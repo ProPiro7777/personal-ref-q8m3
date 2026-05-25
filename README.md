@@ -1,1 +1,4 @@
-# personal-ref-q8m3
+# Personal Reference Archive
+
+Personal study materials. Not for redistribution.
+
