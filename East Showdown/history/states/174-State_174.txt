@@ -1,0 +1,25 @@
+state = { 
+	id = 174 
+	name = "STATE_174" 
+	manpower = 265845 
+	
+	state_category = town 
+	buildings_max_level_factor = 0.75 
+	
+	resources = { gas = 30 } 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 15747 3 }
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 2 
+			anti_air_building = 1 
+			rocket_site = 1 
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 612 2499 2871 4455 4825 7563 7625 9470 9997 15683 15747 15761 15785 }
+}

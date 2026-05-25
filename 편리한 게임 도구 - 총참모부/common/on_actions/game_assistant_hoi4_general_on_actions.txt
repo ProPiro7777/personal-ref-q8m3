@@ -1,0 +1,16 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = {
+                limit = {
+                    is_ai = no
+                }
+                set_country_flag = ROOT.game_assistant_hoi4_general_OPEN
+                country_event = {
+                    id = game_assistant_hoi4_general_text.1
+                }
+            }
+            
+        }
+    }
+}

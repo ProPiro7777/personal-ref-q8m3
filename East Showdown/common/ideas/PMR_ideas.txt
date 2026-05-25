@@ -1,0 +1,72 @@
+ideas = {
+    country = {
+		PMR_unrecognized_state = {
+            allowed = {
+                always = no
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+        
+            removal_cost = -1
+        
+            
+            modifier = {
+                
+            }
+        
+        }
+		PMR_Russian_Military_Contingent = {
+            allowed = {
+                always = no
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+        
+            removal_cost = -1
+        
+            
+            modifier = {
+                
+            }
+        
+        }
+		PMR_Red_Fake = {
+            allowed = {
+                always = no
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+        
+            removal_cost = -1
+        
+            
+            modifier = {
+                
+            }
+        
+        }
+		PMR_Republic_of_Sheriff = {
+            allowed = {
+                always = no
+            }
+        
+            allowed_civil_war = {
+                always = yes
+            }
+        
+            removal_cost = -1
+        
+            
+            modifier = {
+                
+            }
+        
+        }
+    }
+}

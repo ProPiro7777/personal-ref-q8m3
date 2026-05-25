@@ -1,0 +1,637 @@
+#######################################################
+# 0. СТАРЫЕ БЛОКИ
+#######################################################
+
+
+UKR_do_not_attack_the_territory_of_the_russia = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = RBZ
+		value =	-200
+	}
+}
+
+UKR_wait_the_smo = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		always = yes
+		NOT = { 
+			RUS = { has_country_flag = RUS_start_SMO }	
+		}
+	}
+	abort = {
+		always = no
+		RUS = { has_country_flag = RUS_start_SMO }	
+	}
+	#Шашлики на травневі
+	ai_strategy = {
+		type = prepare_for_war
+		id = RUS
+		value = -110
+	}
+}
+
+
+UKR_hold_inland_before_SMO = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		NOT = {
+			RUS = { has_country_flag = RUS_start_SMO }
+		}
+	}
+	abort = {
+		count_triggers = {
+			amount = 1
+			RUS = { has_country_flag = RUS_start_SMO }
+			has_start_date = 2022.04.15
+		}
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = RUS
+		value = -50
+	}
+
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 103  # Odessa state
+		value = 20
+	}	
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 59  # Odessa state
+		value = 20
+	}		
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 165  
+		value = 20
+	}	
+	
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 149 
+		value = 20
+	}	
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 182 
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 715 
+		value = 20
+	}			
+
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 256  # Odessa state
+		value = 15
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 159  # Kirovohrad
+		value = 15
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 105  # Poltava
+		value = 15
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 118  # Cherkasy
+		value = 15
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		order_id = 1
+		states = {
+			256 159 105 118 715 182 149 165 59 103
+		}
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = yes
+	}
+}
+
+
+
+UKR_war = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		AND = {
+			has_war_with = RUS
+			date < 2022.04.01
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { has_war_with = RUS }
+			date > 2022.04.01
+		}
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = RUS
+		value = 40
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = DPR
+		value = 30
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = LPR
+		value = 10
+	}
+	ai_strategy = {
+		type = garrison
+		value = -200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 28
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 56
+		value = -400
+	}
+	
+}
+
+UKR_war_2 = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		AND = {
+			has_war_with = RUS
+			date > 2022.05.05
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { has_war_with = RUS }
+			date > 2022.05.05
+		}
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = RUS
+		value = 35
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = DPR
+		value = 35
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = LPR
+		value = 30
+	}
+	ai_strategy = {
+		type = garrison
+		value = -200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 28
+		value = -100
+	}
+}
+
+  
+
+
+#######################################################
+# 1. НАЧАЛО СВО (24.02.22 – 01.03.22): слабая оборона юга
+#######################################################
+UKR_war_south_stage1 = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		AND = {
+			has_war_with = RUS
+			date > 2022.02.24
+			date < 2022.03.10
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { has_war_with = RUS }
+			date > 2022.03.10
+		}
+	}
+
+	# Слабая оборона Херсона
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 56  # правый Херсон
+		value = -70
+	}
+	# Усиление Николаев(24) / Кривой Рог(61)
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 24
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 61
+		value = 200
+	}
+
+	# Под Киевом мало войск
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 23
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 68
+		value = -100
+	}
+
+	# Донецк(31) > Луганск(63)
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 31
+		value = 300
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 63
+		value = 100
+	}
+
+	# front_control = careful
+	ai_strategy = {
+		type = front_control
+		tag = RUS
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+		manual_attack = no
+		priority = 50
+	}
+
+}
+
+
+#######################################################
+# 2. УСИЛЕНИЕ КИЕВА (01.03.22 – 01.04.22)
+#######################################################
+UKR_defend_kyiv_stage2 = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		AND = {
+			has_war_with = RUS
+			date > 2022.02.24
+			date < 2022.05.01
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { has_war_with = RUS }
+			date > 2022.05.01
+		}
+	}
+
+	# Увеличиваем фронт-контроль Киева
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 23
+		value = 800
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 68
+		value = 800
+	}
+
+	# front_control = balanced
+	ai_strategy = {
+		type = front_control
+		tag = RUS
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		manual_attack = no
+		priority = 60
+	}
+}
+
+
+#######################################################
+# 3. ПОСЛЕ УХОДА РФ ИЗ ПОД КИЕВА (RUS_leave_from_kyiv)
+#######################################################
+UKR_after_RUS_leave_kyiv = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		RUS = { has_country_flag = RUS_failure_of_SMO } 
+	}
+	abort = {
+		NOT = { RUS = { has_country_flag = RUS_failure_of_SMO }  }
+	}
+
+	# Уменьшаем приоритет Киева
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 23
+		value = -200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 68
+		value = -200
+	}
+
+	# front_control = balanced
+	ai_strategy = {
+		type = front_control
+		tag = RUS
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		manual_attack = no
+		priority = 120
+	}
+}
+
+UKR_front_control_1 = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		RUS = { has_country_flag = RUS_failure_of_SMO } 
+	}
+	abort = {
+		date > 2022.7.10
+	}
+
+	# front_control = balanced
+	ai_strategy = {
+		type = front_control
+		tag = RUS
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+		manual_attack = yes
+		priority = 200
+	}
+}
+
+
+UKR_front_control_2 = {
+	allowed = {
+		original_tag = UKR
+	}
+	enable = {
+		RUS = { has_country_flag = RUS_failure_of_SMO } 
+		date > 2022.7.10
+	}
+
+
+	# front_control = balanced
+	ai_strategy = {
+		type = front_control
+		tag = RUS
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		manual_attack = yes
+		priority = 300
+	}
+}
+
+#украина не пушит крым
+UKR_do_not_attack_the_Crimea = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+    ai_strategy = {
+        type = front_unit_request
+        strategic_region = 28  #crimea
+        value = -200
+	}
+}
+
+
+
+
+UKR_do_not_attack_the_territory_of_the_BLR = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = BLR
+		value = -50
+	}
+
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = POL
+		value = -200
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = ROM
+		value = -200
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = SLO
+		value = -200
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = HUN
+		value = -200
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = MOL
+		value = -200
+	}
+}
+
+UKR_PMR_defend = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		has_war_with = PMR
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = PMR
+		value = 10
+	}
+}
+
+UKR_BLR_defend = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		has_war_with = BLR
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = BLR
+		value = 20
+	}
+}
+
+# Разведагентство Украины
+UKR_spy_in_Russia = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 2500
+		mission_target = RUS
+		num_operatives = 2
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 2500
+		num_operatives = 2
+	}
+}
+
+UKR_operations_in_Russia = {
+	allowed = {
+		original_tag = UKR
+	}
+
+	enable = {
+		has_war_with = RUS
+	}
+
+	abort = {
+		NOT = {
+			has_war_with = RUS
+		}
+	}
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_infiltrate_civilian
+		value = 1200
+		operation_target = RUS
+	}
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_infiltrate_armed_forces_army
+		value = 1200
+		operation_target = UKR
+	}
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_targeted_sabotage_infrastructure
+		value = 400
+		operation_target = RUS
+	}
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_kill_general
+		value = 600
+		operation_target = RUS
+	}
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_infiltrate_drg
+		value = 1200
+		operation_target = RUS
+	}
+}

@@ -1,0 +1,428 @@
+infantry_rus = {
+
+	role = infantry
+
+	upgrade_prio = {
+		base = 1
+	}
+
+	available_for = {
+		RUS
+	}
+
+	pechotniy_batalion = {
+		upgrade_prio = {
+			base = 0
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				logistics_company = 1
+				artillery = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				infantry = 3
+				apc = 2
+			}
+		}
+
+		replace_at_match = 1.0
+		replace_with = motostrelkoviy_batalion
+		target_min_match = 0.8
+	}
+
+	motostrelkoviy_batalion = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				logistics_company = 1
+				sp_aa = 1
+				artillery = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				apc = 3
+				ifv_sov = 2
+			}
+		}
+
+	}
+
+	spetsnaz = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				logistics_company = 1
+				sp_aa = 1
+				artillery = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				spetsnaz = 3
+				apc = 2
+				ifv_sov = 1
+			}
+		}
+	}
+}
+
+rosgvardiya_rus = {
+
+	role = garrison
+
+	available_for = {
+		RUS
+	}
+
+	upgrade_prio = {
+		base = 1
+	}
+
+	rosgvardiya = {
+		upgrade_prio = {
+			base = 2
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				recon = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				infantry = 2
+				apc = 1
+			}
+		}
+	}
+}
+
+motorized_rus = {
+
+	role = motorized
+
+	available_for = {
+		RUS
+	}
+
+	upgrade_prio = {
+		base = 1
+	}
+
+	batalion_bars = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				infantry = 2
+				apc = 1
+			}
+		}
+	}
+
+	batalion_motostrelkov = {
+		upgrade_prio = {
+			base = 2
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				logistics_company = 1
+				sp_aa = 1
+				artillery = 1
+				maintenance_company = 1
+				atgm = 1
+				sniper = 1
+				mortar = 1
+			}
+			regiments = {
+				ifv_sov = 2
+				apc = 3
+			}
+		}
+	}
+}
+
+
+armor_rus = {
+
+	role = armor
+
+	available_for = {
+		RUS
+	}
+
+	upgrade_prio = {
+		base = 2
+	}
+
+	tankoviy_batalion = {
+		upgrade_prio = {
+			base = 4
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon_ifv_sov = 1
+				logistics_company = 1
+				sp_aa = 1
+				artillery = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				tank_sov = 3
+				ifv_sov = 2
+			}
+		}
+
+	}
+
+}
+
+
+
+
+
+paratroopers_rus = {
+
+	role = paratroopers
+
+	available_for = {
+		RUS
+	}
+
+	upgrade_prio = {
+		base = 1
+	}
+
+	paratrooper_batalion = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				logistics_company = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				paratrooper = 3
+				towed_art = 1
+			}
+		}
+	}
+
+	light_paratrooper = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				sniper = 1
+			}
+			regiments = {
+				paratrooper = 1
+			}
+		}
+	}
+}
+
+
+artillery_rus = {
+
+	available_for = {
+		RUS
+	}
+
+	role = artillery
+
+	upgrade_prio = {
+		base = 1
+	}
+
+	artillery_batalion = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				logistics_company = 1
+				artillery = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				towed_art = 3
+				MRLS = 1
+				infantry = 1
+			}
+		}
+	}
+
+	tazheliy_artillery_batalion = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				logistics_company = 1
+				sp_aa = 1
+				artillery = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				sp_heavy_art = 3
+				MRLS = 1
+				ifv_sov = 1
+				infantry = 1
+			}
+		}
+	}
+
+	tos_batalion = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				logistics_company = 1
+				artillery = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				TOS = 2
+				ifv_sov = 1
+				infantry = 1
+			}
+		}
+	}
+
+
+
+
+}
+
+marines_rus = {
+
+	available_for = {
+		RUS
+	}
+
+	role = marines
+
+	upgrade_prio = {
+		base = 1
+	}
+
+	marines_batalion = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				engineer = 1
+				field_hospital = 1
+				signal_company = 1
+				recon = 1
+				logistics_company = 1
+				maintenance_company = 1
+				sniper = 1
+				atgm = 1
+				mortar = 1
+			}
+			regiments = {
+				marine = 3
+				towed_art = 1
+			}
+		}
+	}
+}
+
+
+
+

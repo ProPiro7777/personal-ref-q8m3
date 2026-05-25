@@ -1,0 +1,416 @@
+#EAST SHOWDOWN 0.5.1.0 | AI 2.0
+
+#######################################################
+# КОНСТАНТЫ
+#######################################################
+
+@RUS_EQUIP_TIER_S = 40000 # [inf_equip, uniform_equip, body_armor_equip]
+@RUS_EQUIP_TIER_A = 4000 # [atgm_equip, mortar_equip , artillery_equip , grenade_launcher_equip , aa_equip , support_equip , motorized_equip ]
+@RUS_EQUIP_TIER_B = 1000 # [engi_equip, amv_equip , arv_equip ]
+@RUS_EQUIP_TIER_C = 150 # [avf_chassis, apc_chassis, imv_chassis, ifv_chassis,  sp_art_chassis, tank_chassis, sp_mlrs_chassis]
+@RUS_EQUIP_TIER_D = 20  # [sp_aa_chassis, sp_atgm_chassis, sp_heavy_art_chassis, sp_tos_chassis, arv_chassis]
+
+
+
+#######################################################
+# 1. ПОДГОТОВКА К ВОЙНЕ С УКРАИНОЙ
+#######################################################
+RUS_prepare_war_UKR = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		NOT = { 
+			has_war_with = UKR
+		}
+	}
+	abort = {
+		count_triggers = {
+			amount = 1
+			has_war_with = UKR
+			has_start_date = 2022.04.15
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UKR
+		value = 10000
+	}
+}
+
+
+
+
+
+
+##############################
+# 2. КРЫМ–ХЕРСОН
+##############################
+RUS_SMO_FRONT_CONTROL = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		count_triggers = {
+			amount = 2
+			has_war_with = UKR
+			has_start_date = 2022.04.15
+			has_country_flag = RUS_failure_of_SMO
+		}
+	}
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		manual_attack = yes
+		priority = 140
+	}
+}
+
+RUS_more_army_crimea_kherson = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = { type = theatre_distribution_demand_increase value = 20  id = 28 }  # Крым
+
+	ai_strategy = {
+		type = front_unit_request
+		area = crimea_coridor
+		value = 825
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = right_kherson
+		value = 500
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		area = donbass
+		value = 400
+	}	
+
+
+	#abort = {
+	#RUS = { 
+	#	has_global_flag = RUS_STOP_RUS_more_army_crimea_kherson_strategy
+	#}
+	#}
+
+
+	ai_strategy = {
+		type  = force_concentration_front_factor
+		area = crimea_coridor        
+		value = 500
+	}
+
+
+	ai_strategy = {
+		type  = force_concentration_front_factor
+		area = right_kherson        
+		value = 500
+	}	
+
+	# front_control (rush)
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+		priority = 240
+		area = crimea_coridor	
+		area = right_kherson		
+		area = left_zapo		
+	}
+
+}
+
+
+RUS_more_army_kherson = {
+
+} 
+
+
+
+
+##############################
+# 3. ГОМЕЛЬ–КИЕВ
+##############################
+RUS_more_army_gomel_kyiv = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		count_triggers = { 
+			amount = 1
+			has_country_flag = RUS_failure_of_SMO
+			has_start_date = 2022.04.15
+		}
+	}
+
+
+
+
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		priority = 40
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+		area = kyiv_meganager
+	}
+}
+
+##############################
+# РЕОРГАНИЗАЦИЯ ПОСЛЕ ПРОВАЛА СВО
+##############################
+
+#######################################################
+# 4. ОТКАЗ ОТ СЕВЕРНЫХ РЕГИОНОВ УКРАИНЫ ПРИ ПРОВАЛЕ СВО
+#######################################################
+RUS_leave_north_after_failure = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		has_war_with = UKR
+		has_country_flag = RUS_failure_of_SMO
+	}
+	abort = {
+	RUS = { 
+		OR = { 
+			has_global_flag = RUS_STOP_leave_north_after_failure_strategy
+			NOT = { 
+				has_war_with = UKR
+			}
+		}
+	}
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		area = right_kyiv
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = kyiv_meganager
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = chernigov
+		value = -1000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		area = sumskaya_obl
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		area = right_kyiv
+		execute_order = no
+	}
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		area = kyiv_meganager 
+		execute_order = no
+	}
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		area = chernigov
+		execute_order = no
+	}
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		area = sumskaya_obl
+		execute_order = no
+	}
+}
+
+
+
+#############################################
+# 7. ПОВЕДЕНИЕ ПРИ ПРОРЫВЕ ГРАНИЦЫ (russian_border_is_no_longer_safe)
+#############################################
+
+# При этом флаге, РФ должна:
+# - Подтянуть войска в места на территории РФ, где есть войска Украины, чтобы их выбить
+# - Держать небольшой резерв по всей границе (tag = RBZ ? погран.служба?)
+#   Предположим, theatre_distribution_demand_increase = 5, front_unit_request = 300
+
+
+
+
+
+##############################
+# 9. ПРИНЦИП ИСПОЛЬЗОВАНИЯ ПОДРАЗДЕЛЕНИЙ
+##############################
+
+RUS_border_and_rbz_no_garrisons = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		has_global_flag = RUS_STOP_RUS_border_and_rbz_no_garrisons_strategy
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = -10000
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -10000
+	}
+
+}
+
+RUS_ignore_BLR = { 
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		always = yes
+	}
+	# Не защищаем границу с Беларусью
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BLR
+		value = 10000
+	}
+
+	# front_armor_score для Украины
+	ai_strategy = {
+		type = front_armor_score
+		id = UKR
+		value = 10000
+	}
+}
+
+
+RUS_ignore_RBZ_border = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		always = yes
+	}
+	# Если хотим, можем сделать так, что  при первом прорыве
+	# эта стратегия прерывается (abort),чтобы больше не игнорировать RBZ
+	abort = {
+		has_country_flag = russian_border_is_no_longer_safe
+	}
+
+	# Игнорируем погранзону RBZ
+	ai_strategy = {
+		type = front_unit_request
+		tag = RBZ
+		value = -10000
+	}
+
+	# Так же можно добавить:
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = RBZ
+		value = 10000
+	}
+}
+
+
+
+
+
+
+##############################
+# 10. ПРИНЦИП ПРОИЗВОДСТВА
+##############################
+
+########################################################
+#  RUS_base_production
+#  Задаёт некий базовый расклад по производству, активный почти всегда
+########################################################
+
+RUS_base_production = {
+	allowed = {
+		original_tag = RUS
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 40
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 8
+	}
+
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 5
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 2
+	}
+
+
+
+
+}
+
+

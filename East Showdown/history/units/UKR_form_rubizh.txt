@@ -1,0 +1,136 @@
+instant_effect = {
+	ensure_unit_template_UKR_motopechotniy_batalion_nastupu = yes
+	ensure_unit_template_UKR_Tankoviy_batalion = yes
+}
+units = {
+	division = {
+		name = "1-y batal'yon operativnogo priznacheniya 4-yi brihady NHU «Rubizh»"
+		location = 256
+		division_template = "Spetsial'nyy motopikhotnyy batalion nastupu"
+		force_equipment_variants = { 
+			sp_aa_apc_sov_mtlb_equipment = {
+				owner = "UKR"
+				version_name = "Стрела-10" 
+			}
+            tank_sov_t64_equipment = { 
+				owner = "UKR"
+				version_name = "Т-64БВ"
+			}
+			ifv_sov_bmp2_equipment = { 
+				owner = "UKR"
+				version_name = "БМП-2"
+			}
+			apc_ukr_btr3_equipment = { 
+				owner = "UKR"
+				version_name = "БТР-3"
+			}
+		}
+		start_manpower_factor = 0
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2-y batal'yon operativnogo priznacheniya 4-yi brihady NHU «Rubizh»"
+		location = 256
+		division_template = "Spetsial'nyy motopikhotnyy batalion nastupu"
+		force_equipment_variants = { 
+			sp_aa_apc_sov_mtlb_equipment = {
+				owner = "UKR"
+				version_name = "Стрела-10" 
+			}
+			tank_sov_t64_equipment = { 
+				owner = "UKR"
+				version_name = "Т-64БВ"
+			}
+			ifv_sov_bmp2_equipment = { 
+				owner = "UKR"
+				version_name = "БМП-2"
+			}
+			apc_ukr_btr3_equipment = { 
+				owner = "UKR"
+				version_name = "БТР-3"
+			}
+		}
+		start_manpower_factor = 0
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3-y batal'yon operativnogo priznacheniya «Svoboda» 4-yi brihady «Rubizh»"
+		location = 256
+		division_template = "Spetsial'nyy motopikhotnyy batalion nastupu"
+		force_equipment_variants = { 
+			sp_aa_apc_sov_mtlb_equipment = {
+				owner = "UKR"
+				version_name = "Стрела-10" 
+			}
+			imv_heavy_2_equipment = { 
+				owner = "UKR"
+				version_name = "Варта"
+			}
+            apc_sov_btr70_equipment = { 
+				owner = "UKR"
+				version_name = "БТР-70"
+		    }
+			sov_artillery_d30_equipment = { 
+				owner = "UKR"
+				version_name = "Д-30"
+			}
+		}
+		start_manpower_factor = 0
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4-y batal'yon operativnogo priznacheniya «Sila Svobodu» 4-yi brihady «Rubizh»"
+		location = 256
+		division_template = "Spetsial'nyy motopikhotnyy batalion nastupu"
+		force_equipment_variants = { 
+			sp_aa_apc_sov_mtlb_equipment = {
+				owner = "UKR"
+				version_name = "Стрела-10" 
+			}
+			imv_medium_2_equipment = { 
+				owner = "UKR"
+				version_name = "Новатор"
+			}
+			apc_sov_btr70_equipment = { 
+				owner = "UKR"
+				version_name = "БТР-70"
+			}
+			sov_artillery_d30_equipment = { 
+				owner = "UKR"
+				version_name = "Д-30"
+			}
+		}
+		start_manpower_factor = 0
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "1-y tankovy batal'yon 4-yi brihady «Rubizh»"
+		location = 256
+		division_template = "Tankoviy batalion"
+		force_equipment_variants = { 
+            sp_aa_apc_sov_mtlb_equipment = {
+				owner = "UKR"
+				version_name = "Стрела-10" 
+			}
+			tank_sov_t64_equipment = { 
+				owner = "UKR"
+				version_name = "Т-64БВ"
+			}
+			ifv_sov_bmp2_equipment = { 
+				owner = "UKR"
+				version_name = "БМП-2"
+			}
+			sov_artillery_d30_equipment = { 
+				owner = "UKR"
+				version_name = "Д-30" 
+			}
+		}
+		start_manpower_factor = 0
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+}

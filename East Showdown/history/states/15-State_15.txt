@@ -1,0 +1,28 @@
+state = { 
+	id = 15 
+	name = "STATE_15" 
+	manpower = 221467 
+	
+	state_category = town 
+	
+	resources = { chromium = 240 } 
+	history = { 
+		owner = RUS 
+		
+		victory_points = { 10590 100 }
+		
+		buildings = { 
+			electrical_substation = 3 
+			electrical_substation_big = 2 
+			infrastructure = 2 
+			industrial_complex = 4 
+			arms_factory = 2 
+			air_base = 1 
+			anti_air_building = 3 
+			thermal_power_plant = 7 
+		}
+		
+		add_core_of = RUS 
+	}
+	provinces = { 343 1239 6783 7902 10124 10590 11197 11329 11600 12680 12764 12953 13059 13076 13111 }
+}

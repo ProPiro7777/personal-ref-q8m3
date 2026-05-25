@@ -1,0 +1,26 @@
+state = { 
+	id = 319 
+	name = "STATE_319" 
+	manpower = 293730 
+	
+	state_category = city 
+	
+	resources = { gas = 3 } 
+	history = { 
+		owner = SER 
+		
+		victory_points = { 9625 19 }
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 3 
+			air_base = 1 
+			anti_air_building = 2 
+			synthetic_refinery = 1 
+			fuel_silo = 1 
+		}
+		
+		add_core_of = SER 
+	}
+	provinces = { 2323 9625 16849 }
+}

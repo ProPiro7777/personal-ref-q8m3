@@ -1,0 +1,86 @@
+﻿l_korean:
+ STATE_GYEONGGI:0 "경기"
+ STATE_PYONGAN:0 "평안"
+ STATE_GYEONGSANG:0 "경상"
+ STATE_JEOLLA:0 "전라"
+ STATE_CHUNGCHEONG:0 "충청"
+ STATE_GANGWON:0 "강원"
+ STATE_HAMGYEONG:0 "함경"
+ STATE_JEJU:0 "제주"
+ STATE_HWANGHAE:0 "황해"
+ STATE_ULREUNGDO:0 "울릉도"
+ 
+ KOR_STATE_GYEONGGI:0 "케이키"
+ KOR_STATE_PYONGAN:0 "헤이안"
+ KOR_STATE_GYEONGSANG:0 "켄산"
+ KOR_STATE_JEOLLA:0 "젠라"
+ KOR_STATE_CHUNGCHEONG:0 "츄세이"
+ KOR_STATE_GANGWON:0 "코켄"
+ KOR_STATE_HAMGYEONG:0 "칸쿄"
+ KOR_STATE_JEJU:0 "사이슈"
+ KOR_STATE_HWANGHAE:0 "코카이"
+ KOR_STATE_ULREUNGDO:0 "마쓰시마"
+ 
+ JAP_STATE_GYEONGGI:0 "케이키"
+ JAP_STATE_PYONGAN:0 "헤이안"
+ JAP_STATE_GYEONGSANG:0 "켄산"
+ JAP_STATE_JEOLLA:0 "젠라"
+ JAP_STATE_CHUNGCHEONG:0 "츄세이"
+ JAP_STATE_GANGWON:0 "코켄"
+ JAP_STATE_HAMGYEONG:0 "칸쿄"
+ JAP_STATE_JEJU:0 "사이슈"
+ JAP_STATE_HWANGHAE:0 "코카이"
+ JAP_STATE_ULREUNGDO:0 "마쓰시마"
+
+ #Korean Japan
+ FKR_STATE_526:0 "유구"
+ FKR_STATE_528:0 "북구주"
+ FKR_STATE_529:0 "산양"
+ FKR_STATE_530:0 "사국"
+ FKR_STATE_531:0 "관서"
+ FKR_STATE_532:0 "동해"
+ FKR_STATE_533:0 "북동북"
+ FKR_STATE_534:0 "북육"
+ FKR_STATE_535:0 "갑신성"
+ FKR_STATE_536:0 "북해도"
+ FKR_STATE_282:0 "관동"
+ FKR_STATE_1018:0 "남구주"
+ FKR_STATE_1020:0 "산음"
+ FKR_STATE_1019:0 "남동북"
+ 
+ #Korean Manchuria
+ FKR_STATE_328:0 "서간도"
+ FKR_STATE_717:0 "북간도"
+ FKR_STATE_716:0 "요동"
+ FKR_STATE_745:0 "대련"
+ FKR_STATE_610:0 "열하"
+ FKR_STATE_714:0 "흑룡강"
+ FKR_STATE_715:0 "요녕"
+ FKR_STATE_761:0 "호륜패이"
+ 
+ #Korean Kuril
+ FKR_STATE_555:0 "천도 열도"
+ 
+ #Korean Taiwan
+ FKR_STATE_524:0 "대만"
+ 
+ #Korean Primorsk
+ FKR_STATE_408:0 "남부 연해주"
+ FKR_STATE_409:0 "북부 연해주"
+ 
+ #Korean Sakhalin
+ FKR_STATE_655:0 "북부 고혈도"
+ FKR_STATE_537:0 "남부 고혈도"
+ 
+ #Japanese Kuril
+ JAP_STATE_555:0 "지시마 열도"
+ 
+ #Japanese Manchuria
+ JAP_STATE_745:0 "다이렌"
+ 
+ #Japanese Taiwan
+ JAP_STATE_524:0 "다이완"
+ 
+ #Japanese Sakhalin
+ JAP_STATE_655:0 "북부 가라후토"
+ JAP_STATE_537:0 "남부 가라후토"

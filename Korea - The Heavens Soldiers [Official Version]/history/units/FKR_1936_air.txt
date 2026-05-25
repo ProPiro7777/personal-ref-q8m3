@@ -1,0 +1,26 @@
+﻿
+
+
+
+
+#AIRCRAFT
+air_wings = {
+	"KCV 백령도급 핵 추진 항공모함"  = { 
+		cv_fighter_equipment_future_1 =  { owner = "FKR" amount = 10 } 	
+		cv_fighter_equipment_future_1 =  { owner = "FKR" amount = 10 } 	
+		cv_fighter_equipment_future_1 =  { owner = "FKR" amount = 10 } 	
+		cv_fighter_equipment_future_1 =  { owner = "FKR" amount = 10 } 	
+		cv_fighter_equipment_future_1 =  { owner = "FKR" amount = 10 } 	
+		cv_CAS_equipment_future_1 = { owner = "FKR" amount = 10 } 			
+		cv_CAS_equipment_future_1 = { owner = "FKR" amount = 10 } 			
+		cv_CAS_equipment_future_1 = { owner = "FKR" amount = 10 } 			
+		cv_CAS_equipment_future_1 = { owner = "FKR" amount = 10 } 			
+		cv_CAS_equipment_future_1 = { owner = "FKR" amount = 10 } 			
+	}
+			
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################

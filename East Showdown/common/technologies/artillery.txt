@@ -1,0 +1,538 @@
+technologies = {
+		
+		rus_artillery_d1 = {
+
+		allow_branch = { is_SOV_origin = yes }
+
+
+
+		enable_equipments = { sov_artillery_d1_equipment }	
+		enable_subunits = { 
+			towed_art 
+			artillery
+		}
+
+		path = {
+			leads_to_tech = rus_artillery_d20
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	rus_artillery_d74 = {
+
+		allow_branch = { is_SOV_origin = yes }
+
+
+
+		enable_equipments = { sov_artillery_d74_equipment }	
+
+
+
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	rus_artillery_d20 = {
+
+
+
+
+		enable_equipments = { sov_artillery_d20_equipment }	
+
+
+		path = {
+			leads_to_tech = rus_artillery_m46
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	rus_artillery_m46 = {
+
+
+
+
+		enable_equipments = { sov_artillery_m46_equipment }	
+
+
+		path = {
+			leads_to_tech = rus_artillery_d30
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 8 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+
+	rus_artillery_d30 = {
+
+
+
+		enable_equipments = { sov_artillery_d30_equipment }	
+
+
+		path = {
+			leads_to_tech = rus_artillery_2a36
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 12 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	rus_artillery_2a36 = {
+
+
+		enable_equipments = { sov_artillery_2a36_equipment }	
+
+
+		path = {
+			leads_to_tech = rus_artillery_2a65
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 16 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	rus_artillery_2a65 = {
+
+
+
+		enable_equipments = { sov_artillery_2a65_equipment }
+
+
+		path = {
+			leads_to_tech = rus_artillery_2a88
+			research_cost_coeff = 1
+		}
+
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ukr_artillery_precguid_mun
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ukr_artillery_2p22_bohdana
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 20 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	ukr_artillery_precguid_mun = {
+
+		allow_branch = { is_UKR_origin = yes }
+
+		allow = {
+			has_country_flag = NTO_give_us_precision_guided_ammunition_flag
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				army_experience = 5
+				}
+		}
+
+		sp_art = { soft_attack = 0.03 ap_attack = 0.03 hard_attack = 0.03 }
+		
+
+		research_cost = 0
+
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 20 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	ukr_artillery_2p22_bohdana = {
+
+		allow_branch = { is_UKR_origin = yes }
+
+		enable_equipments = { ukr_artillery_2p22_bohdana_equipment }
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 24 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	rus_artillery_2a88 = {
+
+		allow_branch = { is_RUS_origin = yes }
+
+
+		enable_equipments = { rus_artillery_2a88_equipment }	
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 24 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	usa_artillery_m114 = {
+
+		allow_branch = { is_NTO_origin = yes }
+		enable_subunits = { 
+			towed_art 
+			artillery
+		}
+
+
+		enable_equipments = { usa_artillery_m114_equipment }	
+
+		path = {
+			leads_to_tech = usa_artillery_m102
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	usa_artillery_m102 = {
+
+
+		enable_equipments = { usa_artillery_m102_equipment }	
+
+		path = {
+			leads_to_tech = usa_artillery_m198
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	usa_artillery_m198 = {
+
+
+		enable_equipments = { usa_artillery_m198_equipment }	
+
+		path = {
+			leads_to_tech = usa_artillery_m119
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 8 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	usa_artillery_m119 = {
+
+
+		enable_equipments = { usa_artillery_m119_equipment }	
+
+		path = {
+			leads_to_tech = usa_artillery_m777
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 12 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	usa_artillery_m777 = {
+
+
+		enable_equipments = { usa_artillery_m777_equipment }	
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 16 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+
+
+	eng_artillery_bl5inch = {
+		enable_subunits = { 
+			towed_art 
+			artillery
+		}
+		allow_branch = { is_NTO_origin = yes }
+
+		enable_equipments = { eng_artillery_bl5inch_equipment }	
+
+		path = {
+			leads_to_tech = eng_artillery_l118
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	eng_artillery_l118 = {
+
+		enable_equipments = { eng_artillery_l118_equipment }	
+
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	ger_artillery_leFH = {
+
+		allow_branch = { is_NTO_origin = yes }
+		enable_subunits = { 
+			towed_art 
+			artillery
+		}
+		enable_equipments = { ger_artillery_leFH_equipment }	
+
+		path = {
+			leads_to_tech = ger_artillery_FH70
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	ger_artillery_FH70 = {
+
+
+		enable_equipments = { ger_artillery_FH70_equipment }	
+
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+	fra_artillery_modele50 = {
+
+		allow_branch = { is_NTO_origin = yes }
+		enable_subunits = { 
+			towed_art 
+			artillery
+		}
+		enable_equipments = { fra_artillery_modele50_equipment }	
+
+		path = {
+			leads_to_tech = fra_artillery_TRF1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+
+	fra_artillery_TRF1 = {
+
+
+		allow_branch = { is_NTO_origin = yes }
+
+		enable_equipments = { fra_artillery_TRF1_equipment }	
+
+		path = {
+			leads_to_tech = fra_artillery_TRF2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 4 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+
+
+	fra_artillery_TRF2 = {
+
+
+
+		enable_equipments = { fra_artillery_TRF2_equipment }	
+
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 8 }
+		}
+
+		categories = {
+			artillery
+		}
+	}
+
+
+}

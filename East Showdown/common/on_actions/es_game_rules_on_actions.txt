@@ -1,0 +1,1118 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ES_RUS_BACK_AREAS
+						option = ES_RUS_BACK_AREAS_ENABLED
+					}
+				}
+				
+				RBA = {
+					transfer_state = 15
+					transfer_state = 16
+					transfer_state = 17
+					transfer_state = 18
+					transfer_state = 19
+					transfer_state = 23					
+					transfer_state = 26
+					transfer_state = 28
+					transfer_state = 31
+					transfer_state = 34
+					transfer_state = 40
+					transfer_state = 41
+					transfer_state = 42
+					transfer_state = 43
+					transfer_state = 44
+					transfer_state = 51
+					transfer_state = 52
+					transfer_state = 74
+					transfer_state = 84
+					transfer_state = 171
+					transfer_state = 204
+					transfer_state = 294
+					transfer_state = 344
+					transfer_state = 441
+					transfer_state = 442
+					transfer_state = 443
+					transfer_state = 458
+					transfer_state = 459
+					transfer_state = 469
+					transfer_state = 471
+					transfer_state = 472
+					transfer_state = 473
+					transfer_state = 474
+					transfer_state = 475
+					transfer_state = 476
+					transfer_state = 477
+					transfer_state = 478
+					transfer_state = 479
+					transfer_state = 480
+					transfer_state = 481
+					transfer_state = 482
+					transfer_state = 483
+					transfer_state = 484
+					transfer_state = 485
+					transfer_state = 486
+					transfer_state = 487
+					transfer_state = 488
+					transfer_state = 489
+					transfer_state = 490
+					transfer_state = 491
+					transfer_state = 492
+					transfer_state = 493
+					transfer_state = 494
+					transfer_state = 495
+					transfer_state = 496
+					transfer_state = 497
+					transfer_state = 498
+					transfer_state = 499
+					transfer_state = 500
+					transfer_state = 501
+					transfer_state = 502
+					transfer_state = 503
+					transfer_state = 504
+					transfer_state = 505
+					transfer_state = 506
+					transfer_state = 507
+					transfer_state = 508
+					transfer_state = 509
+					transfer_state = 510
+					transfer_state = 511
+					transfer_state = 512
+					transfer_state = 513
+					transfer_state = 514
+					transfer_state = 515
+					transfer_state = 516
+					transfer_state = 517
+					transfer_state = 518
+					transfer_state = 519
+					transfer_state = 520
+					transfer_state = 521
+					transfer_state = 522
+					transfer_state = 523
+					transfer_state = 524
+					transfer_state = 525
+					transfer_state = 526
+					transfer_state = 527
+					transfer_state = 528
+					transfer_state = 529
+					transfer_state = 530
+					transfer_state = 531
+					transfer_state = 532
+					transfer_state = 533
+					transfer_state = 534
+					transfer_state = 535
+					transfer_state = 536
+					transfer_state = 537
+					transfer_state = 538
+					transfer_state = 539
+					transfer_state = 540
+					transfer_state = 541
+					transfer_state = 542
+					transfer_state = 543
+					transfer_state = 544
+					transfer_state = 545
+					transfer_state = 546
+					transfer_state = 547
+					transfer_state = 548
+		
+					every_owned_state = {
+						remove_core_of = RUS
+						add_core_of = RBA
+						
+						14 = { transfer_manpower_between_states = yes }
+						RUS = { transfer_buildings_from_state_between_countries = yes }
+		
+						set_building_level = {
+							type = supply_node
+							level = 0
+							province = { all_provinces = yes }
+						}
+		
+						RBA = {
+							give_resource_rights = { 
+								receiver = RUS 
+								state = PREV 
+							}
+						}
+		
+						teleport_armies = {
+							limit = { tag = RUS }
+							to_province = 18897
+						}
+					}
+		
+					set_global_flag = RBA_created
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ES_NATO_STATUS
+						option = ES_NATO_ONLY_MAIN_BASE
+					}
+				}
+
+				NTO = { change_tag_from = LIT }
+				NTO = { change_tag_from = LAT }
+				NTO = { change_tag_from = CZE }
+				NTO = { change_tag_from = SLO }
+				NTO = { change_tag_from = HUN }
+				NTO = { change_tag_from = ROM }
+				NTO = { change_tag_from = CRO }
+				NTO = { change_tag_from = BUL }
+
+				NBA = {
+					annex_country = { target = LIT }
+					annex_country = { target = LAT }
+					annex_country = { target = CZE }
+					annex_country = { target = SLO }
+					annex_country = { target = HUN }
+					annex_country = { target = ROM }
+					annex_country = { target = CRO }
+					annex_country = { target = BUL }
+
+					transfer_state = 391
+					transfer_state = 392
+					transfer_state = 394
+				}
+
+				#NTO = {
+				#	transfer_state = 45
+				#	45 = { add_core_of = NTO }
+				#	set_capital = { state = 45 }
+				#}
+
+				NBA = {
+					every_owned_state = {
+						add_core_of = NBA
+
+						393 = { transfer_manpower_between_states = yes }
+						NTO = { transfer_buildings_from_state_between_countries = yes }
+
+						set_building_level = {
+							type = supply_node
+							level = 0
+							province = { all_provinces = yes }
+						}
+						
+						NBA = {
+							give_resource_rights = { 
+								receiver = NTO 
+								state = PREV 
+							}
+						}
+						
+						teleport_armies = {
+							limit = { tag = NTO }
+							to_province = 18166
+						}
+					}
+				}
+
+				set_global_flag = NTO_has_only_main_base
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ES_NATO_STATUS
+						option = ES_NATO_UNITED
+					}
+				}
+				
+				NTO = { change_tag_from = LIT }
+				NTO = { change_tag_from = LAT }
+				NTO = { change_tag_from = CZE }
+				NTO = { change_tag_from = SLO }
+				NTO = { change_tag_from = HUN }
+				NTO = { change_tag_from = ROM }
+				NTO = { change_tag_from = CRO }
+				NTO = { change_tag_from = BUL }
+
+				NTO = {
+					annex_country = { target = LIT }
+					annex_country = { target = LAT }
+					annex_country = { target = CZE }
+					annex_country = { target = SLO }
+					annex_country = { target = HUN }
+					annex_country = { target = ROM }
+					annex_country = { target = CRO }
+					annex_country = { target = BUL }
+					
+					every_owned_state = {
+						add_core_of = NTO
+					}
+				}
+
+				set_global_flag = NTO_united
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ES_MINOR_COUNTRIES_STATUS
+						option = ES_MINOR_COUNTRIES_DISABLED
+					}
+				}
+				
+				BOR = { change_tag_from = ABK }
+				BOR = { change_tag_from = KAZ }
+				BOR = { change_tag_from = BOS }
+				BOR = { change_tag_from = SER }
+
+				BOR = {
+					annex_country = { target = ABK }
+					annex_country = { target = KAZ }
+					annex_country = { target = BOS }
+					annex_country = { target = SER }
+
+					every_owned_state = {
+						add_core_of = BOR
+
+						remove_manpower_from_state = yes
+						remove_buildings_from_state = yes
+
+						set_building_level = {
+							type = supply_node
+							level = 0
+							province = { all_provinces = yes }
+						}
+					}
+				}
+
+				set_global_flag = minor_countries_is_disabled
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ES_CHE_STATUS
+						option = ES_CHE_ANNEXED
+					}
+				}
+				CHE = {
+					every_unit_leader = {
+						set_nationality = RUS
+					}
+					every_army_leader = {
+						set_nationality = RUS
+					}
+				}
+				RUS = {
+					annex_country = {
+						target = CHE
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_lDPR_status
+						option = ES_LDPR_ANNEXED
+					}
+				}
+				DPR = {
+					every_unit_leader = {
+						set_nationality = RUS
+					}
+					every_army_leader = {
+						set_nationality = RUS
+					}
+				}
+				LPR = {
+					every_unit_leader = {
+						set_nationality = RUS
+					}
+					every_army_leader = {
+						set_nationality = RUS
+					}
+				}
+				RUS = {
+					annex_country = {
+						target = LPR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DPR
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_lDPR_status
+						option = ES_LDPR_UNITED
+					}
+				}
+				DPR = {
+					country_event = DPR.4
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ban_border_zones
+						option = ES_BAN_BORDER_YES
+					}
+				}
+				set_global_flag = RUS_ban_border_zones_flag
+				RUS = {
+					annex_country = {
+						target = RBZ
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ban_LDNR_district
+						option = ES_BAN_DISTRICT_YES
+					}
+				}
+				set_global_flag = RUS_ban_LDNR_district
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_mp_target_country
+						option = ES_MP_TARGET_COUNTRY_RUS
+					}
+				}
+				set_global_flag = MP_TARGET_COUNTRY_RUSSIA 
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_mp_target_country
+						option = ES_MP_TARGET_COUNTRY_UKR
+					}
+				}
+				set_global_flag = MP_TARGET_COUNTRY_UKRAINE 
+			}
+		}
+
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_arms_factory
+						option = ES_RUS_OFFSITE_ARMS_FACTORY_5
+					}
+				}
+				RUS = { add_offsite_building = { type = arms_factory level = 5} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_arms_factory
+						option = ES_RUS_OFFSITE_ARMS_FACTORY_10
+					}
+				}
+				RUS = { add_offsite_building = { type = arms_factory level = 10} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ES_RUS_OFFSITE_ARMS_FACTORY
+						option = ES_RUS_OFFSITE_ARMS_FACTORY_15
+					}
+				}
+				RUS = { add_offsite_building = { type = arms_factory level = 15} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_arms_factory
+						option = ES_RUS_OFFSITE_ARMS_FACTORY_20
+					}
+				}
+				RUS = { add_offsite_building = { type = arms_factory level = 20} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_arms_factory
+						option = ES_RUS_OFFSITE_ARMS_FACTORY_25
+					}
+				}
+				RUS = { add_offsite_building = { type = arms_factory level = 25} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_arms_factory
+						option = ES_RUS_OFFSITE_ARMS_FACTORY_50
+					}
+				}
+				RUS = { add_offsite_building = { type = arms_factory level = 50} }
+			}
+		}
+		##
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_industrial_complex
+						option = ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_5
+					}
+				}
+				RUS = { add_offsite_building = { type = industrial_complex level = 5} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_industrial_complex
+						option = ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_10
+					}
+				}
+				RUS = { add_offsite_building = { type = industrial_complex level = 10} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_industrial_complex
+						option = ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_15
+					}
+				}
+				RUS = { add_offsite_building = { type = industrial_complex level = 15} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_industrial_complex
+						option = ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_20
+					}
+				}
+				RUS = { add_offsite_building = { type = industrial_complex level = 20} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_industrial_complex
+						option = ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_25
+					}
+				}
+				RUS = { add_offsite_building = { type = industrial_complex level = 25} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_offsite_industrial_complex
+						option = ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_50
+					}
+				}
+				RUS = { add_offsite_building = { type = industrial_complex level = 50} }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_units
+						option = ES_RUS_ADDITIONAL_UNITS_5
+					}
+				}
+				14 = { 	create_unit = { division = "name = \"Motorized reserve unit\" division_template = \"Motostrelkoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 11 allow_spawning_on_enemy_provs = yes id = 4590}}
+				13 = {	create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriysky batalion\" start_experience_factor = 0.15" owner = RUS count = 4 allow_spawning_on_enemy_provs = yes id = 4600}}
+				46 = {	create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4610}}
+				33 = {	create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Paratroopers batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4620}}
+				15 = {	create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_units
+						option = ES_RUS_ADDITIONAL_UNITS_10
+					}
+				}
+				14 = { 	create_unit = { division = "name = \"Motorized reserve unit\" division_template = \"Motostrelkoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 18 allow_spawning_on_enemy_provs = yes id = 4590}}
+				13 = {	create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriysky batalion\" start_experience_factor = 0.15" owner = RUS count = 8 allow_spawning_on_enemy_provs = yes id = 4600}}
+				46 = {	create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 4 allow_spawning_on_enemy_provs = yes id = 4610}}
+				33 = {	create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Paratroopers batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4620}}
+				15 = {	create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"TOS reserve unit\" division_template = \"TOS Batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Marine reserve unit\" division_template = \"Marines batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Heavy artillery reserve unit\" division_template = \"Tazheliy artileriyskiy batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"T-90 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"Helicopter reserve unit\" division_template = \"Vertoletni batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_units
+						option = ES_RUS_ADDITIONAL_UNITS_15
+					}
+				}
+				14 = { 	create_unit = { division = "name = \"Motorized reserve unit\" division_template = \"Motostrelkoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 22 allow_spawning_on_enemy_provs = yes id = 4590}}
+				13 = {	create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriysky batalion\" start_experience_factor = 0.15" owner = RUS count = 13 allow_spawning_on_enemy_provs = yes id = 4600}}
+				46 = {	create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 6 allow_spawning_on_enemy_provs = yes id = 4610}}
+				33 = {	create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Paratroopers batalion\" start_experience_factor = 0.15" owner = RUS count = 4 allow_spawning_on_enemy_provs = yes id = 4620}}
+				15 = {	create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"TOS reserve unit\" division_template = \"TOS Batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Marine reserve unit\" division_template = \"Marines batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Heavy artillery reserve unit\" division_template = \"Tazheliy artileriyskiy batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"T-90 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"Helicopter reserve unit\" division_template = \"Vertoletni batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"Special forces reserve unit\" division_template = \"Spetsnaz\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"T-80 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_units
+						option = ES_RUS_ADDITIONAL_UNITS_20
+					}
+				}
+				14 = { 	create_unit = { division = "name = \"Motorized reserve unit\" division_template = \"Motostrelkoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 30 allow_spawning_on_enemy_provs = yes id = 4590}}
+				13 = {	create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriysky batalion\" start_experience_factor = 0.15" owner = RUS count = 17 allow_spawning_on_enemy_provs = yes id = 4600}}
+				46 = {	create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 9 allow_spawning_on_enemy_provs = yes id = 4610}}
+				33 = {	create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Paratroopers batalion\" start_experience_factor = 0.15" owner = RUS count = 5 allow_spawning_on_enemy_provs = yes id = 4620}}
+				15 = {	create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.15" owner = RUS count = 4 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"TOS reserve unit\" division_template = \"TOS Batalion\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Marine reserve unit\" division_template = \"Marines batalion\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Heavy artillery reserve unit\" division_template = \"Tazheliy artileriyskiy batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"T-90 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"Helicopter reserve unit\" division_template = \"Vertoletni batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"Special forces reserve unit\" division_template = \"Spetsnaz\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"T-80 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_units
+						option = ES_RUS_ADDITIONAL_UNITS_25
+					}
+				}
+				14 = { 	create_unit = { division = "name = \"Motorized reserve unit\" division_template = \"Motostrelkoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 37 allow_spawning_on_enemy_provs = yes id = 4590}}
+				13 = {	create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriysky batalion\" start_experience_factor = 0.15" owner = RUS count = 22 allow_spawning_on_enemy_provs = yes id = 4600}}
+				46 = {	create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 11 allow_spawning_on_enemy_provs = yes id = 4610}}
+				33 = {	create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Paratroopers batalion\" start_experience_factor = 0.15" owner = RUS count = 6 allow_spawning_on_enemy_provs = yes id = 4620}}
+				15 = {	create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.15" owner = RUS count = 5 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"TOS reserve unit\" division_template = \"TOS Batalion\" start_experience_factor = 0.15" owner = RUS count = 4 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Marine reserve unit\" division_template = \"Marines batalion\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Heavy artillery reserve unit\" division_template = \"Tazheliy artileriyskiy batalion\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"T-90 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"Helicopter reserve unit\" division_template = \"Vertoletni batalion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"Special forces reserve unit\" division_template = \"Spetsnaz\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"T-80 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"Rosguard reserve unit\" division_template = \"Rosgvardiya\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_units
+						option = ES_RUS_ADDITIONAL_UNITS_50
+					}
+				}
+				14 = { 	create_unit = { division = "name = \"Motorized reserve unit\" division_template = \"Motostrelkoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 65 allow_spawning_on_enemy_provs = yes id = 4590}}
+				13 = {	create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriysky batalion\" start_experience_factor = 0.15" owner = RUS count = 44 allow_spawning_on_enemy_provs = yes id = 4600}}
+				46 = {	create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 23 allow_spawning_on_enemy_provs = yes id = 4610}}
+				33 = {	create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Paratroopers batalion\" start_experience_factor = 0.15" owner = RUS count = 13 allow_spawning_on_enemy_provs = yes id = 4620}}
+				15 = {	create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.15" owner = RUS count = 11 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"TOS reserve unit\" division_template = \"TOS Batalion\" start_experience_factor = 0.15" owner = RUS count = 8 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Marine reserve unit\" division_template = \"Marines batalion\" start_experience_factor = 0.15" owner = RUS count = 7 allow_spawning_on_enemy_provs = yes id = 4630}}
+				24 = {	create_unit = { division = "name = \"Heavy artillery reserve unit\" division_template = \"Tazheliy artileriyskiy batalion\" start_experience_factor = 0.15" owner = RUS count = 7 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"T-90 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 7 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"Helicopter reserve unit\" division_template = \"Vertoletni batalion\" start_experience_factor = 0.15" owner = RUS count = 5 allow_spawning_on_enemy_provs = yes id = 4630}}
+				40 = {	create_unit = { division = "name = \"Special forces reserve unit\" division_template = \"Spetsnaz\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"T-80 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"Rosguard reserve unit\" division_template = \"Rosgvardiya\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}	
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_manpower
+						option = ES_RUS_ADDITIONAL_MANPOWER_5
+					}
+				}
+				RUS = { add_manpower = 5000 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_manpower
+						option = ES_RUS_ADDITIONAL_MANPOWER_10
+					}
+				}
+				RUS = { add_manpower = 5000 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_manpower
+						option = ES_RUS_ADDITIONAL_MANPOWER_15
+					}
+				}
+				RUS = { add_manpower = 10000 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_manpower
+						option = ES_RUS_ADDITIONAL_MANPOWER_20
+					}
+				}
+				RUS = { add_manpower = 15000 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_rus_additional_manpower
+						option = ES_RUS_ADDITIONAL_MANPOWER_20
+					}
+				}
+				RUS = { add_manpower = 20000 }
+			}
+		}
+
+
+		
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_arms_factory
+						option = ES_UKR_OFFSITE_ARMS_FACTORY_5
+					}
+				}
+				UKR = { add_offsite_building = { type = arms_factory level = 5} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_arms_factory
+						option = ES_UKR_OFFSITE_ARMS_FACTORY_10
+					}
+				}
+				UKR = { add_offsite_building = { type = arms_factory level = 10} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_arms_factory
+						option = ES_UKR_OFFSITE_ARMS_FACTORY_15
+					}
+				}
+				UKR = { add_offsite_building = { type = arms_factory level = 15} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_arms_factory
+						option = ES_UKR_OFFSITE_ARMS_FACTORY_20
+					}
+				}
+				UKR = { add_offsite_building = { type = arms_factory level = 20} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_arms_factory
+						option = ES_UKR_OFFSITE_ARMS_FACTORY_25
+					}
+				}
+				UKR = { add_offsite_building = { type = arms_factory level = 25} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_arms_factory
+						option = ES_UKR_OFFSITE_ARMS_FACTORY_50
+					}
+				}
+				UKR = { add_offsite_building = { type = arms_factory level = 50} }
+			}
+		}
+		##
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_industrial_complex
+						option = ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_5
+					}
+				}
+				UKR = { add_offsite_building = { type = industrial_complex level = 5} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_industrial_complex
+						option = ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_10
+					}
+				}
+				UKR = { add_offsite_building = { type = industrial_complex level = 10} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_industrial_complex
+						option = ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_15
+					}
+				}
+				UKR = { add_offsite_building = { type = industrial_complex level = 15} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_industrial_complex
+						option = ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_20
+					}
+				}
+				UKR = { add_offsite_building = { type = industrial_complex level = 20} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_industrial_complex
+						option = ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_25
+					}
+				}
+				UKR = { add_offsite_building = { type = industrial_complex level = 25} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_offsite_industrial_complex
+						option = ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_50
+					}
+				}
+				UKR = { add_offsite_building = { type = industrial_complex level = 50} }
+			}
+		}
+
+
+		
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_units
+						option = ES_UKR_ADDITIONAL_UNITS_5
+					}
+				}
+				94 = { create_unit = { division = "name = \"NGU reserve unit\" division_template = \"Batalyon NGU okhorony socialnoho poryadka\"  start_experience_factor = 0.45" owner = UKR count = 10 allow_spawning_on_enemy_provs = yes id = 4550} }
+				98 = { create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriyskiy divizion\" start_experience_factor = 0.35" owner = UKR count = 2 allow_spawning_on_enemy_provs = yes id = 4570} }
+				69 = { create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.35" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4580} }
+				59 = { create_unit = { division = "name = \"Mechanized reserve unit\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.35" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4590} }
+				}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_units
+						option = ES_UKR_ADDITIONAL_UNITS_10
+					}
+				}
+				94 = { create_unit = { division = "name = \"NGU reserve unit\" division_template = \"Batalyon NGU okhorony socialnoho poryadka\"  start_experience_factor = 0.45" owner = UKR count = 15 allow_spawning_on_enemy_provs = yes id = 4550} }
+				98 = { create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriyskiy divizion\" start_experience_factor = 0.35" owner = UKR count = 5 allow_spawning_on_enemy_provs = yes id = 4570} }
+				69 = { create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.35" owner = UKR count = 3 allow_spawning_on_enemy_provs = yes id = 4580} }
+				59 = { create_unit = { division = "name = \"Mechanized reserve unit\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.35" owner = UKR count = 3 allow_spawning_on_enemy_provs = yes id = 4590} }
+				88 = { create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Desantniy batalion\" start_experience_factor = 0.35" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4600} }
+				102 = { create_unit = { division = "name = \"T-64 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4610} }
+				162 = { create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4620} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_units
+						option = ES_UKR_ADDITIONAL_UNITS_15
+					}
+				}
+				94 = { create_unit = { division = "name = \"NGU reserve unit\" division_template = \"Batalyon NGU okhorony socialnoho poryadka\"  start_experience_factor = 0.45" owner = UKR count = 19 allow_spawning_on_enemy_provs = yes id = 4550} }
+				98 = { create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriyskiy divizion\" start_experience_factor = 0.35" owner = UKR count = 8 allow_spawning_on_enemy_provs = yes id = 4570} }
+				69 = { create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.35" owner = UKR count = 5 allow_spawning_on_enemy_provs = yes id = 4580} }
+				59 = { create_unit = { division = "name = \"Mechanized reserve unit\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.35" owner = UKR count = 4 allow_spawning_on_enemy_provs = yes id = 4590} }
+				88 = { create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Desantniy batalion\" start_experience_factor = 0.35" owner = UKR count = 2 allow_spawning_on_enemy_provs = yes id = 4600} }
+				102 = { create_unit = { division = "name = \"T-64 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 2 allow_spawning_on_enemy_provs = yes id = 4610} }
+				162 = { create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4620} }
+				135 = {	create_unit = { division = "name = \"Mountain rifles reserve unit\" division_template = \"Gornostrelkoviy batalion\" start_experience_factor = 0.15" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4580} }
+				135 = {	create_unit = { division = "name = \"Marine reserve unit\" division_template = \"Batalion morskoy pechoti\" start_experience_factor = 0.15" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4580} }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_units
+						option = ES_UKR_ADDITIONAL_UNITS_20
+					}
+				}
+				94 = { create_unit = { division = "name = \"NGU reserve unit\" division_template = \"Batalyon NGU okhorony socialnoho poryadka\"  start_experience_factor = 0.45" owner = UKR count = 22 allow_spawning_on_enemy_provs = yes id = 4550} }
+				98 = { create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriyskiy divizion\" start_experience_factor = 0.35" owner = UKR count = 11 allow_spawning_on_enemy_provs = yes id = 4570} }
+				69 = { create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.35" owner = UKR count = 7 allow_spawning_on_enemy_provs = yes id = 4580} }
+				59 = { create_unit = { division = "name = \"Mechanized reserve unit\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.35" owner = UKR count = 6 allow_spawning_on_enemy_provs = yes id = 4590} }
+				88 = { create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Desantniy batalion\" start_experience_factor = 0.35" owner = UKR count = 3 allow_spawning_on_enemy_provs = yes id = 4600} }
+				102 = { create_unit = { division = "name = \"T-64 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 3 allow_spawning_on_enemy_provs = yes id = 4610} }
+				162 = { create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 2 allow_spawning_on_enemy_provs = yes id = 4620} }
+				135 = {	create_unit = { division = "name = \"Mountain rifles reserve unit\" division_template = \"Gornostrelkoviy batalion\" start_experience_factor = 0.15" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4580} }
+				135 = {	create_unit = { division = "name = \"Marine reserve unit\" division_template = \"Batalion morskoy pechoti\" start_experience_factor = 0.15" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4580} }
+				40 = {	create_unit = { division = "name = \"Special forces reserve unit\" division_template = \"SSO batalyon\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"NGU Omega reserve unit\" division_template = \"Zagin centra specialnogo pryznachennya NGU «Omega»\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_units
+						option = ES_UKR_ADDITIONAL_UNITS_25
+					}
+				}
+				94 = { create_unit = { division = "name = \"NGU reserve unit\" division_template = \"Batalyon NGU okhorony socialnoho poryadka\"  start_experience_factor = 0.45" owner = UKR count = 23 allow_spawning_on_enemy_provs = yes id = 4550} }
+				98 = { create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriyskiy divizion\" start_experience_factor = 0.35" owner = UKR count = 14 allow_spawning_on_enemy_provs = yes id = 4570} }
+				69 = { create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.35" owner = UKR count = 9 allow_spawning_on_enemy_provs = yes id = 4580} }
+				59 = { create_unit = { division = "name = \"Mechanized reserve unit\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.35" owner = UKR count = 8 allow_spawning_on_enemy_provs = yes id = 4590} }
+				88 = { create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Desantniy batalion\" start_experience_factor = 0.35" owner = UKR count = 5 allow_spawning_on_enemy_provs = yes id = 4600} }
+				102 = { create_unit = { division = "name = \"T-64 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 4 allow_spawning_on_enemy_provs = yes id = 4610} }
+				162 = { create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 3 allow_spawning_on_enemy_provs = yes id = 4620} }
+				135 = {	create_unit = { division = "name = \"Mountain rifles reserve unit\" division_template = \"Gornostrelkoviy batalion\" start_experience_factor = 0.15" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4580} }
+				135 = {	create_unit = { division = "name = \"Marine reserve unit\" division_template = \"Batalion morskoy pechoti\" start_experience_factor = 0.15" owner = UKR count = 1 allow_spawning_on_enemy_provs = yes id = 4580} }
+				40 = {	create_unit = { division = "name = \"Special forces reserve unit\" division_template = \"SSO batalyon\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"NGU Omega reserve unit\" division_template = \"Zagin centra specialnogo pryznachennya NGU «Omega»\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"Academi reserve unit\" division_template = \"Batalion Academi\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"Azov reserve unit\" division_template = \"Batalyon NGU Spetsilnogo naznacheniya\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"Heavy artillery reserve unit\" division_template = \"Tazheliy artileriyskiy divizion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_units
+						option = ES_UKR_ADDITIONAL_UNITS_50
+					}
+				}
+				94 = { create_unit = { division = "name = \"NGU reserve unit\" division_template = \"Batalyon NGU okhorony socialnoho poryadka\"  start_experience_factor = 0.45" owner = UKR count = 29 allow_spawning_on_enemy_provs = yes id = 4550} }
+				98 = { create_unit = { division = "name = \"Artillery reserve unit\" division_template = \"Artileriyskiy divizion\" start_experience_factor = 0.35" owner = UKR count = 29 allow_spawning_on_enemy_provs = yes id = 4570} }
+				69 = { create_unit = { division = "name = \"Infantry reserve unit\" division_template = \"Pechotniy batalion\" start_experience_factor = 0.35" owner = UKR count = 18 allow_spawning_on_enemy_provs = yes id = 4580} }
+				59 = { create_unit = { division = "name = \"Mechanized reserve unit\" division_template = \"Mechanizirovaniy batalion\" start_experience_factor = 0.35" owner = UKR count = 16 allow_spawning_on_enemy_provs = yes id = 4590} }
+				88 = { create_unit = { division = "name = \"Paratrooper reserve unit\" division_template = \"Desantniy batalion\" start_experience_factor = 0.35" owner = UKR count = 10 allow_spawning_on_enemy_provs = yes id = 4600} }
+				102 = { create_unit = { division = "name = \"T-64 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 9 allow_spawning_on_enemy_provs = yes id = 4610} }
+				162 = { create_unit = { division = "name = \"T-72 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.35" owner = UKR count = 6 allow_spawning_on_enemy_provs = yes id = 4620} }
+				135 = {	create_unit = { division = "name = \"Mountain rifles reserve unit\" division_template = \"Gornostrelkoviy batalion\" start_experience_factor = 0.15" owner = UKR count = 3 allow_spawning_on_enemy_provs = yes id = 4580} }
+				135 = {	create_unit = { division = "name = \"Marine reserve unit\" division_template = \"Batalion morskoy pechoti\" start_experience_factor = 0.15" owner = UKR count = 3 allow_spawning_on_enemy_provs = yes id = 4580} }
+				40 = {	create_unit = { division = "name = \"Special forces reserve unit\" division_template = \"SSO batalyon\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"NGU Omega reserve unit\" division_template = \"Zagin centra specialnogo pryznachennya NGU «Omega»\" start_experience_factor = 0.15" owner = RUS count = 3 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"Academi reserve unit\" division_template = \"Batalion Academi\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"Azov reserve unit\" division_template = \"Batalyon NGU Spetsilnogo naznacheniya\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"Heavy artillery reserve unit\" division_template = \"Tazheliy artileriyskiy divizion\" start_experience_factor = 0.15" owner = RUS count = 2 allow_spawning_on_enemy_provs = yes id = 4630}}
+				34 = {	create_unit = { division = "name = \"T-80 reserve unit\" division_template = \"Tankoviy batalion\" start_experience_factor = 0.15" owner = RUS count = 1 allow_spawning_on_enemy_provs = yes id = 4630}}
+
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_manpower
+						option = ES_UKR_ADDITIONAL_MANPOWER_5
+					}
+				}
+				UKR = { add_manpower = 5000 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_manpower
+						option = ES_UKR_ADDITIONAL_MANPOWER_10
+					}
+				}
+				UKR = { add_manpower = 5000 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_manpower
+						option = ES_UKR_ADDITIONAL_MANPOWER_15
+					}
+				}
+				UKR = { add_manpower = 10000 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_manpower
+						option = ES_UKR_ADDITIONAL_MANPOWER_20
+					}
+				}
+				UKR = { add_manpower = 15000 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_ukr_additional_manpower
+						option = ES_UKR_ADDITIONAL_MANPOWER_20
+					}
+				}
+				UKR = { add_manpower = 20000 }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = es_pmc_abkhazia_status
+						option = ES_PMC_ABKHAZIA_ON
+					}
+				}
+				set_global_flag = pmc_abkhazia_on_flag
+			}
+		}
+
+		effect = {
+			if = { 
+				limit = { 
+					has_game_rule = {
+						rule = es_energy_system_status
+						option = ES_ENERGY_SYSTEM_DISABLED
+					}
+				}
+				country_event = {
+					id = utils.4
+					days = 0
+				}
+			}
+		}
+
+		effect = {
+			if = { 
+				limit = { 
+					has_game_rule = {
+						rule = es_cats_rule
+						option = ES_CATS_ON
+					}
+				}
+				RUS = {
+					recruit_character = rigby
+					recruit_character = ryry
+					add_corps_commander_role = {
+						Character = rigby
+						traits={ brilliant_strategist urban_assault_specialist trait_engineer }
+						skill= 4
+						attack_skill= 4
+						defense_skill=4
+						planning_skill=6
+						logistics_skill=2
+					}
+					add_corps_commander_role = {
+						Character = ryry
+						traits={ inflexible_strategist steel_fortitude }
+						skill= 4
+						attack_skill=2
+						defense_skill=4
+						planning_skill=5
+						logistics_skill=4
+					}
+				}
+			}
+		}
+	}
+}

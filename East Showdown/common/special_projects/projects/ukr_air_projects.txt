@@ -1,0 +1,400 @@
+ukr_e300 = {
+	specialization = specialization_air 
+	icon = GFX_ukr_e300
+	project_tags = {
+		sp_tag_guided_bomb
+	}
+	allowed = {
+		tag = UKR
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = { 
+			electronic = 10 
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipments = {
+			ukr_guided_uav_e300enterprise
+		}
+	}
+}
+ukr_palyanutsia = {
+	specialization = specialization_air 
+	icon = GFX_ukr_palyanutsia
+	project_tags = {
+		sp_tag_guided_bomb
+	}
+	allowed = {
+		tag = UKR
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = { 
+			electronic = 10 
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipments = {
+			ukr_drone_missile_equipment_palanytsya
+		}
+	}
+}
+ukr_sapsan = {
+	specialization = specialization_air 
+	icon = GFX_ukr_sapsan
+	project_tags = {
+		sp_tag_rocket
+	}
+	allowed = {
+		tag = UKR
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = { 
+			electronic = 10
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipments = {
+			ballistic_missile_ukr_generation_3_chassis
+		}
+	}
+}
+ukr_frakensam = {
+	specialization = specialization_air 
+	icon = GFX_ukr_frakensam
+	project_tags = {
+		sp_tag_aircraft
+	}
+	allowed = {
+		tag = UKR
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = { 
+			electronic = 5
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		country_effects = {
+			ROOT = {
+				add_unit_bonus = {
+					category_sp_aa = { 
+						air_attack = 0.15 
+					}
+				}
+			}
+		}
+	}
+}
+ukr_thunder = {
+	specialization = specialization_air 
+	icon = GFX_ukr_thunder
+	project_tags = {
+		sp_tag_rocket
+	}
+	allowed = {
+		tag = UKR
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = { 
+			steel = 10
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipments = {
+			ukr_light_guided_missile_thunder
+		}
+	}
+}
+ukr_missile_compatibility = {
+	specialization = specialization_air 
+	icon = GFX_ukr_missile_compatibility
+	project_tags = {
+		sp_tag_rocket
+	}
+	allowed = {
+		tag = UKR
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = { 
+			electronic = 10
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipments = {
+			ukr_light_guided_missile_flamingo
+		}
+	}
+}
+ukr_typhoon_4 = {
+	specialization = specialization_air 
+	icon = GFX_ukr_typhoon_4
+	project_tags = {
+		sp_tag_rocket
+	}
+	allowed = {
+		tag = UKR	
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = {
+			electronic = 5
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		country_effects = {
+			ROOT = {
+				add_unit_bonus = {
+					category_artillery = { 
+						soft_attack = 0.10 
+						hard_attack = 0.10 
+						ap_attack = 0.10 
+					}
+				}
+			}
+		}
+	}
+}
+ukr_ty141 = {
+	specialization = specialization_air 
+	icon = GFX_ukr_ty141
+	project_tags = {
+		sp_tag_guided_bomb
+	}
+	allowed = {
+		tag = UKR	
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = {
+			electronic = 10
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipments = {
+			ukr_drone_missile_equipment_ty141
+		}
+	}
+}
+ukr_advanced_EW = {
+	specialization = specialization_air 
+	icon = GFX_ukr_advanced_EW
+	project_tags = {
+		sp_tag_radar
+	}
+	allowed = {
+		tag = UKR	
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = {
+			electronic = 5
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		country_effects = {
+			ROOT = {
+				add_unit_bonus = {
+					category_army = {
+						defense = 0.12
+					}
+				}
+			}
+		}
+	}
+}
+ukr_r36m = {
+	specialization = specialization_air 
+	icon = GFX_ukr_r36m
+	project_tags = {
+		sp_tag_radar
+	}
+	allowed = {
+		tag = UKR	
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = {
+			electronic = 25
+		}
+	}
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipments = {
+			ukr_ballistic_missile_satana
+		}
+	}
+}

@@ -1,0 +1,3 @@
+instant_effect = {
+	ensure_unit_template_RUS_Otryad_narodnogo_opolcheniya = yes
+}

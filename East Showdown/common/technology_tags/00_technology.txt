@@ -1,0 +1,418 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+technology_categories = {
+	oborudovanie
+	electronics_tank
+	passivedefend
+	desant_otdel
+    turret
+	engine
+	light_air
+	medium_air
+	heavy_air
+	armor
+	cat_light_armor
+	cat_medium_armor
+	cat_heavy_armor
+	artillery
+	cat_anti_tank
+	cat_anti_air
+	naval_air
+	infantry_weapons
+	motorized_equipment
+	cat_mechanized_equipment
+	naval_equipment
+	rocketry
+	nuclear
+	industry
+	electronics
+	land_doctrine
+	air_doctrine
+	naval_doctrine
+	strategic_destruction_tree
+	battlefield_support_tree
+	operational_integrity_tree
+	jet_technology
+	trade_interdiction_tree
+	convoy_defense_tree
+	light_fighter
+	cat_heavy_fighter
+	tactical_bomber
+	cat_strategic_bomber
+	naval_bomber
+	cas_bomber
+	ship_modules_tech
+	dd_tech
+	cl_tech
+	ca_tech
+	cv_tech
+	bc_tech
+	bb_tech
+	shbb_tech
+	ss_tech
+	tp_tech
+	synth_resources
+	fleet_in_being_tree
+	encryption_tech
+	decryption_tech
+	computing_tech
+	radar_tech
+	infantry_tech
+	marine_tech
+	construction_tech
+	excavation_tech
+	submarine_doctrine
+	air_equipment
+	cat_mobile_warfare
+	cat_superior_firepower
+	cat_grand_battle_plan
+	cat_mass_assault
+	artillery_doctrine_category
+	infantry_doctrine_category
+	tank_doctrine_category
+	sso_doctrine_category
+	cat_base_strike
+	cat_trade_interdiction
+	cat_fleet_in_being
+	cat_strategic_destruction
+	cat_battlefield_support
+	cat_operational_integrity
+	night_vision
+	base_strike_main
+	mot_rockets
+	support_tech
+	para_tech
+	engineers_tech
+	recon_tech
+	mountaineers_tech
+	military_police_tech
+	hospital_tech
+	logistics_tech
+	signal_company_tech
+	maintenance_company_tech
+	naval_mines
+	concentrated_industry_category
+	dispersed_industry_category
+	asw_tech
+	naval_minesweeping
+	naval_minelaying
+	missiles_modules
+	cat_scout_plane
+	train_tech
+	cat_production
+	cat_synth_rubber
+	cat_synth_oil
+	cat_armored_cars
+	cat_special_forces_generic
+	cat_torpedoes
+	cat_ship_light_battery
+	cat_ship_medium_battery
+	cat_ship_heavy_battery
+	air_equipment
+	plane_modules_tech
+	cat_air_guns
+	cat_air_engine
+	cat_air_bombs
+	missiles
+	cat_computers
+	cat_internet
+	cat_development_of_ai
+	cat_radar
+	cat_printers
+	cat_robotization
+	cat_working_equipment
+	cat_building
+	cat_mining
+	cat_urbanization
+	cat_road_construction
+	cat_electronics_manufacturing
+	cat_oil_refining
+}
+
+technology_folders = {
+	infantry_new_folder = { ledger = army }
+	light_armor_folder = { ledger = army }
+	medium_armor_folder = { ledger = army }
+	heavy_armor_folder = { ledger = army }
+	
+	infantry_folder = {
+        available = {
+            NOT = { original_tag = NTO }
+            NOT = { original_tag = UKR }
+			NOT = { original_tag = POL }
+        }
+        ledger = army
+    }
+    ukr_infantry_folder = {
+        available = {
+            NOT = { original_tag = NTO }
+            NOT = { original_tag = LPR }
+            NOT = { original_tag = DPR }
+            NOT = { original_tag = CHE }
+            NOT = { original_tag = PMR }
+            NOT = { original_tag = RUS }
+            NOT = { original_tag = ROM }
+            NOT = { original_tag = POL }
+            NOT = { original_tag = BLR }
+			NOT = { original_tag = WGN }
+			NOT = { original_tag = KLM }
+			NOT = { original_tag = STA }
+			NOT = { original_tag = VNO }
+			NOT = { original_tag = VDG }
+			NOT = { original_tag = VCH }
+			NOT = { original_tag = ISI }
+			NOT = { original_tag = SDG }
+			NOT = { original_tag = SKL }
+			NOT = { original_tag = DRG }
+			NOT = { original_tag = NOO }
+			NOT = { original_tag = ING }
+			NOT = { original_tag = SCR }
+			NOT = { original_tag = DGN }
+        }
+        ledger = army
+    }
+    nto_infantry_folder = {
+        available = {
+            NOT = { original_tag = UKR }
+            NOT = { original_tag = LPR }
+            NOT = { original_tag = DPR }
+            NOT = { original_tag = CHE }
+            NOT = { original_tag = PMR }
+            NOT = { original_tag = RUS }
+            NOT = { original_tag = ROM }
+            NOT = { original_tag = BLR }
+			NOT = { original_tag = WGN }
+			NOT = { original_tag = KLM }
+			NOT = { original_tag = STA }
+			NOT = { original_tag = VNO }
+			NOT = { original_tag = VDG }
+			NOT = { original_tag = VCH }
+			NOT = { original_tag = ISI }
+			NOT = { original_tag = SDG }
+			NOT = { original_tag = SKL }
+			NOT = { original_tag = DRG }
+			NOT = { original_tag = NOO }
+			NOT = { original_tag = ING }
+			NOT = { original_tag = SCR }
+			NOT = { original_tag = DGN }
+        }
+        ledger = army
+    }
+	support_folder = {
+		ledger = army
+	}
+	armour_folder = {
+		ledger = army
+		available = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+	}
+	nsb_armour_folder = {
+		ledger = army
+		available = {
+			NOT = { original_tag = NTO }
+            NOT = { original_tag = UKR }
+			NOT = { original_tag = POL }
+		}
+	}
+    ukr_armour_folder = {
+		ledger = army
+		available = {
+            NOT = { original_tag = NTO }
+            NOT = { original_tag = LPR }
+            NOT = { original_tag = DPR }
+            NOT = { original_tag = CHE }
+            NOT = { original_tag = PMR }
+            NOT = { original_tag = RUS }
+            NOT = { original_tag = ROM }
+            NOT = { original_tag = BLR }
+			NOT = { original_tag = WGN }
+			NOT = { original_tag = POL }
+			NOT = { original_tag = KLM }
+			NOT = { original_tag = STA }
+			NOT = { original_tag = VNO }
+			NOT = { original_tag = VDG }
+			NOT = { original_tag = VCH }
+			NOT = { original_tag = ISI }
+			NOT = { original_tag = SDG }
+			NOT = { original_tag = SKL }
+			NOT = { original_tag = DRG }
+			NOT = { original_tag = NOO }
+			NOT = { original_tag = ING }
+			NOT = { original_tag = SCR }
+			NOT = { original_tag = DGN }
+		}
+	}
+    nto_armour_folder = {
+		ledger = army
+		available = {
+            NOT = { original_tag = UKR }
+            NOT = { original_tag = LPR }
+            NOT = { original_tag = DPR }
+            NOT = { original_tag = CHE }
+            NOT = { original_tag = PMR }
+            NOT = { original_tag = RUS }
+            NOT = { original_tag = ROM }
+            NOT = { original_tag = BLR }
+			NOT = { original_tag = WGN }
+			NOT = { original_tag = KLM }
+			NOT = { original_tag = STA }
+			NOT = { original_tag = VNO }
+			NOT = { original_tag = VDG }
+			NOT = { original_tag = VCH }
+			NOT = { original_tag = ISI }
+			NOT = { original_tag = SDG }
+			NOT = { original_tag = SKL }
+			NOT = { original_tag = DRG }
+			NOT = { original_tag = NOO }
+			NOT = { original_tag = ING }
+			NOT = { original_tag = SCR }
+			NOT = { original_tag = DGN }
+		}
+	}
+	artillery_folder = {
+		ledger = army
+	}
+	air_techs_folder = {
+		ledger = air
+		available = {
+			NOT = { original_tag = NTO }
+            NOT = { original_tag = UKR }
+			NOT = { original_tag = POL}
+		}
+	}
+    ukr_air_techs_folder = {
+		ledger = air
+		available = {
+            NOT = { original_tag = NTO }
+            NOT = { original_tag = LPR }
+            NOT = { original_tag = DPR }
+            NOT = { original_tag = CHE }
+            NOT = { original_tag = PMR }
+            NOT = { original_tag = RUS }
+            NOT = { original_tag = ROM }
+            NOT = { original_tag = BLR }
+			NOT = { original_tag = WGN }
+			NOT = { original_tag = POL }
+			NOT = { original_tag = KLM }
+			NOT = { original_tag = STA }
+			NOT = { original_tag = VNO }
+			NOT = { original_tag = VDG }
+			NOT = { original_tag = VCH }
+			NOT = { original_tag = ISI }
+			NOT = { original_tag = SDG }
+			NOT = { original_tag = SKL }
+			NOT = { original_tag = DRG }
+			NOT = { original_tag = NOO }
+			NOT = { original_tag = ING }
+			NOT = { original_tag = SCR }
+			NOT = { original_tag = DGN }
+		}
+	}
+    nto_air_techs_folder = {
+		ledger = air
+		available = {
+            NOT = { original_tag = UKR }
+            NOT = { original_tag = LPR }
+            NOT = { original_tag = DPR }
+            NOT = { original_tag = CHE }
+            NOT = { original_tag = PMR }
+            NOT = { original_tag = RUS }
+            NOT = { original_tag = ROM }
+            NOT = { original_tag = BLR }
+			NOT = { original_tag = WGN }
+			NOT = { original_tag = KLM }
+			NOT = { original_tag = STA }
+			NOT = { original_tag = VNO }
+			NOT = { original_tag = VDG }
+			NOT = { original_tag = VCH }
+			NOT = { original_tag = ISI }
+			NOT = { original_tag = SDG }
+			NOT = { original_tag = SKL }
+			NOT = { original_tag = DRG }
+			NOT = { original_tag = NOO }
+			NOT = { original_tag = ING }
+			NOT = { original_tag = SCR }
+			NOT = { original_tag = DGN }
+		}
+	}
+
+	missiles_folder = {
+		ledger = air
+		available = {
+			original_tag = RUS
+		}
+	}
+
+	missiles_folder_ukr = {
+		ledger = air
+		available = {
+			original_tag = UKR
+		}
+	}
+
+	missiles_folder_nto = {
+		ledger = air
+		available = {
+			original_tag = NTO
+		}
+	}
+
+	bba_air_techs_folder = {
+		available = {
+			original_tag = BOR
+		}
+		ledger = air
+	}
+	naval_folder = {
+		available = {
+			original_tag = BOR
+			not = { has_dlc = "Man the Guns" }
+		}
+		ledger = navy
+	}
+	mtgnavalfolder = {
+		available = {
+			original_tag = BOR
+			has_dlc = "Man the Guns"
+		}
+		ledger = navy
+	}
+	mtgnavalsupportfolder = {
+		available = {
+			original_tag = BOR
+			has_dlc = "Man the Guns"
+		}
+		ledger = navy
+	}
+	industry_folder = {
+		ledger = civilian
+	}
+	electronic_folder = {
+		ledger = civilian
+	}
+	land_doctrine_folder = {
+		ledger = army
+		doctrine = yes
+	}
+	naval_doctrine_folder = {
+		ledger = navy
+		doctrine = yes
+	}
+	air_doctrine_folder = {
+		ledger = air
+		doctrine = yes
+	}
+	electronics_folder = {
+		available = {
+        original_tag = BOR
+            }
+		ledger = civilian
+	}
+	#secret_weapons_folder
+}
+
+ 

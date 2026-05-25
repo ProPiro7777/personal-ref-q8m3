@@ -1,0 +1,38 @@
+state = { 
+	id = 115 
+	name = "STATE_115" 
+	manpower = 443400 
+	
+	state_category = large_town 
+	buildings_max_level_factor = 0.75 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 726 25 }
+		victory_points = { 3736 8 }
+		victory_points = { 5270 5 }
+		victory_points = { 5659 1 }
+		victory_points = { 8061 4 }
+		victory_points = { 8187 2 }
+		victory_points = { 9855 1 }
+		victory_points = { 10017 2 }
+		victory_points = { 10112 5 }
+		victory_points = { 10725 2 }
+		victory_points = { 10754 2 }
+		victory_points = { 15247 4 }
+		victory_points = { 15324 1 }
+		victory_points = { 15411 3 }
+		victory_points = { 15418 5 }
+		
+		buildings = { 
+			electrical_substation = 4 
+			infrastructure = 3 
+			industrial_complex = 4 
+			anti_air_building = 3 
+			air_base = 1 
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 473 609 726 898 1370 1922 1982 2007 2421 3089 3736 3816 4130 4408 5217 5270 5659 6114 6538 6612 6636 6884 6999 7030 7177 7373 7686 8061 8187 8390 8575 8885 9135 9136 9294 9362 9609 9662 9855 9860 9867 10017 10112 10543 10589 10725 10754 11212 11952 12155 12365 12483 12527 12828 15247 15273 15296 15324 15325 15367 15411 15418 15432 15462 16404 16579 16616 16637 16639 16665 16761 16873 16904 }
+}

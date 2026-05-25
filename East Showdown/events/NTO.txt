@@ -1,0 +1,737 @@
+add_namespace = nto
+add_namespace = nto_parliaments
+add_namespace = nto_hidden
+add_namespace = nto_reopening
+add_namespace = nto_interaction_with_ukraine
+
+country_event = {
+	id = nto_interaction_with_ukraine.1
+	title = nto_interaction_with_ukraine.1.t
+    desc = nto_interaction_with_ukraine.1.desc
+
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = nto_interaction_with_ukraine.1.a
+		set_global_flag = UKRAINE_CAN_DO_EMERGENCY_REQUEST
+		ai_chance = {
+			base = 1000
+		}
+		
+		UKR = { 
+			country_event = ukr_interaction_with_nato.2
+			set_technology = {
+				missile_nto_shtormshadow  = 1
+				missile_nto_gmlrs  = 1
+				missile_nto_atacams  = 1
+			}
+		}
+
+	}
+	option = {
+		name = nto_interaction_with_ukraine.1.b
+		UKR = { 
+			country_event = ukr_interaction_with_nato.1
+		}
+		add_political_power = -50
+		add_stability = -0.1
+	}
+}
+
+
+#nato na vostok
+country_event = {
+	id = nto.1
+	title = nto.1.t
+    desc = nto.1.desc
+
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = nto.1.a
+		RUS = {
+			country_event = {
+				id = smo.1
+				days = 1
+			}
+		}
+	}
+}
+
+#nato vostok
+country_event = { 
+    id = nto.2
+    title = nato.2.t
+	desc = nato.2.d
+
+    trigger = {
+        has_country_flag = event_happened
+        country_exists = NTO
+    }
+    
+	picture = GFX_report_event_albanian_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = nato.2.a
+	}
+}
+
+country_event = {
+	id = nto.7
+	title = nato.7.t
+	desc = nato.7.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nato.7.a
+		add_political_power = -25
+		add_war_support = 0.05
+		add_stability = -0.05
+		add_ideas = NTO_fail_of_our_politics
+	}
+}
+country_event = {
+	id = nto.8
+	title = nato.8.t
+	desc = nato.8.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = nato.6.a
+		add_war_support = 0.1
+	}
+}
+
+country_event = {
+	id = nto.9
+	title = nato.9.t
+	desc = nato.9.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = {
+			base = 10
+		}
+		name = nato.9.a
+		POL = {
+			country_event = pol.17
+		}
+		POL = {
+			complete_national_focus = POL_Failure
+		}
+	}
+	option = {
+		name = nato.9.b
+		ai_chance = {
+			base = 0
+		}
+		NTO = {
+			country_event = nto.10
+		}
+
+	}
+}
+
+country_event = {
+	id = nto.10
+	title = nato.10.t
+	desc = nato.10.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = {
+			base = 0
+		}
+		name = nato.10.a
+		POL = {
+			country_event = pol.18
+		}
+		POL = {
+			complete_national_focus = POL_Deployment_of_nuclear_weapons
+		}
+	}
+	option = {
+		name = nato.10.b
+		ai_chance = {
+			base = 10
+		}
+		POL = {
+			country_event = pol.17
+		}
+		POL = {
+			complete_national_focus = POL_Failure
+		}
+	}
+}
+
+
+country_event = {
+	id = nto.11
+	title = nato.11.t
+	desc = nato.11.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = nato.11.a
+		complete_national_focus = nto_diplomatic_deadlock_Russia
+	}
+}
+
+
+country_event = {
+	id = nto.12
+	title = nato.12.t
+	desc = nato.12.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = nato.12.a
+	}
+}
+
+country_event = {
+	id = nto.13
+	title = nato.13.t
+	desc = nato.13.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = nato.13.a
+		add_to_variable = {
+			ammunition_value_k = 15000
+		}
+	}
+}
+
+country_event = {
+	id = nto.14
+	title = nato.14.t
+	desc = nato.14.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = nato.14.a
+	}
+}
+
+country_event = {
+	id = nto.15
+	title = nato.15.t
+	desc = nato.15.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = nato.15.a
+		UKR = {
+			add_political_power = -20
+			add_stability = -0.01
+		}
+	}
+	option = {
+		name = nato.15.b
+	}
+}
+
+
+country_event = {
+	id = nto.16
+	title = nato.16.t
+	desc = nato.16.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = nato.16.a
+		set_global_flag = NTO_UKR_LOX_HELP
+	}
+}
+
+country_event = {
+	id = nto.17
+	title = nato.17.t
+	desc = nato.17.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 3
+	option = {
+		name = nato.17.a
+		RUS = {
+			country_event = rus.188
+		}
+	}
+}
+
+
+country_event = {
+	id = nto.18
+	title = nato.18.t
+	desc = nato.18.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 3
+	option = {
+		name = nato.18.a
+		complete_national_focus = nto_direct_intervention
+	}
+}
+
+
+
+
+
+country_event = {
+	id = nto.19
+	title = nato.19.t
+	desc = nato.19.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 2
+	option = {
+		name = nato.19.a
+		complete_national_focus = nto_UN_peacekeepers_under_NATO_auspices
+
+	}
+}
+
+country_event = {
+	id = nto.20
+	title = nato.20.t
+	desc = nato.20.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 2
+	option = {
+		name = nato.20.a
+		add_political_power = 50
+	}
+
+	option = {
+		name = nato.20.b
+		complete_national_focus = nto_licvidate_kaliningrad
+
+	}
+}
+
+country_event = {
+	id = nto.21
+	title = nato.21.t
+	desc = nato.21.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 2
+	option = {
+		name = nato.21.a
+		add_political_power = 50
+	}
+
+	option = {
+		name = nato.21.b
+		if = { 
+			limit = { 
+				NOT = { 
+					POL = { 
+						has_completed_focus = POL_Break_up_Belarus
+					}
+				}
+			}
+		declare_war_on = {
+			target = BLR
+		}		
+		POL = { add_to_war = {
+			targeted_alliance = PREV
+			enemy = BLR
+			hostility_reason = asked_to_join
+		} }
+		ROM = { add_to_war = {
+			targeted_alliance = PREV
+			enemy = BLR
+			hostility_reason = asked_to_join
+		} }
+
+		BUL = { add_to_war = {
+			targeted_alliance = PREV
+			enemy = BLR
+			hostility_reason = asked_to_join
+		} }
+
+		SLO = { add_to_war = {
+			targeted_alliance = PREV
+			enemy = BLR
+			hostility_reason = asked_to_join
+		} }
+
+		CRO = { add_to_war = {
+			targeted_alliance = PREV
+			enemy = BLR
+			hostility_reason = asked_to_join
+		} }
+
+		CZE = { add_to_war = {
+			targeted_alliance = PREV
+			enemy = BLR
+			hostility_reason = asked_to_join
+		} }
+
+		LIT = { add_to_war = {
+			targeted_alliance = PREV
+			enemy = BLR
+			hostility_reason = asked_to_join
+		} }
+
+		LAT = { add_to_war = {
+			targeted_alliance = PREV
+			enemy = BLR
+			hostility_reason = asked_to_join
+		} }
+	}
+
+	}
+}
+
+country_event = {
+	id = nto.22
+	title = nato.22.t
+	desc = nato.22.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	timeout_days = 2
+	option = {
+		name = nato.22.a
+		add_political_power = -20
+	}
+}
+
+country_event = {
+	id = nto.23
+	title = nto.23.t
+    desc = nto.23.d
+
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = nto.23.a
+		add_political_power = 50
+		custom_effect_tooltip = NTO_help_for_ukr_tt
+	}
+}
+
+country_event = {
+	id = nto.24
+	title = nto.24.t
+    desc = nto.24.d
+
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = nto.24.a
+		add_to_variable = { NTO_ukrainian_refuges_consumer_goods_factor = 0.3 }
+		add_to_variable = { NTO_ukrainian_refuges_political_power_cost = 2 }
+		add_to_variable = { NTO_ukrainian_refuges_stability_weekly = -0.02 }
+		add_to_variable = { NTO_ukrainian_enemy_operative_capture_chance_factor = -0.5 }
+		add_to_variable = { NTO_ukrainian_refuges_industrial_capacity_factory = -0.1 }
+		add_dynamic_modifier = {
+			modifier = NTO_ukrainian_refuges
+		}
+		custom_effect_tooltip = NTO_ukr_refuges_tt
+		#hidden_effect = {
+			#94 = { 
+		        #add_manpower = -200000
+	        #}
+			#96 = { 
+		        #add_manpower = -70000
+	        #}
+			#10 = { 
+		        #add_manpower = -200000
+	        #}
+			#72 = { 
+		        #add_manpower = -50000
+	        #}
+			#59 = { 
+		        #add_manpower = -50000
+	        #}
+			#253 = { 
+		        #add_manpower = -40000
+	        #}
+			#237 = { 
+		        #add_manpower = -100000
+	        #}
+			#187 = { 
+		        #add_manpower = -60000
+	        #}
+			#156 = { 
+		        #add_manpower = -40000
+	        #}
+			#197 = { 
+		        #add_manpower = -80000
+	        #}
+			#105 = { 
+		        #add_manpower = -50000
+	        #}
+			#107 = { 
+		        #add_manpower = -40000
+	        #}
+			#107 = { 
+		        #add_manpower = -40000
+	        #}
+			#256 = { 
+		        #add_manpower = -150000
+	        #}
+			#57 = { 
+		        #add_manpower = -40000
+	        #}
+		#}
+	}
+}
+
+country_event = {
+	id = nto.25
+	title = nto.25.t
+    desc = nto.25.d
+	picture = GFX_nto_event_25
+
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = nto.25.a
+		add_political_power = -10
+		EU_parliament_support_remove_15 = yes
+	}
+}
+
+
+country_event = {
+	id = nto.26
+	title = nto.26.t
+    desc = nto.26.d
+	picture = GFX_country_event_ukr_102
+
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = nto.26.a
+	}
+}
+
+
+
+
+
+# Dispatcher event for usa parliament
+country_event = {
+	id = nto_parliaments.1
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			45 = { 
+				modifier = {
+					NOT = { medium_USA_parliament_support_trigger = yes }
+					factor = 1.25
+				}
+				modifier = {
+					NOT = { low_USA_parliament_support_trigger = yes }
+					factor = 2
+				}
+				country_event = { id = nto_parliaments.2 days = 1 } #small support
+			} 
+			55 = { 
+				country_event = { id = nto_parliaments.3 days = 1 } #small opposition 
+			} 
+		}
+	}
+}
+
+# Small support event in usa parliament
+country_event = {
+	id = nto_parliaments.2
+	title = nto_parliaments.2.t
+	desc = nto_parliaments.2.d
+
+	is_triggered_only = yes
+	trigger = {
+		tag = NTO
+		has_government = democratic
+	}
+
+	option = {
+		name = nto_parliaments.2.a
+		USA_parliament_support_add_10 = yes
+		hidden_effect = {
+			country_event = { id = nto_parliaments.1 days = 30 random_days = 5 }
+		}
+	}
+}
+
+# Small opposition event in usa parliament
+country_event = {
+	id = nto_parliaments.3
+	title = nto_parliaments.3.t
+	desc = nto_parliaments.3.d
+
+	is_triggered_only = yes
+	trigger = {
+		tag = NTO
+		has_government = democratic
+	}
+
+	option = {
+		name = nto_parliaments.3.a
+		USA_parliament_support_remove_15 = yes
+		hidden_effect = {
+			country_event = { id = nto_parliaments.1 days = 30 random_days = 5 }
+		}
+	}
+}
+
+
+
+
+# Dispatcher event for eu parliament
+country_event = {
+	id = nto_parliaments.4
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			45 = { 
+				modifier = {
+					NOT = { medium_EU_parliament_support_trigger = yes }
+					factor = 1.25
+				}
+				modifier = {
+					NOT = { low_EU_parliament_support_trigger = yes }
+					factor = 2
+				}
+				country_event = { id = nto_parliaments.5 days = 1 } #small support
+			} 
+			55 = { 
+				country_event = { id = nto_parliaments.6 days = 1 } #small opposition 
+			} 
+		}
+	}
+}
+
+# Small support event in usa parliament
+country_event = {
+	id = nto_parliaments.5
+	title = nto_parliaments.5.t
+	desc = nto_parliaments.5.d
+
+	is_triggered_only = yes
+	trigger = {
+		tag = NTO
+		has_government = democratic
+	}
+
+	option = {
+		name = nto_parliaments.5.a
+		EU_parliament_support_add_15 = yes
+		hidden_effect = {
+			country_event = { id = nto_parliaments.4 days = 30 random_days = 5 }
+		}
+	}
+}
+
+# Small opposition event in usa parliament
+country_event = {
+	id = nto_parliaments.6
+	title = nto_parliaments.6.t
+	desc = nto_parliaments.6.d
+
+	is_triggered_only = yes
+	trigger = {
+		tag = NTO
+		has_government = democratic
+	}
+
+	option = {
+		name = nto_parliaments.6.a
+		EU_parliament_support_remove_35 = yes
+		hidden_effect = {
+			country_event = { id = nto_parliaments.4 days = 30 random_days = 5 }
+		}
+	}
+}
+
+# экстренная и медленая рассконсервация
+country_event = {
+	id = nto_reopening.1
+	title = nto_reopening.1.t
+	desc = nto_reopening.1.d
+	is_triggered_only = yes
+	# picture =
+	fire_only_once = yes
+	option = {
+		name = nto_reopening.1.a
+	}
+}
+country_event = {
+	id = nto_reopening.2
+	title = nto_reopening.2.t
+	desc = nto_reopening.2.d
+	is_triggered_only = yes
+	# picture =
+	fire_only_once = yes
+	option = {
+		name = nto_reopening.2.a
+	}
+}
+country_event = {
+	id = nto_reopening.3
+	title = nto_reopening.3.t
+	desc = nto_reopening.3.d
+	is_triggered_only = yes
+	# picture =
+	fire_only_once = yes
+	option = {
+		name = nto_reopening.3.a
+	}
+}
+country_event = {
+	id = nto_reopening.4
+	title = nto_reopening.4.t
+	desc = nto_reopening.4.d
+	is_triggered_only = yes
+	# picture =
+	fire_only_once = yes
+	option = {
+		name = nto_reopening.4.a
+	}
+}
+country_event = {
+	id = nto_reopening.5
+	title = nto_reopening.5.t
+	desc = nto_reopening.5.d
+	is_triggered_only = yes
+	# picture =
+	fire_only_once = yes
+	option = {
+		name = nto_reopening.5.a
+	}
+}

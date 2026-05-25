@@ -1,0 +1,98 @@
+instant_effect = {
+	ensure_unit_template_LIT_Savanorių_batalionas = yes
+	ensure_unit_template_LIT_Mechanizuotas_batalionas = yes
+	ensure_unit_template_LIT_Pėstininkų_batalionas = yes
+}
+units = {
+	division = {
+		name = "Žemaitijos pėstininkų brigados 1-asis pėstininkų batalionas pavadintas didžiojo Lietuvos etmono Jano Chodkevičiaus vardu"
+		location = 9775
+		division_template = "Pėstininkų batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "Žemaitijos pėstininkų brigados 2-asis pėstininkų batalionas pavadintas didžiojo Lietuvos etmono Jano Chodkevičiaus vardu"
+		location = 13650
+		division_template = "Pėstininkų batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "Žemaitijos pėstininkų brigados 3-iasis pėstininkų batalionas pavadintas didžiojo Lietuvos etmono Jano Chodkevičiaus vardu."
+		location = 11073
+		division_template = "Pėstininkų batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "Žemaitijos pėstininkų brigados 4-asis pėstininkų batalionas pavadintas didžiojo Lietuvos etmono Jano Chodkevičiaus vardu."
+		location = 1299
+		division_template = "Pėstininkų batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "1-asis mechanizuotasis batalionas, Mechanizuotoji brigada „Geležinis Vilkas“"
+		location = 1299
+		division_template = "Mechanizuotas batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "2-asis mechanizuotasis batalionas, Mechanizuotoji brigada „Geležinis Vilkas“"
+		location = 8301
+		division_template = "Mechanizuotas batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "3-iasis mechanizuotasis batalionas, Mechanizuotoji brigada „Geležinis Vilkas“"
+		location = 13472
+		division_template = "Mechanizuotas batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "4-iasis mechanizuotasis batalionas, Mechanizuotoji brigada „Geležinis Vilkas“"
+		location = 13306
+		division_template = "Mechanizuotas batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "Savanorių pajėgų teritorinės gynybos lengvosios pėstininkų brigados 1-asis teritorinis lengvųjų pėstininkų batalionas"
+		location = 13050
+		division_template = "Savanorių batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "Savanorių pajėgų teritorinės gynybos lengvosios pėstininkų brigados 2-asis teritorinis lengvųjų pėstininkų batalionas"
+		location = 12673
+		division_template = "Savanorių batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "Savanorių pajėgų teritorinės gynybos lengvosios pėstininkų brigados 3-iasis teritorinis lengvųjų pėstininkų batalionas"
+		location = 13130
+		division_template = "Savanorių batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "Savanorių pajėgų teritorinės gynybos lengvosios pėstininkų brigados 4-asis teritorinis lengvųjų pėstininkų batalionas"
+		location = 2688
+		division_template = "Savanorių batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "Savanorių pajėgų Teritorinės gynybos lengvosios pėstininkų brigados 5-asis teritorinis lengvųjų pėstininkų batalionas"
+		location = 2764
+		division_template = "Savanorių batalionas"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+}

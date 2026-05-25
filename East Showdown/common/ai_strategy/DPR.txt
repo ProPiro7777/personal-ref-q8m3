@@ -1,0 +1,110 @@
+#EAST SHOWDOWN 0.5.1.0 | AI 2.0
+
+#######################################################
+# КОНСТАНТЫ
+#######################################################
+
+@DPR_EQUIP_TIER_S = 1000 # [inf_equip, uniform_equip, body_armor_equip]
+@DPR_EQUIP_TIER_A = 100 # [atgm_equip, mortar_equip , artillery_equip , grenade_launcher_equip , aa_equip , support_equip , motorized_equip ]
+@DPR_EQUIP_TIER_B = 50 # [engi_equip, amv_equip , arv_equip ]
+@DPR_EQUIP_TIER_C = -500 # [avf_chassis, apc_chassis, imv_chassis, ifv_chassis,  sp_art_chassis, tank_chassis, sp_mlrs_chassis]
+
+###########################
+# ДНР
+###########################
+
+# 1) Подготовка к войне 
+DPR_prepare_war_UKR = {
+	allowed = { original_tag = DPR }
+	enable = { always = yes }
+	abort = {
+		has_war_with = UKR
+	}	
+	ai_strategy = {
+		type = prepare_for_war
+		id = UKR
+		value = 10000
+	}
+}
+
+# 2) Игнорируем побережье
+DPR_ignore_coasts = {
+	allowed = { original_tag = DPR }
+	enable = { always = yes }
+	abort = { always = no }
+
+	#ai_strategy = {
+	#	type = front_unit_request
+	#	strategic_region = 110
+	#	value = -1000
+	#}
+	#ai_strategy = {
+	#	type = front_unit_request
+	#	strategic_region = 30
+	#	value = -1000
+	#}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BLR
+		value = 10000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = RBZ
+		value = 10000
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = -10000
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = UKR
+		value = 10000
+	}	
+
+}
+
+DPR_SMO_FRONT_CONTROL = {
+	allowed = {
+		original_tag = DPR
+	}
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+		priority = 20000
+	}
+
+
+
+
+
+
+	ai_strategy = {
+		type = front_unit_request
+		area = crimea_coridor
+		value = 725
+	}
+
+
+
+	
+}
+
+
+

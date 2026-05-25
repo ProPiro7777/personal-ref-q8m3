@@ -1,0 +1,20 @@
+instant_effect = {
+	ensure_unit_template_RUS_CHVK_Patriot = yes
+}
+
+units = {
+	division = {
+		name = "1-y Batal'on CHVK «Patriot»"
+		location = 9227
+		division_template = "CHVK «Patriot»"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2-y Batal'on CHVK «Patriot»"
+		location = 14590
+		division_template = "CHVK «Patriot»"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}

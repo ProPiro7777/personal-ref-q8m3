@@ -1,0 +1,15 @@
+state = { 
+	id = 322 
+	name = "STATE_322" 
+	manpower = 1 
+	
+	state_category = enclave 
+	history = { 
+		owner = RUS 
+		
+		buildings = { electrical_substation = 1 }
+		
+		add_core_of = RUS 
+	}
+	provinces = { 17199 }
+}

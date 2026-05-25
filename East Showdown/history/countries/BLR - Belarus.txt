@@ -1,0 +1,1017 @@
+oob = "BLR_2022"
+set_air_oob = "BLR_2022_air"
+
+complete_national_focus = BLR_appeal_to_people
+
+capital = 29
+
+set_research_slots = 4
+
+set_stability = 0.70
+
+set_war_support = 0.35
+
+add_political_power = 100
+
+set_convoys = 100
+
+set_popularities = {
+	democratic = 11
+	communism = 4
+	fascism = 9
+	neutrality = 76
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2020.08.9"
+	election_frequency = 72
+	elections_allowed = No
+}
+
+set_country_flag = news_pro_russian_flag
+
+#Advisors
+#Neutrality
+recruit_character = BLR_roman_golovchenko
+activate_advisor = BLR_roman_golovchenko
+recruit_character = BLR_alexey_bogdanov
+recruit_character = BLR_ruslan_parkhamovich
+recruit_character = BLR_ivan_kubrakov
+recruit_character = BLR_andrey_khmel #--can be replaced
+activate_advisor = BLR_andrey_khmel
+recruit_character = BLR_dmitry_pinevich
+recruit_character = BLR_vladimir_makey #--can be replaced
+activate_advisor = BLR_vladimir_makey
+recruit_character = BLR_petr_parkhomchik #--can be replaced
+activate_advisor = BLR_petr_parkhomchik
+recruit_character = BLR_alexander_chervyakov
+recruit_character = BLR_irina_kostevich
+recruit_character = BLR_igor_brylo #--can be replaced
+activate_advisor = BLR_igor_brylo
+recruit_character = BLR_sergey_kovalchuk
+recruit_character = BLR_igor_karpenko #--can be replaced
+recruit_character = BLR_vadim_sinavsky
+recruit_character = BLR_yuriy_seliverstov
+#Opposition
+recruit_character = BLR_sergey_tikhanovsky
+BLR_sergey_tikhanovsky = {set_character_flag = BLR_imprisoned_flag}
+recruit_character = BLR_viktor_babariko
+BLR_viktor_babariko = {set_character_flag = BLR_imprisoned_flag}
+recruit_character = BLR_nikolay_statkevich
+BLR_nikolay_statkevich = {set_character_flag = BLR_imprisoned_flag}
+recruit_character = BLR_pavel_severinez
+BLR_pavel_severinez = {set_character_flag = BLR_imprisoned_flag}
+recruit_character = BLR_mariya_kolesnikova
+BLR_mariya_kolesnikova = {set_character_flag = BLR_imprisoned_flag}
+recruit_character = BLR_olga_kovalkova
+BLR_olga_kovalkova = {set_character_flag = BLR_imprisoned_flag}
+recruit_character = BLR_pavel_latushko
+BLR_pavel_latushko = {set_character_flag = BLR_imprisoned_flag}
+#Army
+recruit_character = BLR_victor_khrenin
+recruit_character = BLR_victor_gulevich
+recruit_character = BLR_alexander_volfovich
+recruit_character = BLR_stanislav_zas
+recruit_character = BLR_oleg_belokonev
+recruit_character = BLR_ivan_tertel
+recruit_character = BLR_valery_vakulchik
+recruit_character = BLR_yuriy_karaev
+recruit_character = BLR_ivan_kubrakov
+recruit_character = BLR_vladimir_belyi
+recruit_character = BLR_alexander_lavrenov
+recruit_character = BLR_alexander_naumenko
+recruit_character = BLR_vadim_shadura
+
+#Political
+recruit_character = BLR_alexander_lukashenko
+recruit_character = BLR_vadim_saranchuk
+recruit_character = BLR_gregory_kostusev
+recruit_character = BLR_alexey_sokol
+recruit_character = BLR_oleg_gaidukevich
+
+add_ideas = {
+	only_government_media
+	standard_funding
+	president_republic
+	large_police_force
+	strong_central_administration
+	agrarian_economy
+	service_age_50
+	rescue_increased
+	CU_member
+	BLR_last_european_dictatorship
+	BLR_repressive_machine_2
+	BLR_second_constitution
+	BLR_destroyed_opposition
+	BLR_economic_dependence_on_russia
+	BLR_inefficient_state_capitalism_1
+	BLR_neutrality_idea
+	
+}
+
+set_variable = {
+	var = BLR_opposition_activity_var
+	value = 0.5
+}
+set_variable = {
+	var = ally_state_inf
+	value = 5
+}
+
+update_BLR_opposition_activity_var_effects = yes
+
+add_dynamic_modifier = {
+	modifier = BLR_opposition_activity
+}
+
+#equipment variants
+create_equipment_variant_arv_brem_1 = yes
+create_equipment_variant_tank_sov_t_64 = yes
+create_equipment_variant_tank_sov_t_72 = yes
+create_equipment_variant_imv_vystrel_s_kord = yes
+create_equipment_variant_imv_light_ural_4350 = yes
+create_equipment_variant_imv_ural_4320 = yes
+create_equipment_variant_sp_artillery_2s1_gvozdika = yes
+create_equipment_variant_brdm_brdm_1 = yes
+create_equipment_variant_brdm_brdm_2 = yes
+create_equipment_variant_apc_mt_lb = yes
+create_equipment_variant_apc_mt_lbvm = yes
+create_equipment_variant_ifv_sov_bmp_1 = yes
+create_equipment_variant_sp_mlrs_bm_21_grad = yes
+create_equipment_variant_ifv_sov_bmp_2 = yes
+create_equipment_variant_sp_aa_osa = yes
+create_equipment_variant_sp_aa_buk_m1 = yes
+create_equipment_variant_sp_heavy_artillery_2s7_pion = yes
+create_equipment_variant_sp_atgm_9p149_shturm_s = yes
+create_equipment_variant_sp_aa_tunguska = yes
+create_equipment_variant_apc_btr_50 = yes
+create_equipment_variant_apc_btr_50p = yes
+create_equipment_variant_apc_btr_60 = yes
+create_equipment_variant_apc_btr_70 = yes
+create_equipment_variant_apc_btr_80 = yes
+create_equipment_variant_imv_light_uaz_452 = yes
+create_equipment_variant_imv_light_uaz_469 = yes
+create_equipment_variant_imv_light_uaz_3163_patriot = yes
+create_equipment_variant_sp_atgm_9p148 = yes
+
+set_technology = {
+	computers_0 = 1
+	computers_1 = 1
+	computers_2 = 1
+	internet_0 = 1
+	internet_1 = 1
+	internet_2 = 1
+	internet_3 = 1
+	development_of_ai_0 = 1
+	development_of_ai_1 = 1
+	development_of_ai_2 = 1
+	development_of_ai_3 = 1
+	development_of_ai_4 = 1
+	radar_0 = 1
+	radar_1 = 1
+	radar_2 = 1
+	radar_3 = 1
+	radar_4 = 1
+	radar_5 = 1
+	printers_0 = 1
+	printers_1 = 1
+	printers_2 = 1
+	robotization_0 = 1
+	robotization_1 = 1
+	robotization_2 = 1
+	robotization_3 = 1
+	working_equipment_0 = 1
+	working_equipment_1 = 1
+	working_equipment_2 = 1
+	working_equipment_3 = 1
+	working_equipment_4 = 1
+	working_equipment_5 = 1
+	building_0 = 1
+	building_1 = 1
+	building_2 = 1
+	building_3 = 1
+	building_4 = 1
+	electronics_manufacturing_0 = 1
+	electronics_manufacturing_1 = 1
+	electronics_manufacturing_2 = 1
+	oil_refining_0 = 1
+	oil_refining_1 = 1
+	oil_refining_2 = 1
+	oil_refining_3 = 1
+	road_construction_0 = 1
+	road_construction_1 = 1
+	urbanization_0 = 1
+	urbanization_1 = 1
+	mining_0 = 1
+	SOV_2022 = 1
+
+	
+	
+	
+	
+
+	infantry_weapons_sov_ww2 = 1
+	infantry_weapons_akm = 1
+	infantry_weapons_ak74 = 1
+	infantry_weapons_ak74m = 1
+	infantry_improvements_1 = 1
+	infantry_improvements_0 = 1
+	infantry_improvements_2 = 1
+	infantry_improvements_3 = 1
+	infantry_uniform_kzmp_beryozka = 1
+	infantry_uniform_vsr84_butan = 1
+	infantry_body_armor_6b1 = 1
+	infantry_body_armor_6b3 = 1
+	infantry_body_armor_6b5 = 1
+	infantry_body_armor_6b12 = 1
+	infantry_body_armor_improvement_0 = 1
+	infantry_grenade_launcher_rpg7 = 1
+	infantry_grenade_launcher_rpg18_muha = 1
+	infantry_grenade_launcher_rpg22_netto = 1
+	infantry_uniform_vsr98_flora = 1
+	infantry_mortar_sov_ww2 = 1
+	infantry_mortar_2b9_vasilyok = 1
+	infantry_mortar_2b11 = 1
+	infantry_mortar_2b14_podnos = 1
+	infantry_atgm_9k11_malutka = 1
+	infantry_atgm_9k111_fagot = 1
+	infantry_aa_9k32_strela_2 = 1
+	infantry_aa_9k34_strela_3 = 1
+	infantry_aa_9k38_igla = 1
+	motorized_infantry = 1
+
+	tech_support = 1
+	tech_engineering = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	communication_equipment = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_recon = 1
+	tech_recon2 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_ARV = 1
+	tech_AMV = 1
+
+	tank_sov_t55 = 1
+	sp_artillery_tank_sov_t55 = 1
+
+	tank_sov_t62 = 1
+	sp_artillery_tank_sov_t62 = 1
+
+	tank_sov_t64 = 1
+	sp_artillery_tank_sov_t64 = 1
+
+	tank_sov_t72 = 1
+	sp_artillery_tank_sov_t72 = 1
+	
+
+	tank_sov_t80 = 1
+	sp_artillery_tank_sov_t80 = 1
+
+	ifv_sov_bmp1 = 1
+
+	ifv_sov_bmp2 = 1
+
+	ifv_sov_bmp3 = 1
+
+	afv_sov_bmd1 = 1
+
+	afv_sov_bmd2 = 1
+
+	afv_sov_bmd3 = 1
+
+	apc_sov_btr50 = 1
+
+	apc_sov_btr60 = 1
+
+	apc_sov_btr70 = 1
+
+	apc_sov_btr80 = 1
+
+	apc_sov_mtlb = 1
+	sp_artillery_apc_sov_mtlb = 1
+	sp_heavy_artillery_mrv_tracked_2 = 1
+	sp_mlrs_apc_sov_mtlb = 1
+	sov_brdm1 = 1
+	sov_brdm2 = 1
+	
+	transport1 = 1
+	transport2 = 1
+	transport3 = 1
+	transport4 = 1
+	CAS1 = 1
+	CAS2 = 1
+	CAS3 = 1
+	CASt1 = 1
+	CASt2 = 1
+	CASt3 = 1
+	CASt4 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1 
+	strategic_bomber3 = 1
+	strategic_bomber4 = 1
+	strategic_bomber5 = 1
+	strategic_bomber6 = 1
+	CAS0 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	fighter4 = 1
+	fighter5 = 1
+	fighter6 = 1
+	fighter7 = 1
+	fighter8 = 1
+	fighter9 = 1
+	fightert1 = 1
+	fightert2 = 1
+	hel_strike1 = 1
+	hel_strike2 = 1
+	hel_strike3 = 1
+	hel_strike4 = 1
+	hel_strike5 = 1
+	hel_strike6 = 1
+	hel_strike7 = 1
+	hel_transport1 = 1
+	hel_transport2 = 1
+	hel_transport3 = 1
+	uav_strike1 = 1
+	uav_strike2 = 1
+	uav_recon1 = 1
+	uav_recon2 = 1
+
+	imv_medium_0 = 1
+
+	imv_light_1 = 1
+	sp_aa_imv_light_1 = 1
+	sp_artillery_imv_light_1 = 1
+	sp_mlrs_imv_light_1 = 1
+	imv_light_2 = 1
+	sp_aa_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_3 = 1
+	sp_aa_imv_light_2 = 1
+	sp_atgm_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_0 = 1
+	sp_aa_imv_light_0 = 1
+	sp_atgm_imv_light_0 = 1
+	sp_artillery_imv_light_0 = 1
+	sp_mlrs_imv_light_0 = 1
+	imv_light_4 = 1
+
+	imv_medium_1 = 1
+
+	imv_medium_2 = 1
+
+	imv_medium_3 = 1
+
+	imv_medium_4 = 1
+
+	imv_heavy_0 = 1
+	sp_mlrs_imv_heavy_0 = 1
+	imv_heavy_1 = 1
+	imv_heavy_2 = 1
+	imv_heavy_3 = 1
+	imv_heavy_4 = 1
+	infantry_improvements_0 = 1
+	mrv_wheeled_0 = 1
+	sp_aa_mrv_wheeled_0 = 1
+	mrv_wheeled_1 = 1
+	mrv_wheeled_2 = 1
+	mrv_wheeled_3 = 1
+	mrv_wheeled_4 = 1
+	mrv_tracked_0 = 1
+	mrv_tracked_1 = 1
+	mrv_tracked_2 = 1
+	sp_aa_mrv_tracked_2 = 1
+	mrv_tracked_3 = 1
+	mrv_tracked_4 = 1
+	rus_artillery_d1 = 1
+	rus_artillery_d74 = 1
+	rus_artillery_d20 = 1
+	rus_artillery_m46 = 1
+	rus_artillery_d30 = 1
+}
+
+#2022.04.15 Starting politics
+2022.04.01 = {
+	set_stability = 0.77
+
+	set_war_support = 0.39
+
+	add_political_power = 100
+
+	set_convoys = 100
+	
+	set_popularities = {
+		democratic = 5
+		communism = 5
+		fascism = 11
+		neutrality = 77
+	}
+	
+	add_ideas = { 
+		does_not_participate_in_smo_in_ukraine 
+	}
+	
+	remove_ideas = {
+		BLR_second_constitution
+	}
+	
+	unlock_national_focus = BLR_appeal_to_people
+	unlock_national_focus = BLR_expand_KGB
+	unlock_national_focus = BLR_end_of_third_sector
+	unlock_national_focus = BLR_plan_the_third_republic_referendum
+	#unlock_national_focus = 
+	
+	add_timed_idea = { idea = RUS_past_military_exercises_with_belarus days = 7 }
+	
+	add_dynamic_modifier = { modifier = BLR_third_constitution }
+	
+	# Флажки
+	set_country_flag = BLR_expand_KGB_flag
+	set_country_flag = BLR_developing_nuclear_programm
+	set_country_flag = negotiations_load_flag
+	
+	# Персонажи
+	set_portraits = {
+		character = BLR_alexander_lukashenko
+		civilian = {
+			large = "GFX_BLR_alexander_lukashenko_smo"
+		}
+	}
+	
+	# Другое
+	add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		technology = tech_fpv 
+	}
+	add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		technology = computers_3
+	}
+	add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		technology = printers_3
+	}
+	add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		technology = electronics_manufacturing_3 
+	}
+}
+
+add_equipment_to_stockpile = {
+	type = sp_atgm_sov_brdm2_equipment
+	variant_name = "9П148"
+	amount = 75
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = arv_tank_sov_t72_equipment
+	variant_name = "БРЭМ-1"
+	amount = 100
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = tank_sov_t64_equipment
+	variant_name = "Т-64"
+	amount = 200
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = tank_sov_t72_equipment
+	variant_name = "Т-72"
+	amount = 1200
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = imv_heavy_1_equipment
+	variant_name = "\"Выстрел\" с \"Корд\""
+	amount = 600
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = imv_light_1_equipment
+	variant_name = "Урал-4350"
+	amount = 4000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = imv_heavy_0_equipment
+	variant_name = "Урал-4320"
+	amount = 3000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_apc_sov_mtlb_equipment
+	variant_name = "2С1 Гвоздика"
+	amount = 1000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sov_brdm1_equipment
+	variant_name = "БРДМ-1"
+	amount = 100
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sov_brdm2_equipment
+	variant_name = "БРДМ-2"
+	amount = 600
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_mtlb_equipment
+	variant_name = "МТ-ЛБ"
+	amount = 80
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_mtlb_equipment
+	variant_name = "МТ-ЛБВМ"
+	amount = 60
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_sov_bmp1_equipment
+	variant_name = "БМП-1"
+	amount = 900
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sp_mlrs_imv_heavy_0_equipment
+	variant_name = "БМ-21 Град"
+	amount = 40
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_sov_bmp2_equipment
+	variant_name = "БМП-2"
+	amount = 800
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_wheeled_0_equipment
+	variant_name = "Оса"
+	amount = 480
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_tracked_2_equipment
+	variant_name = "Бук-М1"
+	amount = 140
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sp_heavy_artillery_mrv_tracked_2_equipment
+	variant_name = "2С7 Пион"
+	amount = 20
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sp_atgm_apc_sov_mtlb_equipment
+	variant_name = "9П149 Штурм-С"
+	amount = 60
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_tracked_0_equipment
+	variant_name = "Тунгуска"
+	amount = 160
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr50_equipment
+	variant_name = "БТР-50"
+	amount = 600
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr50_equipment
+	variant_name = "БТР-50П"
+	amount = 800
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr60_equipment
+	variant_name = "БТР-60"
+	amount = 1600
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr70_equipment
+	variant_name = "БТР-70"
+	amount = 1000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr80_equipment
+	variant_name = "БТР-80"
+	amount = 480
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_akm_equipment
+	amount = 80000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_ak74_equipment
+	amount = 70000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_ak74m_equipment
+	amount = 50000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = uniform_kzmp_beryozka_equipment
+	amount = 90000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = uniform_vsr84_butan_equipment
+	amount = 70000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = body_armor_6b1_equipment
+	amount = 50000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = body_armor_6b3_equipment
+	amount = 40000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = body_armor_6b5_equipment
+	amount = 45000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg7_equipment
+	amount = 6000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg18_muha_equipment
+	amount = 8000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg22_netto_equipment
+	amount = 7200
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg26_aglen_equipment
+	amount = 7000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = mortar_2b9_vasilyok_equipment
+	amount = 1300
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = mortar_2b11_equipment
+	amount = 1200
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = mortar_2b14_podnos_equipment
+	amount = 1400
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k11_malutka_equipment
+	amount = 360
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k111_fagot_equipment
+	amount = 280
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k32_strela_2_equipment
+	amount = 3600
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k34_strela_3_equipment
+	amount = 4800
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k38_igla_equipment
+	amount = 4000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_d1_equipment
+	amount = 140
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_d74_equipment
+	amount = 100
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_d20_equipment
+	amount = 120
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_m46_equipment
+	amount = 112
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_d30_equipment
+	amount = 160
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_2a36_equipment
+	amount = 80
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_2a65_equipment
+	amount = 72
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = uniform_vsr98_flora_equipment
+	amount = 30000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k111_1_konkurs_equipment
+	amount = 340
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k115_metis_equipment
+	amount = 240
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k135_kornet_equipment
+	amount = 200
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k338_igla_s_equipment
+	amount = 3000
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = mortar_2b24_podnos_equipment
+	amount = 800
+	producer = BLR
+}
+add_equipment_to_stockpile = {
+	type = RUS_fighter_equipment_mig29smt	
+	amount = 10 #24 more deployed
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = hel_transport_equipment_1	
+	amount = 20
+	producer = RUS 
+}
+add_equipment_to_stockpile = {
+	type = uav_recon_equipment_1	
+	amount = 121
+	producer = BLR
+}
+add_equipment_to_stockpile = {
+	type = uav_recon_equipment_2	
+	amount = 12
+	producer = BLR
+}
+add_equipment_to_stockpile = {
+	type = uav_strike_equipment_2	
+	amount = 13
+	producer = BLR
+}
+
+add_equipment_to_stockpile = {
+	type = engineering_equipment
+	amount = 1500
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = arv_equipment
+	amount = 750
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = amv_equipment
+	amount = 3000
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 5000
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1	
+	amount = 700
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1		
+	amount = 25000
+	producer = RUS
+}
+
+add_equipment_production = {
+	equipment = {
+		type = motorized_equipment_1
+		creator = "BLR"
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = support_equipment_1
+		creator = "BLR"
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = amv_equipment_0
+		creator = "BLR"
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = arv_equipment_0
+		creator = "BLR"
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = engineering_equipment_0
+		creator = "BLR"
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = sp_artillery_apc_sov_mtlb_equipment
+		creator = "BLR"
+		version_name = "2С1 Гвоздика"
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = ifv_sov_bmp1_equipment
+		creator = "BLR" 
+		version_name = "БМП-1"
+	}
+	requested_factories = 2
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = ifv_sov_bmp2_equipment
+		creator = "BLR" 
+		version_name = "БМП-2"
+	}
+	requested_factories = 4
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = apc_sov_btr80_equipment
+		creator = "BLR" 
+		version_name = "БТР-80"
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = tank_sov_t72_equipment
+		creator = "BLR" 
+		version_name = "Т-72"
+	}
+	requested_factories = 3
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = sov_brdm2_equipment
+		creator = "BLR" 
+		version_name = "БРДМ-2"
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}
+add_equipment_production = {
+	equipment = {
+		type = sp_aa_mrv_tracked_2_equipment
+		creator = "BLR" 
+		version_name = "Бук-М1"
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}

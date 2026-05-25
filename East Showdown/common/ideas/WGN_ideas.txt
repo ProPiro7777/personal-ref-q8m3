@@ -1,0 +1,166 @@
+ideas = {
+	country = {
+		WGN_african_resources = {
+			allowed = {
+				always = no
+			}
+
+			picture = WGN_african_resources_1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1			
+			
+			modifier = {
+				country_resource_oil = 20
+				max_fuel_factor = 0.1
+			}
+		}
+
+		WGN_african_resources_2 = {
+			allowed = {
+				always = no
+			}
+
+			picture = WGN_african_resources_1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1			
+			
+			modifier = {
+				country_resource_oil = 80
+				max_fuel_factor = 0.2
+				fuel_gain_factor = 0.1
+				base_fuel_gain_factor = 0.1
+			}
+		}
+
+		WGN_Codex = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = WGN_Codex
+			
+			removal_cost = -1			
+			
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.025
+				army_org_factor = 0.05
+				breakthrough_factor = 0.025
+				air_attack_factor = 0.025
+				surrender_limit = 1
+			}
+		}
+		
+		WGN_Codex_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = WGN_Codex
+			
+			removal_cost = -1			
+			
+			modifier = {
+				army_defence_factor = 0.075
+				army_attack_factor = 0.05
+				army_org_factor = 0.1
+				breakthrough_factor = 0.025
+				air_attack_factor = 0.05
+				surrender_limit = 1
+				experience_loss_factor = 0.25
+			}
+		}
+
+		WGN_own_structure = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = WGN_own_structure
+			
+			removal_cost = -1			
+			
+			modifier = {
+				command_power_gain_mult = 0.25
+				max_command_power_mult = 0.2
+				army_org_factor = 0.1
+				army_speed_factor = 0.1
+				army_morale_factor = 0.15
+				breakthrough_factor = 0.5
+				land_doctrine_cost_factor = -0.65
+				land_mastery_gain_factor = 0.65
+				hidden_modifier = {
+					army_leader_cost_factor = 1
+					promote_cost_factor = 1000
+					army_leader_start_level = 1
+					army_leader_start_logistics_level = 1
+					send_volunteer_size = -100
+					special_forces_cap = 1
+				}
+			}
+		}
+
+		WGN_law_300 = {
+			allowed = {
+				always = no
+			}
+			picture = WGN_law_300
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1			
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				breakthrough_factor = 0.025
+				org_loss_when_moving = -0.15
+				political_power_factor = -0.1
+			}
+		}
+
+		WGN_best_idea = { 
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_WGN_best
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1			
+			
+			modifier = {
+				weekly_manpower = 100
+				army_attack_factor = 0.075
+				army_defence_factor = 0.075
+				army_morale_factor = 0.15
+				political_power_gain = 0.2
+			}
+		}
+	}
+}

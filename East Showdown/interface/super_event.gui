@@ -1,0 +1,300 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "sp_event_window"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_sp_event_window"
+		}
+		
+		iconType = {
+			name = "Super_Event_march_justice_prigoshin"
+			spriteType = "GFX_Super_Event_march_justice_prigoshin"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_SMO"
+			spriteType = "GFX_Super_Event_SMO"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_bakhmut_taken"
+			spriteType = "GFX_Super_Event_RUS_bakhmut_taken"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_WGN_bakhmut_taken"
+			spriteType = "GFX_Super_Event_WGN_bakhmut_taken"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_WGN_prigozhin_died"
+			spriteType = "GFX_Super_Event_WGN_prigozhin_died"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_WGN_prigozhin_President_Russia"
+			spriteType = "GFX_Super_Event_WGN_prigozhin_President_Russia"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_particulation_mobilization"
+			spriteType = "GFX_Super_Event_RUS_particulation_mobilization"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_BLR_Tikhonovskaya_in_power"
+			spriteType = "GFX_Super_Event_BLR_Tikhonovskaya_in_power"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_retreat_from_Kiev"
+			spriteType = "GFX_Super_Event_RUS_retreat_from_Kiev"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_fall_Kiev_se"
+			spriteType = "GFX_Super_Event_RUS_fall_Kiev_se"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_fall_Kharkov"
+			spriteType = "GFX_Super_Event_RUS_fall_Kharkov"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_fall_Donbass"
+			spriteType = "GFX_Super_Event_RUS_fall_Donbass"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_WGN_fall_Kiev"
+			spriteType = "GFX_Super_Event_WGN_fall_Kiev"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_UKR_fall_Lugansk"
+			spriteType = "GFX_Super_Event_UKR_fall_Lugansk"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_UKR_fall_Donetsk"
+			spriteType = "GFX_Super_Event_UKR_fall_Donetsk"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_islamic_rebelion"
+			spriteType = "GFX_Super_Event_RUS_islamic_rebelion"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_UKR_fall_Rostov"
+			spriteType = "GFX_Super_Event_UKR_fall_Rostov"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_islamic_attack_RUS_Al_Queda"
+			spriteType = "GFX_Super_Event_RUS_islamic_attack_RUS_Al_Queda"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_islamic_attack_RUS_S_Al_Queda"
+			spriteType = "GFX_Super_Event_RUS_islamic_attack_RUS_S_Al_Queda"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_Kadyrov_Putin_loyalist_attack"
+			spriteType = "GFX_Super_Event_RUS_Kadyrov_Putin_loyalist_attack"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_new_states_are_add"
+			spriteType = "GFX_Super_Event_RUS_new_states_are_add"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_RUS_gazmanov_dead"
+			spriteType = "GFX_Super_Event_RUS_gazmanov_dead"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_caucasus_united_war_for_decolonisation"
+			spriteType = "GFX_Super_Event_RUS_caucasus_united_war_for_decolonisation"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_UKR_fall_KUAES"
+			spriteType = "GFX_Super_Event_UKR_falls_KUAES"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_RUS_islamic_attack_RUS_ISIS"
+			spriteType = "GFX_Super_Event_RUS_islamic_attack_RUS_ISIS"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_UKR_liberate_Kherson"
+			spriteType = "GFX_Super_Event_UKR_fall_Kherson"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_UKR_liberate_Crimea"
+			spriteType = "GFX_Super_Event_UKR_fall_Crimea"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_UKR_Belgorod_Zahod"
+			spriteType = "GFX_Super_Event_UKR_Belgorod_Zahod"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_1_million_dead"
+			spriteType = "GFX_Super_Event_1_million_dead"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_5_million_dead"
+			spriteType = "GFX_Super_Event_5_million_dead"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_4_years_of_war"
+			spriteType = "GFX_Super_Event_4_years_of_war"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_NTO_RUS_war"
+			spriteType = "GFX_Super_Event_NTO_RUS_war"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_UKR_Kahovka_GES"
+			spriteType = "GFX_Super_Event_UKR_Kahovka_GES"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_UKR_Kyiv_GES"
+			spriteType = "GFX_Super_Event_UKR_Kyiv_GES"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_NTO_Munich_2025"
+			spriteType = "GFX_Super_Event_NTO_Munich_2025"
+			position = {x = 0 y = 0}
+		}
+		
+
+		iconType = {
+			name = "Super_Event_POL_JOIN_SMO"
+			spriteType = "GFX_Super_Event_POL_JOIN_SMO"
+			position = {x = 0 y = 0}
+		}
+		
+
+
+		iconType = {
+			name = "Super_Event_POL_Falanga"
+			spriteType = "GFX_Super_Event_POL_Falanga"
+			position = {x = 0 y = 0}
+		}	
+	
+		iconType = {
+			name = "Super_Event_POL_Falanga_WAR"
+			spriteType = "GFX_Super_Event_POL_Falanga_WAR"
+			position = {x = 0 y = 0}
+		}
+
+
+		iconType = {
+			name = "Super_Event_POL_SOC"
+			spriteType = "GFX_Super_Event_POL_SOC"
+			position = {x = 0 y = 0}
+		}
+		
+		
+		###############
+		###INTERFACE###
+		###############
+		
+		iconType = {
+			name = "sp_event_text_underlay"
+			spriteType = "GFX_sp_event_underlay"
+			position = { x = 195 y = 332 }
+		}
+		
+		instantTextBoxType = {
+			name = "super_quote"
+			position = { x = 225 y = 336 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_quote]"
+			maxWidth = 348
+			maxHeight = 110
+			fixedsize = yes	
+			format = right
+		}
+		
+		instantTextboxType = {
+			name = "super_title"
+			position = { x = -52 y = 40 }
+			font = "hoi_18mbs"
+			format = center
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 700
+			maxHeight = 50
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "sp_event_close_button"
+			spriteType = "GFX_sp_event_close_button"
+			position = { x = 187 y = 475 }
+			clicksound = click_close
+			buttonText = "[get_super_event_remark]"
+			buttonFont = "hoi_20b"
+		}
+	}
+}

@@ -1,0 +1,210 @@
+spriteTypes={
+	spriteType = {
+		name = "GFX_Pytin_union"
+		texturefile = "gfx/interface/custom_gui/BLR/putin_after_war.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_flag"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_flag.png"
+	}
+	spriteType = {
+		name = "GFX_UKR_chipson"
+		texturefile = "gfx/interface/custom_gui/RUS/UKR_chipso.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_chipson_rus"
+		texturefile = "gfx/interface/custom_gui/RUS/UKR_chipso_rus.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_chipson"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_chipso.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_chipson_ukr"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_chipso_ukr.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_flag"
+		texturefile = "gfx/interface/custom_gui/RUS/UKR_flag.png"
+	}
+	spriteType = {
+		name = "GFX_INW_internet"
+		texturefile = "gfx/interface/custom_gui/RUS/Internet.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_gazprom_zubkov"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_gazprom_zubkov.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_gazprom_PAO"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_gazprom.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_gazprom_map"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_gazprom_map.dds"
+	}
+
+	
+	
+
+	spriteType = {
+		name = "GFX_SMO_BridgeSmall"
+		texturefile = "gfx/interface/SMO_Bridges/bridge_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_SMO_BridgeSmall_damaged"
+		texturefile = "gfx/interface/SMO_Bridges/bridge_small_damaged.png"
+	}
+
+	spriteType = {
+		name = "GFX_SMO_BridgeSmall_destroyed"
+		texturefile = "gfx/interface/SMO_Bridges/bridge_small_destroyed.png"
+	}	
+
+	spriteType = {
+		name = "SMO_bridges_btn_back"
+		texturefile = "gfx/interface/SMO_Bridges/zoom_out.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Dnieper_Bridges_map"
+		texturefile = "gfx/interface/SMO_Bridges/Ukraine_Map_Dnipro.png"
+	}
+
+	spriteType = {
+		name = "GFX_DnieperRiver_Bridges_map"
+		texturefile = "gfx/interface/SMO_Bridges/Ukraine_Map.png"
+	}
+
+	spriteType = {
+		name = "GFX_Crimea_Bridges_map"
+		texturefile = "gfx/interface/SMO_Bridges/Crimea_Map.png"
+	}
+
+
+	spriteType = {
+		name = "GFX_next_map"
+		texturefile = "gfx/interface/button_right.dds"
+	}
+
+	spriteType = {
+		name = "GFX_prev_map"
+		texturefile = "gfx/interface/button_left.dds"
+	}
+
+	spriteType = {
+		name = "GFX_bridges_infoBar"
+		texturefile = "gfx/interface/SMO_Bridges/InfoBar.png"
+	}
+
+
+	spriteType = {
+		name = "GFX_Kyiv_Bridges_map"
+		texturefile = "gfx/interface/SMO_Bridges/Ukraine_Map_Kyiv.png"
+	}
+
+	spriteType = {
+		name = "GFX_SMO_HPP"
+		texturefile = "gfx/interface/SMO_Bridges/hpp.png"
+	}
+	spriteType = {
+		name = "GFX_SMO_Bridge"
+		texturefile = "gfx/interface/SMO_Bridges/bridge.png"
+	}
+
+	spriteType = {
+		name = "GFX_RUS_gas_pipeline"
+		texturefile = "gfx/interface/custom_gui/RUS/gas_pipeline.dds"
+	}
+	spriteType = {
+		name = "GFX_GAZ_1_SEVERNIY_POTOK"
+		texturefile = "gfx/interface/custom_gui/RUS/GAZ_1_SEVERNIY_POTOK.dds"
+	}
+	spriteType = {
+		name = "GFX_GAZ_2_YAMAL_EUROPE"
+		texturefile = "gfx/interface/custom_gui/RUS/GAZ_2_YAMAL_EUROPE.dds"
+	}
+	spriteType = {
+		name = "GFX_GAZ_3_URENGOY_UZHGOROD"
+		texturefile = "gfx/interface/custom_gui/RUS/GAZ_3_URENGOY_UZHGOROD.dds"
+	}
+	spriteType = {
+		name = "GFX_GAZ_4_UNION"
+		texturefile = "gfx/interface/custom_gui/RUS/GAZ_4_UNION.dds"
+	}
+	spriteType = {
+		name = "GFX_GAZ_5_TURKISH_STREAM"
+		texturefile = "gfx/interface/custom_gui/RUS/GAZ_5_TURKISH_STREAM.dds"
+	}
+	spriteType = {
+		name = "GFX_GAZ_6_BLUE_STREAM"
+		texturefile = "gfx/interface/custom_gui/RUS/GAZ_6_BLUE_STREAM.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_gas_flags_1"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_gas_flags_1.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_gas_flags_2"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_gas_flags_2.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_gas_flags_3"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_gas_flags_3.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_gas_flags_4"
+		texturefile = "gfx/interface/custom_gui/RUS/RUS_gas_flags_4.dds"
+	}
+	spriteType = {
+		name = "GFX_gas_button"
+		texturefile = "gfx/interface/custom_gui/RUS/gas_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_default_bridge"
+		texturefile = "gfx/interface/SMO_Bridges/bridge.png"
+	}
+
+
+	spriteType = {
+		name = "GFX_damaged_bridge"
+		texturefile = "gfx/interface/SMO_Bridges/damaged.png"
+	}
+
+	spriteType = {
+		name = "GFX_UKR_PUSH"
+		texturefile = "gfx/interface/ideas/UKR/push.png"
+	}
+
+	spriteType = {
+		name = "GFX_NAZI_PUSH"
+		texturefile = "gfx/interface/ideas/UKR/push.png"
+	}
+
+	spriteType = {
+		name = "GFX_destroyed_bridge"
+		texturefile = "gfx/interface/SMO_Bridges/destroyed.png"
+	}
+
+	spriteType = {
+		name = "GFX_default_DAM"
+		texturefile = "gfx/interface/SMO_Bridges/hpp.png"
+	}
+
+	spriteType = {
+		name = "GFX_damaged_DAM"
+		texturefile = "gfx/interface/SMO_Bridges/hpp_damaged.png"
+	}
+
+
+	spriteType = {
+		name = "GFX_destroyed_DAM"
+		texturefile = "gfx/interface/SMO_Bridges/hpp_destroyed.png"
+	}
+
+}
+
+
+

@@ -1,0 +1,823 @@
+es_rus_back_areas = {
+	name = "ES_RUS_BACK_AREAS"
+	group = "ES_RULE_GROUP_GAME_SETUP"
+	default = {
+		name = "ES_RUS_BACK_AREAS_DISABLED"
+		text = "ES_RUS_BACK_AREAS_DISABLED_TEXT"
+		desc = "ES_RUS_BACK_AREAS_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_RUS_BACK_AREAS_ENABLED"
+		text = "ES_RUS_BACK_AREAS_ENABLED_TEXT"
+		desc = "ES_RUS_BACK_AREAS_ENABLED_DESC"
+		allow_achievements = yes
+	}
+}
+es_nato_status = {
+	name = "ES_NATO_STATUS"
+	group = "ES_RULE_GROUP_GAME_SETUP"
+	default = {
+		name = "ES_NATO_DIVIDED"
+		text = "ES_NATO_DIVIDED_TEXT"
+		desc = "ES_NATO_DIVIDED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_NATO_ONLY_MAIN_BASE"
+		text = "ES_NATO_ONLY_MAIN_BASE_TEXT"
+		desc = "ES_NATO_ONLY_MAIN_BASE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_NATO_UNITED"
+		text = "ES_NATO_UNITED_TEXT"
+		desc = "ES_NATO_UNITED_DESC"
+		allow_achievements = yes
+	}
+}
+es_minor_countries_status = {
+	name = "ES_MINOR_COUNTRIES_STATUS"
+	group = "ES_RULE_GROUP_GAME_SETUP"
+	default = {
+		name = "ES_MINOR_COUNTRIES_ENABLED"
+		text = "ES_MINOR_COUNTRIES_ENABLED_TEXT"
+		desc = "ES_MINOR_COUNTRIES_ENABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_MINOR_COUNTRIES_DISABLED"
+		text = "ES_MINOR_COUNTRIES_DISABLED_TEXT"
+		desc = "ES_MINOR_COUNTRIES_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+es_energy_system_status = {
+	name = "ES_ENERGY_SYSTEM_STATUS"
+	group = "ES_RULE_GROUP_GAME_SETUP"
+	default = {
+		name = "ES_ENERGY_SYSTEM_ENABLED"
+		text = "ES_ENERGY_SYSTEM_ENABLED_TEXT"
+		desc = "ES_ENERGY_SYSTEM_ENABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_ENERGY_SYSTEM_DISABLED"
+		text = "ES_ENERGY_SYSTEM_DISABLED_TEXT"
+		desc = "ES_ENERGY_SYSTEM_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+es_bz_breakthrough_status = {
+	name = "ES_BZ_BREAKTHROUGH_STATUS"
+	group = "ES_RULE_GROUP_GAME_SETUP"
+	
+	default = {
+		name = "ES_BZ_BREAKTHROUGH_ENABLED"
+		text = "ES_BZ_BREAKTHROUGH_ENABLED_TEXT"
+		desc = "ES_BZ_BREAKTHROUGH_ENABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_BZ_BREAKTHROUGH_DISABLED"
+		text = "ES_BZ_BREAKTHROUGH_DISABLED_TEXT"
+		desc = "ES_BZ_BREAKTHROUGH_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+es_ban_border_zones = {
+	name = "ES_BAN_BORDER_ZONES"
+	group = "ES_RULE_GROUP_GAME_SETUP"
+	default = {
+		name = "ES_BAN_BORDER_NO"
+		text = "ES_BAN_BORDER_NO_TEXT"
+		desc = "ES_BAN_BORDER_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_BAN_BORDER_YES"
+		text = "ES_BAN_BORDER_YES_TEXT"
+		desc = "ES_BAN_BORDER_YES_DESC"
+		allow_achievements = yes
+	}
+}
+
+es_ammunition_consumption_factor = {
+	name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_STATUS"
+	group = "ES_RULE_GROUP_GAME_SETUP"
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_50"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_50_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_60"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_60_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_70"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_70_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_80"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_80_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_90"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_90_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_100"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_100_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_110"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_110_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_120"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_120_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_130"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_130_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_140"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_140_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_150"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_150_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_160"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_160_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_170"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_170_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_180"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_180_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_190"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_190_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_200"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_200_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_225"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_225_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_250"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_250_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_275"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_275_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_300"
+		text = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_300_TEXT"
+		desc = "ES_AMMUNITION_CONSUMPTION_FACTOR_RULE_DESC"
+		allow_achievements = yes
+	}
+}
+es_ban_LDNR_district = {
+	name = "ES_BAN_LDNR_DISTRICT"
+	group = "ES_RULE_GROUP_GAME_SETUP"
+	default = {
+		name = "ES_BAN_DISTRICT_NO"
+		text = "ES_BAN_DISTRICT_NO_TEXT"
+		desc = "ES_BAN_DISTRICT_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_BAN_DISTRICT_YES"
+		text = "ES_BAN_DISTRICT_YES_TEXT"
+		desc = "ES_BAN_DISTRICT_YES_DESC"
+		allow_achievements = yes
+	}
+}
+
+#
+es_russian_election_rule = {
+	name = "ES_ELECTION_2024_PATH"
+	group = "ES_RULE_GAME_RULE_GROUP"
+	default = {
+		name = "ES_ELECTION_2024_PATH_OFF"
+		text = "ES_ELECTION_2024_PATH_OFF_TEXT"
+		desc = "ES_ELECTION_2024_PATH_OFF_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_ELECTION_2024_PATH_MILITARISATION"
+		text = "ES_ELECTION_2024_PATH_MILITARISATION_TEXT"
+		desc = "ES_ELECTION_2024_PATH_MILITARISATION_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_ELECTION_2024_PATH_HISTORY"
+		text = "ES_ELECTION_2024_PATH_HISTORY_TEXT"
+		desc = "ES_ELECTION_2024_PATH_HISTORY_DESC"
+		allow_achievements = yes
+	}
+}
+
+es_russian_operation_rule = {
+	name = "ES_OPERATION_OF_SMO"
+	group = "ES_RULE_GAME_RULE_GROUP"
+	default = {
+		name = "ES_OPERATION_OF_SMO_OFF"
+		text = "ES_OPERATION_OF_SMO_OFF_TEXT"
+		desc = "ES_OPERATION_OF_SMO_OFF_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_OPERATION_OF_SMO_KIYEV"
+		text = "ES_OPERATION_OF_SMO_KIYEV_TEXT"
+		desc = "ES_OPERATION_OF_SMO_KIYEV_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_OPERATION_OF_SMO_KIYEVFULLBACK"
+		text = "ES_OPERATION_OF_SMO_KIYEVFULLBACK_TEXT"
+		desc = "ES_OPERATION_OF_SMO_KIYEVFULLBACK_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_OPERATION_OF_SMO_FULLBACK"
+		text = "ES_OPERATION_OF_SMO_FULLBACK_TEXT"
+		desc = "ES_OPERATION_OF_SMO_FULLBACK_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_OPERATION_OF_SMO_BORDER"
+		text = "ES_OPERATION_OF_SMO_BORDER_TEXT"
+		desc = "ES_OPERATION_OF_SMO_BORDER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_OPERATION_OF_SMO_NOVOROS"
+		text = "ES_OPERATION_OF_SMO_NOVOROS_TEXT"
+		desc = "ES_OPERATION_OF_SMO_NOVOROS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_OPERATION_OF_SMO_DONBASS"
+		text = "ES_OPERATION_OF_SMO_DONBASS_TEXT"
+		desc = "ES_OPERATION_OF_SMO_DONBASS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_OPERATION_OF_SMO_DNEPRR"
+		text = "ES_OPERATION_OF_SMO_DNEPRR_TEXT"
+		desc = "ES_OPERATION_OF_SMO_DNEPRR_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_OPERATION_OF_SMO_DNEPRL"
+		text = "ES_OPERATION_OF_SMO_DNEPRL_TEXT"
+		desc = "ES_OPERATION_OF_SMO_DNEPRL_DESC"
+		allow_achievements = yes
+	}
+}
+es_march_of_justuse_rule = {
+	name = "ES_MARCH_OF_JUSTICE"
+	group = "ES_RULE_GAME_RULE_GROUP"
+	default = {
+		name = "ES_MARCH_OF_JUSTICE_OFF"
+		text = "ES_MARCH_OF_JUSTICE_OFF_TEXT"
+		desc = "ES_MARCH_OF_JUSTICE_OFF_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_MARCH_OF_JUSTICE_WAGNER_WON"
+		text = "ES_MARCH_OF_JUSTICE_WAGNER_WON_TEXT"
+		desc = "ES_MARCH_OF_JUSTICE_WAGNER_WON_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_MARCH_OF_JUSTICE_HISTORY"
+		text = "ES_MARCH_OF_JUSTICE_HISTORY_TEXT"
+		desc = "ES_MARCH_OF_JUSTICE_HISTORY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_MARCH_OF_JUSTICE_BAD_END"
+		text = "ES_MARCH_OF_JUSTICE_BAD_END_TEXT"
+		desc = "ES_MARCH_OF_JUSTICE_BAD_END_DESC"
+		allow_achievements = yes
+	}
+}
+es_chechen_path_rule = {
+	name = "ES_CHECHEN_PATH"
+	group = "ES_RULE_GAME_RULE_GROUP"
+	default = {
+		name = "ES_CHECHEN_PATH_OFF"
+		text = "ES_CHECHEN_PATH_OFF_TEXT"
+		desc = "ES_CHECHEN_PATH_OFF_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_CHECHEN_PATH_KADYROV_LOYALISTS"
+		text = "ES_CHECHEN_PATH_KADYROV_LOYALISTS_TEXT"
+		desc = "ES_CHECHEN_PATH_KADYROV_LOYALISTS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_CHECHEN_PATH_ICHKERIA"
+		text = "ES_CHECHEN_PATH_ICHKERIA_TEXT"
+		desc = "ES_CHECHEN_PATH_ICHKERIA_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_CHECHEN_PATH_IMARAT"
+		text = "ES_CHECHEN_PATH_IMARAT_TEXT"
+		desc = "ES_CHECHEN_PATH_IMARAT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_CHECHEN_PATH_ISLAMIC_RADIKAL"
+		text = "ES_CHECHEN_PATH_ISLAMIC_RADIKAL_TEXT"
+		desc = "ES_CHECHEN_PATH_ISLAMIC_RADIKAL_DESC"
+		allow_achievements = yes
+	}
+}
+#
+
+es_mp_target_country = {
+	name = "ES_MP_TARGET_COUNTRY"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+
+	default = {
+		name = "ES_MP_TARGET_COUNTRY_NO"
+		text = "ES_MP_TARGET_COUNTRY_NO_TEXT"
+		desc = "ES_MP_TARGET_COUNTRY_NO_DESC"
+		allow_achievements = yes
+	}
+
+	option = {
+		name = "ES_MP_TARGET_COUNTRY_RUS"
+		text = "ES_MP_TARGET_COUNTRY_RUS_TEXT"
+		desc = "ES_MP_TARGET_COUNTRY_RUS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_MP_TARGET_COUNTRY_UKR"
+		text = "ES_MP_TARGET_COUNTRY_UKR_TEXT"
+		desc = "ES_MP_TARGET_COUNTRY_UKR_DESC"
+		allow_achievements = yes
+	}
+}
+
+es_rus_offsite_arms_factory = {
+	name = "ES_RUS_OFFSITE_ARMS_FACTORY"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+	default = {
+		name = "ES_RUS_OFFSITE_ARMS_FACTORY_NO"
+		text = "ES_RUS_OFFSITE_ARMS_FACTORY_NO_TEXT"
+		desc = "ES_RUS_OFFSITE_ARMS_FACTORY_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_ARMS_FACTORY_5"
+		text = "ES_RUS_OFFSITE_ARMS_FACTORY_5_TEXT"
+		desc = "ES_RUS_OFFSITE_ARMS_FACTORY_5_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_ARMS_FACTORY_10"
+		text = "ES_RUS_OFFSITE_ARMS_FACTORY_10_TEXT"
+		desc = "ES_RUS_OFFSITE_ARMS_FACTORY_10_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_ARMS_FACTORY_15"
+		text = "ES_RUS_OFFSITE_ARMS_FACTORY_15_TEXT"
+		desc = "ES_RUS_OFFSITE_ARMS_FACTORY_15_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_ARMS_FACTORY_20"
+		text = "ES_RUS_OFFSITE_ARMS_FACTORY_20_TEXT"
+		desc = "ES_RUS_OFFSITE_ARMS_FACTORY_20_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_ARMS_FACTORY_25"
+		text = "ES_RUS_OFFSITE_ARMS_FACTORY_25_TEXT"
+		desc = "ES_RUS_OFFSITE_ARMS_FACTORY_25_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_ARMS_FACTORY_50"
+		text = "ES_RUS_OFFSITE_ARMS_FACTORY_50_TEXT"
+		desc = "ES_RUS_OFFSITE_ARMS_FACTORY_50_DESC"
+		allow_achievements = no
+	}
+}
+
+es_rus_offsite_industrial_complex = {
+	name = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+	default = {
+		name = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_NO"
+		text = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_NO_TEXT"
+		desc = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_5"
+		text = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_5_TEXT"
+		desc = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_5_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_10"
+		text = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_10_TEXT"
+		desc = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_10_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_15"
+		text = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_15_TEXT"
+		desc = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_15_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_20"
+		text = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_20_TEXT"
+		desc = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_20_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_25"
+		text = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_25_TEXT"
+		desc = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_25_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_50"
+		text = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_50_TEXT"
+		desc = "ES_RUS_OFFSITE_INDUSTRIAL_COMPLEX_50_DESC"
+		allow_achievements = no
+	}
+}
+
+es_rus_additional_units = {
+	name = "ES_RUS_ADDITIONAL_UNITS"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+	default = {
+		name = "ES_RUS_ADDITIONAL_UNITS_NO"
+		text = "ES_RUS_ADDITIONAL_UNITS_NO_TEXT"
+		desc = "ES_RUS_ADDITIONAL_UNITS_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_UNITS_5"
+		text = "ES_RUS_ADDITIONAL_UNITS_5_TEXT"
+		desc = "ES_RUS_ADDITIONAL_UNITS_5_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_UNITS_10"
+		text = "ES_RUS_ADDITIONAL_UNITS_10_TEXT"
+		desc = "ES_RUS_ADDITIONAL_UNITS_10_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_UNITS_15"
+		text = "ES_RUS_ADDITIONAL_UNITS_15_TEXT"
+		desc = "ES_RUS_ADDITIONAL_UNITS_15_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_UNITS_20"
+		text = "ES_RUS_ADDITIONAL_UNITS_20_TEXT"
+		desc = "ES_RUS_ADDITIONAL_UNITS_20_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_UNITS_25"
+		text = "ES_RUS_ADDITIONAL_UNITS_25_TEXT"
+		desc = "ES_RUS_ADDITIONAL_UNITS_25_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_UNITS_50"
+		text = "ES_RUS_ADDITIONAL_UNITS_50_TEXT"
+		desc = "ES_RUS_ADDITIONAL_UNITS_50_DESC"
+		allow_achievements = no
+	}
+}
+
+es_rus_additional_manpower = {
+	name = "ES_RUS_ADDITIONAL_MANPOWER"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+	default = {
+		name = "ES_RUS_ADDITIONAL_MANPOWER_NO"
+		text = "ES_RUS_ADDITIONAL_MANPOWER_NO_TEXT"
+		desc = "ES_RUS_ADDITIONAL_MANPOWER_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_MANPOWER_5"
+		text = "ES_RUS_ADDITIONAL_MANPOWER_5_TEXT"
+		desc = "ES_RUS_ADDITIONAL_MANPOWER_5_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_MANPOWER_10"
+		text = "ES_RUS_ADDITIONAL_MANPOWER_10_TEXT"
+		desc = "ES_RUS_ADDITIONAL_MANPOWER_10_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_MANPOWER_15"
+		text = "ES_RUS_ADDITIONAL_MANPOWER_15_TEXT"
+		desc = "ES_RUS_ADDITIONAL_MANPOWER_15_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_RUS_ADDITIONAL_MANPOWER_20"
+		text = "ES_RUS_ADDITIONAL_MANPOWER_20_TEXT"
+		desc = "ES_RUS_ADDITIONAL_MANPOWER_20_DESC"
+		allow_achievements = no
+	}
+}
+
+es_ukr_offsite_arms_factory = {
+	name = "ES_UKR_OFFSITE_ARMS_FACTORY"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+	default = {
+		name = "ES_UKR_OFFSITE_ARMS_FACTORY_NO"
+		text = "ES_UKR_OFFSITE_ARMS_FACTORY_NO_TEXT"
+		desc = "ES_UKR_OFFSITE_ARMS_FACTORY_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_ARMS_FACTORY_5"
+		text = "ES_UKR_OFFSITE_ARMS_FACTORY_5_TEXT"
+		desc = "ES_UKR_OFFSITE_ARMS_FACTORY_5_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_ARMS_FACTORY_10"
+		text = "ES_UKR_OFFSITE_ARMS_FACTORY_10_TEXT"
+		desc = "ES_UKR_OFFSITE_ARMS_FACTORY_10_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_ARMS_FACTORY_15"
+		text = "ES_UKR_OFFSITE_ARMS_FACTORY_15_TEXT"
+		desc = "ES_UKR_OFFSITE_ARMS_FACTORY_15_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_ARMS_FACTORY_20"
+		text = "ES_UKR_OFFSITE_ARMS_FACTORY_20_TEXT"
+		desc = "ES_UKR_OFFSITE_ARMS_FACTORY_20_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_ARMS_FACTORY_25"
+		text = "ES_UKR_OFFSITE_ARMS_FACTORY_25_TEXT"
+		desc = "ES_UKR_OFFSITE_ARMS_FACTORY_25_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_ARMS_FACTORY_50"
+		text = "ES_UKR_OFFSITE_ARMS_FACTORY_50_TEXT"
+		desc = "ES_UKR_OFFSITE_ARMS_FACTORY_50_DESC"
+		allow_achievements = no
+	}
+}
+
+
+
+es_ukr_offsite_industrial_complex = {
+	name = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+	default = {
+		name = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_NO"
+		text = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_NO_TEXT"
+		desc = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_5"
+		text = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_5_TEXT"
+		desc = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_5_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_10"
+		text = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_10_TEXT"
+		desc = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_10_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_15"
+		text = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_15_TEXT"
+		desc = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_15_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_20"
+		text = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_20_TEXT"
+		desc = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_20_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_25"
+		text = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_25_TEXT"
+		desc = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_25_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_50"
+		text = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_50_TEXT"
+		desc = "ES_UKR_OFFSITE_INDUSTRIAL_COMPLEX_50_DESC"
+		allow_achievements = no
+	}
+}
+
+
+
+es_ukr_additional_units = {
+	name = "ES_UKR_ADDITIONAL_UNITS"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+	default = {
+		name = "ES_UKR_ADDITIONAL_UNITS_NO"
+		text = "ES_UKR_ADDITIONAL_UNITS_NO_TEXT"
+		desc = "ES_UKR_ADDITIONAL_UNITS_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_UNITS_5"
+		text = "ES_UKR_ADDITIONAL_UNITS_5_TEXT"
+		desc = "ES_UKR_ADDITIONAL_UNITS_5_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_UNITS_10"
+		text = "ES_UKR_ADDITIONAL_UNITS_10_TEXT"
+		desc = "ES_UKR_ADDITIONAL_UNITS_10_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_UNITS_15"
+		text = "ES_UKR_ADDITIONAL_UNITS_15_TEXT"
+		desc = "ES_UKR_ADDITIONAL_UNITS_15_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_UNITS_20"
+		text = "ES_UKR_ADDITIONAL_UNITS_20_TEXT"
+		desc = "ES_UKR_ADDITIONAL_UNITS_20_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_UNITS_25"
+		text = "ES_UKR_ADDITIONAL_UNITS_25_TEXT"
+		desc = "ES_UKR_ADDITIONAL_UNITS_25_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_UNITS_50"
+		text = "ES_UKR_ADDITIONAL_UNITS_50_TEXT"
+		desc = "ES_UKR_ADDITIONAL_UNITS_50_DESC"
+		allow_achievements = no
+	}
+}
+
+
+es_ukr_additional_manpower = {
+	name = "ES_UKR_ADDITIONAL_MANPOWER"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+	default = {
+		name = "ES_UKR_ADDITIONAL_MANPOWER_NO"
+		text = "ES_UKR_ADDITIONAL_MANPOWER_NO_TEXT"
+		desc = "ES_UKR_ADDITIONAL_MANPOWER_NO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_MANPOWER_5"
+		text = "ES_UKR_ADDITIONAL_MANPOWER_5_TEXT"
+		desc = "ES_UKR_ADDITIONAL_MANPOWER_5_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_MANPOWER_10"
+		text = "ES_UKR_ADDITIONAL_MANPOWER_10_TEXT"
+		desc = "ES_UKR_ADDITIONAL_MANPOWER_10_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_MANPOWER_15"
+		text = "ES_UKR_ADDITIONAL_MANPOWER_15_TEXT"
+		desc = "ES_UKR_ADDITIONAL_MANPOWER_15_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = "ES_UKR_ADDITIONAL_MANPOWER_20"
+		text = "ES_UKR_ADDITIONAL_MANPOWER_20_TEXT"
+		desc = "ES_UKR_ADDITIONAL_MANPOWER_20_DESC"
+		allow_achievements = no
+	}
+}
+
+es_dynamic_reinforcement_ai_rule = {
+	name = "ES_DYNAMIC_REINFORCEMENT_AI"
+	group = "ES_RULE_GROUP_GAME_SETUP_DIFFICULT"
+	default = {
+		name = "ES_DYNAMIC_REINFORCEMENT_AI_OFF"
+		text = "ES_DYNAMIC_REINFORCEMENT_AI_OFF_TEXT"
+		desc = "ES_DYNAMIC_REINFORCEMENT_AI_OFF_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_DYNAMIC_REINFORCEMENT_AI_ON"
+		text = "ES_DYNAMIC_REINFORCEMENT_AI_ON_TEXT"
+		desc = "ES_DYNAMIC_REINFORCEMENT_AI_ON_DESC"
+		allow_achievements = yes
+	}
+}
+
+es_pmc_abkhazia_status = {
+	name = "ES_PMC_ABKHAZIA"
+	group = "ES_RULE_MEME_GROUP"
+	default = {
+		name = "ES_PMC_ABKHAZIA_OFF"
+		text = "ES_PMC_ABKHAZIA_OFF_TEXT"
+		desc = "ES_PMC_ABKHAZIA_OFF_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_PMC_ABKHAZIA_ON"
+		text = "ES_PMC_ABKHAZIA_ON_TEXT"
+		desc = "ES_PMC_ABKHAZIA_ON_DESC"
+		allow_achievements = yes
+	}
+}
+
+es_cats_rule = {
+	name = "ES_CATS"
+	group = "ES_RULE_MEME_GROUP"
+	default = {
+		name = "ES_CATS_OFF"
+		text = "ES_CATS_OFF_TEXT"
+		desc = "ES_CATS_OFF_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ES_CATS_ON"
+		text = "ES_CATS_ON_TEXT"
+		desc = "ES_CATS_ON_DESC"
+		allow_achievements = no
+	}
+}

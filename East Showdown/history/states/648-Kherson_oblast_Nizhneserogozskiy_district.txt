@@ -1,0 +1,25 @@
+state = { 
+	id = 648 
+	name = "STATE_648" 
+	manpower = 15170 
+	
+	state_category = rural 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 11647 5 }
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 2 
+		}
+
+		2022.04.01 = {
+			owner = UKR
+			controller = RUS
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 1725 2108 3150 3398 4474 5863 6262 6472 6524 6605 7189 8051 9713 11017 11625 11647 12189 12535 14507 16364 }
+}

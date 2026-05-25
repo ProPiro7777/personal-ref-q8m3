@@ -1,0 +1,13 @@
+instant_effect = {
+	ensure_unit_template_RUS_Sturmovoy_Spetsnaz = yes
+}
+
+units = {
+	division = {
+		name = "Batalion «Stalingrad»"
+		location = 6364
+		division_template = "Sturmovoy Spetsnaz"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.01
+	}
+}

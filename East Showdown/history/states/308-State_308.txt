@@ -1,0 +1,21 @@
+state = { 
+	id = 308 
+	name = "STATE_308" 
+	manpower = 355320 
+	
+	state_category = metropolis 
+	history = { 
+		owner = ROM 
+		
+		victory_points = { 2815 14 }
+		
+		buildings = { 
+			electrical_substation = 2 
+			infrastructure = 2 
+			arms_factory = 1 
+		}
+		
+		add_core_of = ROM 
+	}
+	provinces = { 941 2636 2815 4244 4784 4899 16852 }
+}

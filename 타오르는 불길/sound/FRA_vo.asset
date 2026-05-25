@@ -1,0 +1,254 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	FRA_infantry_idle
+	FRA_infantry_neutral_combat
+	FRA_infantry_positive_combat
+	FRA_infantry_retreat
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+########## FRA
+
+soundeffect = 
+{
+    name = "FRA_infantry_idle"
+    sounds = {
+		sound = FRA_Idle_001
+        sound = FRA_Idle_002
+        sound = FRA_Idle_003
+        sound = FRA_Idle_004
+        sound = FRA_Idle_005
+        sound = FRA_Idle_006
+
+    }
+	max_audible = 6
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "FRA_infantry_neutral_combat"
+    sounds = {
+        sound = FRA_Neutral_001
+		sound = FRA_Neutral_002
+		sound = FRA_Neutral_003
+		sound = FRA_Neutral_004
+		sound = FRA_Neutral_005
+		sound = FRA_Neutral_006
+		sound = FRA_Neutral_007
+    }
+	max_audible = 7
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "FRA_infantry_positive_combat"
+    sounds = {
+        sound = FRA_Positive_001
+        sound = FRA_Positive_002
+        sound = FRA_Positive_003
+        sound = FRA_Positive_004
+        sound = FRA_Positive_005
+        sound = FRA_Positive_006
+        sound = FRA_Positive_007
+    }
+	max_audible = 7
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "FRA_infantry_retreat"
+    sounds = {
+        sound = FRA_Retreat_001
+        sound = FRA_Retreat_002
+        sound = FRA_Retreat_003
+        sound = FRA_Retreat_004
+        sound = FRA_Retreat_005
+        sound = FRA_Retreat_006
+    }
+	max_audible = 6
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+############## AUDIO ASSETS
+
+################# FRA
+sound = 
+{
+	name = "FRA_Idle_001"
+	file = "FRA/FRA_idle_001.wav"
+}
+
+sound = 
+{
+	name = "FRA_Idle_002"
+	file = "FRA/FRA_idle_002.wav"
+}
+
+sound = 
+{
+	name = "FRA_Idle_003"
+	file = "FRA/FRA_idle_003.wav"
+}
+
+sound = 
+{
+	name = "FRA_Idle_004"
+	file = "FRA/FRA_idle_004.wav"
+}
+
+sound = 
+{
+	name = "FRA_Idle_005"
+	file = "FRA/FRA_idle_005.wav"
+}
+
+sound = 
+{
+	name = "FRA_Idle_006"
+	file = "FRA/FRA_idle_006.wav"
+}
+
+sound = 
+{
+	name = "FRA_Neutral_001"
+	file = "FRA/FRA_neutral_001.wav"
+}
+
+sound = 
+{
+	name = "FRA_Neutral_002"
+	file = "FRA/FRA_neutral_002.wav"
+}
+
+sound = 
+{
+	name = "FRA_Neutral_003"
+	file = "FRA/FRA_neutral_003.wav"
+}
+
+sound = 
+{
+	name = "FRA_Neutral_004"
+	file = "FRA/FRA_neutral_004.wav"
+}
+
+sound = 
+{
+	name = "FRA_Neutral_005"
+	file = "FRA/FRA_neutral_005.wav"
+}
+
+sound = 
+{
+	name = "FRA_Neutral_006"
+	file = "FRA/FRA_neutral_006.wav"
+}
+
+sound = 
+{
+	name = "FRA_Neutral_007"
+	file = "FRA/FRA_neutral_007.wav"
+}
+
+sound = 
+{
+	name = "FRA_Positive_001"
+	file = "FRA/FRA_positive_001.wav"
+}
+
+sound = 
+{
+	name = "FRA_Positive_002"
+	file = "FRA/FRA_positive_002.wav"
+}
+
+sound = 
+{
+	name = "FRA_Positive_003"
+	file = "FRA/FRA_positive_003.wav"
+}
+
+sound = 
+{
+	name = "FRA_Positive_004"
+	file = "FRA/FRA_positive_004.wav"
+}
+
+sound = 
+{
+	name = "FRA_Positive_005"
+	file = "FRA/FRA_positive_005.wav"
+}
+
+sound = 
+{
+	name = "FRA_Positive_006"
+	file = "FRA/FRA_positive_006.wav"
+}
+
+
+sound = 
+{
+	name = "FRA_Positive_007"
+	file = "FRA/FRA_positive_007.wav"
+}
+
+sound = 
+{
+	name = "FRA_Retreat_001"
+	file = "FRA/FRA_retreat_001.wav"
+}
+
+sound = 
+{
+	name = "FRA_Retreat_002"
+	file = "FRA/FRA_retreat_002.wav"
+}
+
+sound = 
+{
+	name = "FRA_Retreat_003"
+	file = "FRA/FRA_retreat_003.wav"
+}
+
+sound = 
+{
+	name = "FRA_Retreat_004"
+	file = "FRA/FRA_retreat_004.wav"
+}
+
+sound = 
+{
+	name = "FRA_Retreat_005"
+	file = "FRA/FRA_retreat_005.wav"
+}
+
+sound = 
+{
+	name = "FRA_Retreat_006"
+	file = "FRA/FRA_retreat_006.wav"
+}

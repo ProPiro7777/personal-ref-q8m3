@@ -1,0 +1,937 @@
+oob = "WGN_2022"
+
+capital = 411
+
+set_variable = { wgn_get_money_month_var = 0 }
+
+set_variable = { wgn_get_money_days_var = 31 }
+
+set_research_slots = 0
+
+set_stability = 1
+
+set_war_support = 1
+
+set_convoys = 20
+
+add_manpower = 2000
+
+create_intelligence_agency = yes
+
+set_country_flag = head_of_gov_enabled_flag
+
+#Politics for 2022.1.1
+set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 100
+}
+
+set_global_flag = WGN_Africa_commander_Mazay_flag
+set_country_flag = news_pro_russian_flag
+
+recruit_character = evgeniy_prigozhin
+recruit_character = dmitry_utkin
+activate_advisor = WGN_dmitry_utkin
+recruit_character = alexander_kuznetsov
+recruit_character = anton_elizarov
+recruit_character = boris_nizhevenok
+activate_advisor = WGN_anton_elizarov
+recruit_character = council_commanders_PMC
+recruit_character = pavel_prigozhin
+recruit_character = Andrey_Troshev
+recruit_character = konstantin_pikalov
+recruit_character = WGN_sergei_syrovikin_for_event
+activate_advisor = WGN_evgeniy_prigozhin_civilian
+recruit_character = WGN_sovetnik_1
+activate_advisor = WGN_sovetnik_1_idea_token
+recruit_character = WGN_sovetnik_2
+activate_advisor = WGN_sovetnik_2_idea_token
+recruit_character = WGN_sovetnik_3
+activate_advisor = WGN_sovetnik_3_idea_token
+recruit_character = WGN_sovetnik_4
+activate_advisor = WGN_sovetnik_4_idea_token
+recruit_character = WGN_sovetnik_5
+activate_advisor = WGN_sovetnik_5_idea_token
+
+#Doctrines
+set_grand_doctrine = wgn_legacy
+set_sub_doctrine = wagner_structure
+set_sub_doctrine = wagner_combat_exp
+set_sub_doctrine = active_artillery_use
+set_sub_doctrine = wgn_support_focus
+add_mastery = {
+	amount = 280
+	sub_doctrine = wagner_combat_exp
+}
+
+#equipment variants
+create_equipment_variant_tank_sov_t_55 = yes
+create_equipment_variant_tank_sov_t_55a = yes
+create_equipment_variant_tank_sov_t_62 = yes
+create_equipment_variant_tank_sov_t_62m = yes
+create_equipment_variant_tank_sov_t_62mv = yes
+create_equipment_variant_tank_sov_t_72 = yes
+create_equipment_variant_tank_sov_t_72a = yes
+create_equipment_variant_tank_sov_t_72b_obr_85 = yes
+create_equipment_variant_tank_sov_t_72b1 = yes
+create_equipment_variant_tank_sov_t_72b_obr_89 = yes
+create_equipment_variant_tank_sov_t_72ba = yes
+create_equipment_variant_tank_sov_t_72b3 = yes
+create_equipment_variant_tank_sov_t_72b3m = yes
+create_equipment_variant_tank_sov_t_64 = yes
+create_equipment_variant_tank_sov_t_64a = yes
+create_equipment_variant_tank_sov_t_64b = yes
+create_equipment_variant_tank_sov_t_64bv = yes
+create_equipment_variant_tank_sov_t_80 = yes
+create_equipment_variant_tank_sov_t_80b = yes
+create_equipment_variant_tank_sov_t_80bv = yes
+create_equipment_variant_tank_sov_t_80u = yes
+create_equipment_variant_tank_sov_t_90 = yes
+create_equipment_variant_tank_sov_t_90a = yes
+create_equipment_variant_tank_sov_t_90m_proryv_3 = yes
+create_equipment_variant_tank_sov_obekt_640_chyornyy_oryol = yes
+create_equipment_variant_tank_sov_t_14_armata = yes
+create_equipment_variant_imv_vystrel_s_kord = yes
+create_equipment_variant_imv_vystrel = yes
+create_equipment_variant_imv_vystrel_s_30mm_avtopushkoy = yes
+create_equipment_variant_imv_tigr = yes
+create_equipment_variant_imv_tigr_s_modulem_arbalet = yes
+create_equipment_variant_imv_tayfun_4kh4 = yes
+create_equipment_variant_imv_tayfun_4kh4_s_modulem_arbalet = yes
+create_equipment_variant_imv_light_ural_4350 = yes
+create_equipment_variant_imv_light_ural_5350 = yes
+create_equipment_variant_imv_light_ural_6350 = yes
+create_equipment_variant_imv_ural_4320 = yes
+create_equipment_variant_sp_artillery_2s23_nona_svk = yes
+create_equipment_variant_sp_artillery_2s1_gvozdika = yes
+create_equipment_variant_sp_artillery_2s34_khosta = yes
+create_equipment_variant_sp_artillery_2s3_akatsiya = yes
+create_equipment_variant_sp_artillery_2s40_floks = yes
+create_equipment_variant_sp_artillery_2s19_msta_s = yes
+create_equipment_variant_sp_artillery_2s5_giatsint_s = yes
+create_equipment_variant_sp_heavy_artillery_2s7_pion = yes
+create_equipment_variant_sp_heavy_artillery_2s7m_malka = yes
+create_equipment_variant_sp_heavy_artillery_2s4_tyulpan = yes
+create_equipment_variant_sp_artillery_2s35_koalitsiya_sv = yes
+create_equipment_variant_sp_mlrs_bm_21_grad = yes
+create_equipment_variant_sp_mlrs_9k51m_tornado_g = yes
+create_equipment_variant_sp_mlrs_9k57_uragan = yes
+create_equipment_variant_sp_mlrs_9k512_uragan_1m = yes
+create_equipment_variant_sp_mlrs_9k58_smerch = yes
+create_equipment_variant_sp_mlrs_9k515_tornado_s = yes
+create_equipment_variant_sp_atgm_9p149_shturm_s = yes
+create_equipment_variant_sp_atgm_9p157_khrizantema_s = yes
+create_equipment_variant_sp_atgm_9p163_3_kornet_d = yes
+create_equipment_variant_sp_atgm_9p162_kornet_t = yes
+create_equipment_variant_sp_tos_tos_1a_solntsepyok = yes
+create_equipment_variant_sp_aa_pantsir_s1 = yes
+create_equipment_variant_sp_aa_strela_10 = yes
+create_equipment_variant_imv_chekan = yes
+create_equipment_variant_sp_aa_tor_m1 = yes
+create_equipment_variant_sp_aa_osa = yes
+create_equipment_variant_sp_aa_tunguska = yes
+create_equipment_variant_sp_aa_pantsir_sm = yes
+create_equipment_variant_sp_aa_buk_m1 = yes
+create_equipment_variant_sp_aa_buk_m2 = yes
+create_equipment_variant_arv_brem_1 = yes
+create_equipment_variant_arv_brem_2 = yes
+create_equipment_variant_light_tank_sov_2s25_sprut_sd = yes
+create_equipment_variant_light_tank_sov_2s25m_sprut_sdm1 = yes
+create_equipment_variant_apc_btr_50 = yes
+create_equipment_variant_apc_btr_50p = yes
+create_equipment_variant_apc_btr_60 = yes
+create_equipment_variant_apc_btr_60p = yes
+create_equipment_variant_apc_btr_60pa = yes
+create_equipment_variant_apc_btr_60pb = yes
+create_equipment_variant_apc_btr_70 = yes
+create_equipment_variant_apc_btr_70di = yes
+create_equipment_variant_apc_btr_70v = yes
+create_equipment_variant_apc_btr_80 = yes
+create_equipment_variant_apc_btr_80a = yes
+create_equipment_variant_apc_btr_82a = yes
+create_equipment_variant_apc_btr_82am = yes
+create_equipment_variant_apc_btr_87 = yes
+create_equipment_variant_apc_btr_22 = yes
+create_equipment_variant_apc_btr_90_rostok = yes
+create_equipment_variant_apc_btr_90_krymsk = yes
+create_equipment_variant_apc_btr_90m = yes
+create_equipment_variant_apc_btr_k_16_bumerang = yes
+create_equipment_variant_apc_bmp_k_17 = yes
+create_equipment_variant_brdm_brdm_1 = yes
+create_equipment_variant_brdm_brdm_2 = yes
+create_equipment_variant_brdm_brdm_2u = yes
+create_equipment_variant_brdm_brdm_2ms = yes
+create_equipment_variant_apc_mt_lb = yes
+create_equipment_variant_apc_mt_lbvm = yes
+create_equipment_variant_apc_mt_lbvm_6mb = yes
+create_equipment_variant_ifv_sov_bmp_1 = yes
+create_equipment_variant_ifv_sov_bmp_1p = yes
+create_equipment_variant_ifv_sov_bmp_1d = yes
+create_equipment_variant_ifv_sov_bmp_1am_basurmanin = yes
+create_equipment_variant_ifv_sov_bmp_2 = yes
+create_equipment_variant_ifv_sov_bmp_2d = yes
+create_equipment_variant_ifv_sov_bmp_2m_berezhok = yes
+create_equipment_variant_ifv_sov_bmp_2_plamya = yes
+create_equipment_variant_ifv_sov_bmp_3 = yes
+create_equipment_variant_ifv_sov_bmp_3m = yes
+create_equipment_variant_ifv_sov_bmp_3_derivatsiya = yes
+create_equipment_variant_ifv_sov_bmp_3_dragun = yes
+create_equipment_variant_ifv_sov_bmp_3k_rys = yes
+create_equipment_variant_ifv_sov_kurganets_25 = yes
+create_equipment_variant_afv_sov_bmd_1 = yes
+create_equipment_variant_afv_sov_bmd_1p = yes
+create_equipment_variant_afv_sov_bmd_2 = yes
+create_equipment_variant_afv_sov_bmd_2m = yes
+create_equipment_variant_afv_sov_bmd_3 = yes
+create_equipment_variant_afv_sov_bmd_4 = yes
+create_equipment_variant_afv_sov_bmd_4m = yes
+create_equipment_variant_afv_sov_bmd_4m_sinitsa = yes
+create_equipment_variant_imv_light_volga = yes
+create_equipment_variant_imv_light_uaz_452 = yes
+create_equipment_variant_imv_light_uaz_469 = yes
+create_equipment_variant_imv_light_uaz_3163_patriot = yes
+create_equipment_variant_sp_aa_buk_m3 = yes
+create_equipment_variant_bpmt_bmpt_terminator = yes
+create_equipment_variant_bpmt_bmpt_72_terminator_2 = yes
+create_equipment_variant_apc_btr_d = yes
+
+#NEW GENERATION EQUIPMENT VARIANT
+
+set_technology = {
+	SOV_2022 = 1
+	computers_0 = 1
+	computers_1 = 1
+	computers_2 = 1
+	computers_3 = 1
+	internet_0 = 1
+	internet_1 = 1
+	internet_2 = 1
+	internet_3 = 1
+	internet_4 = 1
+	development_of_ai_0 = 1
+	development_of_ai_1 = 1
+	development_of_ai_2 = 1
+	development_of_ai_3 = 1
+	radar_0 = 1
+	radar_1 = 1
+	radar_2 = 1
+	radar_3 = 1
+	radar_4 = 1
+	radar_5 = 1
+	radar_6 = 1
+	printers_0 = 1
+	printers_1 = 1
+	printers_2 = 1
+	printers_3 = 1
+	robotization_0 = 1
+	robotization_1 = 1
+	robotization_2 = 1
+	working_equipment_0 = 1
+	working_equipment_1 = 1
+	working_equipment_2 = 1
+	working_equipment_3 = 1
+	working_equipment_4 = 1
+	building_0 = 1
+	building_1 = 1
+	building_2 = 1
+	building_3 = 1
+	mining_0 = 1
+	mining_1 = 1
+	mining_2 = 1
+	mining_3 = 1
+	mining_4 = 1
+	road_construction_0 = 1
+	road_construction_1 = 1
+	road_construction_2 = 1
+	electronics_manufacturing_0 = 1
+	electronics_manufacturing_1 = 1
+	oil_refining_0 = 1
+	oil_refining_1 = 1
+	oil_refining_2 = 1
+	oil_refining_3 = 1
+	oil_refining_4 = 1
+	urbanization_0 = 1
+	urbanization_1 = 1
+	urbanization_2 = 1
+	infantry_weapons_sov_ww2 = 1
+	infantry_weapons_akm = 1
+	infantry_weapons_ak74 = 1
+	infantry_weapons_ak74m = 1
+	infantry_weapons_ak12 = 1
+	infantry_improvements_1 = 1
+	infantry_improvements_0 = 1
+	infantry_improvements_2 = 1
+	infantry_improvements_3 = 1
+	infantry_uniform_kzmp_beryozka = 1
+	infantry_uniform_vsr84_butan = 1
+	infantry_uniform_vsr93_barviha = 1
+	infantry_uniform_emr_cifra = 1
+	infantry_uniform_vkpo = 1
+	infantry_body_armor_6b1 = 1
+	infantry_body_armor_6b3 = 1
+	infantry_body_armor_6b5 = 1
+	infantry_body_armor_6b12 = 1
+	infantry_body_armor_improvement_0 = 1
+	infantry_body_armor_6b23 = 1
+	infantry_body_armor_ratnik = 1
+	infantry_body_armor_ratnik_2 = 1
+	infantry_grenade_launcher_rpg7 = 1
+	infantry_grenade_launcher_rpg18_muha = 1
+	infantry_grenade_launcher_rpg22_netto = 1
+	infantry_grenade_launcher_rpg26_aglen = 1
+	infantry_grenade_launcher_rpg26_shmel = 1
+	infantry_uniform_vsr98_flora = 1
+	infantry_grenade_launcher_rpg27_tavolga = 1
+	infantry_grenade_launcher_rpg28_klukva = 1
+	infantry_grenade_launcher_rpg30_kruk = 1
+	infantry_grenade_launcher_rpg30_shmel2 = 1
+	infantry_mortar_sov_ww2 = 1
+	infantry_mortar_2b9_vasilyok = 1
+	infantry_mortar_2b11 = 1
+	infantry_mortar_2b14_podnos = 1
+	infantry_mortar_2b24_podnos = 1
+	infantry_mortar_2b25_gall = 1
+	infantry_atgm_9k11_malutka = 1
+	infantry_atgm_9k111_fagot = 1
+	infantry_atgm_9k111_1_konkurs = 1
+	infantry_atgm_9k115_metis = 1
+	infantry_atgm_9k135_kornet = 1
+	infantry_aa_9k32_strela_2 = 1
+	infantry_aa_9k34_strela_3 = 1
+	infantry_aa_9k38_igla = 1
+	infantry_aa_9k338_igla_s = 1
+	infantry_aa_9k333_verba = 1
+	motorized_infantry = 1
+
+	tech_support = 1
+	tech_engineering = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	communication_equipment = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_recon = 1
+	tech_recon2 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_ARV = 1
+	tech_AMV = 1
+	tank_sov_t55 = 1
+	arv_tank_sov_t55 = 1
+	sp_artillery_tank_sov_t55 = 1
+	tank_sov_t62 = 1
+	sp_artillery_tank_sov_t62 = 1
+	
+	tank_sov_t64 = 1
+	sp_artillery_tank_sov_t64 = 1
+	
+	tank_sov_t72 = 1
+	arv_tank_sov_t72 = 1
+	sp_artillery_tank_sov_t72 = 1
+	sp_heavy_artillery_mrv_tracked_2 = 1
+	
+	sp_mlrs_tank_sov_t72 = 1
+	sp_tos_tank_sov_t72 = 1
+	tank_sov_t80 = 1
+	sp_artillery_tank_sov_t80 = 1
+	
+	sp_mlrs_tank_sov_t80 = 1
+	tank_rus_t90 = 1
+	sp_artillery_tank_rus_t90 = 1
+	ifv_sov_bmp1 = 1
+	light_tank_ifv_sov_bmp1 = 1
+	arv_ifv_sov_bmp1 = 1
+	sp_aa_ifv_sov_bmp1 = 1
+	sp_atgm_ifv_sov_bmp1 = 1
+	sp_artillery_ifv_sov_bmp1 = 1
+	sp_mlrs_ifv_sov_bmp1 = 1
+	ifv_sov_bmp2 = 1
+	light_tank_ifv_sov_bmp2 = 1
+	ifv_sov_bmp3 = 1
+	ifv_rus_kurganetz25 = 1
+	afv_sov_bmd1 = 1
+	light_tank_afv_sov_bmd1 = 1
+	infantry_improvements_0 = 1
+	arv_afv_sov_bmd1 = 1
+	afv_sov_bmd2 = 1
+	light_tank_afv_sov_bmd2 = 1
+	arv_afv_sov_bmd2 = 1
+	afv_sov_bmd3 = 1
+	light_tank_afv_sov_bmd3 = 1
+	afv_rus_bmd4 = 1
+	apc_sov_btr50 = 1
+	light_tank_apc_sov_btr50 = 1
+	apc_sov_btr60 = 1
+	apc_sov_btr70 = 1
+	apc_sov_btr80 = 1
+	light_tank_apc_sov_btr80 = 1
+	sp_artillery_apc_sov_btr80 = 1
+	apc_rus_btr16 = 1
+	apc_rus_btr22 = 1
+	apc_rus_btr87 = 1
+	apc_rus_btr90 = 1
+	apc_sov_mtlb = 1
+	sp_aa_apc_sov_mtlb = 1
+	sp_atgm_apc_sov_mtlb = 1
+	sp_artillery_apc_sov_mtlb = 1
+	sp_mlrs_apc_sov_mtlb = 1
+	sov_brdm1 = 1
+
+	sov_brdm2 = 1
+
+	transport1 = 1
+	transport2 = 1
+	transport3 = 1
+	transport4 = 1
+	CAS1 = 1
+	CAS2 = 1
+	CAS3 = 1
+	CASt1 = 1
+	CASt2 = 1
+	CASt3 = 1
+	CASt4 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1 
+	strategic_bomber3 = 1
+	strategic_bomber4 = 1
+	strategic_bomber5 = 1
+	strategic_bomber6 = 1
+
+	CAS0 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	fighter4 = 1
+	fighter5 = 1
+	fighter6 = 1
+	fighter7 = 1
+	fighter8 = 1
+	fighter9 = 1
+	fightert1 = 1
+	fightert2 = 1
+	hel_strike1 = 1
+	hel_strike2 = 1
+	hel_strike3 = 1
+	hel_strike4 = 1
+	hel_strike5 = 1
+	hel_strike6 = 1
+	hel_strike7 = 1
+	hel_transport1 = 1
+	hel_transport2 = 1
+	hel_transport3 = 1
+	uav_strike1 = 1
+	uav_strike2 = 1
+	uav_recon1 = 1
+	uav_recon2 = 1
+	imv_medium_0 = 1
+	imv_light_1 = 1
+	imv_light_2 = 1
+	sp_aa_imv_light_2 = 1
+	sp_atgm_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_3 = 1
+	sp_aa_imv_light_2 = 1
+	sp_atgm_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_0 = 1
+	imv_light_4 = 1
+	sp_aa_imv_light_4 = 1
+	sp_artillery_imv_light_4 = 1
+	sp_mlrs_imv_light_4 = 1
+	imv_medium_1 = 1
+
+	imv_medium_2 = 1
+
+	imv_medium_3 = 1
+
+	imv_medium_4 = 1
+
+	imv_heavy_0 = 1
+	sp_mlrs_imv_heavy_0 = 1
+	imv_heavy_1 = 1
+	sp_mlrs_imv_heavy_1 = 1
+	imv_heavy_2 = 1
+	imv_heavy_3 = 1
+	sp_aa_imv_heavy_3 = 1
+	imv_heavy_4 = 1
+	mrv_wheeled_0 = 1
+	sp_aa_mrv_wheeled_0 = 1
+	mrv_wheeled_1 = 1
+	mrv_wheeled_2 = 1
+	mrv_wheeled_3 = 1
+
+	mrv_wheeled_4 = 1
+	
+	mrv_tracked_0 = 1
+
+	mrv_tracked_1 = 1
+
+	mrv_tracked_2 = 1
+
+	mrv_tracked_3 = 1
+
+	mrv_tracked_4 = 1
+	rus_artillery_d1 = 1
+	rus_artillery_d74 = 1
+	rus_artillery_d20 = 1
+	rus_artillery_m46 = 1
+	rus_artillery_d30 = 1
+	rus_artillery_2a36 = 1
+	rus_artillery_2a65 = 1
+	rus_artillery_2a88 = 1
+
+}
+
+add_ideas = { war_economy militarized_police total_centralization limited_conscription security_bloated huge_military_budget military_object closed_economy WGN_brotherhood WGN_PMC borders_closed society_very_high WGN_african_resources WGN_Codex PMC_council PMC_mediaholding_patriot PMC_organized_military_structure PMC_organized_borders_closed PMC_security_bloated PMC_ISIS_hunter WGN_medical_extended WGN_educational_extended WGN_social_extended WGN_rescue_extended WGN_infrastructure_extended victory_or_death_spirit }
+add_dynamic_modifier = { modifier = WGN_army_modifier }
+
+set_variable = { WGN_map_africa_countries_count = 9 }
+set_variable = { WGN_map_africa_economic_countries_count = 5 }
+
+# 2022.04.15 Start Date politics
+2022.04.01 = {
+	add_to_war = {
+		targeted_alliance = RUS
+		enemy = UKR
+		hostility_reason = asked_to_join
+	}
+	set_oob = "WGN_2022_04_15"
+	
+	#add_political_power = 50
+	army_experience = 20
+	add_command_power = 48 # Итого 100
+	
+	remove_ideas = { 
+		WGN_african_resources
+	}
+	
+	add_ideas = {
+		WGN_african_resources_2
+	}
+	
+	unlock_national_focus = WGN_utkin_orchestra
+	unlock_national_focus = WGN_buyweaponsafrica
+	unlock_national_focus = WGN_recruitment
+	unlock_national_focus = WGN_expandcooperation
+	unlock_national_focus = WGN_newcontracts
+	unlock_national_focus = WGN_contractlogistics
+	unlock_national_focus = WGN_training
+	unlock_national_focus = WGN_newcontingent
+	unlock_national_focus = WGN_africanoperations
+	unlock_national_focus = WGN_expansionminingcapacities
+	unlock_national_focus = WGN_contractwithmotherland
+	unlock_national_focus = WGN_suppliesfrommdrf
+	unlock_national_focus = WGN_calltowar
+	unlock_national_focus = WGN_convenecouncil
+	unlock_national_focus = WGN_setprecisegoals
+	unlock_national_focus = WGN_redeployment
+	unlock_national_focus = WGN_shapinglogistics
+	unlock_national_focus = WGN_modrfcooperation
+	
+	#Динамические и временные идеи
+	add_to_variable = { var = WGN_political_power_factor value = 0.1 }
+	add_to_variable = {	var = WGN_supply_consumption_factor value = 0.15	}
+	
+	#Персонажи
+	set_portraits = {
+		character = evgeniy_prigozhin
+		civilian = {
+			large = "GFX_evgeniy_prigozhin_after_war"
+		}
+		army = {
+			large = "GFX_evgeniy_prigozhin_after_war"
+		}
+	}
+	
+	# Флажки
+	
+	set_country_flag = WGN_operations_in_timbykty_cf
+	
+	# Остальное
+	
+	#Бюджет Вагнера (+доход и +расход)
+	add_to_variable = { WGN_kempering_plus = 3.300 } # Такое число взято из: add_to_variable = { WGN_kempering_plus = 2.23 } add_to_variable = { WGN_kempering_plus = 1.059 } add_to_variable = { WGN_realty_plus = 0.11 }
+	add_to_variable = { WGN_kempering_minus = 2.685 } # Такое число взято из: add_to_variable = { WGN_kempering_minus = 1.85 } add_to_variable = { WGN_kempering_minus = 0.8 } add_to_variable = { WGN_realty_minus = 0.035 }
+	WGN_budget_raschet_se = yes
+	
+	add_to_variable = { WGN_pressure_on_smolniy_var = 1 }
+	
+	add_to_variable = { WGN_budget_var = 0.25 } # Чтобы циферки отличались от 2022.01.01 :)
+
+	add_to_variable = {	var = map_africa_interpreter_RUS^global.map_africa_sahel_region_index value = 2 }
+	add_to_variable = {	var = map_africa_interpreter_RUS^global.map_africa_center_region_index value = 0.5 }
+	
+	#subtract_from_variable = { var = WGN_budget_var value = 0.35 }
+	#subtract_from_variable = { var = WGN_budget_var value = 0.1 }
+	
+	add_intel = { target = UKR civilian_intel = 5 army_intel = 14 airforce_intel = 5 }
+	upgrade_intelligence_agency = upgrade_army_department
+	upgrade_intelligence_agency = upgrade_form_department
+	
+	add_tech_bonus = {
+		bonus = 5
+		uses = 1
+		technology = tech_fpv 
+	}
+	add_tech_bonus = {
+		bonus = 0.50
+		uses = 1
+		technology = infantry_improvements_4
+	}
+	
+	# Снаряжение
+	add_equipment_to_stockpile = {
+		type = train_equipment
+		amount = 10
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_ak12_equipment
+		amount = 3000
+		producer = RUS
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_ak74_equipment
+		amount = 1000
+		producer = RUS
+	}
+	add_equipment_to_stockpile = {
+		type = mortar_2b24_podnos_equipment
+		amount = 250
+		producer = RUS
+	}
+	add_equipment_to_stockpile = {
+		type = body_armor_6b1_equipment
+		amount = 1000
+		producer = RUS
+	}
+	add_equipment_to_stockpile = {
+		type = engineering_equipment
+		amount = 100
+		producer = RUS
+	}
+	add_equipment_to_stockpile = {
+		type = arv_equipment
+		amount = 100
+		producer = RUS
+	}
+	add_equipment_to_stockpile = {
+		type = amv_equipment
+		amount = 100
+		producer = RUS
+	}
+	add_equipment_to_stockpile = {
+		type = body_armor_6b1_equipment
+		amount = 200
+		producer = RUS
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 250
+		producer = RUS
+	}
+}
+
+#WGN_information_war_BOP_modifier 
+set_variable = { var = WGN_BOP_power_balance_weekly value = 0 }
+
+#Бизнес империя Пригожина
+set_variable = { WGN_budget_var = 13.8 }
+set_variable = { WGN_salaries_one_man_var = 0.3 }
+set_variable = { WGN_RF_payments_one_man_var = 0.35 }
+set_variable = { WGN_content_one_man_var = 0.06}
+set_variable = { WGN_content_ten_polit_technolodis_var = 0.013}
+set_variable = { WGN_content_ten_instructors_var = 0.017}
+set_variable = { WGN_kempering_plus = 5.651 }
+set_variable = { WGN_restorans_plus = 0.052 }
+set_variable = { WGN_realty_plus = 0.203 }
+set_variable = { WGN_media_plus = 0.091 }
+set_variable = { WGN_kempering_minus = 5.05 }
+set_variable = { WGN_restorans_minus = 0.038 }
+set_variable = { WGN_realty_minus = 0.142 }
+set_variable = { WGN_media_minus = 0.112 }
+set_variable = { WGN_adm_minus = 0.05 }
+
+set_variable = { WGN_debts_var = 2.612 }
+set_variable = { WGN_debts_plus_var = 0.44 }
+#Африканские активы Конкорда
+set_variable = { WGN_african_actives_CAR_var = 0.228 }
+set_variable = { WGN_african_actives_Sudan_var = 0.136 }
+set_variable = { WGN_african_actives_Madagaskar_var = 0.008 }
+set_variable = { WGN_african_actives_Libia_var = 0.407 }
+set_variable = { WGN_african_actives_Syria_var = 0.505 }
+
+set_variable = { WGN_african_actives_minus_CAR_var = 0.084 }
+set_variable = { WGN_african_actives_minus_Sudan_var = 0.057 }
+set_variable = { WGN_african_actives_minus_Madagaskar_var = 0.002 }
+set_variable = { WGN_african_actives_minus_Libia_var = 0.142 }
+set_variable = { WGN_african_actives_minus_Syria_var = 0.227 }
+#WGN_army_modifier
+set_variable = { WGN_max_planning = 0.20 }
+set_variable = { WGN_planning_speed = 0.075 }
+set_variable = { WGN_war_support_factor = 1 }
+set_variable = { WGN_training_time_factor = -0.15 }
+set_variable = { WGN_acclimatization_hot_climate_gain_factor = 0.2 }
+set_variable = { WGN_weekly_manpower = 25 }
+set_variable = { WGN_conscription_factor = -1 }
+set_variable = { WGN_political_power_factor = -0.65 }
+set_variable = { WGN_successful_stormings = 0 }
+set_variable = { WGN_failed_stormings = 0 }
+
+#WGN_shell_hunger_modifier
+set_variable = { WGN_hunger_weekly_manpower = -50 }
+set_variable = { WGN_hunger_supply_consumption_factor = 0.25 }
+set_variable = { WGN_hunger_command_power_gain_mult = -0.15 }
+set_variable = { WGN_hunger_army_org_factor = -0.1 }
+set_variable = { WGN_hunger_experience_loss_factor = 0.25 }
+set_variable = { WGN_hunger_political_power_factor = -0.15 }
+set_variable = { WGN_hunger_org_loss_when_moving = 0.1 }
+set_variable = { WGN_shell_hunger_modifier_army_attack_factor = -0.075 }
+set_variable = { WGN_shell_hunger_modifier_breakthrough_factor = -0.15 }
+
+add_equipment_to_stockpile = {
+    type = tank_sov_t72_equipment
+    variant_name = "Т-72"
+    amount = 20
+    producer = RUS
+}
+add_equipment_to_stockpile = {
+    type = imv_heavy_1_equipment
+    variant_name = "\"Выстрел\" с 30мм автопушкой"
+    amount = 200
+    producer = RUS
+}
+add_equipment_to_stockpile = {
+    type = imv_light_3_equipment
+    variant_name = "Урал-6350"
+    amount = 500
+    producer = RUS
+}
+
+add_equipment_to_stockpile = {
+    type = sp_artillery_apc_sov_mtlb_equipment
+    variant_name = "2С1 Гвоздика"
+    amount = 50
+    producer = RUS
+}
+add_equipment_to_stockpile = {
+    type = sp_artillery_mrv_tracked_2_equipment
+    variant_name = "2С3 Акация"
+    amount = 50
+    producer = RUS
+}
+add_equipment_to_stockpile = {
+    type = sp_artillery_tank_sov_t72_equipment
+    variant_name = "2С19 Мста-С"
+    amount = 50
+    producer = RUS
+}
+add_equipment_to_stockpile = {
+    type = sp_heavy_artillery_mrv_tracked_2_equipment
+    variant_name = "2С7 Пион"
+    amount = 50
+    producer = RUS
+}
+
+add_equipment_to_stockpile = {
+    type = sp_mlrs_imv_heavy_0_equipment
+    variant_name = "БМ-21 Град"
+    amount = 150
+    producer = RUS
+}
+add_equipment_to_stockpile = {
+    type = sp_mlrs_imv_heavy_0_equipment
+    variant_name = "9К51М Торнадо-Г"
+    amount = 150
+    producer = RUS
+}
+
+add_equipment_to_stockpile = {
+    type = arv_tank_sov_t72_equipment
+    variant_name = "БРЭМ-1"
+    amount = 5
+    producer = RUS
+}
+add_equipment_to_stockpile = {
+    type = arv_ifv_sov_bmp1_equipment
+    variant_name = "БРЭМ-2"
+    amount = 5
+    producer = RUS
+}
+
+add_equipment_to_stockpile = {
+    type = apc_sov_btr80_equipment
+    variant_name = "БТР-80"
+    amount = 30
+    producer = RUS
+}
+
+add_equipment_to_stockpile = {
+    type = ifv_sov_bmp2_equipment
+    variant_name = "БМП-2"
+    amount = 40
+    producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_akm_equipment
+	amount = 600
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = infantry_ak74_equipment
+	amount = 1500
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = infantry_ak74m_equipment
+	amount = 1000
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = body_armor_6b1_equipment
+	amount = 1600
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = body_armor_6b3_equipment
+	amount = 800
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = body_armor_6b5_equipment
+	amount = 300
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = sov_brdm2_equipment
+	variant_name = "БРДМ-2МС" 
+	amount = 50
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k135_kornet_equipment
+	amount = 140
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k32_strela_2_equipment
+	amount = 100
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = aa_9k38_igla_equipment
+	amount = 100
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = aa_9k338_igla_s_equipment
+	amount = 300
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = mortar_2b24_podnos_equipment
+	amount = 60
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_d30_equipment
+	amount = 200
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = sov_artillery_2a36_equipment
+	amount = 40
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = sov_artillery_2a65_equipment
+	amount = 40
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg7_equipment
+	amount = 100
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg18_muha_equipment
+	amount = 400
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg26_aglen_equipment
+	amount = 400
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = uniform_vsr93_barviha_equipment
+	amount = 5000
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = engineering_equipment
+	amount = 100
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = arv_equipment
+	amount = 100
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = amv_equipment
+	amount = 100
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = imv_light_1_equipment
+	variant_name = "Урал-4350"
+	producer = RUS
+	amount = 50
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1	
+	amount = 250
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1		
+	amount = 1500
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_tracked_3_equipment
+	variant_name = "Бук-М3"
+	amount = 35 
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_imv_heavy_3_equipment
+	variant_name = "\"Панцирь-СМ\""
+	amount = 10
+	producer = RUS
+}
+
+add_equipment_to_stockpile = {
+	type = imv_heavy_0_equipment
+	variant_name = "\"Чекан\""
+	amount = 70
+	producer = WGN
+}

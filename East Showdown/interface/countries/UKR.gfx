@@ -1,0 +1,15 @@
+#Goals
+spriteTypes = {
+	spriteType = {
+		name = "debuges"
+		texturefile = "gfx/interface/goals/debug.dds"
+	}
+
+	spriteType = {
+		name = "UKR_budanov_portrait"
+		texturefile = "gfx/leaders/UKR/UKR_kyrylo_budanov.png"
+	}
+}
+#Decisions
+
+#Ideas

@@ -1,0 +1,27 @@
+state = { 
+	id = 989 
+	name = "STATE_989" 
+	manpower = 26723 
+	
+	state_category = rural 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 160 5 }
+		victory_points = { 3838 5 }
+		victory_points = { 6810 2 }
+		victory_points = { 8739 2 }
+		victory_points = { 9497 3 }
+		victory_points = { 11106 3 }
+		victory_points = { 14652 2 }
+		victory_points = { 18793 10 }
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 3 
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 160 1779 2769 3838 4921 5333 5930 6314 6754 6764 6810 7139 8216 8470 8697 8739 8942 9187 9497 10646 10816 11106 11185 14652 14995 15019 15063 15146 15210 15708 15859 16510 17092 18789 18790 18792 18793 18794 }
+}

@@ -1,0 +1,33 @@
+FKR = {
+	army = {
+		male = {
+			"GFX_Portrait_Future_Korea_Generic_Male_land_1"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_2"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_3"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_4"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_5"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_6"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_7"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_8"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_9"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_10"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_11"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_12"
+			"GFX_Portrait_Future_Korea_Generic_Male_land_13"
+
+		}
+		female = {
+			
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Future_Korea_Generic_Male_navy_1"
+			"GFX_Portrait_Future_Korea_Generic_Male_navy_2"
+			"GFX_Portrait_Future_Korea_Generic_Male_navy_3"
+			"GFX_Portrait_Future_Korea_Generic_Male_navy_4"
+			"GFX_Portrait_Future_Korea_Generic_Male_navy_5"
+		}
+	}
+}

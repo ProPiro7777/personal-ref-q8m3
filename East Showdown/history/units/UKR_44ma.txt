@@ -1,0 +1,43 @@
+instant_effect = {
+	ensure_unit_template_UKR_Artileriyskiy_divizion = yes
+}
+
+units = {
+	division = {
+		name = "1-y haubychnyy batal'yon 44-yi okremoyi artyleriyskoyi bryhady"
+		location = 4496
+		officer = {
+			name = "Sergey Baranov"
+			portraits = {
+		        army = {
+				    large = GFX_UKR_Sergey_Baranov
+				    small = GFX_UKR_Sergey_Baranov_small
+			    }
+		    }
+		}
+		division_template = "Samokhidno-artileriyskiy batalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2-y okremyy artyleriyskyy batal'yon 44-yi okremoyi artyleriyskoyi bryhady"
+		location = 4496
+		division_template = "Samokhidno-artileriyskiy batalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3-y okremyy artyleriyskyy batal'yon 44-yi okremoyi artyleriyskoyi bryhady"
+		location = 4496
+		division_template = "Samokhidno-artileriyskiy batalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "142-y okremyy artyleriyskyy batal'yon 44-yi okremoyi artyleriyskoyi bryhady"
+		location = 4496
+		division_template = "Samokhidno-artileriyskiy batalion"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+}

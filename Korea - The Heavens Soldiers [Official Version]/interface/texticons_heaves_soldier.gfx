@@ -1,0 +1,29 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_unit_transport_heli_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_transport_heli_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_unit_attack_heli_icon_small"
+		texturefile = "gfx/texticons/unit_unit_attack_heli_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_fkr"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_fkr.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_fkr_2"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_fkr_2.dds"
+		noOfFrames = 2		
+	}
+	
+	
+}

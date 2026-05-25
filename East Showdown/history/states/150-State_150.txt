@@ -1,0 +1,22 @@
+state = { 
+	id = 150 
+	name = "STATE_150" 
+	manpower = 286500 
+	
+	state_category = large_town 
+	buildings_max_level_factor = 0.75 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 2653 4 }
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 2 
+			anti_air_building = 2 
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 1744 2378 2653 3215 4088 5891 6813 7494 7508 7525 9762 10682 10852 11420 12290 15556 15636 }
+}

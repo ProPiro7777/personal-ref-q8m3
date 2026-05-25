@@ -1,0 +1,20 @@
+state = { 
+	id = 152 
+	name = "STATE_152" 
+	manpower = 6361 
+	
+	state_category = border_zone 
+	history = { 
+		owner = RUS 
+		
+		victory_points = { 10964 1 }
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 3 
+		}
+		
+		add_core_of = RUS 
+	}
+	provinces = { 10454 10964 16159 16197 }
+}

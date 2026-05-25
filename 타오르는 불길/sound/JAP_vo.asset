@@ -1,0 +1,309 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	JAP_infantry_idle
+	JAP_infantry_neutral_combat
+	JAP_infantry_positive_combat
+	JAP_infantry_move_out
+	JAP_infantry_retreat
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+########## JAP
+
+soundeffect = 
+{
+    name = "JAP_infantry_idle"
+    sounds = {
+	sound = JAP_idle_001
+	sound = JAP_idle_002
+	sound = JAP_idle_003
+    }
+	max_audible = 3
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "JAP_infantry_neutral_combat"
+    sounds = {
+        sound = JAP_Neutral_001
+		sound = JAP_Neutral_002
+        sound = JAP_Neutral_003
+        sound = JAP_Neutral_004
+        sound = JAP_Neutral_005
+		sound = JAP_Neutral_006
+        sound = JAP_Neutral_007
+        sound = JAP_Neutral_008
+		sound = JAP_Neutral_009
+        sound = JAP_Neutral_010
+        sound = JAP_Neutral_011
+    }
+	max_audible = 11
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "JAP_infantry_positive_combat"
+    sounds = {
+        sound = JAP_Positive_001
+        sound = JAP_Positive_002
+        sound = JAP_Positive_003
+        sound = JAP_Positive_004
+        sound = JAP_Positive_005
+    }
+	max_audible = 5
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "JAP_infantry_move_out"
+    sounds = {
+        sound = JAP_Moving_001
+		sound = JAP_Moving_002
+		sound = JAP_Moving_003
+		sound = JAP_Moving_004
+		sound = JAP_Moving_005
+		sound = JAP_Moving_006
+    }
+	max_audible = 6
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "JAP_infantry_retreat"
+    sounds = {
+        sound = JAP_Retreat_001
+        sound = JAP_Retreat_002
+        sound = JAP_Retreat_003
+        sound = JAP_Retreat_004
+        sound = JAP_Retreat_005
+        sound = JAP_Retreat_006
+        sound = JAP_Retreat_007
+    }
+	max_audible = 7
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+############## AUDIO ASSETS
+
+################# JAP
+
+sound = 
+{
+	name = "JAP_idle_001"
+	file = "JAP/JAP_idle_001.wav"
+}
+
+sound = 
+{
+	name = "JAP_idle_002"
+	file = "JAP/JAP_idle_002.wav"
+}
+
+sound = 
+{
+	name = "JAP_idle_003"
+	file = "JAP/JAP_idle_003.wav"
+}
+
+
+sound = 
+{
+	name = "JAP_Neutral_001"
+	file = "JAP/JAP_neutral_001.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_002"
+	file = "JAP/JAP_neutral_002.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_003"
+	file = "JAP/JAP_neutral_003.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_004"
+	file = "JAP/JAP_neutral_004.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_005"
+	file = "JAP/JAP_neutral_005.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_006"
+	file = "JAP/JAP_neutral_006.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_007"
+	file = "JAP/JAP_neutral_007.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_008"
+	file = "JAP/JAP_neutral_008.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_009"
+	file = "JAP/JAP_neutral_009.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_010"
+	file = "JAP/JAP_neutral_010.wav"
+}
+
+sound = 
+{
+	name = "JAP_Neutral_011"
+	file = "JAP/JAP_neutral_011.wav"
+}
+
+sound = 
+{
+	name = "JAP_Positive_001"
+	file = "JAP/JAP_positive_001.wav"
+}
+
+sound = 
+{
+	name = "JAP_Positive_002"
+	file = "JAP/JAP_positive_002.wav"
+}
+
+sound = 
+{
+	name = "JAP_Positive_003"
+	file = "JAP/JAP_positive_003.wav"
+}
+
+sound = 
+{
+	name = "JAP_Positive_004"
+	file = "JAP/JAP_positive_004.wav"
+}
+
+sound = 
+{
+	name = "JAP_Positive_005"
+	file = "JAP/JAP_positive_005.wav"
+}
+
+sound = 
+{
+	name = "JAP_Moving_001"
+	file = "JAP/JAP_moving_001.wav"
+}
+
+sound = 
+{
+	name = "JAP_Moving_002"
+	file = "JAP/JAP_moving_002.wav"
+}
+
+sound = 
+{
+	name = "JAP_Moving_003"
+	file = "JAP/JAP_moving_003.wav"
+}
+
+sound = 
+{
+	name = "JAP_Moving_004"
+	file = "JAP/JAP_moving_004.wav"
+}
+
+sound = 
+{
+	name = "JAP_Moving_005"
+	file = "JAP/JAP_moving_005.wav"
+}
+
+sound = 
+{
+	name = "JAP_Moving_006"
+	file = "JAP/JAP_moving_006.wav"
+}
+
+
+sound = 
+{
+	name = "JAP_Retreat_001"
+	file = "JAP/JAP_retreat_001.wav"
+}
+
+sound = 
+{
+	name = "JAP_Retreat_002"
+	file = "JAP/JAP_retreat_002.wav"
+}
+
+sound = 
+{
+	name = "JAP_Retreat_003"
+	file = "JAP/JAP_retreat_003.wav"
+}
+
+sound = 
+{
+	name = "JAP_Retreat_004"
+	file = "JAP/JAP_retreat_004.wav"
+}
+
+sound = 
+{
+	name = "JAP_Retreat_005"
+	file = "JAP/JAP_retreat_005.wav"
+}
+
+sound = 
+{
+	name = "JAP_Retreat_006"
+	file = "JAP/JAP_retreat_006.wav"
+}
+
+sound = 
+{
+	name = "JAP_Retreat_007"
+	file = "JAP/JAP_retreat_007.wav"
+}

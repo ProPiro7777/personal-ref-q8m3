@@ -1,0 +1,473 @@
+﻿capital = 1049 #Jeju Island
+
+oob = "FKR_1936"
+
+add_ideas = {
+	#laws
+	tot_economic_mobilisation
+	service_by_requirement
+	closed_economy
+}
+
+set_stability = 0.7
+set_war_support = 0.85
+set_fuel_ratio = 1.0
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	motorised_infantry = 1
+	tech_trucks = 1
+	transport = 1
+	future_infantry_equipment = 1
+	future_mechanized_equipment = 1
+	attack_heli = 1
+	transport_heli = 1
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+		future_light_hull = 1
+		future_cruiser_hull = 1
+		future_carrier_hull = 1
+		future_submarine_hull = 1
+		future_naval_module = 1
+	}
+	set_naval_oob = "FKR_1936_naval"
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		transport = 1
+		future_destroyer_legacy = 1
+		future_light_cruiser_legacy = 1
+		future_carrier_legacy = 1
+		future_submarine_legacy = 1
+	}
+	set_naval_oob = "FKR_1936_naval_legacy"
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		future_modern_tank_chassis = 1
+		future_modern_tank_modules = 1
+		future_modern_tank_weapon = 1
+	}
+}
+
+if = {
+	limit = { not = { has_dlc = "No Step Back" } }
+	set_technology = {
+		transport = 1
+		future_modern_tank = 1
+		future_modern_tank_aa = 1
+		future_modern_tank_artillery = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+		future_jet_fighter_airframe = 1 
+		future_jet_fighter_weapon = 1
+		future_jet_fighter_modules = 1
+	}
+	set_air_oob = "FKR_1936_bba_air"
+}
+
+if = {
+	limit = { not = { has_dlc = "By Blood Alone" } }
+	set_technology = {
+		transport = 1
+		future_jet_multirole = 1
+		future_jet_CAS = 1
+		future_jet_strat_bomber = 1
+	}
+	set_air_oob = "FKR_1936_air"
+}
+
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 70
+	fascism = 15
+	communism = 15
+}
+
+### 지도자 ###
+recruit_character = FKR_eom_hyunsung
+recruit_character = FKR_jeon_jingu
+### 정치 고문 ###	
+recruit_character = FKR_ahn_changho 
+recruit_character = FKR_chang_duksooo 
+recruit_character = FKR_heo_jeong 
+recruit_character = FKR_hong_myunghee 
+recruit_character = FKR_jang_myeon 
+recruit_character = FKR_kim_byungro 
+recruit_character = FKR_kim_gyusik 
+recruit_character = FKR_kim_sungsoo 
+recruit_character = FKR_lee_dongnyeong 
+recruit_character = FKR_lee_siyoung 
+recruit_character = FKR_rhee_syngman 
+recruit_character = FKR_shin_ikhee 
+recruit_character = FKR_song_jinwoo 
+### 이론가 ###
+recruit_character = FKR_chae_byungdeok
+recruit_character = FKR_choi_yongdeok
+recruit_character = FKR_jung_ilkwon
+recruit_character = FKR_jung_keungmo
+recruit_character = FKR_lee_seunggi
+recruit_character = FKR_son_wonil
+recruit_character = FKR_yoon_ilseon
+recruit_character = FKR_hong_saik
+recruit_character = FKR_kim_seokwon
+recruit_character = FKR_lee_eungjoon
+recruit_character = FKR_lee_jongchan
+recruit_character = FKR_song_hoseong
+recruit_character = FKR_won_youngdeok
+recruit_character = FKR_park_okgyu
+recruit_character = FKR_jang_deokchang
+recruit_character = FKR_park_wonseok
+recruit_character = FKR_baek_suhnyeop
+recruit_character = FKR_ji_cheongcheon
+recruit_character = FKR_kim_jeongryeol
+recruit_character = FKR_kim_jongoh
+recruit_character = FKR_lee_beomseok
+recruit_character = FKR_lee_hyungkeun
+recruit_character = FKR_kim_hongil
+recruit_character = FKR_baek_inyeop
+recruit_character = FKR_song_yochan
+recruit_character = FKR_shin_sungmo
+recruit_character = FKR_shin_hyunjun
+recruit_character = FKR_yoo_jaeheung
+recruit_character = FKR_lee_hanlim
+recruit_character = FKR_jang_doyoung
+recruit_character = FKR_chae_myungshin
+recruit_character = FKR_lee_yongwoon
+recruit_character = FKR_ham_myungsoo
+recruit_character = FKR_kim_gyuseop
+recruit_character = FKR_yi_wu
+recruit_character = FKR_yi_geon
+recruit_character = FKR_kim_gu
+recruit_character = FKR_yi_kang
+recruit_character = FKR_yeo_woonhyung
+recruit_character = FKR_yi_un
+### 이스터에그 ###
+recruit_character = FKR_mutaguchi_renya
+recruit_character = FKR_sibas
+recruit_character = FKR_try_re
+recruit_character = FKR_uralsky
+recruit_character = FKR_yong_nom
+recruit_character = FKR_bluecokewine
+
+generate_scientist_character = {
+	portrait_tag_override = FKR
+	gender = male
+	skills = {
+		specialization_land = 2
+	}
+}
+
+generate_scientist_character = {
+	portrait_tag_override = FKR
+	gender = female
+	skills = {
+		specialization_air = 3
+	}
+	traits = { scientist_trait_aircraft_specialist }
+}
+
+generate_scientist_character = {
+	portrait_tag_override = FKR
+	gender = male
+	skills = {
+		specialization_air = 2
+	}
+	traits = { scientist_trait_electronics_specialist }
+}
+
+generate_scientist_character = {
+	portrait_tag_override = FKR
+	gender = female
+	skills = {
+		specialization_air = 2
+	}
+	traits = { scientist_trait_rocketry_specialist }
+}
+
+generate_scientist_character = {
+	portrait_tag_override = FKR
+	gender = male
+	skills = {
+		specialization_air = 1
+	}
+}
+
+generate_scientist_character = {
+	portrait_tag_override = FKR
+	gender = male
+	skills = {
+		specialization_nuclear = 2
+	}
+	traits = { scientist_trait_nuclear_specialist scientist_trait_brilliant_theorist  }
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_air
+	value = 1.25
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_land
+	value = 0.6
+}
+
+add_breakthrough_progress = {
+	specialization = specialization_naval
+	value = 0.3
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "이순신 급"
+		type = ship_hull_light_future_1
+		name_group = FKR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_future_1
+			fixed_ship_anti_air_slot = ship_anti_air_future_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_future_1
+			fixed_ship_radar_slot = ship_radar_future_1
+			fixed_ship_engine_slot = light_ship_engine_future_1
+			fixed_ship_torpedo_slot = ship_torpedo_future_1
+			front_1_custom_slot = ship_missile_launcher_future_1
+			mid_1_custom_slot = ship_light_battery_future_1
+			mid_2_custom_slot = ship_torpedo_future_1
+			rear_1_custom_slot = ship_depth_charge_future_1
+		}
+		obsolete = no
+	}
+
+	create_equipment_variant = {
+		name = "세종대왕 급"
+		type = ship_hull_cruiser_future_1
+		name_group = FKR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_future_1
+			fixed_ship_anti_air_slot = ship_anti_air_future_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_future_1
+			fixed_ship_radar_slot = ship_radar_future_1
+			fixed_ship_engine_slot = cruiser_ship_engine_future_1
+			fixed_ship_secondaries_slot = ship_secondaries_future_1
+			fixed_ship_armor_slot = ship_armor_cruiser_future_1
+			front_1_custom_slot = ship_missile_launcher_future_1
+			mid_1_custom_slot = ship_secondaries_future_1
+			mid_2_custom_slot = ship_torpedo_future_1
+			rear_1_custom_slot = ship_light_battery_future_1
+			rear_2_custom_slot = ship_depth_charge_future_1
+		}
+		obsolete = no
+	}
+
+	create_equipment_variant = {
+		name = "광개토대왕 급"
+		type = ship_hull_carrier_future_1
+		name_group = FKR_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_future_1
+			fixed_ship_radar_slot = ship_radar_future_1
+			fixed_ship_engine_slot = carrier_ship_engine_future_1
+			fixed_ship_secondaries_slot = ship_secondaries_future_1
+			fixed_ship_armor_slot = ship_armor_cruiser_future_1
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+			mid_2_custom_slot = ship_deck_space
+			rear_1_custom_slot = ship_secondaries_future_1
+
+		}
+		obsolete = no
+		icon = "GFX_future_carrier_hull_medium"
+	}
+
+	create_equipment_variant = {
+		name = "안창호 급"
+		type = ship_hull_submarine_future_1
+		name_group = FKR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_future_1 
+			fixed_ship_engine_slot = sub_ship_engine_future_1
+			front_1_custom_slot = ship_torpedo_sub_future_1
+			mid_1_custom_slot = ship_radar_future_1
+			rear_1_custom_slot = ship_torpedo_sub_future_1
+		}
+		obsolete = no
+	}
+}
+
+###땅끄nsb
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "K2 흑표"
+		type = modern_tank_equipment_chassis_future_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = future_tank_cannon_1
+			turret_type_slot = future_tank_modern_tank_turret_1
+			suspension_type_slot = future_tank_in_arm_suspension_1
+			armor_type_slot = future_tank_Composite_Reaction_armor_1
+			engine_type_slot = future_tank_hybrid_engine_1
+			special_type_slot_1 = future_tank_communication_device_1
+			special_type_slot_2 = future_auto_loader_1
+			special_type_slot_3 = future_Active_defense_system_1
+			special_type_slot_4 = future_Fire_Control_System_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 3
+		}
+		icon = "gfx/interface/technologies/FKR_future_modern_tank.dds"
+	}
+	create_equipment_variant = {
+		name = "K-30 비호"
+		type = modern_tank_aa_chassisequipment_chassis_future_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = future_tank_anti_air_cannon_1
+			turret_type_slot = future_tank_modern_tank_turret_1
+			suspension_type_slot = future_tank_in_arm_suspension_1
+			armor_type_slot = future_tank_Composite_Reaction_armor_1
+			engine_type_slot = future_tank_diesel_engine_1
+			special_type_slot_1 = future_tank_communication_device_1
+			special_type_slot_2 = future_Fire_Control_System_1
+			special_type_slot_3 = future_Active_defense_system_1
+			special_type_slot_4 = empty
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 3
+		}
+		icon = "gfx/interface/technologies/FKR_future_modern_tank_aa.dds"
+	}
+	create_equipment_variant = {
+		name = "K9A1 자주포"
+		type = modern_tank_artillery_chassisequipment_chassis_future_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = future_tank_howitzer_1
+			turret_type_slot = future_tank_modern_tank_turret_1
+			suspension_type_slot = future_tank_in_arm_suspension_1
+			armor_type_slot = future_tank_Composite_Reaction_armor_1
+			engine_type_slot = future_tank_diesel_engine_1
+			special_type_slot_1 = future_tank_communication_device_1
+			special_type_slot_2 = future_auto_loader_1
+			special_type_slot_3 = future_Active_defense_system_1
+			special_type_slot_4 = future_Fire_Control_System_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 3
+		}
+		icon = "gfx/interface/technologies/FKR_future_modern_tank_artillery.dds"
+	}
+}
+
+
+###짹짹이bba
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "F-35B 라이트닝 II"
+		type = cv_fighter_airframe_future_1
+		modules = {
+			fixed_main_weapon_slot = future_air_to_air_guided_missilee_1
+			fixed_auxiliary_weapon_slot_1 = future_air_to_air_guided_missilee_1
+			fixed_auxiliary_weapon_slot_2 = future_bomb_bay_1
+			fixed_auxiliary_weapon_slot_3 = empty
+			fixed_auxiliary_weapon_slot_4 = empty
+			engine_type_slot = Future_jet_turbofan_engines_1_1x
+			special_type_slot_1 = future_aesa_radar_1
+			special_type_slot_2 = future_targeting_pods_1
+			special_type_slot_3 = future_missile_approach_warning_1
+			special_type_slot_4 = future_head_mounted_display_1
+			special_type_slot_5 = future_Electronic_Warfare_System_1
+			special_type_slot_6 = future_fighter_communication_device_1
+		}
+		icon = "gfx/interface/technologies/FKR_future_jet_multirole.dds"
+	}
+	create_equipment_variant = {
+		name = "A-10C 선더볼트 II"
+		type = cv_small_plane_cas_airframefighter_airframe_future_1
+		modules = {
+			fixed_main_weapon_slot = future_gatling_cannon_1_1x
+			fixed_auxiliary_weapon_slot_1 = future_rocket_launcher_1_4x
+			fixed_auxiliary_weapon_slot_2 = future_air_to_air_guided_missilee_1
+			fixed_auxiliary_weapon_slot_3 = future_air_to_ground_guided_missilee_1
+			fixed_auxiliary_weapon_slot_4 = future_bomb_bay_1
+			engine_type_slot = Future_jet_turbofan_engines_1_2x
+			special_type_slot_1 = future_aesa_radar_1
+			special_type_slot_2 = future_targeting_pods_1 
+			special_type_slot_3 = future_Electronic_Warfare_System_1
+			special_type_slot_4 = future_fighter_communication_device_1
+			special_type_slot_5 = empty
+			special_type_slot_6 = empty
+		}
+		icon = "gfx/interface/technologies/FKR_future_CAS.dds"
+	}
+	create_equipment_variant = {
+        name = "B-1 랜서"
+        type = large_plane_airframe_jet_bomber_future_1
+        modules = {
+            fixed_main_weapon_slot = future_bomb_bay_1
+            fixed_auxiliary_weapon_slot_1 = future_bomb_bay_1
+            fixed_auxiliary_weapon_slot_2 = future_bomb_bay_1
+            fixed_auxiliary_weapon_slot_3 = future_bomb_bay_1
+            fixed_auxiliary_weapon_slot_4 = future_air_to_ground_guided_missilee_1
+            engine_type_slot = Future_jet_turbofan_engines_1_4x
+            special_type_slot_1 = future_aesa_radar_1
+            special_type_slot_2 = future_targeting_pods_1
+            special_type_slot_3 = future_missile_approach_warning_1
+            special_type_slot_4 = future_fighter_communication_device_1
+            special_type_slot_5 = future_Electronic_Warfare_System_1
+            special_type_slot_6 = empty
+        }
+        icon = "gfx/interface/technologies/FKR_future_jet_bomber.dds"
+    }
+}
+
+country_event = {
+	id = fkr.1
+	days = 3
+}

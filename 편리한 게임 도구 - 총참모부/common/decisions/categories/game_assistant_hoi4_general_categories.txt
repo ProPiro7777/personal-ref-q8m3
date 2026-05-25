@@ -1,0 +1,14 @@
+game_assistant_hoi4_general_categories = {
+    icon = GFX_decision_category_GER_war_planning
+    scripted_gui = game_assistant_hoi4_general_gui
+    priority = 1000
+    allowed = {
+        is_ai = no
+	}
+    available = {
+        is_ai = no
+    }
+	visible = {
+		always = yes
+	}
+}

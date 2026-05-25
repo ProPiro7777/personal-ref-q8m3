@@ -1,0 +1,13 @@
+instant_effect = {
+	ensure_unit_template_RUS_Light_paratrooper = yes
+}
+
+units = {
+	division = {
+		name = "Desantnaia gruppa 83-y gvardeiskoi desantno-shturmovoi brigady"
+		location = 18782
+		division_template = "Light paratrooper"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+}

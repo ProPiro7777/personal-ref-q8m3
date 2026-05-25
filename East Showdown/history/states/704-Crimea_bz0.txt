@@ -1,0 +1,25 @@
+state = { 
+	id = 704 
+	name = "STATE_704" 
+	manpower = 1 
+	
+	state_category = border_zone 
+	history = { 
+		owner = RUS 
+		
+		victory_points = { 5914 1 }
+		victory_points = { 6313 2 }
+		
+		buildings = { 
+			infrastructure = 3 
+			electrical_substation = 1 
+			5914 = { bunker = 4 }
+			6313 = { bunker = 6 }
+			15837 = { bunker = 6 }
+			16598 = { bunker = 6 }
+		}
+		
+		add_core_of = RUS 
+	}
+	provinces = { 5914 6313 15837 16598 }
+}

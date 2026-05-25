@@ -1,0 +1,889 @@
+oob = "CHE_2022"
+
+capital = 372
+
+set_research_slots = 1
+
+set_stability = 0.55
+
+set_war_support = 0.57
+
+add_political_power = 0
+
+set_convoys = 0
+
+set_popularities = {
+	democratic = 13
+	communism = 3
+	fascism = 14
+	neutrality = 70
+}
+
+set_country_flag = news_pro_russian_flag
+
+set_country_flag = head_of_gov_enabled_flag
+
+set_variable = { CHE_kadyrov_health_variable = 60 }
+
+#Doctrines
+set_grand_doctrine = ussr_legacy
+set_sub_doctrine = over_mechanized
+set_sub_doctrine = massed_artillery
+set_sub_doctrine = dysfunctional_general_staff
+set_sub_doctrine = vdv_cult
+set_sub_doctrine = basic_special_forces_expertise
+add_mastery = {
+	amount = 70
+	sub_doctrine = basic_special_forces_expertise
+}
+
+add_ideas = {
+	state_within_a_state
+	president_republic
+	BRICS_and_CU_member
+	destructive_corruption_level
+	only_government_media
+	militarized_police
+	limited_conscription
+	civilian_economy
+	CHE_conservative_society
+	UN_recognized
+	educational_shortened
+	social_shortened
+	rescue_shortened
+	birth_rate7
+	security_large
+	large_military_budget
+	mobilization_age_22_24
+	society_high
+	CHE_clan_economy
+	CHE_total_economic_dependence_on_russia
+	CHE_collapse_of_the_economy_1
+	CHE_passive_strategy
+}
+add_dynamic_modifier = {
+	modifier = CHE_commitee_torture
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2019.04.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+# 2022.04.15 Start Date politics
+2022.04.01 = {
+	set_oob = "CHE_2022_04_15"
+
+	add_to_war = {
+		targeted_alliance = RUS
+		enemy = UKR
+		hostility_reason = asked_to_join
+	}
+	
+	set_popularities = {
+		democratic = 10
+		communism = 1
+		fascism = 19
+		neutrality = 70
+	} # Меняется по фокусу
+	
+	set_stability = 0.60 # Выдаётся по фокусам
+
+	set_war_support = 0.62 # Выдаётся по фокусам
+
+	add_political_power = 100 # Выдаётся по фокусам
+	
+	army_experience = 50
+	add_command_power = -26 # Итого 25
+	
+	set_portraits = {
+		character = ramzan_kadyrov
+		civilian = {
+			large = "gfx/leaders/CHE/kadyrov_after_war.dds"
+		}
+	}
+	
+	
+	unlock_national_focus = CHE_start_situation
+	unlock_national_focus = CHE_kadyrov_bastions
+	unlock_national_focus = CHE_our_army
+	unlock_national_focus = CHE_experience_of_the_military_operation
+	
+	add_tech_bonus = {
+		bonus = 1.50
+		uses = 1
+		technology = tech_fpv 
+	}
+	add_tech_bonus = {
+		bonus = 0.80
+		uses = 1
+		technology = computers_2
+	}
+	add_tech_bonus = {
+		bonus = 0.80
+		uses = 1
+		technology = printers_1
+	}
+	add_tech_bonus = {
+		bonus = 0.80
+		uses = 1
+		technology = electronics_manufacturing_1
+	}
+	
+	#Списание снаряжения
+	add_equipment_to_stockpile = {
+		type = aa_9k34_strela_3_equipment
+		amount = -252
+		producer = RUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = amv_equipment_0
+		amount = -165
+		producer = RUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = arv_equipment_0
+		amount = -45
+		producer = RUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = atgm_9k111_1_konkurs_equipment
+		amount = -90
+		producer = RUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = engineering_equipment_0
+		amount = -55
+		producer = RUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = grenade_launcher_rpg18_muha_equipment
+		amount = -560
+		producer = RUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = infantry_akm_equipment
+		amount = -7805
+		producer = RUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = mortar_2b14_podnos_equipment
+		amount = -110
+		producer = RUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = -1285
+		producer = RUS
+	}
+
+}
+
+recruit_character = ramzan_kadyrov
+recruit_character = CHE_Nakaev_Halid
+recruit_character = CHE_Ibragim_Yangulbaev
+recruit_character = chychiev_myslim
+recruit_character = byarovich_daaev
+recruit_character = masaev_rizvan
+recruit_character = beckchan_elim
+recruit_character = hasan_hakimov
+recruit_character = sultan_tagaev
+recruit_character = alchanov_ruslan
+recruit_character = chamzat_kadyrov
+recruit_character = magomed_kadyrov
+recruit_character = chergikov_idris
+recruit_character = ibragim_zakriev
+recruit_character = islam_kadyrov
+recruit_character = apti_alauddinov
+recruit_character = magomed_tyshaev
+recruit_character = zamid_chalaev
+recruit_character = husein_mejidov
+recruit_character = adam_delimkhanov
+recruit_character = hussein_mezhidov
+recruit_character = alibek_delimkhanov
+recruit_character = anzor_bisaev
+recruit_character = CHE_Huseyn_Dzhambetov
+recruit_character = CHE_Abdul_Wahid
+recruit_character = CHE_coordination
+recruit_character = CHE_magomed_hanbiev
+recruit_character = salah_meshiev
+recruit_character = magomed_daydov
+recruit_character = ruslan_alhanov
+recruit_character = danial_martynov
+activate_advisor = CHE_chychiev_myslim
+activate_advisor = CHE_adam_delimkhanov
+activate_advisor = CHE_magomed_daydov
+activate_advisor = CHE_salah_meshiev
+activate_advisor = CHE_ruslan_alhanov
+activate_advisor = CHE_husein_mejidov
+activate_advisor = CHE_zamid_chalaev
+activate_advisor = CHE_danial_martynov
+set_cosmetic_tag = CHE_game_start
+
+set_country_flag = part_of_russian_federation
+set_country_flag = news_pro_russian_flag
+
+#equipment variants
+create_equipment_variant_arv_brem_1 = yes
+create_equipment_variant_tank_sov_t_64 = yes
+create_equipment_variant_tank_sov_t_72 = yes
+create_equipment_variant_imv_vystrel_s_kord = yes
+create_equipment_variant_imv_light_ural_4350 = yes
+create_equipment_variant_imv_ural_4320 = yes
+create_equipment_variant_sp_artillery_2s1_gvozdika = yes
+create_equipment_variant_brdm_brdm_1 = yes
+create_equipment_variant_brdm_brdm_2 = yes
+create_equipment_variant_apc_mt_lb = yes
+create_equipment_variant_apc_mt_lbvm = yes
+create_equipment_variant_ifv_sov_bmp_1 = yes
+create_equipment_variant_sp_mlrs_bm_21_grad = yes
+create_equipment_variant_ifv_sov_bmp_2 = yes
+create_equipment_variant_sp_aa_osa = yes
+create_equipment_variant_sp_aa_buk_m1 = yes
+create_equipment_variant_sp_heavy_artillery_2s7_pion = yes
+create_equipment_variant_sp_atgm_9p149_shturm_s = yes
+create_equipment_variant_sp_aa_tunguska = yes
+create_equipment_variant_apc_btr_50 = yes
+create_equipment_variant_apc_btr_50p = yes
+create_equipment_variant_apc_btr_60 = yes
+create_equipment_variant_apc_btr_70 = yes
+create_equipment_variant_apc_btr_80 = yes
+create_equipment_variant_imv_light_uaz_452 = yes
+create_equipment_variant_imv_light_uaz_469 = yes
+create_equipment_variant_imv_light_uaz_3163_patriot = yes
+
+set_technology = {
+	SOV_2022 = 1
+	computers_0 = 1
+	internet_0 = 1
+	internet_1 = 1
+	development_of_ai_0 = 1
+	radar_0 = 1
+	radar_1 = 1
+	radar_2 = 1
+	radar_3 = 1
+	radar_4 = 1
+	radar_5 = 1
+	printers_0 = 1
+	robotization_0 = 1
+	working_equipment_0 = 1
+	working_equipment_1 = 1
+	building_0 = 1
+	building_1 = 1
+	building_2 = 1
+	mining_0 = 1
+	oil_refining_0 = 1
+	road_construction_0 = 1
+	road_construction_1 = 1
+	road_construction_2 = 1
+	urbanization_0 = 1
+	urbanization_1 = 1
+	urbanization_2 = 1
+	electronics_manufacturing_0 = 1
+	
+	
+	
+	
+
+	infantry_weapons_sov_ww2 = 1
+	infantry_weapons_akm = 1
+	infantry_weapons_ak74 = 1
+	infantry_weapons_ak74m = 1
+	infantry_improvements_1 = 1
+	infantry_improvements_0 = 1
+	infantry_improvements_2 = 1
+	infantry_improvements_3 = 1
+	infantry_uniform_kzmp_beryozka = 1
+	infantry_uniform_vsr84_butan = 1
+	infantry_body_armor_6b1 = 1
+	infantry_body_armor_6b3 = 1
+	infantry_body_armor_6b5 = 1
+	infantry_body_armor_6b12 = 1
+	infantry_body_armor_improvement_0 = 1
+	infantry_grenade_launcher_rpg7 = 1
+	infantry_grenade_launcher_rpg18_muha = 1
+	infantry_grenade_launcher_rpg22_netto = 1
+	infantry_uniform_vsr98_flora = 1
+	infantry_mortar_sov_ww2 = 1
+	infantry_mortar_2b9_vasilyok = 1
+	infantry_mortar_2b11 = 1
+	infantry_mortar_2b14_podnos = 1
+	infantry_atgm_9k11_malutka = 1
+	infantry_atgm_9k111_fagot = 1
+	infantry_aa_9k32_strela_2 = 1
+	infantry_aa_9k34_strela_3 = 1
+	infantry_aa_9k38_igla = 1
+	motorized_infantry = 1
+
+	tech_support = 1
+	tech_engineering = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	communication_equipment = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_recon = 1
+	tech_recon2 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_ARV = 1
+	tech_AMV = 1
+
+	tank_sov_t55 = 1
+	sp_artillery_tank_sov_t55 = 1
+
+	tank_sov_t62 = 1
+	sp_artillery_tank_sov_t62 = 1
+
+	tank_sov_t64 = 1
+	sp_artillery_tank_sov_t64 = 1
+
+	tank_sov_t72 = 1
+	sp_artillery_tank_sov_t72 = 1
+	sp_heavy_artillery_mrv_tracked_2 = 1
+	
+
+	tank_sov_t80 = 1
+	sp_artillery_tank_sov_t80 = 1
+
+	ifv_sov_bmp1 = 1
+
+	ifv_sov_bmp2 = 1
+
+	ifv_sov_bmp3 = 1
+
+	afv_sov_bmd1 = 1
+
+	afv_sov_bmd2 = 1
+
+	afv_sov_bmd3 = 1
+
+	apc_sov_btr50 = 1
+
+	apc_sov_btr60 = 1
+
+	apc_sov_btr70 = 1
+
+	apc_sov_btr80 = 1
+
+	apc_sov_mtlb = 1
+
+	sov_brdm1 = 1
+	sov_brdm2 = 1
+	
+	transport1 = 1
+	transport2 = 1
+	transport3 = 1
+	transport4 = 1
+	CAS1 = 1
+	CAS2 = 1
+	CAS3 = 1
+	CASt1 = 1
+	CASt2 = 1
+	CASt3 = 1
+	CASt4 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1 
+	strategic_bomber3 = 1
+	strategic_bomber4 = 1
+	strategic_bomber5 = 1
+	strategic_bomber6 = 1
+	CAS0 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	fighter4 = 1
+	fighter5 = 1
+	fighter6 = 1
+	fighter7 = 1
+	fighter8 = 1
+	fighter9 = 1
+	fightert1 = 1
+	fightert2 = 1
+	hel_strike1 = 1
+	hel_strike2 = 1
+	hel_strike3 = 1
+	hel_strike4 = 1
+	hel_strike5 = 1
+	hel_strike6 = 1
+	hel_strike7 = 1
+	hel_transport1 = 1
+	hel_transport2 = 1
+	hel_transport3 = 1
+	uav_strike1 = 1
+	uav_strike2 = 1
+	uav_recon1 = 1
+	uav_recon2 = 1
+
+	imv_medium_0 = 1
+
+	imv_light_1 = 1
+	sp_aa_imv_light_1 = 1
+	sp_artillery_imv_light_1 = 1
+	sp_mlrs_imv_light_1 = 1
+	imv_light_2 = 1
+	sp_aa_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_3 = 1
+	sp_aa_imv_light_2 = 1
+	sp_atgm_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_0 = 1
+	sp_aa_imv_light_0 = 1
+	sp_atgm_imv_light_0 = 1
+	sp_artillery_imv_light_0 = 1
+	sp_mlrs_imv_light_0 = 1
+	imv_light_4 = 1
+
+	imv_medium_1 = 1
+
+	imv_medium_2 = 1
+
+	imv_medium_3 = 1
+
+	imv_medium_4 = 1
+
+	imv_heavy_0 = 1
+	sp_mlrs_imv_heavy_0 = 1
+	imv_heavy_1 = 1
+	imv_heavy_2 = 1
+	imv_heavy_3 = 1
+	imv_heavy_4 = 1
+	infantry_improvements_0 = 1
+	mrv_wheeled_0 = 1
+	sp_aa_mrv_wheeled_0 = 1
+	mrv_wheeled_1 = 1
+	mrv_wheeled_2 = 1
+	mrv_wheeled_3 = 1
+	mrv_wheeled_4 = 1
+	mrv_tracked_0 = 1
+	mrv_tracked_1 = 1
+	mrv_tracked_2 = 1
+	mrv_tracked_3 = 1
+	mrv_tracked_4 = 1
+	rus_artillery_d1 = 1
+	rus_artillery_d74 = 1
+	rus_artillery_d20 = 1
+	rus_artillery_m46 = 1
+	rus_artillery_d30 = 1
+
+	
+
+}
+
+add_equipment_to_stockpile = {
+	type = arv_tank_sov_t72_equipment
+	variant_name = "БРЭМ-1"
+	amount = 10
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = tank_sov_t64_equipment
+	variant_name = "Т-64"
+	amount = 20
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = tank_sov_t72_equipment
+	variant_name = "Т-72"
+	amount = 120
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = imv_heavy_1_equipment
+	variant_name = "\"Выстрел\" с \"Корд\""
+	amount = 60
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = imv_light_1_equipment
+	variant_name = "Урал-4350"
+	amount = 400
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = imv_heavy_0_equipment
+	variant_name = "Урал-4320"
+	amount = 300
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_apc_sov_mtlb_equipment
+	variant_name = "2С1 Гвоздика"
+	amount = 100
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sov_brdm1_equipment
+	variant_name = "БРДМ-1"
+	amount = 10
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sov_brdm2_equipment
+	variant_name = "БРДМ-2"
+	amount = 60
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_mtlb_equipment
+	variant_name = "МТ-ЛБ"
+	amount = 8
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_mtlb_equipment
+	variant_name = "МТ-ЛБВМ"
+	amount = 6
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_sov_bmp1_equipment
+	variant_name = "БМП-1"
+	amount = 90
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sp_mlrs_imv_heavy_0_equipment
+	variant_name = "БМ-21 Град"
+	amount = 4
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_sov_bmp2_equipment
+	variant_name = "БМП-2"
+	amount = 80
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_wheeled_0_equipment
+	variant_name = "Оса"
+	amount = 48
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_tracked_2_equipment
+	variant_name = "Бук-М1"
+	amount = 14
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sp_heavy_artillery_mrv_tracked_2_equipment
+	variant_name = "2С7 Пион"
+	amount = 2
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sp_atgm_apc_sov_mtlb_equipment
+	variant_name = "9П149 Штурм-С"
+	amount = 6
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_tracked_0_equipment
+	variant_name = "Тунгуска"
+	amount = 16
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr50_equipment
+	variant_name = "БТР-50"
+	amount = 60
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr50_equipment
+	variant_name = "БТР-50П"
+	amount = 80
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr60_equipment
+	variant_name = "БТР-60"
+	amount = 160
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr70_equipment
+	variant_name = "БТР-70"
+	amount = 100
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_btr80_equipment
+	variant_name = "БТР-80"
+	amount = 48
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_akm_equipment
+	amount = 8000
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_ak74_equipment
+	amount = 7000
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_ak74m_equipment
+	amount = 5000
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = uniform_kzmp_beryozka_equipment
+	amount = 9000
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = uniform_vsr84_butan_equipment
+	amount = 7000
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = body_armor_6b1_equipment
+	amount = 5000
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = body_armor_6b3_equipment
+	amount = 4000
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = body_armor_6b5_equipment
+	amount = 4500
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg7_equipment
+	amount = 600
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg18_muha_equipment
+	amount = 800
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg22_netto_equipment
+	amount = 720
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg26_aglen_equipment
+	amount = 640
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_grenade_launcher_rpg26_shmel
+	amount = 60
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = mortar_2b9_vasilyok_equipment
+	amount = 130
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = mortar_2b11_equipment
+	amount = 120
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = mortar_2b14_podnos_equipment
+	amount = 140
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k11_malutka_equipment
+	amount = 36
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k111_fagot_equipment
+	amount = 28
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k32_strela_2_equipment
+	amount = 360
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k34_strela_3_equipment
+	amount = 480
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k38_igla_equipment
+	amount = 400
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_d1_equipment
+	amount = 14
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_d74_equipment
+	amount = 10
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_d20_equipment
+	amount = 12
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_m46_equipment
+	amount = 11
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_d30_equipment
+	amount = 16
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_2a36_equipment
+	amount = 8
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = sov_artillery_2a65_equipment
+	amount = 7
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = uniform_vsr98_flora_equipment
+	amount = 3000
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k111_1_konkurs_equipment
+	amount = 340
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k115_metis_equipment
+	amount = 240
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k135_kornet_equipment
+	amount = 200
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k338_igla_s_equipment
+	amount = 300
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = mortar_2b24_podnos_equipment
+	amount = 80
+	producer = CHE
+}
+
+add_equipment_to_stockpile = {
+	type = engineering_equipment
+	amount = 1500
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = arv_equipment
+	amount = 750
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = amv_equipment
+	amount = 3000
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 5000
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1	
+	amount = 700
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1		
+	amount = 25000
+	producer = RUS
+}

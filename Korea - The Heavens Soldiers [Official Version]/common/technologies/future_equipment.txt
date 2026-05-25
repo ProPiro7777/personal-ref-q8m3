@@ -1,0 +1,171 @@
+technologies = {
+
+	### Infantry Equipment ###
+
+	future_infantry_equipment = {
+
+		enable_equipments = { 
+			infantry_equipment_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_infantry_equipment = {
+
+		enable_equipments = { 
+			infantry_equipment_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	### Artillery Equipment ###
+
+	redesigned_future_anti_air = {
+		enable_equipments = { 
+			future_anti_air_equipment
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_anti_tank = {
+		enable_equipments = { 
+			future_anti_tank_equipment
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_mlrs = {
+		enable_subunits = {
+			motorized_rocket_brigade
+		}
+		enable_equipments = { 
+			future_mlrs_equipment
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}	
+
+	### Mobile Equipment ###
+
+	future_mechanized_equipment = {
+
+		enable_equipments = { 
+			mechanized_equipment_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_mechanized_equipment = {
+
+		enable_equipments = { 
+			mechanized_equipment_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+    ### Helicopter Equipment ###
+
+	attack_heli = {
+
+		enable_equipments = { 
+			attack_heli_equipment_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+
+		enable_subunits = {
+			attack_heli
+		}
+	}
+
+	transport_heli = {
+
+		enable_equipments = { 
+			transport_heli_equipment_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+
+		enable_subunits = {
+			transport_heli_infantry
+		}
+	}
+
+	redesigned_attack_heli = {
+
+		enable_equipments = { 
+			attack_heli_equipment_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_transport_heli = {
+
+		enable_equipments = { 
+			transport_heli_equipment_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+}

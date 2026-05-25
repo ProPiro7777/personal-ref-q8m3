@@ -1,0 +1,923 @@
+debug_category = {
+
+	abstract_test_decision = {
+		remove_effect = { 
+
+		 for_loop_effect = {
+		 	start = 1          
+		 	end = 1000
+		 	value = t        
+		 		meta_effect = {
+		 			ID = "[?t|.0]"        
+		 			text = {
+		 				country_event = {
+		 					id = ukr_SMO.[ID]
+		 				}
+		 			}
+		 		}
+		 	}
+		
+
+			#set_temp_variable = { api_src_state_id = 94 }
+			#set_temp_variable = { api_building_type = token:industrial_complex }		
+			#set_temp_variable = { api_amount = 10 }
+			#set_temp_variable = { api_consider_energy_opt = 1 }
+			#ESAPI_transfer_random_state_building = yes
+			#custom_effect_tooltip = ESAPI_transfer_random_state_building_tt
+
+
+			#set_temp_variable = { api_state_id = 79 }	
+			#set_temp_variable = { api_building_type = token:industrial_complex }	
+			#set_temp_variable = { api_amount = 25 }	
+			#set_temp_variable = { api_consider_energy_opt = 1 }		
+			#hidden_effect = {
+			#ESAPI_add_state_building = yes				
+			#}
+			#custom_effect_tooltip = ESAPI_add_state_building_tt	
+			
+			#RUS = { ESAPI_add_random_state_building_td = yes }
+
+			#set_temp_variable = { api_building_type = token:industrial_complex }	
+			#set_temp_variable = { api_amount = 25 }	
+			#set_temp_variable = { api_consider_energy_opt = 1 }		
+			#ESAPI_add_random_state_building = yes
+			#custom_effect_tooltip = ESAPI_add_random_state_building_tt
+
+			#custom_effect_tooltip = ESAPI_transfer_random_state_building_tt
+
+
+			#set_temp_variable = { api_src_state_id = 94 }
+			#set_temp_variable = { api_building_type = token:industrial_complex }		
+			#set_temp_variable = { api_amount = 5 }
+			#set_temp_variable = { api_consider_energy_opt = 1 }
+
+			#add_to_temp_array = { api_state_candidates = 65 }
+			#add_to_temp_array = { api_state_candidates = 76 }
+			#add_to_temp_array = { api_state_candidates = 81 }
+
+			#ESAPI_transfer_area_building = yes
+
+			#custom_effect_tooltip = ESAPI_transfer_area_building_tt
+
+			
+		}
+
+	}
+
+	RUS_wagner_vosstanie_armyan = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+		}
+		complete_effect = {
+			country_event = {
+				id = WGN.4
+				days = 0
+			}
+		}
+	}
+
+	RUS_bz_create_template = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+		}
+		complete_effect = {
+			division_template = {
+				name = "Border Guards"
+				is_locked = yes
+				regiments = {
+					border_guard = {
+						x = 0
+						y = 0
+					}
+				}
+			}
+		}
+	}
+	RUS_bz_remove_template = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+		}
+		complete_effect = {
+			delete_unit_template_and_units = {
+				division_template = "Border Guards"
+				disband = yes
+			}
+		}
+	}
+	RUS_bz_spawn_one_unit = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+		}
+		complete_effect = {
+			555 = {
+				set_temp_variable = {
+					temp_province_id = 15011
+				}
+				bz_state_create_unit_in_province = yes
+			}
+		}
+	}
+	RUS_bz_spawn_ten_unit = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+		}
+		complete_effect = {
+			103 = {
+				#set_temp_variable = { temp_target_country = RUS }
+				set_temp_variable = {
+					temp_province_id = 3939
+				}
+				for_loop_effect = {
+					end = 10
+					bz_state_create_unit_in_province = yes
+				}
+			}
+		}
+	}
+	#Russia
+	RUS_load_second_focus_tree = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = RUS
+		}
+		complete_effect = {
+			load_focus_tree = RUS_operational_tactical_after_SMO
+		}
+	}
+	#Donetsk
+	DPR_load_after_war_focuses = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = DPR
+		}
+		complete_effect = {
+			set_country_flag = DPR_in_war_flag
+		}
+	}
+	#Wagner
+	WGN_shell_hunger_flag_decision = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = WGN
+		}
+		complete_effect = {
+			set_global_flag = WGN_shell_hunger_flag_worse
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	WGN_shell_hunger_idea_decision = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = WGN
+		}
+		complete_effect = {
+			WGN = {
+				add_dynamic_modifier = { modifier = WGN_shell_hunger_modifier }
+			}
+		}
+	}
+	WGN_shell_hunger_flag_end_decision= {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = WGN
+		}
+		complete_effect = {
+			clr_global_flag = WGN_shell_hunger_flag_worse
+		}
+	}
+	WGN_loss_ammo = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = WGN
+		}
+		complete_effect = {
+			set_variable = {
+				ammunition_value_k = 0
+			}
+		}
+	}
+	WGN_have_ammo = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = WGN
+		}
+		complete_effect = {
+			set_variable = {
+				ammunition_value_k = 10000000
+			}
+		}
+	}
+	RUS_loss_ammo = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = WGN
+		}
+		complete_effect = {
+			RUS = {
+				set_variable = {
+					ammunition_value_k = 0
+				}
+			}
+		}
+	}
+	
+	RUS_have_ammo = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = WGN
+		}
+		complete_effect = {
+			RUS = {
+				set_variable = {
+					ammunition_value_k = 1000000
+				}
+			}
+		}
+	}
+	WGN_raschitat_budjet = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = WGN
+		}
+		complete_effect = {
+			WGN_budget_raschet_se = yes
+		}
+	}
+
+	#All
+	bridge_attack_test1 = {
+		fire_only_once = yes
+		visible = {
+			OR = {
+				original_tag = RUS
+				original_tag = UKR
+			}
+		}
+		remove_effect = {
+			subtract_from_variable = {
+				global.dnipro_obj_current_hp^0 = 600
+			}
+			log = "[BRIDGES TEST 1] УРОН : 600, итоговое HP = [?global.dnipro_obj_current_hp^0]"
+		}
+	}
+	bridges_check_variable_TEST = {
+		fire_only_once = no
+		visible = {
+			OR = {
+				original_tag = RUS
+				original_tag = UKR
+			}
+		}
+		remove_effect = {
+			ESB_VARIABLE_CHECK_TEST = yes
+			log = "[BRIDGES TEST 2] EXECUTED"
+		}
+	}
+	bridge_attack_test1 = {
+		fire_only_once = yes
+		visible = {
+			OR = {
+				original_tag = RUS
+				original_tag = UKR
+			}
+		}
+		remove_effect = {
+			subtract_from_variable = {
+				global.dnipro_obj_current_hp^0 = 600
+			}
+			log = "[BRIDGES TEST 1] УРОН : 600, итоговое HP = [?global.dnipro_obj_current_hp^0]"
+		}
+	}
+	bridges_check_variable_TEST = {
+		fire_only_once = no
+		visible = {
+			OR = {
+				original_tag = RUS
+				original_tag = UKR
+			}
+		}
+		remove_effect = {
+			ESB_VARIABLE_CHECK_TEST = yes
+			log = "[BRIDGES TEST 2] EXECUTED"
+		}
+	}
+
+	DEBUG_Start_SMO = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		complete_effect = {
+			RUS = {
+				complete_national_focus = RUS_SMO
+			}
+		}
+	}
+
+
+	DEBUG_set_energy_dynamic_mod_in_state_94 = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		complete_effect = {
+			94 = {
+				add_dynamic_modifier = {
+					modifier = energy_local_blackout
+				}
+			}
+		}
+	}
+	DEBUG_add_ammo_cat = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			NOT = {
+				has_global_flag = DEBUG_add_ammo_cat_flag
+			}
+		}
+		complete_effect = {
+			set_global_flag = DEBUG_add_ammo_cat_flag
+		}
+	}
+	DEBUG_del_ammo_cat = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			clr_global_flag = DEBUG_add_ammo_cat_flag
+		}
+	}
+	DEBUG_add_ammo_1k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			add_to_variable = {
+				ammunition_value_k = 1
+			}
+		}
+	}
+	DEBUG_add_ammo_2k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			add_to_variable = {
+				ammunition_value_k = 2
+			}
+		}
+	}
+	DEBUG_add_ammo_5k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			add_to_variable = {
+				ammunition_value_k = 5
+			}
+		}
+	}
+	DEBUG_add_ammo_10k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			add_to_variable = {
+				ammunition_value_k = 10
+			}
+		}
+	}
+	DEBUG_add_ammo_50k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			add_to_variable = {
+				ammunition_value_k = 50
+			}
+		}
+	}
+	DEBUG_add_ammo_100k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			add_to_variable = {
+				ammunition_value_k = 100
+			}
+		}
+	}
+	DEBUG_add_ammo_500k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			add_to_variable = {
+				ammunition_value_k = 500
+			}
+		}
+	}
+	DEBUG_add_ammo_1000k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			add_to_variable = {
+				ammunition_value_k = 1000
+			}
+		}
+	}
+	DEBUG_del_ammo_1k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				ammunition_value_k = 1
+			}
+		}
+	}
+	DEBUG_del_ammo_2k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				ammunition_value_k = 2
+			}
+		}
+	}
+	DEBUG_del_ammo_5k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				ammunition_value_k = 5
+			}
+		}
+	}
+	DEBUG_del_ammo_10k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				ammunition_value_k = 10
+			}
+		}
+	}
+	DEBUG_del_ammo_50k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				ammunition_value_k = 50
+			}
+		}
+	}
+	DEBUG_del_ammo_100k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				ammunition_value_k = 100
+			}
+		}
+	}
+	DEBUG_del_ammo_500k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				ammunition_value_k = 500
+			}
+		}
+	}
+	DEBUG_del_ammo_1000k = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			has_global_flag = DEBUG_add_ammo_cat_flag
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				ammunition_value_k = 1000
+			}
+		}
+	}
+	WGN_POWER_BALANCE_Shoigy_05 = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			tag = WGN
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = WGN_power_balance
+				value = 0.05
+			}
+			add_power_balance_value = {
+				id = RUS_power_balance
+				value = 0.05
+			}
+		}
+	}
+	WGN_POWER_BALANCE_Shoigy_25 = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			tag = WGN
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = WGN_power_balance
+				value = 0.25
+			}
+			add_power_balance_value = {
+				id = RUS_power_balance
+				value = 0.25
+			}
+		}
+	}
+	WGN_POWER_BALANCE_Wagner_05 = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			tag = WGN
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = WGN_power_balance
+				value = -0.05
+			}
+			add_power_balance_value = {
+				id = RUS_power_balance
+				value = -0.05
+			}
+		}
+	}
+	WGN_POWER_BALANCE_Wagner_25 = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			tag = WGN
+		}
+		complete_effect = {
+			add_power_balance_value = {
+				id = WGN_power_balance
+				value = -0.25
+			}
+			add_power_balance_value = {
+				id = RUS_power_balance
+				value = -0.25
+			}
+		}
+	}
+
+	idiotus_krasava = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		complete_effect = {
+			set_global_flag = idiotus_krasava_flag
+		}
+	}
+	
+	RUS_idiotus_krasava = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		complete_effect = {
+			country_event = {
+				    id = WGN.4
+				    days = 0
+	        }
+		}
+	}
+
+		UKR_test_dynamic_defence = {
+		icon = generic_formable_nations
+		allowed = {
+			original_tag = UKR
+		}
+		visible = {
+			
+		}
+
+		complete_effect = {
+			# every_controlled_state = {
+			# 	add_building_construction = {
+			# 		type = bunker
+			# 		level = 3
+			# 		province = {
+			# 			all_provinces = yes
+       		# 			limit_to_border = yes
+			# 			limit_to_border_country = RUS
+			# 			#level < 5
+			# 		}
+			# 	}
+			# 	add_building_construction = {
+			# 		type = bunker
+			# 		level = 3
+			# 		province = {
+			# 			all_provinces = yes
+       		# 			limit_to_border = yes
+			# 			limit_to_border_country = BLR
+			# 			#level < 5
+			# 		}
+			# 	}
+			# 	add_building_construction = {
+			# 		type = bunker
+			# 		level = 3
+			# 		province = {
+			# 			all_provinces = yes
+       		# 			limit_to_border = yes
+			# 			limit_to_border_country = PMR
+			# 			#level < 5
+			# 		}
+			# 	}
+			# }
+			every_core_state = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = {
+						all_provinces = yes
+       					limit_to_border = yes
+						limit_to_border_country = RUS
+						#level < 5
+					}
+				}
+			}
+			# if = {
+			# 	limit = { NOT = {  } }
+			# }
+		}
+	}
+
+	# RUS_test_dynamic_defence = {
+	# 	icon = generic_formable_nations
+	# 	allowed = {
+	# 		original_tag = RUS
+	# 	}
+	# 	visible = {
+			
+	# 	}
+
+	# 	complete_effect = {
+	# 		# every_controlled_state = {
+	# 		# 	add_building_construction = {
+	# 		# 		type = bunker
+	# 		# 		level = 3
+	# 		# 		province = {
+	# 		# 			all_provinces = yes
+    #    		# 			limit_to_border = yes
+	# 		# 			limit_to_border_country = RUS
+	# 		# 			#level < 5
+	# 		# 		}
+	# 		# 	}
+	# 		# 	add_building_construction = {
+	# 		# 		type = bunker
+	# 		# 		level = 3
+	# 		# 		province = {
+	# 		# 			all_provinces = yes
+    #    		# 			limit_to_border = yes
+	# 		# 			limit_to_border_country = BLR
+	# 		# 			#level < 5
+	# 		# 		}
+	# 		# 	}
+	# 		# 	add_building_construction = {
+	# 		# 		type = bunker
+	# 		# 		level = 3
+	# 		# 		province = {
+	# 		# 			all_provinces = yes
+    #    		# 			limit_to_border = yes
+	# 		# 			limit_to_border_country = PMR
+	# 		# 			#level < 5
+	# 		# 		}
+	# 		# 	}
+	# 		# }
+	# 		# every_owned_state = {
+	# 		# 	add_building_construction = {
+	# 		# 		type = bunker
+	# 		# 		level = 3
+	# 		# 		province = {
+	# 		# 			all_provinces = yes
+    #    		# 			limit_to_border = yes
+	# 		# 			limit_to_border_country = UKR
+	# 		# 			#level < 5
+	# 		# 		}
+	# 		# 	}
+	# 		# }
+			
+	# 		# # как варик
+	# 		# if = {
+	# 		# 	limit = {
+	# 		# 		controls_state = 57
+	# 		# 	}
+	# 		# 	57 = {
+	# 		# 		add_building_construction = {
+	# 		# 			type = bunker
+	# 		# 			level = 1
+	# 		# 			province = {
+	# 		# 				all_provinces = yes
+	# 		# 				limit_to_border = yes
+	# 		# 				#level < 5
+	# 		# 			}
+	# 		# 		}
+	# 		# 	}
+	# 		# }
+
+
+
+	# 		#если стейт не полностью под контролем(этот в прифронте будет юзатся)
+	# 		if = {
+	# 			limit = {
+	# 				num_divisions_in_states = {
+	# 					#type = infantry
+	# 					count > 1
+	# 					states = {107}
+	# 				}
+	# 			}
+	# 			107 = {
+	# 				add_building_construction = {
+	# 					type = bunker
+	# 					level = 1
+	# 					province = {
+	# 						all_provinces = yes
+	# 						limit_to_border = yes
+	# 						limit_to_border_country = UKR
+	# 						#level < 5
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+
+
+
+	# 		# every_controlled_state = {
+				
+	# 		# 	add_building_construction = {
+	# 		# 		type = bunker
+	# 		# 		level = 1
+	# 		# 		province = {
+	# 		# 			all_provinces = yes
+    #    		# 			limit_to_border = yes
+	# 		# 			limit_to_border_country = UKR
+	# 		# 			#level < 5
+	# 		# 		}
+	# 		# 	}
+	# 		# }
+
+
+			
+
+	# 		# if = {
+	# 		# 	limit = { NOT = {  } }
+	# 		# }
+	# 	}
+	# }
+	RUS_unlock_focuses_smo_failure_decision = {
+		visible = {
+			tag = RUS
+		}
+		complete_effect = {
+			country_event = rus.158
+		}
+	}
+	RUS_unlock_assault_brigades_decision = {
+		icon = GFX_decision_RUS_Form_assault_brigades
+		visible = {
+			tag = RUS
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_unlock_assault_brigades_decision"
+			set_technology = { 
+				assault_infantry = 1
+			}
+		}
+	}
+	RUS_unlock_focuses_wagner_betray_decision = {
+		visible = {
+			tag = RUS
+		}
+		complete_effect = {
+			set_country_flag = Wagner_betray_after_march_cf
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	RUS_unlock_sp_after_smo_fail_decision = {
+		visible = {
+			tag = RUS
+		}
+		complete_effect = {
+			set_country_flag = RUS_unlock_sp_after_smo_fail_flag
+		}
+	}
+	UKR_nto_help_new_brigades_category_unlock_decision = {
+		visible = {
+			original_tag = UKR
+		}
+		complete_effect = {
+			UKR = {
+				set_country_flag = UKR_nto_help_new_brigades_category_unlocked_flag
+			}
+		}
+	}
+	UKR_New_brigades_category_unlock_decision = {
+		visible = {
+			original_tag = UKR
+		}
+		complete_effect = {
+			UKR = {
+				set_country_flag = UKR_New_brigades_category_unlocked_flag
+			}
+		}
+	}
+	UKR_create_territorial_defence_category_unlock_decision = {
+		visible = {
+			original_tag = UKR
+		}
+		complete_effect = {
+			UKR = {
+				set_country_flag = UKR_create_territorial_defence_category_unlocked_flag
+			}
+		}
+	}
+	UKR_IL_Territorial_Defense_Ukraine_category_unlock_decision = {
+		visible = {
+			original_tag = UKR
+		}
+		complete_effect = {
+			UKR = {
+				set_country_flag = UKR_IL_Territorial_Defense_Ukraine_category_unlocked_flag
+			}
+		}
+	}
+	UKR_Coordination_of_MTR_with_foreign_MTR_category_unlock_decision = {
+		visible = {
+			original_tag = UKR
+		}
+		complete_effect = {
+			UKR = {
+				set_country_flag = Coordination_of_MTR_with_foreign_MTR_flag
+			}
+		}
+	}
+	DPR_shelling_GUI_decision = {
+		visible = {
+			original_tag = DPR
+		}
+		complete_effect = {
+			DPR = {
+				set_country_flag = DPR_shelling_GUI_dec
+			}
+		}
+	}
+}

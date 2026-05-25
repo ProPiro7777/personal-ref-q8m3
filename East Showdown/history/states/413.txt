@@ -1,0 +1,30 @@
+state = { 
+	id = 413 
+	name = "STATE_413" 
+	manpower = 34769 
+	
+	state_category = rural 
+	buildings_max_level_factor = 0.75 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 16377 2 }
+		victory_points = { 18397 10 }
+		victory_points = { 18398 5 }
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 3 
+			industrial_complex = 1 
+			anti_air_building = 1 
+		}
+
+		2022.04.01 = {
+			owner = UKR
+			controller = RUS
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 5156 6811 7278 8680 8767 9122 9386 11075 11395 11873 16075 16123 16343 16360 16377 16405 18397 18398 }
+}

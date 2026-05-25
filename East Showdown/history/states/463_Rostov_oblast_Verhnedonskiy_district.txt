@@ -1,0 +1,18 @@
+state = { 
+	id = 463 
+	name = "STATE_463" 
+	manpower = 18004 
+	
+	state_category = pastoral 
+	history = { 
+		owner = RUS 
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 3 
+		}
+		
+		add_core_of = RUS 
+	}
+	provinces = { 762 6299 6303 6583 6920 7282 8553 9336 11932 15239 15322 }
+}

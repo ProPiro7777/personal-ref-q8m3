@@ -1,0 +1,2232 @@
+
+game_assistant_hoi4_general_categories = {
+
+
+#1.我想要什么？
+#一个可以操作盟友与傀儡的AI操作决议
+
+#2.我想要什么功能？
+#1.改变盟友的建设目标-让盟友建造军用工厂民用工程海军船坞。
+#2.让盟友在拥有资源的地方修建基础设施-这个没必要-我可以帮AI修建
+#3.让盟友不要对其他国家发动战争
+#4.让盟友不要防守我们的前线
+#5.让盟友强制防守我们的前线
+#6.让盟友集中部队进行突破
+#7.让盟友把部队派到指定敌国的前线
+#8.让盟友集中协调海军入侵一个国家
+#9.让盟友更倾向于进攻
+#10.让盟友开始建设情报机构-或不要建造
+#11.让盟友积极的扩军.
+#12.让盟友不要建造任何军队!!!!!
+#13.让盟友只建造指定类型的军队
+#14.控制盟友对敌方发动进攻的前线控制
+#15.增加盟友的船坞与军用工厂的比率
+#16.禁止盟友出售装备
+#17.让盟友疯狂出售装备
+#18.让盟友禁止购买装备
+#19.让盟友用更多的工厂来生产飞机
+#20.让AI将注意力放在特定的地区-这个取消-感觉会和前几个冲突
+
+#特定类别决议
+#1.让盟友防御我的前线
+#2.让盟友给我租借
+
+#特定国家决议
+#德国
+#1.让意大利专注在地中海
+#2.让意大利放弃埃塞俄比亚地区
+#3.让意大利专心防守本土
+
+
+#日本
+#英国
+#中国
+
+#分类：
+#1.建设控制-民用工厂-军用工厂-船坞-炼油厂-储油罐
+#2.准备战争-守卫前线-协调入侵-兵力集中-防御态势-攻击态势
+#3.建设情报-静止建设-疯狂扩军-非军事化-禁止与允许出售装备-静止与允许购买装备-给我租借
+#4.优先步兵师-优先装甲师-优先驻军-
+#5.优先驱逐舰-优先潜艇-优先运输船
+#6.优先战斗机-优先攻击机-优先运输机
+#7.AI注意力放在特定地区
+
+
+
+    ##########################################
+    ##############AI建造类别###################
+    ##########################################
+    #占位符
+    game_assistant_hoi4_general_OPEN_MOD = {
+        icon = GFX_decision_generic_electricity
+        priority = 1
+        visible = {
+            always = yes
+        }
+        available = {
+            always = no
+        }
+        fire_only_once = no
+        complete_effect = {}
+        
+    }
+    game_assistant_hoi4_general_CLOS_MOD = {
+        icon = GFX_decision_generic_electricity
+        priority = -1
+        visible = {
+            always = yes
+        }
+        available = {
+            always = no
+        }
+        fire_only_once = no
+        complete_effect = {}
+        
+    }
+
+    #建设
+    game_assistant_hoi4_general_building_target_industrial_complex = {
+        icon = GFX_decision_generic_electricity
+        visible = {
+            has_country_flag = ROOT.OPEN_button1
+        }
+        available = {
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                or = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+                is_ai = yes
+            }
+        }
+        modifier = {
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+
+            FROM = {
+                Ai_Strategy_building_industrial_complex_open_scripted_effects = yes
+            }
+        }
+    }
+    #
+    game_assistant_hoi4_general_building_target_arms_factory = {
+        icon = GFX_decision_generic_factory
+        visible = {
+            has_country_flag = ROOT.OPEN_button1
+        }
+        available = {
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                or = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+                is_ai = yes
+            }
+        }
+        modifier = {
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                Ai_Strategy_building_arms_factory_open_scripted_effects = yes
+            }
+        }
+    }
+    #
+    game_assistant_hoi4_general_building_target_dockyard = {
+        icon = GFX_decision_generic_merge_plant_ship
+        visible = {
+            has_country_flag = ROOT.OPEN_button1
+        }
+        available = {
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                or = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+                is_ai = yes
+            }
+        }
+        modifier = {
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                Ai_Strategy_building_dockyard_open_scripted_effects = yes
+            }
+        }
+    }
+    #
+    game_assistant_hoi4_general_building_target_synthetic_refinery = {
+        icon = GFX_decision_generic_construction
+        visible = {
+            has_country_flag = ROOT.OPEN_button1
+        }
+        available = {
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                or = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+                is_ai = yes
+            }
+        }
+        modifier = {
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                Ai_Strategy_building_synthetic_refinery_open_scripted_effects = yes
+            }
+        }
+    }
+    #
+    game_assistant_hoi4_general_building_target_fuel_silo = {
+        icon = GFX_decision_generic_research
+        visible = {
+            has_country_flag = ROOT.OPEN_button1
+        }
+        available = {
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                or = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+                is_ai = yes
+            }
+        }
+        modifier = {
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                Ai_Strategy_building_fuel_silo_open_scripted_effects = yes
+            }
+        }
+    }
+
+    #AI禁止购买军火
+    game_assistant_hoi4_general_equipment_market_spend_factories = {
+        icon = GFX_decision_generic_arrest
+        visible = {
+            has_country_flag = ROOT.OPEN_button2
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                Ai_Strategy_equipment_market_spend_factories_scripted_effects = yes
+            }
+        }
+    }
+    #AI禁止出售装备
+    game_assistant_hoi4_general_equipment_market_for_sale_factor = {
+        icon = GFX_decision_generic_brainwash
+        visible = {
+            has_country_flag = ROOT.OPEN_button2
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                Ai_Strategy_equipment_market_for_sale_factor_scripted_effects = yes
+            }
+        }
+    }
+
+
+    ##########################################
+    ##############AI备战类别###################
+    ##########################################
+
+    #让盟友AI全面扩军
+    game_assistant_hoi4_general_force_build_armies_A = {
+        icon = GFX_decision_category_generic_propaganda
+        visible = {
+            has_country_flag = ROOT.OPEN_button2
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            FROM = {
+
+            }
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = force_build_armies_FOCUS_variable
+                }
+                var:force_build_armies_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_force_build_armies_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = force_build_armies_FOCUS_variable
+            }
+            #
+            set_variable = {
+                force_build_armies_FOCUS_variable = FROM
+            }
+            var:force_build_armies_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_force_build_armies_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_force_build_armies_B = {
+        icon = GFX_decision_category_generic_propaganda
+        visible = {
+            has_country_flag = ROOT.OPEN_button2
+        }
+        available = {
+            has_variable = force_build_armies_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = force_build_armies_FOCUS_variable
+                }
+                var:force_build_armies_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_force_build_armies_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = force_build_armies_FOCUS_variable
+            }
+        }
+    }
+
+    #盟友AI非军事化
+    game_assistant_hoi4_general_build_army_0_A = {
+        icon = GFX_decision_category_ger_mefo_bills
+        visible = {
+            has_country_flag = ROOT.OPEN_button2
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+
+            }
+            if = {
+                limit = {
+                    has_variable = build_army_0_FOCUS_variable
+                }
+                var:build_army_0_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_build_army_0_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = build_army_0_FOCUS_variable
+            }
+            #
+            set_variable = {
+                build_army_0_FOCUS_variable = FROM
+            }
+            var:build_army_0_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_build_army_0_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_build_army_0_B = {
+        icon = GFX_decision_category_ger_military_buildup
+        visible = {
+            has_country_flag = ROOT.OPEN_button2
+        }
+        available = {
+            has_variable = build_army_0_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = build_army_0_FOCUS_variable
+                }
+                var:build_army_0_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_build_army_0_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = build_army_0_FOCUS_variable
+            }
+        }
+    }
+
+
+    #让盟友AI强制防守特定友方边界
+    game_assistant_hoi4_general_force_defend_ally_borders_A = {
+        icon = GFX_decision_generic_army_support
+        visible = {
+            has_country_flag = ROOT.OPEN_button3
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+
+            }
+            if = {
+                limit = {
+                    has_variable = force_defend_ally_borders_FOCUS_variable
+                }
+                var:force_defend_ally_borders_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_force_defend_ally_borders_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = force_defend_ally_borders_FOCUS_variable
+            }
+            #
+            set_variable = {
+                force_defend_ally_borders_FOCUS_variable = FROM
+            }
+            var:force_defend_ally_borders_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_force_defend_ally_borders_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_force_defend_ally_borders_B = {
+        icon = GFX_decision_generic_army_support
+        visible = {
+            has_country_flag = ROOT.OPEN_button3
+        }
+        available = {
+            has_variable = force_defend_ally_borders_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = force_defend_ally_borders_FOCUS_variable
+                }
+                var:force_defend_ally_borders_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_force_defend_ally_borders_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = force_defend_ally_borders_FOCUS_variable
+            }
+        }
+    }
+
+    #让盟友AI忽略特定友方前线
+    game_assistant_hoi4_general_dont_defend_ally_borders_A = {
+        icon = GFX_decision_FIN_stop_motti_tactics
+        visible = {
+            has_country_flag = ROOT.OPEN_button3
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            if = {
+                limit = {
+                    has_variable = dont_defend_ally_borders_FOCUS_variable
+                }
+                var:dont_defend_ally_borders_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_force_dont_defend_ally_borders_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = dont_defend_ally_borders_FOCUS_variable
+            }
+            #
+            set_variable = {
+                dont_defend_ally_borders_FOCUS_variable = FROM
+            }
+            var:dont_defend_ally_borders_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_force_dont_defend_ally_borders_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_dont_defend_ally_borders_B = {
+        icon = GFX_decision_FIN_stop_motti_tactics
+        visible = {
+            has_country_flag = ROOT.OPEN_button3
+        }
+        available = {
+            has_variable = dont_defend_ally_borders_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = dont_defend_ally_borders_FOCUS_variable
+                }
+                var:dont_defend_ally_borders_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_force_dont_defend_ally_borders_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = dont_defend_ally_borders_FOCUS_variable
+            }
+        }
+    }
+
+    #盟友不要对其他国家发动战争
+    game_assistant_hoi4_general_avoid_starting_wars_A = {
+        icon = GFX_decision_faction_bul_bs
+        visible = {
+            has_country_flag = ROOT.OPEN_button3
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            if = {
+                limit = {
+                    has_variable = avoid_starting_wars_FOCUS_variable
+                }
+                var:avoid_starting_wars_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_avoid_starting_wars_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = avoid_starting_wars_FOCUS_variable
+            }
+            #
+            set_variable = {
+                avoid_starting_wars_FOCUS_variable = FROM
+            }
+            var:avoid_starting_wars_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_avoid_starting_wars_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_avoid_starting_wars_B = {
+        icon = GFX_decision_faction_bul_bs
+        visible = {
+            has_country_flag = ROOT.OPEN_button3
+        }
+        available = {
+            has_variable = avoid_starting_wars_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = avoid_starting_wars_FOCUS_variable
+                }
+                var:avoid_starting_wars_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_avoid_starting_wars_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = avoid_starting_wars_FOCUS_variable
+            }
+        }
+    }
+
+    #盟友集中使用部队
+    game_assistant_hoi4_general_force_concentration_factor_A = {
+        icon = GFX_decision_SWI_guisan_speech
+        visible = {
+            has_country_flag = ROOT.OPEN_button3
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            if = {
+                limit = {
+                    has_variable = force_concentration_factor_FOCUS_variable
+                }
+                var:force_concentration_factor_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_force_concentration_factor_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = force_concentration_factor_FOCUS_variable
+            }
+            #
+            set_variable = {
+                force_concentration_factor_FOCUS_variable = FROM
+            }
+            var:force_concentration_factor_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_force_concentration_factor_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_force_concentration_factor_B = {
+        icon = GFX_decision_SWI_guisan_speech
+        visible = {
+            has_country_flag = ROOT.OPEN_button3
+        }
+        available = {
+            has_variable = force_concentration_factor_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = force_concentration_factor_FOCUS_variable
+                }
+                var:force_concentration_factor_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_force_concentration_factor_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = force_concentration_factor_FOCUS_variable
+            }
+        }
+    }
+
+    #盟友AI对目标国家备战
+    game_assistant_hoi4_general_prepare_for_war_A = {
+        icon = GFX_decision_eng_trade_unions_support
+        visible = {
+            has_country_flag = ROOT.OPEN_button4
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                NOT = {
+                    OR = {
+                        has_war_with = ROOT
+                        is_in_faction_with = ROOT
+                        is_puppet_of = ROOT
+                    }
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            if = {
+                limit = {
+                    has_variable = prepare_for_war_FOCUS_variable
+                }
+                var:prepare_for_war_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_prepare_for_war_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = prepare_for_war_FOCUS_variable
+            }
+            #
+            set_variable = {
+                prepare_for_war_FOCUS_variable = FROM
+            }
+            var:prepare_for_war_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_prepare_for_war_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_prepare_for_war_B = {
+        icon = GFX_decision_category_generic_crisis
+        visible = {
+            has_country_flag = ROOT.OPEN_button4
+        }
+        available = {
+            has_variable = prepare_for_war_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = prepare_for_war_FOCUS_variable
+                }
+                var:prepare_for_war_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_prepare_for_war_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = prepare_for_war_FOCUS_variable
+            }
+        }
+    }
+
+    #盟友AI协调海军入侵一个国家
+    game_assistant_hoi4_general_invade_A = {
+        icon = GFX_decision_category_GER_war_planning
+        visible = {
+            has_country_flag = ROOT.OPEN_button5
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            if = {
+                limit = {
+                    has_variable = invade_FOCUS_variable
+                }
+                var:invade_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_invade_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = invade_FOCUS_variable
+            }
+            #
+            set_variable = {
+                invade_FOCUS_variable = FROM
+            }
+            var:invade_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_invade_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_invade_B = {
+        icon = GFX_decision_category_GER_war_planning
+        visible = {
+            has_country_flag = ROOT.OPEN_button5
+        }
+        available = {
+            has_variable = invade_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = invade_FOCUS_variable
+                }
+                var:invade_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_invade_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = invade_FOCUS_variable
+            }
+        }
+    }
+
+
+    ##########################################
+    ##############AI战法类别###################
+    ##########################################
+
+    #盟友AI部署前线部队到目标对象-防守姿态
+    game_assistant_hoi4_general_front_control_careful_A = {
+        icon = GFX_decision_category_military_operation
+        visible = {
+            has_country_flag = ROOT.OPEN_button6
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                set_country_flag = FOCUS_control_careful
+            }
+            if = {
+                limit = {
+                    has_variable = front_control_careful_FOCUS_variable
+                }
+                var:front_control_careful_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_front_control_careful_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = front_control_careful_FOCUS_variable
+            }
+            #
+            set_variable = {
+                front_control_careful_FOCUS_variable = FROM
+            }
+            var:front_control_careful_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_front_control_careful_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_front_control_careful_B = {
+        icon = GFX_decision_category_military_operation
+        visible = {
+            has_country_flag = ROOT.OPEN_button6
+        }
+        available = {
+            has_variable = front_control_careful_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = front_control_careful_FOCUS_variable
+                }
+                var:front_control_careful_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_front_control_careful_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = front_control_careful_FOCUS_variable
+            }
+            every_country = {
+                limit = {
+                    has_country_flag = FOCUS_control_careful
+                }
+                clr_country_flag = FOCUS_control_careful
+            }
+        }
+    }
+
+    #盟友AI部署前线部队到目标对象-稳步推进
+    game_assistant_hoi4_general_front_control_balanced_A = {
+        icon = GFX_decision_category_military_operation
+        visible = {
+            has_country_flag = ROOT.OPEN_button7
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                set_country_flag = FOCUS_control_balanced
+            }
+            if = {
+                limit = {
+                    has_variable = front_control_balanced_FOCUS_variable
+                }
+                var:front_control_balanced_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_front_control_balanced_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = front_control_balanced_FOCUS_variable
+            }
+            #
+            set_variable = {
+                front_control_balanced_FOCUS_variable = FROM
+            }
+            var:front_control_balanced_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_front_control_balanced_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_front_control_balanced_B = {
+        icon = GFX_decision_category_military_operation
+        visible = {
+            has_country_flag = ROOT.OPEN_button7
+        }
+        available = {
+            has_variable = invade_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = front_control_balanced_FOCUS_variable
+                }
+                var:front_control_balanced_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_front_control_balanced_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = front_control_balanced_FOCUS_variable
+            }
+            every_country = {
+                limit = {
+                    has_country_flag = FOCUS_control_balanced
+                }
+                clr_country_flag = FOCUS_control_balanced
+            }
+        }
+    }
+
+    #盟友AI部署前线部队到目标对象-全力进攻
+    game_assistant_hoi4_general_front_control_rush_A = {
+        icon = GFX_decision_category_military_operation
+        visible = {
+            has_country_flag = ROOT.OPEN_button8
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                set_country_flag = FOCUS_control_rush
+            }
+            if = {
+                limit = {
+                    has_variable = front_control_rush_FOCUS_variable
+                }
+                var:front_control_rush_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_front_control_rush_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = front_control_rush_FOCUS_variable
+            }
+            #
+            set_variable = {
+                front_control_rush_FOCUS_variable = FROM
+            }
+            var:front_control_rush_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_front_control_rush_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_general_front_control_rush_B = {
+        icon = GFX_decision_category_military_operation
+        visible = {
+            has_country_flag = ROOT.OPEN_button8
+        }
+        available = {
+            has_variable = front_control_rush_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = front_control_rush_FOCUS_variable
+                }
+                var:front_control_rush_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_front_control_rush_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = front_control_rush_FOCUS_variable
+            }
+            every_country = {
+                limit = {
+                    has_country_flag = FOCUS_control_rush
+                }
+                clr_country_flag = FOCUS_control_rush
+            }
+        }
+    }
+
+    ##########################################
+    ##############AI军队结构###################
+    ##########################################
+    #盟友AI建造更多步兵
+    game_assistant_hoi4_general_role_ratio_infantry_A = {
+        icon = GFX_decision_generic_belgian_colonial_helmet
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_infantry_FOCUS_variable = FROM
+            }
+            var:role_ratio_infantry_FOCUS_variable = {
+                Ai_Strategy_role_ratio_infantry_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI建造更多装甲
+    game_assistant_hoi4_general_role_ratio_armor_A = {
+        icon = GFX_decision_generic_merge_plant_tank
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_armor_FOCUS_variable = FROM
+            }
+            var:role_ratio_armor_FOCUS_variable = {
+                Ai_Strategy_role_ratio_armor_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI建造更多卫戍部队
+    game_assistant_hoi4_general_role_ratio_garrison_A = {
+        icon = GFX_decision_generic_industry
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_garrison_FOCUS_variable = FROM
+            }
+            var:role_ratio_garrison_FOCUS_variable = {
+                Ai_Strategy_role_ratio_garrison_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI建造更多摩托化部队
+    game_assistant_hoi4_general_role_ratio_motorized_A = {
+        icon = GFX_decision_generic_motorized
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_motorized_FOCUS_variable = FROM
+            }
+            var:role_ratio_motorized_FOCUS_variable = {
+                Ai_Strategy_role_ratio_motorized_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI建造更多反坦克部队
+    game_assistant_hoi4_general_role_ratio_anti_armor_A = {
+        icon = GFX_decisions_generic_infiltration
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_anti_armor_FOCUS_variable = FROM
+            }
+            var:role_ratio_anti_armor_FOCUS_variable = {
+                Ai_Strategy_role_ratio_anti_armor_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI建造更多机械化部队
+    game_assistant_hoi4_general_role_ratio_mechanized_A = {
+        icon = GFX_decision_generic_prepare_civil_war
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_mechanized_FOCUS_variable = FROM
+            }
+            var:role_ratio_mechanized_FOCUS_variable = {
+                Ai_Strategy_role_ratio_mechanized_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI建造更多海军陆战队
+    game_assistant_hoi4_general_role_ratio_marines_A = {
+        icon = GFX_decision_generic_intelligence_operation
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_marines_FOCUS_variable = FROM
+            }
+            var:role_ratio_marines_FOCUS_variable = {
+                Ai_Strategy_role_ratio_marines_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI建造更多伞兵部队
+    game_assistant_hoi4_general_role_ratio_paratroopers_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_paratroopers_FOCUS_variable = FROM
+            }
+            var:role_ratio_paratroopers_FOCUS_variable = {
+                Ai_Strategy_role_ratio_paratroopers_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI建造更多山地部队
+    game_assistant_hoi4_general_role_ratio_mountaineers_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_mountaineers_FOCUS_variable = FROM
+            }
+            var:role_ratio_mountaineers_FOCUS_variable = {
+                Ai_Strategy_role_ratio_mountaineers_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI建造更多骑兵部队
+    game_assistant_hoi4_general_role_ratio_cavalry_A = {
+        icon = GFX_decision_generic_cavalry
+        visible = {
+            has_country_flag = ROOT.OPEN_button9
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                role_ratio_cavalry_FOCUS_variable = FROM
+            }
+            var:role_ratio_cavalry_FOCUS_variable = {
+                Ai_Strategy_role_ratio_cavalry_scripted_effects_A = yes
+            }
+        }
+    }
+
+
+    #盟友AI生产更多的主力舰
+    game_assistant_hoi4_general_unit_ratio_capital_ship_A = {
+        icon = GFX_decision_category_generic_naval
+        visible = {
+            has_country_flag = ROOT.OPEN_button10
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_capital_ship_FOCUS_variable = FROM
+            }
+            var:unit_ratio_capital_ship_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_capital_ship_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI生产更多的航母
+    game_assistant_hoi4_general_unit_ratio_carrier_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button10
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_carrier_FOCUS_variable = FROM
+            }
+            var:unit_ratio_carrier_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_carrier_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI生产更多的潜艇
+    game_assistant_hoi4_general_unit_ratio_submarine_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button10
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_submarine_FOCUS_variable = FROM
+            }
+            var:unit_ratio_submarine_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_submarine_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI生产更多的屏卫舰
+    game_assistant_hoi4_general_unit_ratio_screen_ship_A = {
+        icon = GFX_decision_generic_human_torpedo
+        visible = {
+            has_country_flag = ROOT.OPEN_button10
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_screen_ship_FOCUS_variable = FROM
+            }
+            var:unit_ratio_screen_ship_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_screen_ship_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI生产更多的护航舰队
+    game_assistant_hoi4_general_unit_ratio_convoy_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button10
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_convoy_FOCUS_variable = FROM
+            }
+            var:unit_ratio_convoy_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_convoy_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI制造更多的战斗机
+    game_assistant_hoi4_general_unit_ratio_fighter_A = {
+        icon = GFX_decision_generic_air
+        visible = {
+            has_country_flag = ROOT.OPEN_button11
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_fighter_FOCUS_variable = FROM
+            }
+            var:unit_ratio_fighter_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_fighter_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI制造更多的对地攻击机
+    game_assistant_hoi4_general_unit_ratio_cas_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button11
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_cas_FOCUS_variable = FROM
+            }
+            var:unit_ratio_cas_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_cas_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI制造更多的海军轰炸机
+    game_assistant_hoi4_general_unit_ratio_naval_bomber_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button11
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_naval_bomber_FOCUS_variable = FROM
+            }
+            var:unit_ratio_naval_bomber_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_naval_bomber_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI制造更多的战略轰炸机
+    game_assistant_hoi4_general_unit_ratio_strategic_bomber_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button11
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_strategic_bomber_FOCUS_variable = FROM
+            }
+            var:unit_ratio_strategic_bomber_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_strategic_bomber_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI制造更多的战术轰炸机
+    game_assistant_hoi4_general_unit_ratio_tactical_bomber_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button11
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_tactical_bomber_FOCUS_variable = FROM
+            }
+            var:unit_ratio_tactical_bomber_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_tactical_bomber_scripted_effects_A = yes
+            }
+        }
+    }
+
+    #盟友AI制造更多的重型战斗机
+    game_assistant_hoi4_general_unit_ratio_heavy_fighter_A = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button11
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            set_variable = {
+                unit_ratio_heavy_fighter_FOCUS_variable = FROM
+            }
+            var:unit_ratio_heavy_fighter_FOCUS_variable = {
+                Ai_Strategy_unit_ratio_heavy_fighter_scripted_effects_A = yes
+            }
+        }
+    }
+
+    ##########################################
+    ##############AI特定类别###################
+    ##########################################
+    #盟友AI给玩家租借
+    game_assistant_hoi4_send_lend_lease_desire = {
+        icon = GFX_decision_category_generic
+        visible = {
+            has_country_flag = ROOT.OPEN_button12
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            for_each_scope_loop = {
+                array = ROOT.allies
+                Ai_Strategy_send_lend_lease_desire_scripted_effects_A = yes
+            }
+
+        }
+    }
+    #盟友AI给指定国家租借
+    game_assistant_hoi4_send_lend_lease_from_AI_desire_A = {
+        icon = GFX_decision_generic_break_treaty
+        visible = {
+            has_country_flag = ROOT.OPEN_button12
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                OR = {
+                    #例如苏联：苏联与德国作战，我们也可以指定盟友给苏联租借
+                    and = {
+                        has_war = yes
+                        NOT = {
+                            has_war_with = ROOT
+                        }
+                    }
+                    is_in_faction_with = ROOT
+                    is_puppet_of = ROOT
+                }
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+            }
+            if = {
+                limit = {
+                    has_variable = send_lend_lease_desire_FOCUS_variable
+                }
+                var:send_lend_lease_desire_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_send_lend_lease_desire_from_AI_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = send_lend_lease_desire_FOCUS_variable
+            }
+            #
+            set_variable = {
+                send_lend_lease_desire_FOCUS_variable = FROM
+            }
+            var:send_lend_lease_desire_FOCUS_variable = {
+                for_each_scope_loop = {
+                    array = PREV.PREV.allies
+                    Ai_Strategy_send_lend_lease_desire_from_AI_scripted_effects_A = yes
+                }
+            }
+        }
+    }
+    #清除指令
+    game_assistant_hoi4_send_lend_lease_from_AI_desire_B = {
+        icon = GFX_decision_generic_break_treaty
+        visible = {
+            has_country_flag = ROOT.OPEN_button12
+        }
+        available = {
+            has_variable = send_lend_lease_desire_FOCUS_variable
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            if = {
+                limit = {
+                    has_variable = send_lend_lease_desire_FOCUS_variable
+                }
+                var:send_lend_lease_desire_FOCUS_variable = {
+                    for_each_scope_loop = {
+                        array = PREV.PREV.allies
+                        Ai_Strategy_send_lend_lease_desire_from_AI_scripted_effects_B = yes
+                    }
+                }
+                clear_variable = send_lend_lease_desire_FOCUS_variable
+            }
+        }
+    }
+    #傀儡禁止给玩家部队
+    game_assistant_hoi4_no_units_deployed_to_overlord = {
+        icon = GFX_decision_faction_bul_bs
+        visible = {
+            has_country_flag = ROOT.OPEN_button12
+        }
+        available = {
+            is_in_faction = yes
+        }
+        fire_only_once = no
+        target_trigger = {
+            FROM = {
+                is_puppet_of = ROOT
+            }
+        }
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            FROM = {
+                add_ideas = game_assistant_hoi4_general_no_units_deployed_to_overlord
+            }
+        }
+    }
+
+    ##########################################
+    ##############特定国家类别#################
+    ##########################################
+    #意大利防守地中海
+    game_assistant_hoi4_GER_decision_ITA = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button12
+            TAG = GER
+        }
+        available = {
+            TAG = GER
+            is_historical_focus_on = yes
+            is_in_faction = yes
+            ITA = {
+                exists = yes
+            }
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            ITA = {
+                Ai_Strategy_GER_from_ITA_scripted_effects = yes
+            }
+        }
+    }
+    #捷克斯洛伐克优先在有德国核心的地区修建建筑
+    game_assistant_hoi4_GER_decision_CZE = {
+        icon = GFX_decision_category_jap_southern_expansion
+        visible = {
+            has_country_flag = ROOT.OPEN_button12
+            TAG = GER
+        }
+        available = {
+            TAG = GER
+            is_historical_focus_on = yes
+            is_in_faction = yes
+            CZE = {
+                exists = yes
+            }
+        }
+        fire_only_once = yes
+        complete_effect = {
+            set_variable_to_random = {
+                var = game_assistant_hoi4_general_text
+                min = 1
+                max = 1001
+                integer = yes
+            }
+            CZE = {
+                Ai_Strategy_GER_from_CZE_scripted_effects = yes
+            }
+        }
+    }
+    
+}

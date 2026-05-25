@@ -1,0 +1,136 @@
+music = {
+	name = "start_SMO"
+	file = "start_SMO.ogg"
+}
+
+music = {
+	name = "POL_Join_SMO"
+	file = "POL_Join_SMO.ogg"
+}
+
+music = {
+	name = "POL_Falanga"
+	file = "POL_Falanga.ogg"
+}
+
+
+music = {
+	name = "POL_War_UKR"
+	file = "POL_War_UKR.ogg"
+}
+
+
+music = {
+	name = "POL_SOC"
+	file = "POL_SOC.ogg"
+}
+
+music = {
+	name = "UKR_super_fall_KUAES"
+	file = "UKR_super_fall_KUAES.ogg"
+}
+music = {
+	name = "UKR_super_fall_Rostov"
+	file = "UKR_super_fall_Rostov.ogg"
+}
+music = {
+	name = "UKR_liberate_Crimea"
+	file = "UKR_liberate_Crimea.ogg"
+}
+music = {
+	name = "RUS_super_fall_Donbass"
+	file = "RUS_super_fall_Donbass.ogg"
+}
+music = {
+	name = "RUS_super_fall_Kharkov"
+	file = "RUS_super_fall_Kharkov.ogg"
+}
+music = {
+	name = "Belgorod_under_Ukraine"
+	file = "Belgorod_under_Ukraine.ogg"
+}
+music = {
+	name = "march_justice"
+	file = "march_justice.ogg"
+}
+music = {
+	name = "bakhmut_taken"
+	file = "bakhmut_taken.ogg"
+}
+music = {
+	name = "WGN_bakhmut_taken"
+	file = "WGN_bakhmut_taken.ogg"
+}
+music = {
+	name = "prigoshin_died"
+	file = "prigoshin_died.ogg"
+}
+music = {
+	name = "prigozhin_President_Russia"
+	file = "prigozhin_President_Russia.ogg"
+}
+music = {
+	name = "Russia_particulation_mobilization"
+	file = "Russia_particulation_mobilization.ogg"
+}
+music = {
+	name = "Belarus_Tikhonovskaya_in_power"
+	file = "BLR_Tikhonovskaya.ogg"
+}
+music = {
+	name = "RUS_retreat_from_Kiev"
+	file = "RUS_retreat_from_Kiev.ogg"
+}
+music = {
+	name = "RUS_fall_Kiev_se"
+	file = "RUS_fall_Kiev_se.ogg"
+}
+music = {
+	name = "WGN_fall_Kiev"
+	file = "WGN_fall_Kiev.ogg"
+}
+music = {
+	name = "UKR_fall_Lugansk"
+	file = "UKR_fall_Lugansk.ogg"
+}
+music = {
+	name = "UKR_fall_Donetsk"
+	file = "UKR_fall_Donetsk.ogg"
+}
+music = {
+	name = "RUS_islamic_rebelion"
+	file = "RUS_islamic_rebelion.ogg"
+}
+music = {
+	name = "RUS_islamic_attack_RUS"
+	file = "RUS_islamic_attack_RUS.ogg"
+}
+music = {
+	name = "RUS_loyalist_attack_Kadyrov_Putin"
+	file = "RUS_loyalist_attack_Kadyrov_Putin.ogg"
+}
+music = {
+	name = "RUS_war_for_decolonisation"
+	file = "RUS_war_for_decolonisation.ogg"
+}
+music = {
+	name = "RUS_new_states"
+	file = "RUS_new_states.ogg"
+}
+music = {
+	name = "RUS_gazmanov_dead"
+	file = "RUS_GAZONUH_HAHLINA.ogg"
+}
+music = {
+	name = "prigozhin_bombit"
+	file = "prigozhin_bombit.ogg"
+}
+music = {
+	name = "prigozhin_bombit_2"
+	file = "prigozhin_bombit_2.ogg"
+}
+
+music = {
+	name = "Prigoshin_Leningrad_pesnya"
+	file = "Prigoshin_Leningrad_pesnya.ogg"
+}

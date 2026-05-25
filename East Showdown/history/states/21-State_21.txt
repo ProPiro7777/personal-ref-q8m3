@@ -1,0 +1,23 @@
+state = { 
+	id = 21 
+	name = "STATE_21" 
+	manpower = 297906 
+	
+	state_category = large_city 
+	history = { 
+		owner = LIT 
+		
+		victory_points = { 10956 100 }
+		
+		buildings = { 
+			electrical_substation = 6 
+			infrastructure = 4 
+			arms_factory = 2 
+			industrial_complex = 4 
+			thermal_power_plant = 1 
+		}
+		
+		add_core_of = LIT 
+	}
+	provinces = { 2970 10956 17302 17464 17478 17612 17800 17854 17976 17983 17984 17985 17986 17989 17990 17994 17996 17999 }
+}

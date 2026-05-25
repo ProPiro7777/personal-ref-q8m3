@@ -1,0 +1,70 @@
+instant_effect = { 
+	ensure_unit_template_MOL_infantry = yes
+	ensure_unit_template_MOL_artillery = yes
+	ensure_unit_template_MOL_spetsnaz = yes
+}
+
+units = {
+	division = {
+		name = "Batalionul 1 Infanterie Motorizata din cadrul Brigazii 1 Infanterie Motorizata «Moldova»"
+		location = 16024
+		division_template = "Batalion de infanterie"
+		force_equipment_variants = {
+			imv_medium_1_equipment = { owner = "NTO" version_name = "HMMWV" amount = 26 }
+			apc_sov_btr70_equipment = { owner = "RUS" amount = 20 }
+			sov_artillery_d20_equipment = { owner = "RUS" amount = 6 }
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.01
+	}
+
+	division = {
+		name = "Batalionul 1 Infanterie Motorizata din cadrul Brigazii 2 Infanterie Motorizata «Stefan cel Mare»"
+		location = 12751
+		division_template = "Batalion de infanterie"
+		force_equipment_variants = {
+			imv_medium_1_equipment = { owner = "NTO" version_name = "HMMWV" amount = 26 }
+			apc_sov_btr60_equipment = { owner = "RUS" amount = 20 }
+			sov_artillery_d20_equipment = { owner = "RUS" amount = 6 }
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.01
+	}
+
+	division = {
+		name = "Batalionul 1 Infanterie Motorizata din cadrul Brigazii 3 Infanterie Motorizata «Dacia»"
+		location = 16617
+		division_template = "Batalion de infanterie"
+		force_equipment_variants = {
+			imv_medium_1_equipment = { owner = "NTO" version_name = "HMMWV" amount = 26 }
+			apc_sov_btr60_equipment = { owner = "RUS" amount = 20 }
+			sov_artillery_d20_equipment = { owner = "RUS" amount = 6 }
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.01
+	}
+
+	division = { 
+		name = "Batalionul 1 Artilerie al Brigazii 1 Artilerie «Prut»"
+		location = 16198
+		division_template = "Batalion de artilerie"
+		force_equipment_variants = { 
+			imv_medium_1_equipment = { owner = "NTO" version_name = "HMMWV" amount = 26 }
+			sov_artillery_2a36_equipment = { owner = "RUS" amount = 24 }
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.01
+	}
+
+	division = { 
+		name = "Batalionul Fortelor Speciale «Fulger»"
+		location = 12751
+		division_template = "Batalionul fortelor speciale"
+		force_equipment_variants = { 
+			imv_medium_1_equipment = { owner = "NTO" version_name = "HMMWV" amount = 46 }
+			sov_artillery_d20_equipment = { owner = "RUS" amount = 6 }
+		}
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+}

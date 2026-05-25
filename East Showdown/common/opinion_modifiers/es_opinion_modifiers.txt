@@ -1,0 +1,123 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	recognize_as_occupied_territory = {
+		value = -100
+	}
+
+	recognize_as_occupied_territory_trade = {
+		value = -100
+		trade = yes
+	}
+
+	separatists = {
+		value = -200
+		
+	}
+
+	terrorists = {
+		value = -100
+	}
+	
+	support_russia = { 
+		value = -70
+	}
+	
+	support_ukraine = { 
+		value = -40
+	}
+	
+	support_us = { 
+		value = 30
+	}
+
+	#Pro-Russian
+	mother_russia = {
+		value = 100
+	}
+	
+	fraternal_nations = {
+		value = 60
+	}
+
+	RUS_hohli_closed_border = {
+		value = -20
+	}
+
+	#POL
+	POL_Condemn_South_Stream = {
+		value = -30
+	}
+	RUS_NTO_neg_suc = {
+		value = 10
+	}
+	POL_Negotiations_with_Zelensky ={
+		value = 10
+	}
+	POL_Condemn_Germany_for_being_soft_towards_Russia = {
+		value = -5
+	}
+	POL_Morawiecki_visit_to_Kyiv = {
+		value = 10
+	}
+	POL_new_format_UA_POL = {
+		value = 10
+	}
+	UKR_POL_accepted_us_in_EU = {
+		value = 40
+	}
+	RUS_POL_accepted_ukr_in_EU = {
+		value = -30
+	}
+
+	POL_NATO_declined_negotations_of_equipment = {
+		value = -15
+	}
+	POL_trade_deepening_UKR = {
+		value = 10
+	}
+	POL_accept_grain_UKR = {
+		value = 10
+	}
+	POL_european_aid_UKR = {
+		value = 10
+	}
+	POL_grain_scandal_UKR = {
+		value = -10
+	}
+	POL_Grain_tranche_agreement_to_other_countries = {
+		value = -10
+	}
+
+
+RUS_POL_Conflict = { 
+	value = -15
+}
+
+RUS_POL_Conflict_2 = { 
+	value = -20
+}
+RUS_POL_Conflict_3 = { 
+	value = -30
+}
+RUS_POL_Conflict_4 = { 
+	value = -40
+}
+RUS_POL_Conflict_5 = { 
+	value = -60
+}
+
+UKR_NTO_zaluzhniy_in_gb = { 
+	value = 10
+}
+
+}

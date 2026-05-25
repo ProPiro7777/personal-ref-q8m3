@@ -1,0 +1,13 @@
+instant_effect = {
+	ensure_unit_template_RUS_Pechotniy_batalion = yes
+}
+
+units = {
+	division = {
+		name = "Batalion im. Bogdana Hmelnickogo"
+		location = 18897
+		division_template = "Pechotniy batalion"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+	}
+}

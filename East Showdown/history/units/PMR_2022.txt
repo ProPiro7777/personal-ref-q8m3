@@ -1,0 +1,74 @@
+instant_effect = { 
+	ensure_unit_template_PMR_infantry_batalion = yes
+	ensure_unit_template_PMR_tank_batalion = yes
+	ensure_unit_template_PMR_spetsnaz = yes
+}
+
+units = {
+	division = {
+		name = "1-y motostrelkovyy batal'on 1-y otdel'noy gvardeyskoy motostrelkovoy brigady imeni general-polkovnika S. F. Kitsaka"
+		location = 11020
+		division_template = "Motostrelkovyy batal'on"
+		force_equipment_variants = { 
+			apc_sov_btr70_equipment = { owner = "RUS" amount = 46 }
+			sov_artillery_d20_equipment = { owner = "RUS" amount = 6 }
+		}
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		name = "1-y tankovyy batal'on 1-y otdel'noy gvardeyskoy motostrelkovoy brigady imeni general-polkovnika S. F. Kitsaka"
+		location = 11020
+		division_template = "Tankovyy batal'on"
+		force_equipment_variants = { 
+			apc_sov_btr80_equipment = { owner = "RUS" amount = 26 }
+			tank_sov_t64_equipment = { owner = "RUS" version_name = "Т-64БВ" amount = 20 }
+			sov_artillery_d20_equipment = { owner = "RUS" amount = 6 }
+		}
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "1-y motostrelkovyy batal'on 1-y motostrelkovoy brigady"
+		location = 1220
+		division_template = "Motostrelkovyy batal'on"
+		force_equipment_variants = { 
+			apc_sov_btr70_equipment = { owner = "RUS" amount = 46 }
+			sov_artillery_d20_equipment = { owner = "RUS" amount = 6 }
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		name = "1-y motostrelkovyy batal'on 2-y motostrelkovoy brigady"
+		location = 8025
+		division_template = "Motostrelkovyy batal'on"
+		force_equipment_variants = { 
+			apc_sov_btr60_equipment = { owner = "RUS" amount = 46 }
+			sov_artillery_d20_equipment = { owner = "RUS" amount = 6 }
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		name = "1-y motostrelkovyy batal'on 3-y motostrelkovoy brigady"
+		location = 7048
+		division_template = "Motostrelkovyy batal'on"
+		force_equipment_variants = { 
+			apc_sov_mtlb_equipment = { owner = "RUS" amount = 46 }
+			sov_artillery_d20_equipment = { owner = "RUS" amount = 6 }
+		}
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		name = "1-y otdel'nyy batal'on spetsial'nogo naznacheniya"
+		location = 11020
+		division_template = "Spetsnaz"
+		force_equipment_variants = { 
+			imv_heavy_1_equipment = { owner = "RUS" amount = 46 }
+		}
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+}

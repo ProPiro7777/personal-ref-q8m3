@@ -1,0 +1,135 @@
+#EAST SHOWDOWN 0.5.1.0 | AI 2.0
+
+WGN_me_ne_frego = {
+	allowed = {
+		original_tag = WGN
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RUS
+		value = -1000
+	}
+}
+
+
+WGN_border_setup = {
+	allowed = {
+		original_tag = WGN
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = -10000
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = BOR
+		value = -2000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = RBZ
+		value = -2000
+	}
+
+
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = RUS
+		value = 100
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BLR
+		value = 10000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = RBZ
+		value = 10000
+	}
+
+
+}
+
+
+#########################################
+# 1) Общая логика: война на Донбассе
+#########################################
+# Простой вариант: пока WGN в войне с УКР -> дави Донбасс (Донецк=31, Луганск=63)
+# Это большой «фронтовой» блок, чтобы проверять, идёт ли война, а остальное уточнять.
+
+WGN_donbass_front = {
+	allowed = {
+		original_tag = WGN
+	}
+	enable = {
+		count_triggers = {
+			amount = 1
+			has_war_with = UKR
+			has_start_date = 2022.04.15
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { has_war_with = UKR }
+		}
+	}
+
+
+
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 118
+		value = 1500
+	}
+	ai_strategy = {
+		type = front_unit_request
+		strategic_region = 119  # Луганск
+		value = 1500
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		strategic_region = 118
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+		priority = 9999
+	}
+	ai_strategy = {
+		type = front_control
+		tag = UKR
+		strategic_region = 119
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+		priority = 9999
+	}
+}
+

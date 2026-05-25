@@ -1,0 +1,69 @@
+instant_effect = {
+	ensure_unit_template_UKR_NATO_UKR_battalion = yes
+}
+
+units = {
+	division = {
+		name = "NATO peacekeeping brigade"
+		location = 11555
+		division_template = "NATO UKR battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "NATO peacekeeping brigade"
+		location = 11555
+		division_template = "NATO UKR battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "NATO peacekeeping brigade"
+		location = 11555
+		division_template = "NATO UKR battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "NATO peacekeeping brigade"
+		location = 11555
+		division_template = "NATO UKR battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "NATO peacekeeping brigade"
+		location = 11555
+		division_template = "NATO UKR battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "NATO peacekeeping brigade"
+		location = 11555
+		division_template = "NATO UKR battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "NATO peacekeeping brigade"
+		location = 11555
+		division_template = "NATO UKR battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "NATO peacekeeping brigade"
+		location = 11555
+		division_template = "NATO UKR battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "NATO peacekeeping brigade"
+		location = 11555
+		division_template = "NATO UKR battalion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+}

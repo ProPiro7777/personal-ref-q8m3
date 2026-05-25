@@ -1,0 +1,2926 @@
+characters = {
+	volodymir_zelenskyy = {
+		name = volodymir_zelenskyy
+		portraits = {
+			civilian = {
+				#Custom image for Denis Pushilin
+				large = "gfx/leaders/UKR/zelenskyy.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = controlled_democracy
+			traits = {
+				humorist_president
+			}
+			desc = VLADIMIR_ZELENSKY_DESCRIPTION
+		}
+		field_marshal = {
+			# THIS IS NEEDED FOR THE PUTIN MISSIONS OR IT WONT APPEAR ITS PORTRAIT IN THE EVENTS
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				UKR = {
+					exists = no
+				}
+			}
+		}
+	}
+	SNBO_leader = {
+		name = SNBO_leader
+		portraits = {
+			civilian = {
+				#Custom image for Denis Pushilin
+				large = "gfx/leaders/UKR/SNBO_leader.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = controlled_democracy
+			traits = {
+			}
+		}
+	}
+	UKR_viktor_medvedchuk = {
+		name = UKR_viktor_medvedchuk
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_viktor_medvedchuk.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = oligarchy
+			traits = {
+				putin_friend
+				oligarch
+			}
+		}
+	}
+	UKR_Boiko_Yurii = {
+		name = UKR_Boiko_Yurii
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_Boiko_Yurii.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = authoritarian_democracy_boiko
+			traits = {
+			}
+		}
+	}
+	UKR_RO_Yanukovich = {
+		name = UKR_RO_Yanukovich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_RO_Yanukovich.dds"
+			}
+		}
+	}
+	UKR_RO_Kiva = {
+		name = UKR_RO_Kiva
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_RO_Kiva.dds"
+			}
+		}
+	}
+	UKR_Peter_Nikolaevich = {
+		name = UKR_Peter_Nikolaevich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_Peter_Nikolaevich.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+	}
+	UKR_Oleg_Tyagnibok = {
+		name = UKR_Oleg_Tyagnibok
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_Oleg_Tyagnibok.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = national_socialism
+			traits = {
+				ideological_sportsman
+			}
+		}
+	}
+	UKR_Andriy_Tarasenko = {
+		name = UKR_Andriy_Tarasenko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = national_socialism
+			traits = {
+				nationalist_symbol
+			}
+		}
+	}
+	UKR_genshtab_VSY = {
+		name = UKR_genshtab_VSY
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_genshtab_VSY.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = military_dictatorship
+			traits = {
+				incompetent_leader
+			}
+		}
+	}
+	UKR_pravy_sektor = {
+		name = UKR_pravy_sektor
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/UKR_pravy_sektor.dds"
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = nationalism
+			traits = {
+				incompetent_leader
+			}
+		}
+	}
+	denys_shmyhal = {
+		name = denys_shmyhal
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/smigal.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = prime_minister
+			idea_token = UKR_denys_shmyhal
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				premier_minister_handyman
+			}
+		}
+	}
+	denys_shmyhal_head_president_office = {
+		name = denys_shmyhal_head_president_office
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/smigal.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_president_office
+			idea_token = UKR_denys_shmyhal_head_president_office
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				head_president_office_handyman2
+			}
+		}
+	}
+	denys_shmyhal_energetics_minister = {
+		name = denys_shmyhal_energetics_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/smigal.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = energetics_minister
+			idea_token = UKR_denys_shmyhal_energetics_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				energy_minister_handyman
+			}
+		}
+	}
+	denys_shmyhal_defense_minister = {
+		name = denys_shmyhal_defense_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/smigal.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = defense_minister
+			idea_token = UKR_denys_shmyhal_defense_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+			    defense_minister_handyman
+			}
+		}
+	}
+	dmytro_kuleba = {
+		name = UKR_dmytro_kuleba
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/culeba.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = foreign_affairs_minister
+			idea_token = UKR_dmytro_kuleba
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				foreign_affairs_minister_persistent_diplomat
+			}
+		}
+	}
+	andriy_sibiga = {
+		name = UKR_andriy_sibiga
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/sibiga.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = foreign_affairs_minister
+			idea_token = UKR_andriy_sibiga
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				foreign_affairs_minister_quiet_performer
+			}
+		}
+	}
+	alexey_reznikov = {
+		name = alexey_reznikov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/reznikov.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = defense_minister
+			idea_token = UKR_alexey_reznikov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				defense_minister_industrialist
+			}
+		}
+	}
+	rustem_umerov = {
+		name = rustem_umerov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/rustem_umerov.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = defense_minister
+			idea_token = UKR_rustem_umerov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				defense_minister_cautious
+			}
+		}
+	}
+	alexey_arestovich = {
+		name = alexey_arestovich
+		portraits = {
+			civilian = {
+				small = GFX_Areztovich
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_alexey_arestovich
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_the_peoples_comforter
+			}
+		}
+	}
+	ruslan_stefanchuk = {
+		name = ruslan_stefanchuk
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/stefanchuk.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_ruslan_stefanchuk
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_head_of_the_verkhovna_rada
+			}
+		}
+	}
+	alexey_goncharenko = {
+		name = alexey_goncharenko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/smallgoncharenko.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_alexey_goncharenko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_populist_of_simple_solutions
+			}
+		}
+	}
+	maryana_bezuahla = {
+		name = maryana_bezuahla
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/bezugla.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_maryana_bezuahla
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_eternal_critic
+			}
+		}
+	}
+	rinat_akhmetov = {
+		name = rinat_akhmetov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/ahmetov.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_rinat_akhmetov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_donetsk_oligarch_and_patron
+			}
+		}
+	}
+	serhiy_sternenko = {
+		name = serhiy_sternenko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/sternenko.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_serhiy_sternenko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_nationalist_volunteer
+			}
+		}
+	}
+	david_arakhamia = {
+		name = david_arakhamia
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/arahamia.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_david_arakhamia
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_head_of_the_servant_of_the_people_faction
+			}
+		}
+	}
+	elena_zelenska = {
+		name = elena_zelenska
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/olena_zelenska.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_elena_zelenska
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_first_lady
+			}
+		}
+	}
+	igor_lachenkov = {
+		name = igor_lachenkov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/lachen.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_igor_lachenkov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_responsible_citizen_volunteer
+			}
+		}
+	}
+	taras_chmut = {
+		name = taras_chmut
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/chmut.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_taras_chmut
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_pioneer_of_volunteering
+			}
+		}
+	}
+	igor_terekhov = {
+		name = igor_terekhov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/terehov.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_igor_terekhov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_the_kind_hearted_mayor_of_kharkiv
+			}
+		}
+	}
+	kyryl_budanov = {
+		name = kyryl_budanov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/budanov.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/UKR_kyrylo_budanov.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_reckless
+				fast_planner
+				media_personality
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_reconnaissance
+			idea_token = UKR_kyryl_budanov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				head_of_reconnaissance_original_scout
+			}
+		}
+	}
+	oleg_ivashchenko = {
+		name = oleg_ivashchenko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/ivashenko.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_reconnaissance
+			idea_token = UKR_oleg_ivashchenko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				head_of_reconnaissance_tasks_love_silence
+			}
+		}
+	}
+	vasily_malyuk = {
+		name = vasily_malyuk
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/maluk.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_reconnaissance
+			idea_token = UKR_vasily_malyuk
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				head_of_reconnaissance_shield_of_stability
+			}
+		}
+	}
+
+
+	ivan_bakanov = {
+		name = ivan_bakanov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/bakanov.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_security_service
+			idea_token = UKR_ivan_bakanov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				head_of_security_service_slow
+			}
+		}
+	}
+	vasily_malyuk_sbu = {
+		name = vasily_malyuk
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/maluk.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_security_service
+			idea_token = UKR_vasily_malyuk_sbu
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				head_of_security_service_superman
+			}
+		}
+	}
+	evgen_khmara = {
+		name = evgen_khmara
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/hmara.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_of_security_service
+			idea_token = UKR_evgen_khmara
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				head_of_security_sf_soldier_from_AFO_Unit_of_the_SSU
+			}
+		}
+	}
+	kyryl_budanov_prime_minister = {
+		name = kyryl_budanov_prime_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/budanov_kostum.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = prime_minister
+			idea_token = UKR_kyryl_budanov_prime_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				premier_minister_unemotional_leader
+			}
+		}
+	}
+	kyryl_budanov_head_president_office = {
+		name = kyryl_budanov_head_president_office
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/budanov_kostum.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_president_office
+			idea_token = UKR_kyryl_budanov_head_president_office
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				head_president_office_system_reformer
+			}
+		}
+	}
+	kyryl_budanov_internal_affairs_minister = {
+		name = kyryl_budanov_internal_affairs_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/budanov_kostum.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = internal_affairs_minister
+			idea_token = UKR_kyryl_budanov_internal_affairs_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				internal_affairs_minister_scout
+			}
+		}
+	}
+	pavel_palisa = {
+		name = pavel_palisa
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/palisa.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_president_office
+			idea_token = UKR_pavel_palisa
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				head_president_office_war_veteran
+			}
+		}
+	}
+	vladislav_vlasiyk = {
+		name = vladislav_vlasiyk
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/vlasuk.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_president_office
+			idea_token = UKR_vladislav_vlasiyk
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				head_president_office_experienced_lawyer_from_the_ministry_of_justice
+			}
+		}
+	}
+	andriy_biletsky = {
+		name = andriy_biletsky
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/biletskiy.dds"
+			}
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/biletsky.png"
+			}	
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = UKR_andriy_biletsky
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				UKR_army_chief_biletskiy
+			}
+			cost = 100
+		}
+	}
+	andriy_ilyenko = {
+		name = andriy_ilyenko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_andriy_ilyenko
+			allowed = {
+				original_tag = UKR
+				has_government = fascism
+			}
+			traits = {
+				premier_minister_fascism
+			}
+		}
+	}
+	#Military
+	mikola_balan = {
+		name = mikola_balan
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/balan_mikola.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/balan_mikola.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				defensive_doctrine
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	} 
+
+	valeriy_zaluzhnyy = {
+		name = valeriy_zaluzhnyy
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/UKR_valeriy_zaluzhnyy.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/valeryy_zalysniy.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+		}
+		field_marshal = {
+			traits = {
+				expert_improviser
+				brilliant_strategist
+				career_officer
+				trait_engineer
+				fortress_buster
+				media_personality
+				expert_improviser
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = UKR_valeriy_zaluzhnyy
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				UKR_army_chief_zaluzhnyy
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	valeriy_zaluzhnyy_prime_minister = {
+		name = valeriy_zaluzhnyy_prime_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/zalushniy_kostum.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = prime_minister
+			idea_token = UKR_valeriy_zaluzhnyy_prime_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				premier_minister_the_peoples_favorite_general
+			}
+		}
+	}
+	evghenyy_moiysyk = {
+		name = evghenyy_moiysyk
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/moiysyk_evghenyy.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/moiysyk_evghenyy.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				commando
+				career_officer
+				paratrooper
+				trait_reckless
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	viktor_bokyi = {
+		name = viktor_bokyi
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/viktor_bokyi.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/bokyi_viktor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				inflexible_strategist
+				trait_cautious
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	volodymir_karpenko = {
+		name = volodymir_karpenko
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/karpenko_volodymir.dds"
+			}
+			army = {
+				large = "gfx/leaders/UKR/karpenko_volodymir.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_reckless
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	volodymir_koval = {
+		name = volodymir_koval
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/koval_volodymir.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/koval_volodymir.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				engineer_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	sergey_naev = {
+		name = sergey_naev
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/naev_sergey.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/naev_sergey.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				defensive_doctrine
+				fast_planner
+				trait_engineer
+				fortress_buster
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	oleksandr_nesterenko = {
+		name = oleksandr_nesterenko
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/nesterenko_oleksandr.dds"
+			}
+			army = {
+				large = "gfx/leaders/UKR/nesterenko_oleksandr.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	oleksandr_pavlyuk = {
+		name = oleksandr_pavlyuk
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/oleksandr_pavlyuk.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/oleksandr_pavlyuk.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ihor_palahnyuk = {
+		name = ihor_palahnyuk
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/UKR_palahnyuk_ihor.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/palahnyuk_ihor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_leader
+				defensive_doctrine
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	sergiy_litvinov = {
+		name = sergiy_litvinov
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/sergiy_litvinov.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/sergiy_litvinov.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	oleksandr_kyrylenko = {
+		name = oleksandr_kyrylenko
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/oleksandr_kyrylenko.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/oleksandr_kyrylenko.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				fast_planner
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	dmytro_krasilnikov = {
+		name = dmytro_krasilnikov
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/dmytro_krasilnikov.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/dmytro_krasilnikov.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	vladislav_klochkov = {
+		name = vladislav_klochkov
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/vladislav_klochkov.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/vladislav_klochkov.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	dmytro_gerega = {
+		name = dmytro_gerega
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/dmytro_gerega.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/dmytro_gerega.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				fortress_buster
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	ihor_plahuta = {
+		name = ihor_plahuta
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/ihor_plahuta.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/ihor_plahuta.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_expert
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	maksim_mirhorodskiy = {
+		name = maksim_mirhorodskiy
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/maksim_mirhorodskiy.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/maksim_mirhorodskiy.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+				paratrooper
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	vadim_syharevskiy = {
+		name = vadim_syharevskiy
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/vadim_syharevskiy.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/vadim_syharevskiy.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				naval_invader
+				invader_ii
+				expert_improviser
+				trait_engineer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = UKR_vadim_syharevskiy
+			ledger = air
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	robert_brovdy = {
+		name = robert_brovdy
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/madyar.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = UKR_robert_brovdy
+			ledger = air
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	serhiy_kornichyk = {
+		name = serhiy_kornichyk
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/serhiy_kornichyk.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/serhiy_kornichyk.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				fast_planner
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	vasil_osipchuk = {
+		name = vasil_osipchuk
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/vasil_osipchuk.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/vasil_osipchuk.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	oleg_gulak = {
+		name = oleg_gulak
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/oleg_gulak.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/oleg_gulak.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				logistics_wizard
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	oleksandr_sirskyy = {
+		name = oleksandr_sirskyy
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/oleksandr_sirskyy.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/sirskyy_oleksandr.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				brilliant_strategist
+				unyielding_defender
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = UKR_oleksandr_sirskyy
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				UKR_army_chief_sirskiyy
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	serhiy_stanislavovych = {
+		name = serhiy_stanislavovych
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/stanislavovych_serhiy.dds"
+			}
+			army = {
+				large = "gfx/leaders/UKR/stanislavovych_serhiy.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	gregory_galagan = {
+		name = gregory_galagan
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/gregory_galagan.dds.dds"
+			}
+			army = {
+				large = "gfx/leaders/UKR/gregory_galagan.dds"
+			}
+		}
+	}
+	ihor_tantsyura = {
+		name = ihor_tantsyura
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/tantsyura_ihor.dds"
+			}
+			army = {
+				large = "gfx/leaders/UKR/tantsyura_ihor.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	volodymyr_shvedyuk = {
+		name = volodymyr_shvedyuk
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/shvedyuk_volodymyr.dds"
+			}
+			army = {
+				large = "gfx/leaders/UKR/shvedyuk_volodymyr.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	mykola_oleshuk = {
+		name = mykola_oleshuk
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/mykola_oleshuk.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/shvedyuk_volodymyr.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = mykola_oleshuk
+			ledger = air
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	anatoly_kryvonoshko = {
+		name = anatoly_kryvonoshko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/krivonoshko.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = UKR_anatoly_kryvonoshko
+			ledger = air
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	dmytro_marchenko = {
+		name = dmytro_marchenko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/UKR_dmytro_marchenko.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/UKR_dmytro_marchenko.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				fortress_buster
+				brilliant_strategist
+				defensive_doctrine
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	kryvonos_sergey = {
+		name = kryvonos_sergey
+		country_leader = {
+			ideology = despotism
+		}
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/culeba1.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/culeba1.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_reckless
+				trait_engineer
+				fortress_buster
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	sergey_shaptala = {
+		name = sergey_shaptala
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/UKR_sergey_shaptala.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/sergey_shaptala.png"
+			}
+		}
+		field_marshal = {
+			traits = {
+				Skilled_Staffer
+				brilliant_strategist
+				career_officer
+				trait_engineer
+				hill_fighter
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 6
+			logistics_skill = 6
+		}
+		advisor = {
+			slot = head_of_headquarter
+			idea_token = UKR_sergey_shaptala
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	oleksandr_tarnavskiy = {
+		name = oleksandr_tarnavskiy
+		portraits = {
+			army = {
+				small = "gfx/leaders/UKR/small/oleksandr_tarnavskiy.png"
+			}
+			army = {
+				large = "gfx/leaders/UKR/UKR_oleksandr_tarnavskiy.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				inflexible_strategist
+				Skilled_Staffer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 6
+		}
+	}
+	yuriy_sodol = {
+		name = yuriy_sodol
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/UKR_yuriy_sodol.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				naval_invader
+				invader_ii
+				fast_planner
+				butcher
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	mikhail_zabrodsky = {
+		name = mikhail_zabrodsky
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/UKR_mikhail_zabrodsky.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				career_officer
+				paratrooper
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	andriy_gnatov = {
+		name = andriy_gnatov
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/UKR_andriy_gnatov.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				naval_invader
+				invader_ii
+				expert_improviser
+				career_officer
+				trait_engineer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 3
+		}
+	}
+	denys_prokopenko = {
+		name = denys_prokopenko
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/UKR_denys_prokopenko.png"
+			}
+			army = {
+				small = "gfx/leaders/UKR/small/UKR_denys_prokopenko_small.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				defensive_doctrine
+				brilliant_strategist
+				fortress_buster
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = UKR_denys_prokopenko
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				UKR_army_chief_prokopenko
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	mikhail_drapatiy = {
+		name = mikhail_drapatiy
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/UKR_mikhail_drapatiy.png"
+			}
+			army = {
+				small = "gfx/leaders/UKR/small/UKR_mikhail_drapatiy_small.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				fortress_buster
+				brilliant_strategist
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = UKR_mikhail_drapatiy
+			ledger = army
+			can_be_fired = no
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				UKR_army_chief_drapatiy
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	skibyuk_igor = {
+		name = skibyuk_igor
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/UKR_skibyuk_igor.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				fortress_buster
+				paratrooper
+				career_officer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	anatoliy_bargilevich = {
+		name = anatoliy_bargilevich
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/UKR_anatoliy_bargilevich.png"
+			}
+			army = {
+				small = "hz"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_engineer
+				career_officer
+				brilliant_strategist
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_gs
+			idea_token = UKR_anatoliy_bargilevich
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 100
+		}
+	}
+	bohdan_krotevych = {
+		name = bohdan_krotevych
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/krotevych.png"
+			}
+			army = {
+				small = "gfx/leaders/UKR/small/krotevych_small.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_engineer
+				career_officer
+				brilliant_strategist
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = head_of_headquarter
+			idea_token = UKR_bohdan_krotevych
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 100
+		}
+	}
+	andrey_gnatov = {
+		name = andrey_gnatov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/smallgnatov.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_headquarter
+			idea_token = UKR_andrey_gnatov
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 100
+		}
+	}
+	maxim_zhorin = {
+		name = maxim_zhorin
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/shorin.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_headquarter
+			idea_token = UKR_maxim_zhorin
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 100
+		}
+	}
+	anatoly_bargilevich = {
+		name = anatoly_bargilevich
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/bargilevich.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_headquarter
+			idea_token = UKR_bohdan_krotevych
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 100
+		}
+	}
+	yuriy_halushkyn = {
+		name = yuriy_halushkyn
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/halushkin.png"
+			}
+			civilian = {
+				small = "gfx/leaders/UKR/smallgalushkin.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_engineer
+				career_officer
+				brilliant_strategist
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = head_of_headquarter
+			idea_token = UKR_yuriy_halushkyn
+			allowed = {
+				original_tag = UKR
+			}
+			traits = {
+				army_regrouping_3
+			}
+			cost = 100
+		}
+	}
+	prytula = {
+		name = prytula
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/prytula.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_prytula
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				political_advisor_media_volunteer
+			}
+		}
+	}
+	vitaly_kim = {
+		name = vitaly_kim
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/vitaly_kim.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_vitaly_kim
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+	ermak = {
+		name = ermak
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/ermak.png"
+				large = "gfx/leaders/UKR/UKR_ermak.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_president_office
+			idea_token = UKR_ermak_head_president_office
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				head_president_office_creator_of_the_presidents_office
+			}
+		}
+		country_leader = {
+			expire = "1965.1.1"
+			ideology = controlled_democracy
+			traits = {
+			}
+		}
+	}
+	n_head_president_office = {
+		name = n_head_president_office
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/no_peaple.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = head_president_office
+			idea_token = UKR_n_head_president_office
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+			}
+			traits = {
+				
+			}
+		}
+	}
+	Muraev_Evgen = {
+		name = Muraev_Evgen
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/muraev.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = UKR_Muraev_Evgen
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				
+			}
+		}
+	}
+
+	Julia_Sviridenko = {
+		name = Julia_Sviridenko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/sviridenko.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = prime_minister
+			idea_token = UKR_Julia_Sviridenko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				premier_minister_responsible_bureaucrat
+			}
+		}
+	}
+	Julia_Sviridenko_economy_minister = {
+		name = Julia_Sviridenko_economy_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/sviridenko.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			idea_token = UKR_Julia_Sviridenko_economy_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				economy_minister_chief_economist
+			}
+		}
+	}
+	alexey_sobolev = {
+		name = alexey_sobolev
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/sobolev.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			idea_token = UKR_alexey_sobolev
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				economy_minister_executive
+			}
+		}
+	}
+	alexey_sobolev_energetics_minister = {
+		name = alexey_sobolev_energetics_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/sobolev.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = energetics_minister
+			idea_token = UKR_alexey_sobolev_energetics_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				energy_minister_executive
+			}
+		}
+	}
+	mykhailo_fedorov_economy_minister = {
+		name = mykhailo_fedorov_economy_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/fedorov.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			idea_token = UKR_mykhailo_fedorov_economy_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				economy_minister_economic_reformer
+			}
+		}
+	}
+	mykhailo_fedorov_defense_minister = {
+		name = mykhailo_fedorov_defense_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/fedorov.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = defense_minister
+			idea_token = UKR_mykhailo_fedorov_defense_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				defense_minister_system_reformer
+			}
+		}
+	}
+	german_smetanin = {
+		name = german_smetanin
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/smetanin.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = defense_minister
+			idea_token = UKR_german_smetanin
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				defense_minister_head_of_ukroboronprom
+			}
+		}
+	}
+	dmitry_natalukha = {
+		name = dmitry_natalukha
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/nataluha.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			idea_token = UKR_dmitry_natalukha
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				economy_minister_state_property_reformer
+			}
+		}
+	}
+	sergey_koretsky = {
+		name = sergey_koretsky
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/koretskiy.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = economy_minister
+			idea_token = UKR_sergey_koretsky
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				economy_minister_head_of_naftogaz
+			}
+		}
+	}
+	sergey_koretsky_energetics_minister = {
+		name = sergey_koretsky_energetics_minister
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/koretskiy.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = energetics_minister
+			idea_token = UKR_sergey_koretsky_energetics_minister
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				energy_minister_head_of_naftogaz
+			}
+		}
+	}
+	mykhailo_fedorov = {
+		name = mykhailo_fedorov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/fedorov.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = prime_minister
+			idea_token = UKR_mykhailo_fedorov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				premier_minister_responsible_technocrat
+			}
+		}
+	}
+	german_galushchenko = {
+		name = german_galushchenko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/galushenko.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = energetics_minister
+			idea_token = UKR_german_galushchenko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				energy_minister_old_school_lawyer
+			}
+		}
+	}
+	svetlana_grinchuk = {
+		name = svetlana_grinchuk
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/grinchuk.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = energetics_minister
+			idea_token = UKR_svetlana_grinchuk
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				energy_minister_questionable_individual
+			}
+		}
+	}
+	artem_nekrasov = {
+		name = artem_nekrasov
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/nekrasov.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = energetics_minister
+			idea_token = UKR_artem_nekrasov
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+			}
+			traits = {
+				energy_minister_experienced_energy_professional
+			}
+		}
+	}
+	Denis_Monastirsky = {
+		name = Denis_Monastirsky
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/monastirsky.png"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = internal_affairs_minister
+			idea_token = UKR_Denis_Monastirsky
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				internal_affairs_minister_successful_head_of_the_mia
+			}
+		}
+	}
+	igor_klimenko = {
+		name = igor_klimenko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/klimenko.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = internal_affairs_minister
+			idea_token = UKR_igor_klimenko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				internal_affairs_minister_experienced_police_officer
+			}
+		}
+	}
+	serhiy_deineko = {
+		name = serhiy_deineko
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/UKR/small/deyneko.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = internal_affairs_minister
+			idea_token = UKR_serhiy_deineko
+			allowed = {
+				original_tag = UKR
+			}
+			available = {
+
+			}
+			traits = {
+				internal_affairs_minister_communications_in_the_border_service
+			}
+		}
+	}
+	UKR_Vasiliy_petrovich = {
+		name = UKR_Vasiliy_petrovich
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_Vasiliy_petrovich
+				small = GFX_idea_UKR_Vasiliy_petrovich
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_armored_specialist
+				scientist_trait_fast_learner
+			}
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+	UKR_Anna_kornevich = {
+		name = UKR_Anna_kornevich
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_Anna_kornevich
+				small = GFX_idea_UKR_Anna_kornevich
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_aircraft_specialist
+				scientist_trait_genius
+				scientist_trait_rocketry_specialist
+			}
+			skills = {
+				specialization_air = 4
+			}
+		}
+	}
+	UKR_Victor_lokhmach = {
+		name = UKR_Victor_lokhmach
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_Victor_lokhmach
+				small = GFX_idea_UKR_Victor_lokhmach
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_armored_specialist
+				scientist_trait_artillery_specialist
+			}
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+	UKR_Djo_hitrodum = {
+		name = UKR_Djo_hitrodum
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_Djo_hitrodum
+				small = GFX_idea_UKR_Djo_hitrodum
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_aircraft_specialist
+				scientist_trait_helicopter_expert
+			}
+			skills = {
+				specialization_air = 3
+			}
+		}
+	}
+	UKR_Evgen_korovin = {
+		name = UKR_Evgen_korovin
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_Evgen_korovin
+				small = GFX_idea_UKR_Evgen_korovin
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_fast_learner
+				scientist_trait_armored_specialist
+			}
+			skills = {
+				specialization_land = 3
+			}
+		}
+	}
+	UKR_Venya_sidorov = {
+		name = UKR_Venya_sidorov
+		portraits = {
+			army = {
+				large = GFX_portrait_UKR_Venya_sidorov
+				small = GFX_idea_UKR_Venya_sidorov
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_rocketry_specialist
+				scientist_trait_bombs_expert
+			}
+			skills = {
+				specialization_air = 4
+			}
+		}
+	}
+	sergey_perec = {
+		name = sergey_perec
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/sergey_perec.png"
+			}			
+		}
+		corps_commander = {
+			traits = {
+				commando
+				skirmisher
+				naval_invader
+				invader_ii
+				panzer_leader
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 1
+		}
+	}
+	alexey_shandar = {
+		name = alexey_shandar
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/alexey_shandar.png"
+			}			
+		}
+		corps_commander = {
+			traits = {
+				commando
+				skirmisher
+				organizer
+				paratrooper
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	vladimir_shvorak = {
+		name = vladimir_shvorak
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/vladimir_shvorak.png"
+			}				
+		}
+		corps_commander = {
+			traits = {
+				commando
+				skirmisher
+				paratrooper
+				defensive_doctrine
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	gennady_shapovalov = {
+		name = gennady_shapovalov
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFUgennady_shapovalov.png"
+			}				
+		}
+		corps_commander = {
+			traits = {
+				commando
+				skirmisher
+				paratrooper
+				trait_engineer
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	victor_solymchuk = {
+		name = victor_solymchuk
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/victor_solymchuk.png"
+			}			
+		}
+		corps_commander = {
+			traits = {
+				defensive_doctrine
+				infantry_officer
+				infantry_expert
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	edouard_moskalov = {
+		name = edouard_moskalov
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/edouard_moskalov.png"
+			}	
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+				urban_assault_specialist
+				ambusher
+				village_assault_specialist
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	igor_obolensky = {
+		name = igor_obolensky
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/igor_obolensky.png"
+			}		
+		}
+		corps_commander = {
+			traits = {
+				organizer
+				trickster
+				commando
+				skirmisher
+				trait_engineer
+				cavalry_leader
+				village_assault_specialist
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	sergey_voichenko = {
+		name = sergey_voichenko
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/sergey_voichenko.png"
+			}			
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+				organizer
+				offensive_doctrine
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	dmitry_bratishko = {
+		name = dmitry_bratishko
+		portraits = {
+			army = {
+				large = "gfx/leaders/UKR/NEW_AFU/dmitry_bratishko.png"
+			}			
+		}
+		corps_commander = {
+			traits = {
+				commando
+				skirmisher
+				paratrooper
+				organizer
+				naval_invader
+				trickster
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

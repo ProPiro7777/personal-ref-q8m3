@@ -1,0 +1,714 @@
+add_namespace = super
+add_namespace = POL_super
+
+
+country_event = {
+	id = POL_super.1
+	title = POL_super.1.t
+	desc = POL_super.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = POL_super.1.a
+		log = "[GetDateText]: [This.GetName]: POL_super.1.a executed"
+		
+        set_global_flag = POL_join_SMO_se
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "POL_Join_SMO"
+	}
+}
+
+country_event = {
+	id = POL_super.2
+	title = POL_super.2.t
+	desc = POL_super.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = POL_super.2.a
+		log = "[GetDateText]: [This.GetName]: POL_super.2.a executed"
+		
+        set_global_flag = POL_Falanga_se
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "POL_Falanga"
+	}
+}
+
+country_event = {
+	id = POL_super.3
+	title = POL_super.3.t
+	desc = POL_super.3.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = POL_super.3.a
+		log = "[GetDateText]: [This.GetName]: POL_super.3.a executed"
+		
+        set_global_flag = POL_Falanga_WAR_se
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "POL_War_UKR"
+	}
+}
+
+country_event = {
+	id = POL_super.4
+	title = POL_super.4.t
+	desc = POL_super.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = POL_super.4.a
+		log = "[GetDateText]: [This.GetName]: POL_super.4.a executed"
+		
+		POL = { 
+
+		recruit_character = Zandberg
+
+
+		add_country_leader_role = {
+			character = Zandberg
+			promote_leader = yes
+			country_leader = {
+				ideology = socialism
+				expire = "1965.1.1.1"
+			}
+		}		
+		
+		Zandberg = {
+			promote_character = yes
+		}
+
+
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = yes
+			election_frequency = 72
+		}
+
+		add_popularity = {
+			ideology = communism
+			popularity = 0.7
+		}
+		
+
+
+	
+
+
+			set_cosmetic_tag = POL_Communism
+		}
+
+        set_global_flag = POL_SOC_se
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "POL_SOC"
+	}
+}
+
+
+country_event = {
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.1.a
+		log = "[GetDateText]: [This.GetName]: super.1.a executed"
+		
+        set_global_flag = RUS_start_SMO_se
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "start_SMO"
+	}
+}
+
+country_event = {
+	id = super.2
+	title = super.2.t
+	desc = super.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.2.a
+		log = "[GetDateText]: [This.GetName]: super.2.a executed"
+		
+        set_global_flag = RUS_march_justice_prigoshin_se
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "march_justice"
+	}
+}
+
+country_event = {
+	id = super.3
+	title = super.3.t
+	desc = super.3.d
+	picture = GFX_report_event_diplomatic_message
+
+	trigger = {
+		UKR = {
+		    has_war_with = RUS
+			NOT = {
+				controls_province = 15750
+				controls_province = 15685
+				controls_province = 6711
+				controls_province = 18617
+				controls_province = 18619
+				controls_province = 18616
+				controls_province = 18614
+				controls_province = 18615
+			}
+		}
+		NOT = {
+			WGN = {
+				divisions_in_state = {  size > 3  state = 165 }
+			}
+			has_global_flag = WGN_bakhmut_taken_only_se
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.3.a
+		log = "[GetDateText]: [This.GetName]: super.3.a executed"
+		
+        set_global_flag = RUS_bakhmut_taken_se
+		set_global_flag = Super_Event_Visible
+		set_global_flag = RUS_bakhmut_taken_only_se
+		
+		play_song = "bakhmut_taken"
+	}
+}
+
+country_event = {
+	id = super.4
+	title = super.4.t
+	desc = super.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	trigger = {
+	    UKR = {
+		    has_war_with = RUS
+			NOT = {
+				controls_province = 15750
+				controls_province = 15685
+				controls_province = 6711
+				controls_province = 18617
+				controls_province = 18619
+				controls_province = 18616
+				controls_province = 18614
+				controls_province = 18615
+			}
+		}
+		NOT = {
+			has_global_flag = RUS_bakhmut_taken_only_se
+		}
+		WGN = {
+			divisions_in_state = {  size > 3  state = 165 }
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.4.a
+		log = "[GetDateText]: [This.GetName]: super.4.a executed"
+		
+        set_global_flag = WGN_bakhmut_taken_se
+		set_global_flag = Super_Event_Visible
+		set_global_flag = WGN_bakhmut_taken_only_se
+		
+		play_song = "WGN_bakhmut_taken"
+	}
+}
+
+country_event = {
+	id = super.5
+	title = super.5.t
+	desc = super.5.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.5.a
+		log = "[GetDateText]: [This.GetName]: super.5.a executed"
+		
+        set_global_flag = WGN_prigozhin_died
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "prigoshin_died"
+
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = super.6
+	title = super.6.t
+	desc = super.6.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.6.a
+		log = "[GetDateText]: [This.GetName]: super.6.a executed"
+		
+        set_global_flag = WGN_prigozhin_President_Russia
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "prigozhin_President_Russia"
+	}
+}
+
+country_event = {
+	id = super.7
+	title = super.7.t
+	desc = super.7.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.7.a
+		log = "[GetDateText]: [This.GetName]: super.7.a executed"
+		
+        set_global_flag = RUS_particulation_mobilization
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "Russia_particulation_mobilization"
+	}
+}
+
+country_event = {
+	id = super.8
+	title = super.8.t
+	desc = super.8.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.8.a
+		log = "[GetDateText]: [This.GetName]: super.8.a executed"
+		
+        set_global_flag = BLR_Tikhonovskaya
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "Belarus_Tikhonovskaya_in_power"
+	}
+}
+
+country_event = {
+	id = super.9
+	title = super.9.t
+	desc = super.9.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.9.a
+		log = "[GetDateText]: [This.GetName]: super.9.a executed"
+		
+        set_global_flag = RUS_retreat_from_Kiev
+		set_global_flag = Super_Event_Visible
+
+
+		
+		play_song = "RUS_retreat_from_Kiev"
+	}
+}
+
+country_event = {
+	id = super.10
+	title = super.10.t
+	desc = super.10.d
+	picture = GFX_report_event_diplomatic_message
+
+	trigger = {
+	    UKR = {
+		    has_war_with = RUS
+			NOT = {
+				controls_state = 94
+				controls_state = 95
+			}
+		}
+		NOT = {
+			WGN = {
+				divisions_in_state = {  size > 3  state = 94 }
+			}
+			has_global_flag = WGN_kyiv_taken_only_se
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.10.a
+		log = "[GetDateText]: [This.GetName]: super.10.a executed"
+		
+        set_global_flag = RUS_fall_Kiev_se
+		set_global_flag = Super_Event_Visible
+		set_global_flag = RUS_kyiv_taken_only_se
+		
+		play_song = "RUS_fall_Kiev_se"
+	}
+}
+
+country_event = {
+	id = super.11
+	title = super.11.t
+	desc = super.11.d
+	picture = GFX_report_event_diplomatic_message
+
+	trigger = {
+	    UKR = {
+		    has_war_with = RUS
+			NOT = {
+				controls_state = 94
+				controls_state = 95
+			}
+		}
+		NOT = {
+			has_global_flag = RUS_kyiv_taken_only_se
+		}
+		WGN = {
+			divisions_in_state = {  size > 3  state = 94 }
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.11.a
+		log = "[GetDateText]: [This.GetName]: super.11.a executed"
+		
+        set_global_flag = WGN_fall_Kiev
+		set_global_flag = Super_Event_Visible
+		set_global_flag = WGN_kyiv_taken_only_se
+		
+		play_song = "WGN_fall_Kiev"
+	}
+}
+
+country_event = {
+	id = super.12
+	title = super.12.t
+	desc = super.12.d
+	picture = GFX_report_event_diplomatic_message
+
+	trigger = {
+	    UKR = {
+		    has_war_with = RUS
+			controls_province = 18719
+			controls_province = 18729
+			controls_province = 7162
+			controls_province = 18718
+			controls_province = 3641
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.12.a
+		log = "[GetDateText]: [This.GetName]: super.12.a executed"
+		
+        set_global_flag = UKR_fall_Lugansk
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "UKR_fall_Lugansk"
+	}
+}
+
+country_event = {
+	id = super.13
+	title = super.13.t
+	desc = super.13.d
+	picture = GFX_report_event_diplomatic_message
+
+	trigger = {
+	    UKR = {
+		    has_war_with = RUS
+			controls_province = 1661
+			controls_province = 3061
+			controls_province = 18153
+			controls_province = 16285
+			controls_province = 16217
+			controls_province = 18151
+			controls_province = 4400
+			controls_province = 1427
+			controls_province = 18149
+			controls_province = 18813
+			controls_province = 18150
+			controls_province = 18739
+			controls_province = 16034
+			controls_province = 9305
+			controls_province = 18154
+			controls_province = 8212
+			controls_province = 4865
+			controls_province = 12312
+			controls_province = 5715
+		}
+	}
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.13.a
+		log = "[GetDateText]: [This.GetName]: super.13.a executed"
+		
+        set_global_flag = UKR_fall_Donetsk
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "UKR_fall_Donetsk"
+	}
+}
+
+country_event = {
+	id = super.14
+	title = super.14.t
+	desc = super.14.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.14.a
+		log = "[GetDateText]: [This.GetName]: super.14.a executed"
+		
+        set_global_flag = RUS_islamic_rebelion
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "RUS_islamic_rebelion"
+	}
+}
+
+country_event = {
+	id = super.15
+	title = super.15.t
+	desc = super.15.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.15.a
+		log = "[GetDateText]: [This.GetName]: super.15.a executed"
+		if = {
+			limit = {
+				has_global_flag = RUS_Al_Queda_united_Caucasus
+			}
+			set_global_flag = RUS_islamic_attack_RUS_Al_Queda
+		}
+		if = {
+			limit = {
+				has_global_flag = RUS_S_Al_Queda_united_Caucasus
+			}
+			set_global_flag = RUS_islamic_attack_RUS_S_Al_Queda
+		}
+		if = {
+			limit = {
+				has_global_flag = RUS_ISIS_united_Caucasus
+			}
+			set_global_flag = RUS_islamic_attack_RUS_ISIS
+		}
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "RUS_islamic_attack_RUS"
+	}
+}
+
+country_event = {
+	id = super.16
+	title = super.16.t
+	desc = super.16.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.16.a
+		log = "[GetDateText]: [This.GetName]: super.16.a executed"
+		set_global_flag = RUS_Kadyrov_Putin_loyalist_attack_RUS
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "RUS_loyalist_attack_Kadyrov_Putin"
+	}
+}
+
+country_event = {
+	id = super.17
+	title = super.17.t
+	desc = super.17.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.17.a
+		log = "[GetDateText]: [This.GetName]: super.17.a executed"
+		set_global_flag = RUS_caucasus_united_war_for_decolonisation
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "RUS_war_for_decolonisation"
+	}
+}
+
+country_event = {
+	id = super.18
+	title = super.18.t
+	desc = super.18.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.18.a
+		log = "[GetDateText]: [This.GetName]: super.18.a executed"
+		set_global_flag = RUS_new_states_are_add
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "RUS_new_states"
+	}
+}
+
+country_event = {
+	id = super.19
+	title = super.19.t
+	desc = super.19.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+
+	immediate = {
+		name = super.19.a
+		log = "[GetDateText]: [This.GetName]: super.19.a executed"
+		set_global_flag = RUS_gazmanov_dead
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "RUS_gazmanov_dead"
+	}
+}

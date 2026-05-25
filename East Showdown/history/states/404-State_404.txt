@@ -1,0 +1,15 @@
+state = { 
+	id = 404 
+	name = "BORDER_STATES" 
+	manpower = 1 
+	
+	state_category = metropolis 
+	history = { 
+		owner = BOR 
+		
+		buildings = { electrical_substation = 1 }
+		
+		add_core_of = BOR 
+	}
+	provinces = { 18236 18237 18246 18247 }
+}

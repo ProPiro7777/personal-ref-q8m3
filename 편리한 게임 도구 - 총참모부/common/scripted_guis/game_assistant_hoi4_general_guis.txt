@@ -1,0 +1,526 @@
+scripted_gui = {
+    game_assistant_hoi4_general_gui = {
+        context_type = decision_category
+        parent_window_token = decision_tab
+        window_name = "game_assistant_hoi4_general_gui"
+        visible = {
+        }
+
+        triggers = {
+            game_assistant_hoi4_general_zhuo_mian_USA_icon_visible = {
+                check_variable = {
+                    game_assistant_hoi4_general1 = -1
+                }
+            }
+            game_assistant_hoi4_general_zhuo_mian_GER_icon_visible = {
+                check_variable = {
+                    game_assistant_hoi4_general1 = 0
+                }
+            }
+            game_assistant_hoi4_general_zhuo_mian_SOV_icon_visible = {
+                check_variable = {
+                    game_assistant_hoi4_general1 = 1
+                }
+            }
+
+
+            #
+            GFX_game_assistant_general_open_button1_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button1
+                }
+            }
+            GFX_game_assistant_general_clos_button1_visible = {
+
+                has_country_flag = ROOT.OPEN_button1
+            }
+            #
+            GFX_game_assistant_general_open_button2_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button2
+                }
+            }
+            GFX_game_assistant_general_clos_button2_visible = {
+
+                has_country_flag = ROOT.OPEN_button2
+            }
+            #
+            GFX_game_assistant_general_open_button3_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button3
+                }
+            }
+            GFX_game_assistant_general_clos_button3_visible = {
+
+                has_country_flag = ROOT.OPEN_button3
+            }
+            #
+            GFX_game_assistant_general_open_button4_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button4
+                }
+            }
+            GFX_game_assistant_general_clos_button4_visible = {
+
+                has_country_flag = ROOT.OPEN_button4
+            }
+            #
+            GFX_game_assistant_general_open_button5_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button5
+                }
+            }
+            GFX_game_assistant_general_clos_button5_visible = {
+
+                has_country_flag = ROOT.OPEN_button5
+            }
+            #
+            GFX_game_assistant_general_open_button6_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button6
+                }
+            }
+            GFX_game_assistant_general_clos_button6_visible = {
+
+                has_country_flag = ROOT.OPEN_button6
+            }
+            #
+            GFX_game_assistant_general_open_button7_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button7
+                }
+            }
+            GFX_game_assistant_general_clos_button7_visible = {
+
+                has_country_flag = ROOT.OPEN_button7
+            }
+            #
+            GFX_game_assistant_general_open_button8_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button8
+                }
+            }
+            GFX_game_assistant_general_clos_button8_visible = {
+
+                has_country_flag = ROOT.OPEN_button8
+            }
+            #
+            GFX_game_assistant_general_open_button9_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button9
+                }
+            }
+            GFX_game_assistant_general_clos_button9_visible = {
+
+                has_country_flag = ROOT.OPEN_button9
+            }
+            #
+            GFX_game_assistant_general_open_button10_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button10
+                }
+            }
+            GFX_game_assistant_general_clos_button10_visible = {
+
+                has_country_flag = ROOT.OPEN_button10
+            }
+            #
+            GFX_game_assistant_general_open_button11_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button11
+                }
+            }
+            GFX_game_assistant_general_clos_button11_visible = {
+
+                has_country_flag = ROOT.OPEN_button11
+            }
+            #
+            GFX_game_assistant_general_open_button12_visible = {
+                NOT = {
+                    has_country_flag = ROOT.OPEN_button12
+                }
+            }
+            GFX_game_assistant_general_clos_button12_visible = {
+
+                has_country_flag = ROOT.OPEN_button12
+            }
+
+
+        }
+
+
+        effects = {
+            GFX_game_assistant_general_open_button1_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button1
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button1
+                }
+                
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button1_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button1
+                    }
+                    clr_country_flag = ROOT.OPEN_button1
+                }
+
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+
+            GFX_game_assistant_general_open_button2_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button2
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button2
+                }
+
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button2_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button2
+                    }
+                    clr_country_flag = ROOT.OPEN_button2
+                }
+
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button3_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button3
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button3
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button3_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button3
+                    }
+                    clr_country_flag = ROOT.OPEN_button3
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button4_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button4
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button4
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button4_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button4
+                    }
+                    clr_country_flag = ROOT.OPEN_button4
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button5_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button5
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button5
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button5_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button5
+                    }
+                    clr_country_flag = ROOT.OPEN_button5
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button6_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button6
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button6
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button6_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button6
+                    }
+                    clr_country_flag = ROOT.OPEN_button6
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button7_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button7
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button7
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button7_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button7
+                    }
+                    clr_country_flag = ROOT.OPEN_button7
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button8_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button8
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button8
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button8_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button8
+                    }
+                    clr_country_flag = ROOT.OPEN_button8
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button9_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button9
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button9
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button9_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button9
+                    }
+                    clr_country_flag = ROOT.OPEN_button9
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button10_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button10
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button10
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button10_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button10
+                    }
+                    clr_country_flag = ROOT.OPEN_button10
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button11_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button11
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button11
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button11_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button11
+                    }
+                    clr_country_flag = ROOT.OPEN_button11
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_open_button12_click = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_country_flag = ROOT.OPEN_button12
+                        }
+                    }
+                    set_country_flag = ROOT.OPEN_button12
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+            GFX_game_assistant_general_clos_button12_click = {
+                if = {
+                    limit = {
+                        has_country_flag = ROOT.OPEN_button12
+                    }
+                    clr_country_flag = ROOT.OPEN_button12
+                }
+                set_variable_to_random = {
+                    var = game_assistant_hoi4_general1
+                    min = -1
+                    max = 2
+                    integer = yes
+                }
+            }
+        }
+        
+
+    }
+}
+
+
+
+

@@ -1,0 +1,20 @@
+state = { 
+	id = 274 
+	name = "STATE_274" 
+	manpower = 21 
+	
+	state_category = enclave 
+	buildings_max_level_factor = 0.75 
+	history = { 
+		owner = UKR 
+		
+		buildings = { 
+			electrical_substation = 1 
+			solar_power_plant = 4 
+			infrastructure = 1 
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 16506 }
+}

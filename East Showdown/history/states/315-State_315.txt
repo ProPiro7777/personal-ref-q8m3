@@ -1,0 +1,32 @@
+state = { 
+	id = 315 
+	name = "STATE_315" 
+	manpower = 201462 
+	
+	state_category = metropolis 
+	
+	resources = { gas = 285 } 
+	history = { 
+		owner = ROM 
+		
+		victory_points = { 6273 10 }
+		victory_points = { 10069 10 }
+		victory_points = { 10151 10 }
+		victory_points = { 12470 15 }
+		
+		buildings = { 
+			electrical_substation = 6 
+			electrical_substation_big = 1 
+			infrastructure = 3 
+			arms_factory = 5 
+			industrial_complex = 8 
+			dockyard = 2 
+			anti_air_building = 2 
+			solar_power_plant = 5 
+			wind_power_plant = 12 
+		}
+		
+		add_core_of = ROM 
+	}
+	provinces = { 2593 2844 5053 5142 5159 5664 5689 6105 6273 6283 6374 6593 7630 8693 9228 10025 10069 10126 10151 10584 11970 12269 12470 16825 16925 16929 16933 16957 }
+}

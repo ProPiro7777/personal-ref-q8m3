@@ -1,0 +1,1147 @@
+#equipment variants
+create_equipment_variant_tank_ger_leopard_2a1 = yes
+create_equipment_variant_tank_ger_leopard_1a5 = yes
+create_equipment_variant_imv_hmmwv = yes
+create_equipment_variant_arv_brem_1 = yes
+create_equipment_variant_brdm_brdm_1 = yes
+create_equipment_variant_tank_sov_t_72 = yes
+create_equipment_variant_brdm_brdm_2 = yes
+create_equipment_variant_apc_mt_lb = yes
+create_equipment_variant_apc_mt_lbvm = yes
+create_equipment_variant_imv_oshkosh_matv = yes
+create_equipment_variant_apc_m113 = yes
+create_equipment_variant_tank_usa_m1_abrams = yes
+create_equipment_variant_ifv_sov_bwp_1 = yes
+create_equipment_variant_imv_light_fmtv = yes
+create_equipment_variant_imv_m1117_asv = yes
+create_equipment_variant_sp_artillery_m109 = yes
+create_equipment_variant_sp_artillery_2s1_gvozdika = yes
+create_equipment_variant_sp_mlrs_m142_himars = yes
+create_equipment_variant_sp_mlrs_bm_21_grad = yes
+create_equipment_variant_sp_aa_osa = yes
+create_equipment_variant_sp_aa_buk_m1 = yes
+create_equipment_variant_sp_aa_tunguska = yes
+create_equipment_variant_apc_aav_7 = yes
+
+oob = "LAT_2022"
+
+capital = 14
+
+set_research_slots = 0
+
+set_stability = 1
+
+set_war_support = 0.50
+
+add_political_power = 0
+
+set_convoys = 50
+
+set_popularities = {
+	democratic = 70
+	communism = 3
+	fascism = 15
+	neutrality = 12
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2019.04.21"
+	election_frequency = 48
+	elections_allowed = Yes
+}
+
+set_country_flag = news_pro_ukrainian_flag
+
+add_ideas = {
+	eu_member
+	service_age_50
+	birth_rate5
+	infrastructure_increased
+	rescue_increased
+	social_increased
+	medical_increased
+}
+
+recruit_character = egils_levits
+
+create_corps_commander = {
+	name = "Rob Rodriguez"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Stacy Farley"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Denny Haines"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Bayard Russon"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Kenneth Pattinson"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Neron Akhtar"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Erhard Fellows"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Ebeneser Downing"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Yanaton Widdows"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Martyn Vockins"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "HaLATrd Joynson"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Liam Edney"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lazaro Leal"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Andrus Rowe"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Gomer Potter"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_navy_leader = {
+	name = "Roddy Cornock"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 5
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Roderigo Antram"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Hilary Crew"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Paton Fothergill"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Kennedy Mccormick"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Hercules Legg"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Sandro Fearn"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Miguel Oakey"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 5
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Swen Villiger"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 1
+	defense_skill = 4
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Jarvis Allam"
+	portrait_path = ""
+	traits = {}
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+	
+
+	
+
+	
+
+	
+
+set_technology = {
+	NTO_2022_1 = 1
+	SOVIETHEIR_2022_1 = 1
+	nto_transport1 = 1
+	NTO_hel_transport2 = 1
+	nto_CAS1 = 1
+	nto_CAS2 = 1
+	nto_strategic_bomber1 = 1
+	nto_fighter1 = 1
+	nto_fighter2 = 1
+	nto_fighter3 = 1
+	nto_hel_strike1 = 1
+	nto_hel_strike2 = 1
+	NTO_hel_transport1 = 1
+	NTO_uav_strike1 = 1
+	NTO_uav_strike2 = 1
+	NTO_uav_strike3 = 1
+	NTO_uav_strike_bayraktar = 1
+	NTO_uav_recon1 = 1
+	NTO_uav_recon2 = 1
+
+	
+	
+	
+	
+
+	tech_support = 1
+	tech_engineering = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	tech_engineers3 = 1
+	communication_equipment = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	tech_recon = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_ARV = 1
+	tech_AMV = 1
+	motorized_infantry = 1
+
+	imv_civil_0 = 1
+	imv_medium_0 = 1
+	imv_light_1 = 1
+	sp_aa_imv_light_1 = 1
+	sp_atgm_imv_light_1 = 1
+	sp_artillery_imv_light_1 = 1
+	sp_mlrs_imv_light_1 = 1
+	imv_light_2 = 1
+	sp_aa_imv_light_2 = 1
+	sp_atgm_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_3 = 1
+	sp_aa_imv_light_2 = 1
+	sp_atgm_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_0 = 1
+	sp_aa_imv_light_0 = 1
+	sp_atgm_imv_light_0 = 1
+	sp_artillery_imv_light_0 = 1
+	sp_mlrs_imv_light_0 = 1
+	imv_light_4 = 1
+	sp_aa_imv_light_4 = 1
+	sp_atgm_imv_light_4 = 1
+	sp_artillery_imv_light_4 = 1
+	sp_mlrs_imv_light_4 = 1
+	imv_medium_1 = 1
+	imv_medium_2 = 1
+	imv_medium_3 = 1
+	imv_medium_4 = 1
+	imv_heavy_0 = 1
+	sp_aa_imv_heavy_0 = 1
+	sp_atgm_imv_heavy_0 = 1
+	sp_artillery_imv_heavy_0 = 1
+	sp_mlrs_imv_heavy_0 = 1
+	imv_heavy_1 = 1
+	sp_aa_imv_heavy_1 = 1
+	sp_atgm_imv_heavy_1 = 1
+	sp_artillery_imv_heavy_1 = 1
+	sp_mlrs_imv_heavy_1 = 1
+	imv_heavy_2 = 1
+	sp_aa_imv_heavy_2 = 1
+	sp_atgm_imv_heavy_2 = 1
+	sp_artillery_imv_heavy_2 = 1
+	sp_mlrs_imv_heavy_2 = 1
+	imv_heavy_3 = 1
+	sp_aa_imv_heavy_3 = 1
+	sp_atgm_imv_heavy_3 = 1
+	sp_artillery_imv_heavy_3 = 1
+	sp_mlrs_imv_heavy_3 = 1
+	imv_heavy_4 = 1
+	sp_aa_imv_heavy_4 = 1
+	sp_atgm_imv_heavy_4 = 1
+	sp_artillery_imv_heavy_4 = 1
+	sp_mlrs_imv_heavy_4 = 1
+	mrv_wheeled_0 = 1
+	sp_aa_mrv_wheeled_0 = 1
+	sp_atgm_mrv_wheeled_0 = 1
+	sp_artillery_mrv_wheeled_0 = 1
+	sp_mlrs_mrv_wheeled_0 = 1
+	sp_tos_mrv_wheeled_0 = 1
+	mrv_wheeled_1 = 1
+	sp_aa_mrv_wheeled_1 = 1
+	sp_atgm_mrv_wheeled_1 = 1
+	sp_artillery_mrv_wheeled_1 = 1
+	sp_mlrs_mrv_wheeled_1 = 1
+	sp_tos_mrv_wheeled_1 = 1
+	mrv_wheeled_2 = 1
+	sp_aa_mrv_wheeled_2 = 1
+	sp_atgm_mrv_wheeled_2  = 1
+	sp_artillery_mrv_wheeled_2 = 1
+	sp_mlrs_mrv_wheeled_2 = 1
+	sp_tos_mrv_wheeled_2 = 1
+	mrv_wheeled_3 = 1
+	sp_aa_mrv_wheeled_3 = 1
+	sp_atgm_mrv_wheeled_3 = 1
+	sp_artillery_mrv_wheeled_3 = 1
+	sp_mlrs_mrv_wheeled_3 = 1
+	sp_tos_mrv_wheeled_3 = 1
+	mrv_wheeled_4 = 1
+	sp_aa_mrv_wheeled_4 = 1
+	sp_atgm_mrv_wheeled_4 = 1
+	sp_artillery_mrv_wheeled_4 = 1
+	sp_mlrs_mrv_wheeled_4 = 1
+	sp_tos_mrv_wheeled_4 = 1
+	mrv_tracked_0 = 1
+	sp_aa_mrv_tracked_0 = 1
+	sp_atgm_mrv_tracked_0 = 1
+	sp_artillery_mrv_tracked_0 = 1
+	sp_mlrs_mrv_tracked_0 = 1
+	sp_tos_mrv_tracked_0 = 1
+	mrv_tracked_1 = 1
+	sp_aa_mrv_tracked_1 = 1
+	sp_atgm_mrv_tracked_1 = 1
+	sp_artillery_mrv_tracked_1 = 1
+	sp_mlrs_mrv_tracked_1 = 1
+	sp_tos_mrv_tracked_1 = 1
+	mrv_tracked_2 = 1
+	sp_aa_mrv_tracked_2 = 1
+	sp_atgm_mrv_tracked_2  = 1
+	sp_artillery_mrv_tracked_2 = 1
+	sp_mlrs_mrv_tracked_2 = 1
+	sp_tos_mrv_tracked_2 = 1
+	mrv_tracked_3 = 1
+	sp_aa_mrv_tracked_3 = 1
+	sp_atgm_mrv_tracked_3 = 1
+	sp_artillery_mrv_tracked_3 = 1
+	sp_mlrs_mrv_tracked_3 = 1
+	sp_tos_mrv_tracked_3 = 1
+	mrv_tracked_4 = 1
+	sp_aa_mrv_tracked_4 = 1
+	infantry_improvements_0 = 1
+	sp_atgm_mrv_tracked_4 = 1
+	sp_artillery_mrv_tracked_4 = 1
+	sp_mlrs_mrv_tracked_4 = 1
+	sp_tos_mrv_tracked_4 = 1
+	tank_ger_leopard1 = 1
+	ifv_heavy_ger_leopard1 = 1
+	apc_tank_ger_leopard1 = 1
+	sp_aa_tank_ger_leopard1 = 1
+	sp_atgm_tank_ger_leopard1 = 1
+	arv_tank_ger_leopard1 = 1
+	sp_artillery_tank_ger_leopard1 = 1
+	sp_mlrs_tank_ger_leopard1 = 1
+	tank_ger_leopard2 = 1
+	ifv_heavy_ger_leopard2 = 1
+	apc_tank_ger_leopard2 = 1
+	sp_aa_tank_ger_leopard2 = 1
+	sp_atgm_tank_ger_leopard2 = 1
+	arv_tank_ger_leopard2 = 1
+	sp_artillery_tank_ger_leopard2 = 1
+	sp_mlrs_tank_ger_leopard2 = 1
+	tank_ger_kf51 = 1
+	ifv_heavy_ger_kf51 = 1
+	apc_tank_ger_kf51 = 1
+	sp_aa_tank_ger_kf51 = 1
+	sp_atgm_tank_ger_kf51 = 1
+	arv_tank_ger_kf51 = 1
+	sp_artillery_tank_ger_kf51 = 1
+	sp_mlrs_tank_ger_kf51 = 1
+	tank_eng_centurion = 1
+	ifv_heavy_eng_centurion = 1
+	apc_tank_eng_centurion = 1
+	sp_aa_tank_eng_centurion = 1
+	sp_atgm_tank_eng_centurion = 1
+	arv_tank_eng_centurion = 1
+	sp_artillery_tank_eng_centurion = 1
+	sp_mlrs_tank_eng_centurion = 1
+	tank_eng_chieftain = 1
+	ifv_heavy_eng_chieftain = 1
+	apc_tank_eng_chieftain = 1
+	sp_aa_tank_eng_chieftain = 1
+	sp_atgm_tank_eng_chieftain = 1
+	arv_tank_eng_chieftain = 1
+	sp_artillery_tank_eng_chieftain = 1
+	sp_mlrs_tank_eng_chieftain = 1
+	tank_eng_challenger1 = 1
+	ifv_heavy_eng_challenger1 = 1
+	sp_aa_tank_eng_challenger1 = 1
+	arv_tank_eng_challenger1 = 1
+	sp_artillery_tank_eng_challenger1 = 1
+	tank_eng_challenger2 = 1
+	ifv_heavy_eng_challenger2 = 1
+	apc_tank_eng_challenger2 = 1
+	sp_aa_tank_eng_challenger2 = 1
+	sp_atgm_tank_eng_challenger2 = 1
+	arv_tank_eng_challenger2 = 1
+	sp_artillery_tank_eng_challenger2 = 1
+	tank_usa_m48patton = 1
+	ifv_heavy_usa_m48patton = 1
+	apc_tank_usa_m48patton = 1
+	sp_aa_tank_usa_m48patton = 1
+	sp_atgm_tank_usa_m48patton = 1
+	arv_tank_usa_m48patton = 1
+	sp_artillery_tank_usa_m48patton = 1
+	sp_mlrs_tank_usa_m48patton = 1
+	tank_usa_m60patton = 1
+	ifv_heavy_usa_m60patton = 1
+	apc_tank_usa_m60patton = 1
+	sp_aa_tank_usa_m60patton = 1
+	sp_atgm_tank_usa_m60patton = 1
+	arv_tank_usa_m60patton = 1
+	sp_artillery_tank_usa_m60patton = 1
+	sp_mlrs_tank_usa_m60patton = 1
+	tank_usa_abrams = 1
+	ifv_heavy_usa_abrams = 1
+	apc_tank_usa_abrams = 1
+	sp_atgm_tank_usa_abrams = 1
+	arv_tank_usa_abrams = 1
+	sp_artillery_tank_usa_abrams = 1
+	sp_mlrs_tank_usa_abrams = 1
+	tank_fra_amx30 = 1
+	ifv_heavy_fra_amx30 = 1
+	apc_tank_fra_amx30 = 1
+	sp_aa_tank_fra_amx30 = 1
+	sp_atgm_tank_fra_amx30 = 1
+	arv_tank_fra_amx30 = 1
+	sp_artillery_tank_fra_amx30 = 1
+	tank_fra_leclerc = 1
+	ifv_heavy_fra_leclerc = 1
+	apc_tank_fra_leclerc = 1
+	sp_atgm_tank_fra_leclerc = 1
+	arv_tank_fra_leclerc = 1
+	sp_artillery_tank_fra_leclerc = 1
+	tank_ita_ariete = 1
+	ifv_heavy_ita_ariete = 1
+	apc_tank_ita_ariete = 1
+	sp_aa_tank_ita_ariete = 1
+	sp_atgm_tank_ita_ariete = 1
+	arv_tank_ita_ariete = 1
+	sp_artillery_tank_ita_ariete = 1
+	sp_mlrs_tank_ita_ariete = 1
+	usa_infantry_weapons_m1_garand = 1
+	usa_infantry_weapons_m14 = 1
+	usa_infantry_weapons_m16 = 1
+	usa_infantry_weapons_m4 = 1
+	usa_infantry_weapons_fn_scar = 1
+	eng_infantry_weapons_sten = 1
+	eng_infantry_weapons_em2 = 1
+	eng_infantry_weapons_l1a1 = 1
+	eng_infantry_weapons_sa80 = 1
+	eng_infantry_weapons_l119a2 = 1
+	ger_infantry_weapons_stg44 = 1
+	ger_infantry_weapons_hk_g3 = 1
+	ger_infantry_weapons_hk33 = 1
+	ger_infantry_weapons_hk_g41 = 1
+	ger_infantry_weapons_hk_g36 = 1
+	ger_infantry_weapons_hk416 = 1
+	fra_infantry_weapons_mas36 = 1
+	fra_infantry_weapons_mas49_56 = 1
+	fra_infantry_weapons_famas_f1 = 1
+	fra_infantry_weapons_famas_g2 = 1
+	ita_infantry_weapons_carcano_m1891 = 1
+	ita_infantry_weapons_carcano_m38 = 1
+	ita_infantry_weapons_beretta_m1938 = 1
+	ita_infantry_weapons_bm59 = 1
+	ita_infantry_weapons_ar70 = 1
+	swe_infantry_weapons_ag_m42 = 1
+	swe_infantry_weapons_ak4 = 1
+	swe_infantry_weapons_ak5 = 1
+	swe_infantry_weapons_ak6 = 1
+	infantry_uniform_usa_frog_skin = 1
+	infantry_uniform_usa_erdl = 1
+	infantry_uniform_usa_woodland = 1
+	infantry_uniform_usa_ucp = 1
+	infantry_uniform_usa_ocp = 1
+
+	
+	infantry_armor_usa_m1951 = 1
+	infantry_armor_usa_m1955 = 1
+	infantry_armor_usa_pasgt = 1
+	infantry_armor_usa_iba = 1
+	infantry_armor_usa_iotv = 1
+	infantry_armor_usa_sps = 1
+	grenade_launchers_usa_m72_law = 1
+	grenade_launchers_usa_fgr17_viper = 1
+	grenade_launchers_usa_smaw = 1
+	grenade_launchers_usa_fgm148_javelin = 1
+	grenade_launchers_usa_fgm172_sraw = 1
+	
+	grenade_launchers_eng_law80 = 1
+	grenade_launchers_eng_nlaw = 1
+	
+	grenade_launchers_ger_panzerschreck = 1
+	grenade_launchers_ger_panzerfaust44 = 1
+	grenade_launchers_ger_rgw90 = 1
+	grenade_launchers_swe_carlgustaf_m3 = 1
+	
+	mortar_usa_m19 = 1
+	mortar_usa_m29 = 1
+	mortar_usa_m224 = 1
+	mortar_usa_m120 = 1
+	mortar_ger_grw34 = 1
+	mortar_ger_120krh40 = 1
+	mortar_ger_rsg60 = 1
+	atgm_usa_m47_dragon = 1
+	atgm_usa_bgm71_tow = 1
+	atgm_usa_bgm71_tow_ii = 1
+	atgm_usa_bgm71f_tow_2b = 1
+	atgm_usa_fgm148_javelin = 1
+	atgm_usa_javelin_f_model = 1
+	atgm_ger_fra_milan = 1
+	atgm_ger_fra_hot = 1
+	atgm_ger_fra_milan2 = 1
+	atgm_ger_fra_milan3 = 1
+	atgm_ger_fra_eryx = 1
+	atgm_ger_fra_akeron_mp = 1
+	atgm_ger_fra_mmp = 1
+	
+	manpads_usa_fim43_redeye = 1
+	manpads_usa_fim92_stinger = 1
+	manpads_usa_fim92_stinger_post = 1
+	manpads_usa_fim92_stinger_rmp_e = 1
+	manpads_usa_fim92_stinger_rmp_f = 1
+	manpads_usa_fim92j_stinger = 1
+	manpads_eng_blowpipe = 1
+	manpads_eng_javelin = 1
+	manpads_eng_starburst = 1
+	manpads_eng_starstreak = 1
+	manpads_eng_martlet = 1
+	manpads_fra_mistral = 1
+	manpads_swe_rbs70 = 1
+	manpads_swe_rbs70m = 1
+	manpads_swe_rbs90 = 1
+	apc_usa_aav7 = 1
+	arv_apc_usa_aav7 = 1
+	apc_eng_fv432 = 1
+	light_tank_apc_eng_fv432 = 1
+	arv_apc_eng_fv432 = 1
+	sp_aa_apc_eng_fv432 = 1
+	sp_atgm_apc_eng_fv432 = 1
+	sp_artillery_apc_eng_fv432 = 1
+	apc_swe_pbv302 = 1
+	light_tank_apc_swe_pbv302 = 1
+	arv_apc_swe_pbv302 = 1
+	sp_aa_apc_swe_pbv302 = 1
+	sp_atgm_apc_swe_pbv302 = 1
+	sp_artillery_apc_swe_pbv302 = 1
+	apc_ita_freccia = 1
+	light_tank_apc_ita_freccia = 1
+	arv_apc_ita_freccia = 1
+	sp_aa_apc_ita_freccia = 1
+	sp_atgm_apc_ita_freccia = 1
+	sp_artillery_apc_ita_freccia = 1
+	apc_fra_VAB = 1
+	light_tank_apc_fra_VAB = 1
+	arv_apc_fra_VAB = 1
+	sp_aa_apc_fra_VAB = 1
+	sp_atgm_apc_fra_VAB = 1
+	sp_artillery_apc_fra_VAB = 1
+	apc_usa_stryker = 1
+	light_tank_apc_usa_stryker = 1
+	arv_apc_usa_stryker = 1
+	sp_aa_apc_usa_stryker = 1
+	sp_atgm_apc_usa_stryker = 1
+	sp_artillery_apc_usa_stryker = 1
+	apc_usa_lav25 = 1
+	light_tank_apc_usa_lav25 = 1
+	arv_apc_usa_lav25 = 1
+	sp_aa_apc_usa_lav25 = 1
+	sp_atgm_apc_usa_lav25 = 1
+	sp_artillery_apc_usa_lav25 = 1
+	light_tank_apc_usa_m113 = 1
+	arv_apc_usa_m113 = 1
+	sp_aa_apc_usa_m113 = 1
+	sp_atgm_apc_usa_m113 = 1
+	sp_artillery_apc_usa_m113 = 1
+	apc_usa_m113 = 1
+	light_tank_apc_ger_fuchs = 1
+	arv_apc_ger_fuchs = 1
+	sp_aa_apc_ger_fuchs = 1
+	sp_atgm_apc_ger_fuchs = 1
+	sp_artillery_apc_ger_fuchs = 1
+	apc_ger_fuchs = 1
+	ifv_ita_dardo = 1
+	light_tank_ifv_ita_dardo = 1
+	arv_ifv_ita_dardo = 1
+	sp_aa_ifv_ita_dardo = 1
+	sp_atgm_ifv_ita_dardo = 1
+	sp_artillery_ifv_ita_dardo = 1
+	ifv_fra_vbci = 1
+	light_tank_ifv_fra_vbci = 1
+	arv_ifv_fra_vbci = 1
+	sp_aa_ifv_fra_vbci = 1
+	sp_atgm_ifv_fra_vbci = 1
+	sp_artillery_ifv_fra_vbci = 1
+	ifv_fra_amx10p = 1
+	light_tank_ifv_fra_amx10p = 1
+	arv_ifv_fra_amx10p = 1
+	sp_aa_ifv_fra_amx10p = 1
+	sp_atgm_ifv_fra_amx10p = 1
+	sp_artillery_ifv_fra_amx10p = 1
+	ifv_eng_warrior = 1
+	light_tank_ifv_eng_warrior = 1
+	arv_ifv_eng_warrior = 1
+	sp_aa_ifv_eng_warrior = 1
+	sp_atgm_ifv_eng_warrior = 1
+	ifv_usa_bradley = 1
+	arv_ifv_usa_bradley = 1
+	sp_atgm_ifv_usa_bradley = 1
+	sp_artillery_ifv_usa_bradley = 1
+	sp_mlrs_ifv_usa_bradley = 1
+	ifv_ger_marder1 = 1
+	light_tank_ifv_ger_marder1 = 1
+	arv_ifv_ger_marder1 = 1
+	sp_aa_ifv_ger_marder1 = 1
+	sp_atgm_ifv_ger_marder1 = 1
+	sp_artillery_ifv_ger_marder1 = 1
+	infantry_improvements_1 = 1
+	infantry_improvements_0 = 1
+	infantry_improvements_2 = 1
+	infantry_improvements_3 = 1
+	infantry_improvements_4 = 1
+	usa_artillery_m114 = 1
+	usa_artillery_m102 = 1
+	usa_artillery_m198 = 1
+	usa_artillery_m119 = 1
+	usa_artillery_m777 = 1
+	eng_artillery_bl5inch = 1
+	eng_artillery_l118 = 1
+	ger_artillery_leFH = 1
+	ger_artillery_FH70 = 1
+	fra_artillery_TRF1 = 1
+
+	ifv_sov_bmp1 = 1
+	light_tank_ifv_sov_bmp1 = 1
+	arv_ifv_sov_bmp1 = 1
+	sp_aa_ifv_sov_bmp1 = 1
+	sp_atgm_ifv_sov_bmp1 = 1
+	sp_artillery_ifv_sov_bmp1 = 1
+	sp_mlrs_ifv_sov_bmp1 = 1
+	ifv_sov_bmp2 = 1
+	light_tank_ifv_sov_bmp2 = 1
+	arv_ifv_sov_bmp2 = 1
+	sp_aa_ifv_sov_bmp2 = 1
+	sp_atgm_ifv_sov_bmp2 = 1
+	sp_artillery_ifv_sov_bmp2 = 1
+	sp_mlrs_ifv_sov_bmp2 = 1
+	tank_sov_t55 = 1
+	ifv_heavy_sov_t55 = 1
+	apc_tank_sov_t55 = 1
+	sp_aa_tank_sov_t55 = 1
+	sp_atgm_tank_sov_t55 = 1
+	arv_tank_sov_t55 = 1
+	sp_artillery_tank_sov_t55 = 1
+	
+	sp_mlrs_tank_sov_t55 = 1
+	tank_sov_t62 = 1
+	ifv_heavy_sov_t62 = 1
+	apc_tank_sov_t62 = 1
+	sp_aa_tank_sov_t62 = 1
+	sp_atgm_tank_sov_t62 = 1
+	arv_tank_sov_t62 = 1
+	sp_artillery_tank_sov_t62 = 1
+	
+	sp_mlrs_tank_sov_t62 = 1
+	tank_sov_t64 = 1
+	ifv_heavy_sov_t64 = 1
+	apc_tank_sov_t64 = 1
+	sp_aa_tank_sov_t64 = 1
+	sp_atgm_tank_sov_t64 = 1
+	arv_tank_sov_t64 = 1
+	sp_artillery_tank_sov_t64 = 1
+	
+	sp_mlrs_tank_sov_t64 = 1
+	tank_sov_t72 = 1
+	ifv_heavy_sov_t72 = 1
+	apc_tank_sov_t72 = 1
+	sp_aa_tank_sov_t72 = 1
+	sp_atgm_tank_sov_t72 = 1
+	arv_tank_sov_t72 = 1
+	sp_artillery_tank_sov_t72 = 1
+	
+	sp_mlrs_tank_sov_t72 = 1
+	apc_sov_btr50 = 1
+	light_tank_apc_sov_btr50 = 1
+	arv_apc_sov_btr50 = 1
+	sp_aa_apc_sov_btr50 = 1
+	sp_atgm_apc_sov_btr50 = 1
+	sp_artillery_apc_sov_btr50 = 1
+	apc_sov_btr60 = 1
+	light_tank_apc_sov_btr60 = 1
+	arv_apc_sov_btr60 = 1
+	sp_aa_apc_sov_btr60 = 1
+	sp_atgm_apc_sov_btr60 = 1
+	sp_artillery_apc_sov_btr60 = 1
+	apc_sov_btr70 = 1
+	light_tank_apc_sov_btr70 = 1
+	arv_apc_sov_btr70 = 1
+	sp_aa_apc_sov_btr70 = 1
+	sp_atgm_apc_sov_btr70 = 1
+	sp_artillery_apc_sov_btr70 = 1
+	apc_sov_mtlb = 1
+	light_tank_apc_sov_mtlb = 1
+	arv_apc_sov_mtlb = 1
+	sp_aa_apc_sov_mtlb = 1
+	sp_atgm_apc_sov_mtlb = 1
+	sp_artillery_apc_sov_mtlb = 1
+	sp_mlrs_apc_sov_mtlb = 1
+	sov_brdm1 = 1
+	light_tank_sov_brdm1 = 1
+	arv_sov_brdm1 = 1
+	sp_aa_sov_brdm1 = 1
+	sp_atgm_sov_brdm1 = 1
+	sov_brdm2 = 1
+	light_tank_sov_brdm2 = 1
+	arv_sov_brdm2 = 1
+	sp_aa_sov_brdm2 = 1
+	sp_atgm_sov_brdm2 = 1
+}
+
+2022.04.01 = {
+	send_embargo = RUS
+	send_embargo = DPR
+	send_embargo = LPR
+	send_embargo = CHE
+	send_embargo = WGN
+	send_embargo = BLR
+	add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		technology = computers_2
+	}
+	add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		technology = printers_1
+	}
+	add_tech_bonus = {
+		bonus = 1
+		uses = 1
+		technology = electronics_manufacturing_1
+	}
+	add_tech_bonus = {
+		bonus = 0.50
+		uses = 1
+		technology = robotization_1
+	}
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard2_equipment
+	variant_name = "Leopard 2A1"
+	amount = 20
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard1_equipment
+	variant_name = "Leopard 1A5"
+	amount = 15
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = imv_medium_1_equipment
+	variant_name = "HMMWV"
+	amount = 50
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = arv_tank_sov_t72_equipment
+	variant_name = "БРЭМ-1"
+	amount = 10
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = sov_brdm1_equipment
+	variant_name = "БРДМ-1"
+	amount = 15
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = tank_sov_t72_equipment
+	variant_name = "Т-72"
+	amount = 30
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = sov_brdm2_equipment
+	variant_name = "БРДМ-2"
+	amount = 20
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_mtlb_equipment
+	variant_name = "МТ-ЛБ"
+	amount = 10
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = apc_sov_mtlb_equipment
+	variant_name = "МТ-ЛБВМ"
+	amount = 8
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = imv_medium_4_equipment
+	variant_name = "Oshkosh MATV"
+	amount = 10
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = apc_usa_m113_equipment
+	variant_name = "M113"
+	amount = 20
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = tank_usa_abrams_equipment
+	variant_name = "M1 Abrams"
+	amount = 10
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_sov_bmp1_equipment
+	variant_name = "BWP-1"
+	amount = 15
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = imv_light_1_equipment
+	variant_name = "FMTV"
+	amount = 25
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = imv_medium_2_equipment
+	variant_name = "M1117 ASV"
+	amount = 10
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_ifv_usa_bradley_equipment
+	variant_name = "M109"
+	amount = 5
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_apc_sov_mtlb_equipment
+	variant_name = "2С1 Гвоздика"
+	amount = 15
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = sp_mlrs_imv_light_1_equipment
+	variant_name = "M142 HIMARS"
+	amount = 5
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = imv_heavy_0_equipment
+	variant_name = "БМ-21 Град"
+	amount = 10
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_wheeled_0_equipment
+	variant_name = "Оса"
+	amount = 10
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_tracked_2_equipment
+	variant_name = "Бук-М1"
+	amount = 5
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_mrv_tracked_0_equipment
+	variant_name = "Тунгуска"
+	amount = 8
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = apc_usa_aav7_equipment
+	variant_name = "AAV-7"
+	amount = 5
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = usa_infantry_m4_equipment
+	amount = 5000
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = ger_infantry_hk416_equipment
+	amount = 4000
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = eng_infantry_l119a2_equipment
+	amount = 3000
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = fra_infantry_hk416f_equipment
+	amount = 3000
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = uniform_kzmp_beryozka_equipment
+	amount = 4000
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = body_armor_6b3_equipment
+	amount = 3000
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = grenade_launcher_rpg7_equipment
+	amount = 500
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_9k111_fagot_equipment
+	amount = 200
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = aa_9k32_strela_2_equipment
+	amount = 300
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = usa_artillery_m777_equipment
+	amount = 15
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = ger_artillery_FH70_equipment
+	amount = 10
+	producer = LAT
+}
+
+add_equipment_to_stockpile = {
+	type = engineering_equipment
+	amount = 500
+	producer = NTO
+}
+add_equipment_to_stockpile = {
+	type = arv_equipment
+	amount = 250
+	producer = NTO
+}
+add_equipment_to_stockpile = {
+	type = amv_equipment
+	amount = 1000
+	producer = NTO
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 1500
+	producer = NTO
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1	
+	amount = 150
+	producer = LAT
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1		
+	amount = 1500
+	producer = LAT
+}

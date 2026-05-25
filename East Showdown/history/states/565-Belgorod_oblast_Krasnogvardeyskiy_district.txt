@@ -1,0 +1,18 @@
+state = { 
+	id = 565 
+	name = "STATE_565" 
+	manpower = 32242 
+	
+	state_category = small_town 
+	history = { 
+		owner = RUS 
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 3 
+		}
+		
+		add_core_of = RUS 
+	}
+	provinces = { 26 4684 6413 6600 6729 7809 7862 9033 9285 10080 14863 14948 14977 15050 15945 }
+}

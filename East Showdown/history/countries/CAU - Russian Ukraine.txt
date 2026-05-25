@@ -1,0 +1,408 @@
+#equipment variants
+create_equipment_variant_imv_vystrel = yes
+create_equipment_variant_imv_tigr = yes
+create_equipment_variant_ifv_sov_bmp_1p = yes
+create_equipment_variant_sp_mlrs_bm_21_grad = yes
+create_equipment_variant_sp_aa_pantsir_s1 = yes
+create_equipment_variant_apc_btr_70v = yes
+create_equipment_variant_sp_artillery_2s1_gvozdika = yes
+create_equipment_variant_tank_sov_t_72b_obr_89 = yes
+create_equipment_variant_tank_sov_t_64b = yes
+create_equipment_variant_ifv_sov_bmp_2d = yes
+
+set_research_slots = 1
+set_stability = 0.2
+set_war_support = 0.5
+set_convoys = 20
+
+set_country_flag = news_pro_russian_flag
+
+set_technology = {
+	rus_sam_5B21 = 1
+	rus_sam_5B55P = 1
+	missile_ukr_neptun = 1
+	missile_ukr_r17 = 1
+	missile_ukr_tochkau = 1
+	ukr_transport1 = 1 
+	ukr_CAS1 = 1
+	ukr_CAS2 = 1
+	ukr_fighter1 = 1
+	ukr_fighter2 = 1 
+	ukr_hel_strike1 = 1
+	ukr_hel_transport1 = 1
+	ukr_hel_transport2 = 1
+	ukr_uav_strike1 = 1
+	ukr_uav_strike2 = 1
+	ukr_uav_recon1 = 1
+	infantry_improvements_0 = 1
+	ukr_uav_recon2 = 1
+	UKR_2022_1 = 1
+
+	
+	
+	
+	
+
+	infantry_weapons_sov_ww2 = 1
+	infantry_weapons_akm = 1
+	infantry_weapons_ak74 = 1
+	infantry_weapons_z10 = 1
+	infantry_weapons_vepr = 1
+	infantry_weapons_vylkan = 1
+	infantry_improvements_1 = 1
+	infantry_improvements_0 = 1
+	infantry_improvements_2 = 1
+	infantry_improvements_3 = 1
+	infantry_uniform_kzmp_beryozka = 1
+	infantry_uniform_vsr84_butan = 1
+	infantry_uniform_ukr_vsr98_flora = 1
+	infantry_uniform_mm14 = 1
+	infantry_uniform_multicam = 1
+	infantry_body_armor_6b1 = 1
+	infantry_body_armor_6b3 = 1
+	infantry_body_armor_6b5 = 1
+	infantry_body_armor_fort = 1
+	infantry_body_armor_korsarm314 = 1
+	infantry_grenade_launcher_rpg7 = 1
+	infantry_grenade_launcher_rpg18_muha = 1
+	infantry_grenade_launcher_rpg22_netto = 1
+	infantry_grenade_launcher_rpg26_aglen = 1
+	infantry_grenade_launcher_rk2stugna = 1
+	infantry_grenade_launcher_rk3korsar = 1
+	infantry_mortar_sov_ww2 = 1
+	infantry_mortar_2b9_vasilyok  = 1
+	infantry_mortar_2b11 = 1
+	infantry_mortar_2b14_podnos = 1
+	infantry_mortar_2b24_podnos = 1
+	infantry_mortar_m12015molot = 1
+	infantry_atgm_9k11_malutka = 1
+	infantry_atgm_9k111_fagot = 1
+	infantry_atgm_skif = 1
+	infantry_atgm_stugna = 1
+	infantry_atgm_barier = 1
+	infantry_aa_9k32_strela_2 = 1
+	infantry_aa_9k34_strela_3 = 1
+	infantry_aa_9k38_igla = 1
+	infantry_aa_igla1 = 1
+
+	motorized_infantry = 1
+
+	tech_support = 1
+	tech_engineering = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	communication_equipment = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_recon = 1
+	tech_recon2 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_ARV = 1
+	tech_AMV = 1
+
+	tank_sov_t55 = 1
+
+	tank_sov_t62 = 1
+
+	tank_sov_t64 = 1
+	ifv_heavy_sov_t64 = 1
+
+	tank_sov_t72 = 1
+	arv_tank_sov_t72 = 1
+	sp_artillery_tank_sov_t72 = 1
+	
+
+	tank_sov_t80 = 1
+	sp_artillery_tank_sov_t80 = 1
+
+	tank_ukr_t84 = 1
+
+	ifv_sov_bmp1 = 1
+	arv_ifv_sov_bmp1 = 1
+
+	ifv_sov_bmp2 = 1
+
+	ifv_sov_bmp3 = 1
+
+	afv_sov_bmd1 = 1
+
+	afv_sov_bmd2 = 1
+
+	afv_sov_bmd3 = 1
+
+	apc_sov_btr50 = 1
+
+	apc_sov_btr60 = 1
+
+	apc_sov_btr70 = 1
+
+	apc_sov_btr80 = 1
+
+	apc_ukr_btr3 = 1
+
+	apc_ukr_btr4 = 1
+
+	apc_ukr_otaman = 1
+
+	apc_sov_mtlb = 1
+	sp_aa_apc_sov_mtlb = 1
+	sp_atgm_apc_sov_mtlb = 1
+	sp_artillery_apc_sov_mtlb = 1
+	sp_mlrs_apc_sov_mtlb = 1
+
+	sov_brdm1 = 1
+
+	sov_brdm2 = 1
+
+	imv_medium_0 = 1
+
+	imv_light_1 = 1
+	imv_light_2 = 1
+	sp_aa_imv_light_2 = 1
+	sp_atgm_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_3 = 1
+	sp_aa_imv_light_2 = 1
+	sp_atgm_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_0 = 1
+	imv_light_4 = 1
+	sp_artillery_imv_light_4 = 1
+	imv_medium_1 = 1
+	imv_medium_2 = 1
+	imv_medium_3 = 1
+	imv_medium_4 = 1
+	imv_heavy_0 = 1
+	sp_mlrs_imv_heavy_0 = 1
+	imv_heavy_1 = 1
+	sp_mlrs_imv_heavy_1 = 1
+	imv_heavy_2 = 1
+	imv_heavy_3 = 1
+	imv_heavy_4 = 1
+	sp_mlrs_imv_heavy_4 = 1
+	mrv_wheeled_0 = 1
+	sp_aa_mrv_wheeled_0 = 1
+	mrv_wheeled_1 = 1
+	mrv_wheeled_2 = 1
+	mrv_wheeled_3 = 1
+	mrv_wheeled_4 = 1
+	mrv_tracked_0 = 1
+	sp_aa_mrv_tracked_0 = 1
+	mrv_tracked_1 = 1
+	mrv_tracked_2 = 1
+	sp_aa_mrv_tracked_2 = 1
+	mrv_tracked_3 = 1
+	mrv_tracked_4 = 1
+	sp_aa_mrv_tracked_4 = 1
+	rus_artillery_d1 = 1
+	rus_artillery_d74 = 1
+	rus_artillery_d20 = 1
+	rus_artillery_m46 = 1
+	rus_artillery_d30 = 1
+	rus_artillery_2a36 = 1
+	#Doctrines
+    ato_oos_legacy = 1
+	experienced_artillerists =1
+	alternative_tank_application = 1
+	experienced_assault_infantry = 1
+	widespread_fpv_drone_usage = 1
+	basic_doctrines = 1
+	basic_infantry_expertise = 1
+	basic_artillery_expertise = 1
+	artillery_doctrine_t1_4 = 1
+	basic_infantry_expertise = 1
+	infantry_motorized_doctrine_t1_4 = 1
+	basic_special_forces_expertise = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2019.04.21"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 40
+	fascism = 5
+	communism = 10
+	neutrality = 45
+}
+
+every_other_country = {
+	limit = {
+		NOT = {
+			tag = RUS
+		}
+	}
+	add_opinion_modifier = {
+		target = ROOT
+		modifier = recognize_as_occupied_territory
+	}
+	add_opinion_modifier = {
+		target = ROOT
+		modifier = recognize_as_occupied_territory_trade
+	}
+}
+
+add_opinion_modifier = {
+	target = UKR
+	modifier = hostile_status
+}
+
+add_opinion_modifier = {
+	target = RUS
+	modifier = mother_russia
+}
+
+add_named_threat = {
+	threat = 3.1
+	name = UKR_crisis
+}
+
+# add_equipment_to_stockpile = {
+# 	type = mortar_1_eq	
+# 	amount = 900
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = mortar_2_eq	
+# 	amount = 320
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = atgm_1_eq	
+# 	amount = 750
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = atgm_2_eq	
+# 	amount = 850
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = arv_equipment_0	
+# 	amount = 820
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = amv_equipment_0	
+# 	amount = 998
+# 	producer = LPR
+# }
+
+# add_equipment_to_stockpile = {
+# 	type = artillery_equipment_1	
+# 	amount = 325
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = artillery_equipment_2	
+# 	amount = 180
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = artillery_equipment_3	
+# 	amount = 50
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = t64_chassis_0
+# 	variant_name = "Т-64Б"
+# 	amount = 400
+# 	producer = LPR
+# } 
+# add_equipment_to_stockpile = {
+# 	type = bronemashina1_chassis
+# 	variant_name = "Выстрел БМ"
+# 	amount = 900
+# 	producer = LPR
+# } 
+# add_equipment_to_stockpile = {
+# 	type = bronemashina2_chassis
+# 	variant_name = "Тигр БМ"
+# 	amount = 700
+# 	producer = LPR
+# } 
+# add_equipment_to_stockpile = {
+# 	type = bmp1a_chassis
+# 	variant_name = "БМП-1 БМ"
+# 	amount = 600
+# 	producer = LPR
+# } 
+# add_equipment_to_stockpile = {
+# 	type = bmp2a_chassis
+# 	variant_name = "БМП-2 БМ"
+# 	amount = 495
+# 	producer = LPR
+# } 
+# add_equipment_to_stockpile = {
+# 	type = mlrs1_chassis
+# 	variant_name = "БМ-21 \"Град\""
+# 	amount = 250
+# 	producer = LPR
+# } 
+# add_equipment_to_stockpile = {
+# 	type = medium_zrk1_chassis
+# 	variant_name = "\"Панцирь-С1\""
+# 	amount = 140
+# 	producer = LPR
+# } 
+# add_equipment_to_stockpile = {
+# 	type = btr1_chassis
+# 	variant_name = "БТР-70 БМ"
+# 	amount = 880
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = medium_sau_chassis_0
+# 	variant_name = "2С1"
+# 	amount = 300
+# 	producer = LPR
+# } 
+# add_equipment_to_stockpile = {
+# 	type = engineering_equipment_0	
+# 	amount = 900
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = infantry_anti_tank_equipment_2	
+# 	amount = 5600
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = infantry_anti_tank_equipment_1	
+# 	amount = 8000
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = infantry_anti_air_equipment_1	
+# 	amount = 3500
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = infantry_equipment_2	
+# 	amount = 54000
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = motorized_equipment_1	
+# 	amount = 5800
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = support_equipment_1	
+# 	amount = 9000
+# 	producer = LPR
+# }
+# add_equipment_to_stockpile = {
+# 	type = t72_chassis_0
+# 	variant_name = "Т-72Б обр. 89"
+# 	amount = 670
+# 	producer = LPR
+# }

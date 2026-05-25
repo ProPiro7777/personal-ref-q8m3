@@ -1,0 +1,24 @@
+state = { 
+	id = 302 
+	name = "STATE_302" 
+	manpower = 12193 
+	
+	state_category = border_zone 
+	history = { 
+		owner = RUS 
+		
+		victory_points = { 18886 2 }
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 2 
+		}
+		
+		2022.04.01 = {
+			owner = RBZ
+		}
+		
+		add_core_of = RUS 
+	}
+	provinces = { 678 14390 18886 18900 }
+}

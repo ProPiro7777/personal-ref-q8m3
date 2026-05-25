@@ -1,0 +1,9 @@
+This mod adds battle plan shortcuts that aren't in the vanilla game.
+
+[h1]Changes[/h1]
+Naval Invasion Hotkey: D
+Naval Invasion With Floating Harbor Hotkey: shift D
+Paradrop Hotkey: G
+
+
+[b]Ironman Compatable[/b]

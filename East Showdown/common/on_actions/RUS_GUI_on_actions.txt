@@ -1,0 +1,11 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = { has_country_flag = SMO_STAFF_WINDOW_OPEN }
+
+				map_update_regions_status = yes
+			}
+		}
+	}
+}

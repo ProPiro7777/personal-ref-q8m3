@@ -1,0 +1,22 @@
+instant_effect = {
+	ensure_unit_template_RUS_DSHRG_Rusich = yes
+}
+
+units = {
+	division = {
+		name = "DSHRG Rusich"
+		officer = {
+			name = "Alexey Milchakov"
+			portraits = {
+		        army = {
+					large = GFX_idea_Milchakov
+					small = GFX_idea_Milchakov_small
+				}
+		    }
+		}
+		location = 3948
+		division_template = "DSHRG Rusich"
+		start_experience_factor = 1
+		start_equipment_factor = 0.01
+	}
+}

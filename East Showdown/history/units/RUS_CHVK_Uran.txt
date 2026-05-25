@@ -1,0 +1,13 @@
+instant_effect = {
+	ensure_unit_template_RUS_CHVK = yes
+}
+
+units = {
+	division = {
+		name = "Batal'on Roskosmosa «Uran»"
+		location = 9227
+		division_template = "CHVK"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}

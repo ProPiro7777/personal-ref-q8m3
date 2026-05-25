@@ -1,0 +1,13 @@
+instant_effect = {
+	ensure_unit_template_UKR_Bratstvo = yes
+}
+
+units = {
+	division = {
+		name = "Batal'yon «Bratstvo»"
+		location = 15801
+		division_template = "Bratstvo"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+}

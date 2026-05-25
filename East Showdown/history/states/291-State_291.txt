@@ -1,0 +1,25 @@
+state = { 
+	id = 291 
+	name = "STATE_291" 
+	manpower = 31 
+	
+	state_category = wasteland 
+	buildings_max_level_factor = 0.75 
+	history = { 
+		owner = UKR 
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 1 
+			radar_station = 1 
+		}
+		
+		2022.04.01 = {
+			owner = UKR
+			controller = RUS
+		}
+
+		add_core_of = UKR 
+	}
+	provinces = { 17198 18810 }
+}

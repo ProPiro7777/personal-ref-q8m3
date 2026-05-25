@@ -1,0 +1,33 @@
+state={
+	id=1047
+	name="STATE_CHUNGCHEONG"
+	
+	resources={
+		coal = 9.000
+	}
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			13385 5 
+		}
+		victory_points = {
+			13386 3 
+		}
+		add_core_of = KOR
+
+	}
+
+	provinces={
+		1100 7175 7204 11992 13384 13385 13386 
+	}
+	manpower=2390018
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.0 
+}

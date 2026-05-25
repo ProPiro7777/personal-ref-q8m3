@@ -1,0 +1,277 @@
+
+DPR_INF_01 = {
+	name = "Rifle Division"
+	for_countries = { 
+		DPR 
+	}
+	can_use = { 
+		always = yes 
+	}
+	division_types = { 
+		"infantry" 
+	}
+	fallback_name = "%dya Strelkoviy batalon"
+	ordered = {
+		1 = { 
+			"" 
+		}
+	}
+}
+
+# батальон арты шиш
+DPR_ART_01 = 
+{
+	name = "Artillery Division"
+
+	for_countries = { DPR }
+
+	can_use = { always = yes }
+
+	division_types = { "towed_art" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%dya Artileriyskiy batalion"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "1-y samokhodno-artileriysky batalion 5-y motostrelkovyy brigady" }
+		2 = { "Art batalon Kalmius" }
+		3 = { "1-y Batalon sau 9-go polka morskoy pekhoty" }
+	}
+}
+
+DPR_MOT_01 = 
+{
+	name = "Motor Rifle Division"
+
+	for_countries = { DPR }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" } 
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%dya Motostrelkoviy batalion"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "1-y motostrelkovyy Batalon 0-y motostrelkovoy brigady" }
+		2 = { "2-y motostrelkovyy Batalon 110-y motostrelkovoy brigady" }
+		3 = { "3-y motostrelkovyy Batalon 110-y motostrelkovoy brigady" } #norm
+		4 = { "1-y motostrelkovyy Batalon 5-y motostrelkovyy brigady" }
+		5 = { "2-y motostrelkovyy Batalon 5-y motostrelkovyy brigady" }
+		6 = { "3-y motostrelkovyy Batalon 5-y motostrelkovyy brigady" }
+	}
+}
+
+
+
+#Это танковый батальон
+
+DPR_ARM_01 = 
+{
+	name = "Tankoviy batalion"
+
+	for_countries = { DPR }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%d-y Tankoviy batalon"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "1-y tankovyy Batalion 5-y motostrelkovyy brigady" }
+
+
+	}
+}
+
+DPR_ARM_02 = 
+{
+	name = "Tank Corps"
+
+	for_countries = { DPR }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%dya Tankovaya Korpus"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-	y Tankovaya Korpus" }
+		2 = { "%d-y Tankovaya Korpus" }
+		3 = { "%d-y Tankovaya Korpus" }
+		4 = { "%d-y Tankovaya Korpus" }
+		5 = { "%d-y Tankovaya Korpus" }
+		6 = { "%d-y Tankovaya Korpus" }
+		7 = { "%d-y Tankovaya Korpus" }
+		8 = { "%d-y Tankovaya Korpus" }
+		9 = { "%d-y Tankovaya Korpus" }
+
+	}
+}
+
+DPR_ARM_03 = 
+{
+	name = "Guard Tank Corps"
+
+	for_countries = { DPR }
+
+	can_use = { has_war = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%dya Gvardeiskaya Tankovaya Korpus"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d-y Gvardeiskiy Tankoviy Korpus" }
+		2 = { "%d-y Gvardeiskiy Tankoviy Korpus" }
+		3 = { "%d-y Gvardeiskiy Tankoviy Korpus" }
+		4 = { "%d-y Gvardeiskiy Tankoviy Korpus" }
+		5 = { "%d-y Gvardeiskiy Tankoviy Korpus" }
+		6 = { "%d-y Gvardeiskiy Tankoviy Korpus" }
+		7 = { "%d-y Gvardeiskiy Tankoviy Korpus" }
+		8 = { "%d-y Gvardeiskiy Tankoviy Korpus" }
+		9 = { "%d-y Gvardeiskiy Tankoviy Korpus" }
+
+	}
+}
+
+DPR_ARM_04 = 
+{
+	name = "Tank Brigade"
+
+	for_countries = { DPR }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%d-ya Tankovaya Brigada"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dya Tankovaya Brigada" }
+		2 = { "%dya Tankovaya Brigada" }
+		3 = { "%dya Tankovaya Brigada" }
+		4 = { "%dya Tankovaya Brigada" }
+		5 = { "%dya Tankovaya Brigada" }
+		6 = { "%dya Tankovaya Brigada" }
+		7 = { "%dya Tankovaya Brigada" }
+		8 = { "%dya Tankovaya Brigada" }
+		9 = { "%dya Tankovaya Brigada" }
+		10 = { "%dya Tankovaya Brigada" }
+	}
+}
+
+#десантники
+
+DPR_PAR_01 = 
+{
+	name = "Paratrooper Division"
+
+	for_countries = { DPR }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%d-y parashyutnyy batalon"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "1-y parashyutnyy batalon" }
+	}
+}
+
+#марина
+
+DPR_MAR_01 = 
+{
+	name = "Marine Division"
+
+	for_countries = { DPR }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%d-ya brigada Morskoi Pekhoty"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "1-y \"Semyonovskiy\" Motostrelkoviy batalion morskoy pekhoti 9-go otdelnogog gvardeyskogo polka morskoy pekhoty" }
+		2 = { "2-y Motostrelkoiy batalion morskoy pekhoti 9-go otdelnogog gvardeyskogo polka morskoy pekhoty" }
+	}
+}
+
+DPR_TRO_01 = 
+{
+	name = "Garrison Division"
+
+	for_countries = { DPR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SOV_INF_01 }
+
+	fallback_name = "%d-y batalon tro"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "1-y Batalon Territorialnoy oborony" }
+		2 = { "2-y Batalon Territorialnoy oborony" }
+		3 = { "3-y Batalon Territorialnoy oborony imeni \"383-y Shahtyorskoy strelkovoy divisii\"" }
+		4 = { "4-y Batalon Territorialnoy oborony" }
+		5 = { "5-y Batalon Territorialnoy oborony" }
+		6 = { "6-y Batalon Territorialnoy oborony" }
+	}
+}

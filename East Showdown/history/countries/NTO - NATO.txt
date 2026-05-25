@@ -1,0 +1,2521 @@
+﻿oob = "NTO_2022"
+capital = 393
+set_research_slots = 4
+set_stability = 0.7
+set_war_support = 0.75
+set_convoys = 200
+
+set_country_flag = news_pro_ukrainian_flag
+
+
+#equipment variants
+create_equipment_variant_tank_eng_centurion_mk_3 = yes
+create_equipment_variant_tank_eng_centurion_mk_5 = yes
+create_equipment_variant_tank_eng_centurion_mk_8 = yes
+create_equipment_variant_tank_eng_centurion_mk_10 = yes
+create_equipment_variant_tank_eng_chieftain_mk_12 = yes
+create_equipment_variant_tank_eng_challenger_1 = yes
+create_equipment_variant_tank_eng_challenger_1_mk_2 = yes
+create_equipment_variant_tank_eng_challenger_1_mk_3 = yes
+create_equipment_variant_tank_eng_challenger_1_mk_3_enhanced = yes
+create_equipment_variant_tank_eng_challenger_2 = yes
+create_equipment_variant_tank_eng_challenger_2_megatron = yes
+create_equipment_variant_tank_eng_challenger_2_tes = yes
+create_equipment_variant_tank_usa_m48_patton = yes
+create_equipment_variant_tank_usa_m48a2 = yes
+create_equipment_variant_tank_usa_m48a2c = yes
+create_equipment_variant_tank_usa_m48a3 = yes
+create_equipment_variant_tank_usa_m48a5 = yes
+create_equipment_variant_tank_usa_m60 = yes
+create_equipment_variant_tank_usa_m60a1 = yes
+create_equipment_variant_tank_usa_m60a1_rise = yes
+create_equipment_variant_tank_usa_m1_abrams = yes
+create_equipment_variant_tank_usa_m1a1 = yes
+create_equipment_variant_tank_usa_m1a1_aim = yes
+create_equipment_variant_tank_usa_m1a2 = yes
+create_equipment_variant_tank_usa_m1a2_sep_v1 = yes
+create_equipment_variant_tank_usa_m1a2_sep_v2 = yes
+create_equipment_variant_tank_usa_m1a2_sep_v3 = yes
+create_equipment_variant_tank_usa_m1a2_sep_v4 = yes
+create_equipment_variant_tank_usa_m1a2d = yes
+create_equipment_variant_tank_ger_leopard_1 = yes
+create_equipment_variant_tank_ger_leopard_1a1a1 = yes
+create_equipment_variant_tank_ger_leopard_1a2 = yes
+create_equipment_variant_tank_ger_leopard_1a3 = yes
+create_equipment_variant_tank_ger_leopard_1a4 = yes
+create_equipment_variant_tank_ger_leopard_1a5 = yes
+create_equipment_variant_tank_ger_leopard_1a6 = yes
+create_equipment_variant_tank_ger_leopard_2 = yes
+create_equipment_variant_tank_ger_leopard_2a1 = yes
+create_equipment_variant_tank_ger_leopard_2a2 = yes
+create_equipment_variant_tank_ger_leopard_2a3 = yes
+create_equipment_variant_tank_ger_leopard_2a4 = yes
+create_equipment_variant_tank_ger_leopard_2a5 = yes
+create_equipment_variant_tank_ger_leopard_2a6 = yes
+create_equipment_variant_tank_ger_leopard_2a7 = yes
+create_equipment_variant_tank_ger_leopard_2a8 = yes
+create_equipment_variant_tank_ger_kf51_panther = yes
+create_equipment_variant_tank_fra_amx_30 = yes
+create_equipment_variant_tank_fra_amx_30b2 = yes
+create_equipment_variant_tank_fra_leclerc_serie_1 = yes
+create_equipment_variant_tank_fra_leclerc_serie_2 = yes
+create_equipment_variant_tank_fra_leclerc_xlr = yes
+create_equipment_variant_tank_ita_c1_ariete = yes
+create_equipment_variant_tank_ita_c1_ariete_mk_2 = yes
+create_equipment_variant_ifv_ger_marder_1 = yes
+create_equipment_variant_ifv_ger_marder_1a3 = yes
+create_equipment_variant_ifv_ger_puma = yes
+create_equipment_variant_ifv_ita_dardo = yes
+create_equipment_variant_ifv_usa_m2_bradley = yes
+create_equipment_variant_ifv_usa_m3_bradley_cavalry_fighting_vehicle = yes
+create_equipment_variant_ifv_usa_m2a1_bradley = yes
+create_equipment_variant_ifv_usa_m2a2_bradley = yes
+create_equipment_variant_ifv_usa_m2a3_bradley = yes
+create_equipment_variant_ifv_usa_m2a4_bradley = yes
+create_equipment_variant_ifv_swe_cv90 = yes
+create_equipment_variant_ifv_eng_warrior = yes
+create_equipment_variant_ifv_eng_warrior_csp = yes
+create_equipment_variant_ifv_fra_amx_10p = yes
+create_equipment_variant_ifv_fra_amx_10p_milan = yes
+create_equipment_variant_ifv_fra_vbci = yes
+create_equipment_variant_apc_fv432 = yes
+create_equipment_variant_apc_fv432_bulldog = yes
+create_equipment_variant_apc_vab = yes
+create_equipment_variant_apc_m113 = yes
+create_equipment_variant_apc_m113a3 = yes
+create_equipment_variant_apc_m113a4 = yes
+create_equipment_variant_apc_lav_25 = yes
+create_equipment_variant_apc_stryker = yes
+create_equipment_variant_apc_stryker_icv = yes
+create_equipment_variant_apc_pbv_302 = yes
+create_equipment_variant_apc_tpz_1_fuchs = yes
+create_equipment_variant_apc_boxer = yes
+create_equipment_variant_apc_boxer_a2 = yes
+create_equipment_variant_apc_aav_7 = yes
+create_equipment_variant_apc_aav_7a1 = yes
+create_equipment_variant_apc_freccia = yes
+create_equipment_variant_imv_hmmwv = yes
+create_equipment_variant_imv_international_maxxpro = yes
+create_equipment_variant_imv_iveco_lmv = yes
+create_equipment_variant_imv_foxhound = yes
+create_equipment_variant_imv_oshkosh_matv = yes
+create_equipment_variant_imv_vbmr_griffon = yes
+create_equipment_variant_imv_mastiff = yes
+create_equipment_variant_imv_light_fmtv = yes
+create_equipment_variant_imv_m1117_asv = yes
+create_equipment_variant_light_tank_nto_b1_centauro = yes
+create_equipment_variant_light_tank_nto_amx_10rc = yes
+create_equipment_variant_light_tank_nto_stryker_mgs = yes
+create_equipment_variant_arv_ariete_arv = yes
+create_equipment_variant_arv_leopard_1_arv = yes
+create_equipment_variant_arv_leclerc_dcl = yes
+create_equipment_variant_arv_m88_hercules = yes
+create_equipment_variant_arv_m88a1_hercules = yes
+create_equipment_variant_arv_m88a2_hercules = yes
+create_equipment_variant_arv_m88a3_hercules = yes
+create_equipment_variant_arv_m113_arv = yes
+create_equipment_variant_sp_artillery_m109 = yes
+create_equipment_variant_sp_artillery_m109a1 = yes
+create_equipment_variant_sp_artillery_m109a2 = yes
+create_equipment_variant_sp_artillery_m109a3 = yes
+create_equipment_variant_sp_artillery_m109a4 = yes
+create_equipment_variant_sp_artillery_m109a5 = yes
+create_equipment_variant_sp_artillery_m109a6_paladin = yes
+create_equipment_variant_sp_artillery_m109a7 = yes
+create_equipment_variant_sp_artillery_as_90 = yes
+create_equipment_variant_sp_artillery_pzh_2000 = yes
+create_equipment_variant_sp_artillery_archer = yes
+create_equipment_variant_sp_artillery_caesar = yes
+create_equipment_variant_sp_artillery_amx_30_auf_1 = yes
+create_equipment_variant_sp_heavy_artillery_m110 = yes
+create_equipment_variant_sp_heavy_artillery_m55 = yes
+create_equipment_variant_sp_mlrs_m142_himars = yes
+create_equipment_variant_sp_mlrs_m270 = yes
+create_equipment_variant_sp_aa_roland = yes
+create_equipment_variant_sp_aa_an_twq_1_avenger = yes
+create_equipment_variant_sp_aa_iris_t = yes
+create_equipment_variant_sp_aa_gepard = yes
+create_equipment_variant_imv_light_ford_m35_deuce = yes
+
+set_technology = {
+		computers_0 = 1
+	computers_1 = 1
+	computers_2 = 1
+	computers_3 = 1
+	computers_4 = 1
+	computers_5 = 1
+	internet_0 = 1
+	internet_1 = 1
+	internet_2 = 1
+	internet_3 = 1
+	internet_4 = 1
+	internet_5 = 1
+	development_of_ai_0 = 1
+	development_of_ai_1 = 1
+	development_of_ai_2 = 1
+	development_of_ai_3 = 1
+	development_of_ai_4 = 1
+	development_of_ai_5 = 1
+	radar_0 = 1
+	radar_1 = 1
+	radar_2 = 1
+	radar_3 = 1
+	radar_4 = 1
+	radar_5 = 1
+	radar_6 = 1
+	printers_0 = 1
+	printers_1 = 1
+	printers_2 = 1
+	printers_3 = 1
+	printers_4 = 1
+	robotization_0 = 1
+	robotization_1 = 1
+	robotization_2 = 1
+	robotization_3 = 1
+	robotization_4 = 1
+	robotization_5 = 1
+	working_equipment_0 = 1
+	working_equipment_1 = 1
+	working_equipment_2 = 1
+	working_equipment_3 = 1
+	working_equipment_4 = 1
+	working_equipment_5 = 1
+	building_0 = 1
+	building_1 = 1
+	building_2 = 1
+	building_3 = 1
+	building_4 = 1
+	building_5 = 1
+	electronics_manufacturing_0 = 1
+	electronics_manufacturing_1 = 1
+	electronics_manufacturing_2 = 1
+	electronics_manufacturing_3 = 1
+	electronics_manufacturing_4 = 1
+	electronics_manufacturing_5 = 1
+	road_construction_0 = 1
+	road_construction_1 = 1
+	road_construction_2 = 1
+	road_construction_3 = 1
+	urbanization_0 = 1
+	urbanization_1 = 1
+	urbanization_2 = 1
+	urbanization_3 = 1
+	oil_refining_0 = 1
+	oil_refining_1 = 1
+	oil_refining_2 = 1
+	oil_refining_3 = 1
+	mining_0 = 1
+	mining_1 = 1
+	mining_2 = 1
+	mining_3 = 1
+	nto_sam_SM1 = 1
+	nto_sam_mim104 = 1
+	nto_sam_nasams = 1
+	nto_sam_thaad = 1
+	nto_sam_Hawk = 1
+	missile_nto_agm86  = 1
+	missile_nto_agm129  = 1
+	missile_nto_agm142  = 1
+	missile_nto_agm158  = 1
+	missile_nto_SLAM  = 1
+	missile_nto_exocet   = 1
+	missile_nto_as15tt = 1 
+	missile_nto_rbs15  = 1 
+	missile_nto_seaeagle  = 1
+	missile_nto_seaskua  = 1
+	missile_nto_harpoon  = 1
+	missile_nto_agm158clrasm  = 1
+	missile_nto_bluesteel  = 1
+	missile_nto_shtormshadow  = 1
+	missile_nto_taurus  = 1
+	missile_nto_gmlrs  = 1
+	missile_nto_atacams  = 1
+	missile_nto_bansheejet80 = 1
+
+	NTO_2022_1 = 1
+	nto_transport1 = 1
+	nto_transport2 = 1
+	nto_transport4 = 1
+	nto_eu_transport1 = 1
+	nto_eu_transport2 = 1
+	nto_guidance_complex1 = 1
+	nto_guidance_complex2 = 1
+	nto_eu_guidance_complex1 = 1
+	NTO_hel_transport2 = 1
+	nto_CAS1 = 1
+	nto_CAS2 = 1
+	nto_CAS3 = 1
+	nto_eu_CAS1 = 1
+	nto_strategic_bomber1 = 1
+	nto_strategic_bomber4 = 1
+	nto_strategic_bomber_v2_1 = 1
+	nto_strategic_bomber_v2_2 = 1
+	nto_multipurpose_fighter1 = 1
+	nto_multipurpose_fighter2 = 1
+	nto_multipurpose_fighter3 = 1
+	nto_multipurpose_fighter4 = 1
+	nto_multipurpose_fighter5 = 1
+	nto_eu_multipurpose_fighter1 = 1
+	nto_eu_multipurpose_fighter2 = 1
+	nto_eu_multipurpose_fighter3 = 1
+	nto_eu_multipurpose_fighter4 = 1
+	nto_eu_multipurpose_fighter5 = 1
+	nto_eu_bomber_fighter1 = 1
+	nto_fighter1 = 1
+	nto_fighter2 = 1
+	nto_fighter3 = 1
+	nto_hel_strike1 = 1
+	nto_hel_strike2 = 1
+	nto_hel_strike_apache = 1
+	NTO_hel_transport1 = 1
+	NTO_uav_strike1 = 1
+	NTO_uav_strike2 = 1
+	NTO_uav_strike3 = 1
+	NTO_uav_strike_bayraktar = 1
+	NTO_uav_recon1 = 1
+	NTO_uav_recon2 = 1
+
+
+	
+	
+	
+	
+	tech_support = 1
+	tech_engineering = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	tech_engineers3 = 1
+	communication_equipment = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	tech_recon = 1
+	tech_recon2 = 1
+	tech_recon3 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_ARV = 1
+	tech_AMV = 1
+	motorized_infantry = 1
+
+	imv_civil_0 = 1
+	imv_civil_1 = 1
+	imv_civil_2 = 1
+	imv_civil_3 = 1
+	imv_medium_0 = 1
+	sp_aa_imv_medium_0 = 1
+	sp_atgm_imv_medium_0 = 1
+	sp_artillery_imv_medium_0 = 1
+	sp_mlrs_imv_medium_0 = 1
+	imv_light_1 = 1
+	sp_mlrs_imv_light_1 = 1
+	imv_light_2 = 1
+	sp_aa_imv_light_2 = 1
+	sp_atgm_imv_light_2 = 1
+	sp_artillery_imv_light_2 = 1
+	sp_mlrs_imv_light_2 = 1
+	imv_light_3 = 1
+	sp_artillery_imv_light_3 = 1
+	imv_light_0 = 1
+	sp_aa_imv_light_0 = 1
+	sp_atgm_imv_light_0 = 1
+	sp_artillery_imv_light_0 = 1
+	sp_mlrs_imv_light_0 = 1
+	imv_light_4 = 1
+	sp_aa_imv_light_4 = 1
+	sp_atgm_imv_light_4 = 1
+	sp_artillery_imv_light_4 = 1
+	sp_mlrs_imv_light_4 = 1
+	imv_medium_1 = 1
+	sp_aa_imv_medium_1 = 1
+	sp_atgm_imv_medium_1 = 1
+	sp_artillery_imv_medium_1 = 1
+	sp_mlrs_imv_medium_1 = 1
+	imv_medium_2 = 1
+	sp_aa_imv_medium_2 = 1
+	sp_atgm_imv_medium_2 = 1
+	sp_artillery_imv_medium_2 = 1
+	sp_mlrs_imv_medium_2 = 1
+	imv_medium_3 = 1
+	sp_aa_imv_medium_3 = 1
+	sp_atgm_imv_medium_3 = 1
+	sp_artillery_imv_medium_3 = 1
+	sp_mlrs_imv_medium_3 = 1
+	imv_medium_4 = 1
+	sp_aa_imv_medium_4 = 1
+	sp_atgm_imv_medium_4 = 1
+	sp_artillery_imv_medium_4 = 1
+	sp_mlrs_imv_medium_4 = 1
+	imv_heavy_0 = 1
+	imv_heavy_1 = 1
+	imv_heavy_2 = 1
+	imv_heavy_3 = 1
+	imv_heavy_4 = 1
+	mrv_wheeled_0 = 1
+	mrv_wheeled_1 = 1
+	mrv_wheeled_2 = 1
+	infantry_improvements_0 = 1
+	mrv_wheeled_3 = 1
+	mrv_wheeled_4 = 1
+	
+	tank_ger_leopard1 = 1
+	sp_aa_tank_ger_leopard1 = 1
+	arv_tank_ger_leopard1 = 1
+	sp_artillery_tank_ger_leopard1 = 1
+
+	tank_ger_leopard2 = 1
+	tank_ger_kf51 = 1
+	tank_eng_centurion = 1
+	tank_eng_chieftain = 1
+	tank_eng_challenger1 = 1
+	sp_artillery_tank_eng_challenger1 = 1
+	tank_eng_challenger2 = 1
+
+	tank_usa_m48patton = 1
+	sp_heavy_artillery_mrv_tracked_1 = 1
+	tank_usa_m60patton = 1
+	arv_tank_usa_m60patton = 1
+	
+	tank_usa_abrams = 1
+	
+	tank_fra_amx30 = 1
+	sp_artillery_tank_fra_amx30 = 1
+	tank_fra_leclerc = 1
+	arv_tank_fra_leclerc = 1
+	tank_ita_ariete = 1
+	arv_tank_ita_ariete = 1
+
+	usa_infantry_weapons_m1_garand = 1
+	usa_infantry_weapons_m14 = 1
+	usa_infantry_weapons_m16 = 1
+	usa_infantry_weapons_m4 = 1
+	usa_infantry_weapons_fn_scar = 1
+	eng_infantry_weapons_sten = 1
+	eng_infantry_weapons_em2 = 1
+	eng_infantry_weapons_l1a1 = 1
+	eng_infantry_weapons_sa80 = 1
+	eng_infantry_weapons_l119a2 = 1
+	ger_infantry_weapons_stg44 = 1
+	ger_infantry_weapons_hk_g3 = 1
+	ger_infantry_weapons_hk33 = 1
+	ger_infantry_weapons_hk_g41 = 1
+	ger_infantry_weapons_hk_g36 = 1
+	ger_infantry_weapons_hk416 = 1
+	fra_infantry_weapons_mas36 = 1
+	fra_infantry_weapons_mas49_56 = 1
+	fra_infantry_weapons_famas_f1 = 1
+	fra_infantry_weapons_famas_g2 = 1
+	ita_infantry_weapons_carcano_m1891 = 1
+	ita_infantry_weapons_carcano_m38 = 1
+	ita_infantry_weapons_beretta_m1938 = 1
+	ita_infantry_weapons_bm59 = 1
+	ita_infantry_weapons_ar70 = 1
+	swe_infantry_weapons_ag_m42 = 1
+	swe_infantry_weapons_ak4 = 1
+	swe_infantry_weapons_ak5 = 1
+	swe_infantry_weapons_ak6 = 1
+	infantry_uniform_usa_frog_skin = 1
+	infantry_uniform_usa_erdl = 1
+	infantry_uniform_usa_woodland = 1
+	infantry_uniform_usa_ucp = 1
+	infantry_uniform_usa_ocp = 1
+	infantry_armor_usa_m1951 = 1
+	infantry_armor_usa_m1955 = 1
+	infantry_armor_usa_pasgt = 1
+	infantry_armor_usa_iba = 1
+	infantry_armor_usa_iotv = 1
+	infantry_armor_usa_sps = 1
+	grenade_launchers_usa_m72_law = 1
+	grenade_launchers_usa_fgr17_viper = 1
+	grenade_launchers_usa_smaw = 1
+	grenade_launchers_usa_fgm148_javelin = 1
+	grenade_launchers_usa_fgm172_sraw = 1
+	
+	grenade_launchers_eng_law80 = 1
+	grenade_launchers_eng_nlaw = 1
+	
+	grenade_launchers_ger_panzerschreck = 1
+	grenade_launchers_ger_panzerfaust44 = 1
+	grenade_launchers_ger_rgw90 = 1
+	grenade_launchers_swe_carlgustaf_m3 = 1
+	
+	mortar_usa_m19 = 1
+	mortar_usa_m29 = 1
+	mortar_usa_m224 = 1
+	mortar_usa_m120 = 1
+	mortar_ger_grw34 = 1
+	mortar_ger_120krh40 = 1
+	mortar_ger_rsg60 = 1
+	atgm_usa_m47_dragon = 1
+	atgm_usa_bgm71_tow = 1
+	atgm_usa_bgm71_tow_ii = 1
+	atgm_usa_bgm71f_tow_2b = 1
+	atgm_usa_fgm148_javelin = 1
+	atgm_usa_javelin_f_model = 1
+	atgm_ger_fra_milan = 1
+	atgm_ger_fra_hot = 1
+	atgm_ger_fra_milan2 = 1
+	atgm_ger_fra_milan3 = 1
+	atgm_ger_fra_eryx = 1
+	atgm_ger_fra_akeron_mp = 1
+	atgm_ger_fra_mmp = 1
+	
+	manpads_usa_fim43_redeye = 1
+	manpads_usa_fim92_stinger = 1
+	manpads_usa_fim92_stinger_post = 1
+	manpads_usa_fim92_stinger_rmp_e = 1
+	manpads_usa_fim92_stinger_rmp_f = 1
+	manpads_usa_fim92j_stinger = 1
+	manpads_eng_blowpipe = 1
+	manpads_eng_javelin = 1
+	manpads_eng_starburst = 1
+	manpads_eng_starstreak = 1
+	manpads_eng_martlet = 1
+	manpads_fra_mistral = 1
+	manpads_swe_rbs70 = 1
+	manpads_swe_rbs70m = 1
+	manpads_swe_rbs90 = 1
+	apc_usa_aav7 = 1
+	arv_apc_usa_aav7 = 1
+	apc_eng_fv432 = 1
+	
+	apc_swe_pbv302 = 1
+	apc_ita_freccia = 1
+	light_tank_apc_ita_freccia = 1
+	apc_fra_VAB = 1
+	light_tank_apc_fra_VAB = 1
+	apc_usa_stryker = 1
+	light_tank_apc_usa_stryker = 1
+	
+	apc_usa_lav25 = 1
+	arv_apc_usa_m113 = 1
+	apc_usa_m113 = 1
+	apc_ger_boxer = 1
+	apc_ger_fuchs = 1
+	ifv_swe_cv90 = 1
+	ifv_ita_dardo = 1
+	ifv_fra_vbci = 1
+	ifv_fra_amx10p = 1
+	ifv_eng_warrior = 1
+	ifv_usa_bradley = 1
+	sp_artillery_ifv_usa_bradley = 1
+	sp_mlrs_ifv_usa_bradley = 1
+	ifv_ger_puma = 1
+	ifv_ger_marder1 = 1
+	infantry_improvements_1 = 1
+	infantry_improvements_0 = 1
+	infantry_improvements_2 = 1
+	infantry_improvements_3 = 1
+	infantry_improvements_4 = 1
+	usa_artillery_m114 = 1
+	usa_artillery_m102 = 1
+	usa_artillery_m198 = 1
+	usa_artillery_m119 = 1
+	usa_artillery_m777 = 1
+	eng_artillery_bl5inch = 1
+	eng_artillery_l118 = 1
+	ger_artillery_leFH = 1
+	ger_artillery_FH70 = 1
+	fra_artillery_modele50 = 1
+	fra_artillery_TRF1 = 1
+	fra_artillery_TRF2 = 1
+
+	#Doctrines
+    #nato_legacy = 1
+	#us_marine_corps = 1
+	#overreliance_on_air_superiority = 1
+	#top_notch_equipment = 1
+	#no_one_left_behind = 1
+	#basic_doctrines = 1
+	#basic_infantry_expertise = 1
+	#infantry_motorized_doctrine_t1_1 = 1
+	#
+}
+
+#Doctrines
+set_grand_doctrine = nato_legacy
+set_sub_doctrine = top_notch_equipment
+set_sub_doctrine = overreliance_on_air_superiority
+set_sub_doctrine = no_one_left_behind
+set_sub_doctrine = us_marine_corps
+set_sub_doctrine = basic_special_forces_expertise
+add_mastery = {
+	amount = 100
+	sub_doctrine = basic_special_forces_expertise
+}
+
+add_ideas = {
+	NTO_dem_pol
+	parlament_assambly_of_NATO
+	large_military_budget
+	strong_central_administration
+	volunteer_only
+	infrastructure_extended
+	military_object
+	service_age_55
+	rescue_extended
+	partial_economic_mobilisation
+	social_increased
+	educational_extended
+	medical_increased
+	security_bloated
+	NTO_supply_of_the_eastern_european_army_1
+	NTO_Fighting_for_Democracy
+	NTO_Nato_Military_School
+	NTO_Unified_communication_system
+	NTO_Struggle_General_Staff
+	NTO_The_Pacifian_Society
+	NTO_Collaboration_with_CHVK
+	NTO_The_Shame_of_Afghanistan
+	NTO_pol_treaty
+}
+add_dynamic_modifier = {
+	modifier = NTO_nato_military_complex
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2018.10.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 69
+	fascism = 10
+	communism = 3
+	neutrality = 18
+}
+
+create_faction_from_template = faction_template_north_atlantic_treaty_organization
+
+add_to_faction = LAT
+add_to_faction = LIT
+add_to_faction = POL
+add_to_faction = CZE
+add_to_faction = SLO
+add_to_faction = HUN
+add_to_faction = ROM
+add_to_faction = CRO
+add_to_faction = BUL
+
+recruit_character = jens_stoltenberg
+recruit_character = tod_walters
+recruit_character = tim_radford
+recruit_character = erick_smith
+recruit_character = nick_karter
+recruit_character = james_hokenhall
+recruit_character = patrick_sanders
+recruit_character = pier_shull
+recruit_character = andreas_marloy
+recruit_character = klaydio_gracio
+recruit_character = rob_bayer
+recruit_character = david_olvin
+recruit_character = brayn_fenton
+recruit_character = charlz_kvinton
+recruit_character = kristopher_kavoli
+recruit_character = terri_burkhard
+recruit_character = yorg_follmer
+recruit_character = NTO_keir_starmer
+recruit_character = NTO_rishi_sunak
+recruit_character = NTO_elizabeth_truss
+recruit_character = NTO_giorgia_meloni
+recruit_character = NTO_mario_dragi
+recruit_character = NTO_emmanuel_macron
+recruit_character = NTO_donald_trump
+recruit_character = NTO_joe_biden
+recruit_character = NTO_olaf_sholtz
+recruit_character = NTO_boris_johnson
+recruit_character = NTO_william_burns
+recruit_character = NTO_christine_lagarde
+recruit_character = NTO_ursula_von_der_leyen
+recruit_character = NTO_kris_kavoli
+
+set_rule = {
+	can_send_volunteers = yes
+}
+
+set_country_flag = european_army_is_supplied
+
+set_rule = {
+	can_send_volunteers = no
+}
+
+add_offsite_building = {
+	type = arms_factory 	
+	level = 15
+}
+add_offsite_building = {
+	type = industrial_complex
+	level = 5
+}
+
+2022.04.01 = {
+	set_oob = "NTO_2022" # Измените на NTO_2022_04_15, если появится вариант на это время
+	set_stability = 0.7 # Изменить на более реальные цифры
+	set_war_support = 0.75 # Изменить на более реальные цифры
+	set_convoys = 200 # Изменить на более реальные цифры
+	add_manpower = 10000
+	
+	unlock_national_focus = nto_diplomatic_deadlock_Russia
+	unlock_national_focus = nto_new_commission_Russia
+	unlock_national_focus = nto_council_NATO_Russia
+	unlock_national_focus = nto_note_protest_Russian
+	unlock_national_focus = nto_Meeting_NATO_EU
+	unlock_national_focus = nto_Munich_Conference
+	unlock_national_focus = nto_condemn_Russia_troops
+	unlock_national_focus = nto_Russian_Ukrainian_War
+	unlock_national_focus = nto_Revision_Euro_Atlantic_defense
+	unlock_national_focus = nto_Meeting_with_EU_Defense_Ministers
+	unlock_national_focus = nto_Technical_cooperation_Ukraine
+	unlock_national_focus = nto_Cyber_Defense_Ukraine
+	unlock_national_focus = nto_Small_shipments_lightweapons
+	unlock_national_focus = nto_Supply_armored_vehicles_equipment
+	unlock_national_focus = nto_Condemn_invasion_Ukraine
+	unlock_national_focus = nto_impose_sanctions
+	unlock_national_focus = nto_calls_putin
+	unlock_national_focus = nto_freezing_of_assets_of_the_rf
+	unlock_national_focus = nto_discrediting_the_rf_in_the_un
+	#unlock_national_focus = nto_light_equipment_supplies
+	#unlock_national_focus = nto_organize_logistics_on_the_pol_ukr_border
+	#unlock_national_focus = nto_sign_lend_lease_to_ukr
+	unlock_national_focus = nto_oil_refusal
+	unlock_national_focus = nto_freezing_north_stream
+	unlock_national_focus = nto_help_ukrainian_refugees
+	unlock_national_focus = nto_refugee_help_centers
+	unlock_national_focus = nto_bureaucracy_refugees
+	unlock_national_focus = nto_humanitarian_missions
+	unlock_national_focus = nto_medical_assistance
+	unlock_national_focus = nto_monetary_aid
+	unlock_national_focus = nto_cancel_restrictions_ukraine
+	
+	add_ideas = {
+		
+	}
+	
+	# Динамические и временные идеи
+	add_dynamic_modifier = { modifier = NTO_ukrainian_refuges }
+	
+	add_to_variable = { NTO_ukrainian_refuges_consumer_goods_factor = 0.3 }
+	add_to_variable = { NTO_ukrainian_refuges_political_power_cost = 2 }
+	add_to_variable = { NTO_ukrainian_refuges_stability_weekly = -0.02 }
+	add_to_variable = { NTO_ukrainian_enemy_operative_capture_chance_factor = -0.5 }
+	add_to_variable = { NTO_ukrainian_refuges_industrial_capacity_factory = -0.1 }
+	
+	add_to_variable = { NTO_ukrainian_refuges_stability_weekly = 0.01 }
+	add_to_variable = { NTO_ukrainian_refuges_consumer_goods_factor = -0.15 }
+	add_to_variable = { NTO_ukrainian_enemy_operative_capture_chance_factor = -0.10 }
+	add_to_variable = { NTO_ukrainian_refuges_political_power_cost = -0.25 }
+	
+	add_to_variable = { NTO_ukrainian_refuges_stability_weekly = 0.005 }
+	add_to_variable = { NTO_ukrainian_enemy_operative_capture_chance_factor = 0.20 }
+	add_to_variable = { NTO_ukrainian_refuges_political_power_cost = -0.25 }
+	
+	add_to_variable = { NTO_ukrainian_refuges_stability_weekly = 0.002 }
+	add_to_variable = { NTO_ukrainian_refuges_political_power_cost = -1 } 
+	add_to_variable = { NTO_ukrainian_refuges_consumer_goods_factor = -0.05 }
+	
+	add_to_variable = {
+		NTO.nato_country_resource_gas_var = -50
+		tooltip = nto_freezing_of_assets_of_the_rf_tt
+	}
+	add_to_variable = {
+		NTO.nato_country_resource_gas_var = -50
+		tooltip = nto_oil_refusal_tt
+	}
+	add_to_variable = {
+		NTO.nato_country_resource_gas_var = -50
+		tooltip = nto_freezing_of_assets_of_the_rf_tt
+	}
+	
+	# Другое
+	send_embargo = RUS
+	send_embargo = DPR
+	send_embargo = LPR
+	send_embargo = CHE
+	send_embargo = WGN
+	send_embargo = BLR
+	
+	add_tech_bonus = {
+		bonus = 2
+		uses = 1
+		technology = tech_fpv 
+	}
+}
+
+#NEW GENERATION EQUIPMENT VARIANT
+
+					
+			
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+ 
+
+add_equipment_to_stockpile = {
+	type = apc_usa_m113_equipment
+    variant_name = "M113"
+	amount = 4308
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = arv_tank_usa_m60patton_equipment
+    variant_name = "M88 Hercules"
+	amount = 500
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = apc_usa_aav7_equipment
+    variant_name = "AAV-7"
+	amount = 1000
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = apc_usa_lav25_equipment
+    variant_name = "LAV-25"
+	amount = 2000
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_eng_challenger2_equipment
+    variant_name = "Challenger 2"
+	amount = 180
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_eng_challenger2_equipment
+    variant_name = "Challenger 2 Megatron"
+	amount = 100 
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_eng_challenger2_equipment
+    variant_name = "Challenger 2 TES"
+	amount = 60
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = arv_tank_ger_leopard1_equipment
+    variant_name = "Leopard 1 ARV"
+	amount = 300 
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard1_equipment
+    variant_name = "Leopard 1"
+	amount = 1000 
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard1_equipment
+    variant_name = "Leopard 1A3"
+	amount = 800 
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard1_equipment
+    variant_name = "Leopard 1A5"
+	amount = 600 
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_usa_abrams_equipment
+    variant_name = "M1 Abrams"
+	amount = 200 
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_usa_abrams_equipment
+    variant_name = "M1A1"
+	amount = 200 
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_usa_abrams_equipment
+    variant_name = "M1A2 SEP v3"
+	amount = 600 
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_usa_abrams_equipment
+    variant_name = "M1A2 SEP v4"
+	amount = 200
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard2_equipment
+    variant_name = "Leopard 2A4"
+	amount = 150
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard2_equipment
+    variant_name = "Leopard 2A5"
+	amount = 300
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard2_equipment
+    variant_name = "Leopard 2A6"
+	amount = 350
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard2_equipment
+    variant_name = "Leopard 2A7"
+	amount = 150
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard2_equipment
+    variant_name = "Leopard 2A7+"
+	amount = 75
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_leopard2_equipment
+    variant_name = "Leopard 2A8"
+	amount = 80
+	producer = NTO 
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ger_kf51_equipment
+	variant_name = "KF51 Panther"
+	amount = 1
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = tank_fra_leclerc_equipment
+	variant_name = "Leclerc Serie 1"
+	amount = 120
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = tank_fra_leclerc_equipment
+	variant_name = "Leclerc Serie 2"
+	amount = 70
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = tank_fra_leclerc_equipment
+	variant_name = "Leclerc XLR"
+	amount = 40
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ita_ariete_equipment
+	variant_name = "C1 Ariete"
+	amount = 50
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = tank_ita_ariete_equipment
+	variant_name = "C1 Ariete Mk.2"
+	amount = 150
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_ger_marder1_equipment
+	variant_name = "Marder 1A3"
+	amount = 500
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_ger_puma_equipment
+	variant_name = "Puma"
+	amount = 400
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_ita_dardo_equipment
+	variant_name = "Dardo"
+	amount = 250
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_usa_bradley_equipment
+	variant_name = "M2A3 Bradley"
+	amount = 1000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_usa_bradley_equipment
+	variant_name = "M2A4 Bradley"
+	amount = 250
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_swe_cv90_equipment
+	variant_name = "CV90"
+	amount = 200
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_eng_warrior_equipment
+	variant_name = "Warrior CSP"
+	amount = 150
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ifv_fra_vbci_equipment
+	variant_name = "VBCI"
+	amount = 700
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = apc_eng_fv432_equipment
+	variant_name = "FV432 Bulldog"
+	amount = 400
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = apc_fra_vab_equipment
+	variant_name = "VAB"
+	amount = 400
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = apc_usa_stryker_equipment
+	variant_name = "Stryker"
+	amount = 500
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = apc_ger_boxer_equipment
+	variant_name = "Boxer"
+	amount = 400
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = apc_ger_boxer_equipment
+	variant_name = "Boxer A2"
+	amount = 200
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = apc_ita_freccia_equipment
+	variant_name = "Freccia"
+	amount = 50
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = imv_medium_1_equipment
+	variant_name = "HMMWV"
+	amount = 9000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = imv_medium_1_equipment
+	variant_name = "International MaxxPro"
+	amount = 500
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = imv_medium_2_equipment
+	variant_name = "Iveco LMV"
+	amount = 500
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = imv_medium_3_equipment
+	variant_name = "Foxhound"
+	amount = 1000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = imv_medium_4_equipment
+	variant_name = "Oshkosh MATV"
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = imv_heavy_2_equipment
+	variant_name = "Mastiff"
+	amount = 2800
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = imv_heavy_1_equipment
+	variant_name = "VBMR Griffon"
+	amount = 1800
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = imv_light_1_equipment
+	variant_name = "FMTV"
+	amount = 30000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_ifv_usa_bradley_equipment
+	variant_name = "M109"
+	amount = 700
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_imv_light_3_equipment
+	variant_name = "Caesar"
+	amount = 100
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_ifv_usa_bradley_equipment
+	variant_name = "M109A5"
+	amount = 200
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_ifv_usa_bradley_equipment
+	variant_name = "M109A6 Paladin"
+	amount = 300
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_ifv_usa_bradley_equipment
+	variant_name = "M109A7"
+	amount = 50
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_tank_eng_challenger1_equipment
+	variant_name = "AS-90"
+	amount = 50
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_artillery_tank_ger_leopard1_equipment
+	variant_name = "PzH 2000"
+	amount = 200
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_mlrs_imv_light_1_equipment
+	variant_name = "M142 HIMARS"
+	amount = 250
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_mlrs_ifv_usa_bradley_equipment
+	variant_name = "M270"
+	amount = 250
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_imv_light_3_equipment
+	variant_name = "Roland"
+	amount = 50
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_imv_light_0_equipment
+	variant_name = "AN/TWQ-1 Avenger"
+	amount = 200
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_imv_light_3_equipment
+	variant_name = "IRIS-T"
+	amount = 80
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = sp_aa_tank_ger_leopard1_equipment
+	variant_name = "Gepard"
+	amount = 180
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_infantry_m4_equipment
+	amount = 500000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_infantry_fn_scar_equipment
+	amount = 500000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_infantry_m27_iar_equipment
+	amount = 300000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_infantry_sig_xm7_equipment
+	amount = 80000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_woodland_equipment
+	amount = 300000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_ucp_equipment
+	amount = 300000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_ocp_equipment
+	amount = 200000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_pasgt_armor_equipment
+	amount = 50000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_iba_armor_equipment
+	amount = 200000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_iotv_armor_equipment
+	amount = 200000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_sps_armor_equipment
+	amount = 100000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fgr17_viper_equipment
+	amount = 6000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_smaw_equipment
+	amount = 7000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fgm148_javelin_equipment
+	amount = 35000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fgm148_javelin_atgm_equipment
+	amount = 60000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fgm172_sraw_equipment
+	amount = 17000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_m224_equipment
+	amount = 8000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_m120_equipment
+	amount = 18000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fim92_stinger_equipment
+	amount = 25000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fim92_stinger_post_equipment
+	amount = 10000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fim92_stinger_rmp_e_equipment
+	amount = 9800
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fim92_stinger_rmp_f_equipment
+	amount = 8000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fim92j_stinger_equipment
+	amount = 10000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_bgm71_tow_equipment
+	amount = 15000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_bgm71_tow_ii_equipment
+	amount = 9000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_bgm71f_tow_2b_equipment
+	amount = 15000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_fgm148_javelin_equipment
+	amount = 20000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_javelin_f_model_equipment
+	amount = 25000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_infantry_l1a1_equipment
+	amount = 100000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_infantry_sa80_equipment
+	amount = 75000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_infantry_l119a2_equipment
+	amount = 50000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_law80_equipment
+	amount = 20000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_nlaw_equipment
+	amount = 18000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_sbml2inch_equipment
+	amount = 10000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_l16_equipment
+	amount = 8000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_javelin_equipment
+	amount = 15000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_starburst_equipment
+	amount = 11000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_starstreak_equipment
+	amount = 12000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sam_hawk_equipment
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sam_sm1_equipment
+	amount = 1400
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sam_mim104_equipment
+	amount = 2000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sam_nasams_equipment
+	amount = 600
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sam_thaad_equipment
+	amount = 400
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_martlet_equipment
+	amount = 10000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = atgm_eng_vickers_vigilant
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_swingfire_equipment
+	amount = 4000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_infantry_ag_m42_equipment
+	amount = 40000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_infantry_ak4_equipment
+	amount = 50000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_infantry_ak5_equipment
+	amount = 60000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_infantry_ak6_equipment
+	amount = 70000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_m90_equipment
+	amount = 50000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_carlgustaf_m3_equipment
+	amount = 25000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_carlgustaf_m4_equipment
+	amount = 20000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_rbs70_equipment
+	amount = 15000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_rbs70m_equipment
+	amount = 10000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = swe_rbs90_equipment
+	amount = 8000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_fra_milan_equipment
+	amount = 20000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_fra_hot_equipment
+	amount = 15000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_fra_milan2_equipment
+	amount = 18000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_fra_milan3_equipment
+	amount = 12000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_fra_eryx_equipment
+	amount = 10000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_fra_akeron_mp_equipment
+	amount = 8000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_fra_mmp_equipment
+	amount = 10000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_infantry_mas36_equipment
+	amount = 15000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_infantry_mas49_56_equipment
+	amount = 14000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_infantry_famas_f1_equipment
+	amount = 40000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_infantry_famas_g2_equipment
+	amount = 50000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_infantry_hk416f_equipment
+	amount = 22000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_tap47_56_equipment
+	amount = 12000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_cce_equipment
+	amount = 30000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_france_f1_armor_equipment
+	amount = 10000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_france_f2_armor_equipment
+	amount = 8000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_felin_armor_equipment
+	amount = 6000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_lracf1_equipment
+	amount = 7000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_apilas_equipment
+	amount = 9000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_apilasab92_equipment
+	amount = 8000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_brandt2731_equipment
+	amount = 5000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_mo120rt_equipment
+	amount = 6000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_entac_equipment
+	amount = 4000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_mistral_equipment
+	amount = 3500
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_infantry_carcano_m1891_equipment
+	amount = 5000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_infantry_carcano_m38_equipment
+	amount = 5000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_infantry_beretta_m1938_equipment
+	amount = 4000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_infantry_bm59_equipment
+	amount = 4000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_infantry_ar70_equipment
+	amount = 4000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_infantry_beretta_arx160_equipment
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_m1929_telo_mimetico_equipment
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_vegetato_mimetico_equipment
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_vegetato_2004_equipment
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ita_breda_equipment
+	amount = 2000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_infantry_hk_g41_equipment
+	amount = 4000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_infantry_hk_g36_equipment
+	amount = 80000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_infantry_hk416_equipment
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_sumpftarn_equipment
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_flecktarn_equipment
+	amount = 3000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_rgw90_equipment
+	amount = 5000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_rgw110_equipment
+	amount = 4000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_grw34_equipment
+	amount = 2500
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_120krh40_equipment
+	amount = 2200
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_rsg60_equipment
+	amount = 2000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = usa_artillery_m777_equipment
+	amount = 900
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = ger_artillery_FH70_equipment
+	amount = 350
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = eng_artillery_l118_equipment
+	amount = 450
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = fra_artillery_TRF2_equipment
+	amount = 200
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = NTO_transport_plane_equipment_c5
+	amount = 131
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_fighter_equipment_tomado
+	amount = 600
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_cas_equipment_a10a
+	amount = 280
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_fighter_equipment_f16a
+	amount = 951
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_fighter_equipment_f22
+	amount = 195
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_fighter_equipment_f35
+	amount = 285
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_strat_bomber_equipment_b52
+	amount = 70
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_strat_bomber_equipment_b1
+	amount = 57
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_strat_bomber_equipment_b2
+	amount = 20
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_hel_strike_equipment_ah1
+	amount = 1000
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_hel_strike_equipment_ah1z
+	amount = 195
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_hel_strike_equipment_ah1z
+	amount = 2000
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_hel_transport_equipment_uh1
+	amount = 4000
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_hel_transport_equipment_sh60
+	amount = 500
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_uav_strike_equipment_rq1
+	amount = 360
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_uav_strike_equipment_mq9
+	amount = 270
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_uav_strike_equipment_mq1c
+	amount = 200
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_uav_recon_equipment_rq7
+	amount = 500
+	producer = NTO
+} 
+
+add_equipment_to_stockpile = {
+	type = NTO_uav_recon_equipment_rq4
+	amount = 50
+	producer = NTO
+}
+add_equipment_to_stockpile = {
+	type = engineering_equipment
+	amount = 6000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = communication_equipment
+	amount = 15000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = arv_equipment
+	amount = 5000
+	producer = NTO
+}
+add_equipment_to_stockpile = {
+	type = amv_equipment
+	amount = 8000
+	producer = NTO
+}
+add_equipment_to_stockpile = {
+	type = imv_light_1_equipment
+	amount = 18000
+	variant_name = "M35 Deuce"
+	producer = NTO
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1	
+	amount = 1000
+	producer = NTO
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1		
+	amount = 50000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_medium_guided_missile_agm86		
+	amount = 650
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_medium_guided_missile_129		
+	amount = 800
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_medium_guided_missile_142		
+	amount = 700
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_medium_guided_missile_158		
+	amount = 1000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_medium_guided_missile_slam		
+	amount = 850
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_medium_guided_missile_183		
+	amount = 900
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sea_guided_missile_equipment_seaeagle		
+	amount = 400
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sea_guided_missile_equipment_seaskua		
+	amount = 500
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sea_guided_missile_equipment_harpoon		
+	amount = 850
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sea_guided_missile_equipment_agm158c		
+	amount = 400
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sea_guided_missile_equipment_exocet		
+	amount = 400
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sea_guided_missile_equipment_as15tt		
+	amount = 250
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_sea_guided_missile_equipment_rbs15		
+	amount = 350
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_light_guided_missile_equipment_gmlrs		
+	amount = 4000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_light_guided_missile_equipment_bluesteel		
+	amount = 500
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_light_guided_missile_equipment_shtormshadow		
+	amount = 1200
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_light_guided_missile_equipment_taurus		
+	amount = 40
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_guided_uav_equipment_bansheejet80		
+	amount = 20
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_ballistic_missile_equipment_atacams		
+	amount = 1000
+	producer = NTO
+}
+
+add_equipment_to_stockpile = {
+	type = nto_ballistic_missile_equipment_atacams_mod		
+	amount = 700
+	producer = NTO
+}
+
+add_equipment_production = {
+	equipment = {
+        type = tank_eng_challenger2_equipment
+		creator = "NTO" 
+		version_name = "Challenger 2 TES"
+	}
+	requested_factories = 4
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = tank_usa_abrams_equipment
+		creator = "NTO" 
+		version_name = "M1A2 SEP v4"
+	}
+	requested_factories = 4
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = tank_ger_leopard2_equipment
+		creator = "NTO" 
+		version_name = "Leopard 2A8"
+	}
+	requested_factories = 4
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = tank_fra_leclerc_equipment
+		creator = "NTO" 
+		version_name = "Leclerc XLR"
+	}
+	requested_factories = 4
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = tank_ita_ariete_equipment
+		creator = "NTO" 
+		version_name = "C1 Ariete Mk.2" 
+	}
+	requested_factories = 3
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = ifv_ger_marder1_equipment
+		creator = "NTO" 
+		version_name = "Marder 1A3" 
+	}
+	requested_factories = 6
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = ifv_ita_dardo_equipment
+		creator = "NTO" 
+		version_name = "Dardo" 
+	}
+	requested_factories = 5
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = ifv_usa_bradley_equipment
+		creator = "NTO" 
+		version_name = "M2A4 Bradley"
+	}
+	requested_factories = 8
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = ifv_swe_cv90_equipment
+		creator = "NTO" 
+		version_name = "CV90" 
+	}
+	requested_factories = 3
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = ifv_eng_warrior_equipment
+		creator = "NTO" 
+		version_name = "Warrior CSP" 
+	}
+	requested_factories = 1
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = apc_usa_m113_equipment
+		creator = "NTO" 
+		version_name = "M113A4" 
+	}
+	requested_factories = 8
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = imv_medium_1_equipment
+		creator = "NTO" 
+		version_name = "HMMWV"
+	}
+	requested_factories = 10
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = imv_medium_1_equipment
+		creator = "NTO" 
+		version_name = "International MaxxPro"
+	}
+	requested_factories = 8
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = light_tank_apc_fra_VAB_equipment
+		creator = "NTO" 
+		version_name = "AMX-10RC"
+	}
+	requested_factories = 4
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = sp_artillery_ifv_usa_bradley_equipment
+		creator = "NTO" 
+		version_name = "M109A7"
+	}
+	requested_factories = 8
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = sp_artillery_tank_eng_challenger1_equipment
+		creator = "NTO" 
+		version_name = "AS-90" 
+	}
+	requested_factories = 8
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = sp_artillery_tank_ger_leopard1_equipment
+		creator = "NTO" 
+		version_name = "PzH 2000" 
+	}
+	requested_factories = 4
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = sp_artillery_imv_light_4_equipment
+		creator = "NTO" 
+		version_name = "Archer"
+	}
+	requested_factories = 3
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = sp_artillery_imv_light_3_equipment
+		creator = "NTO" 
+		version_name = "Caesar"
+	}
+	requested_factories = 4
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = sp_mlrs_imv_light_1_equipment
+		creator = "NTO" 
+		version_name = "M142 HIMARS" 
+	}
+	requested_factories = 4
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = sp_mlrs_ifv_usa_bradley_equipment
+		creator = "NTO" 
+		version_name = "M270"
+	}
+	requested_factories = 2
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = sp_aa_imv_light_3_equipment
+		creator = "NTO" 
+		version_name = "IRIS-T" 
+	}
+	requested_factories = 2
+	progress = 0.6
+	efficiency = 50
+}
+
+add_equipment_production = {
+	equipment = {
+        type = sp_aa_tank_ger_leopard1_equipment
+		creator = "NTO" 
+		version_name = "Gepard" 
+	}
+	requested_factories = 15
+	progress = 0.6
+	efficiency = 50
+}
+
+# add_equipment_production = {
+# 	equipment = {
+#         type = imv_medium_1_equipment
+# 		creator = "NTO" 
+# 		version_name = "International MaxxPro"
+# 	}
+# 	requested_factories = 15
+# 	progress = 0.6
+# 	efficiency = 50
+# }
+
+# add_equipment_production = {
+# 	equipment = {
+#         type = imv_medium_1_equipment
+# 		creator = "NTO" 
+# 		version_name = "International MaxxPro"
+# 	}
+# 	requested_factories = 15
+# 	progress = 0.6
+# 	efficiency = 50
+# }
+
+# add_equipment_production = {
+# 	equipment = {
+#         type = imv_medium_1_equipment
+# 		creator = "NTO" 
+# 		version_name = "International MaxxPro"
+# 	}
+# 	requested_factories = 15
+# 	progress = 0.6
+# 	efficiency = 50
+# }
+
+# add_equipment_production = {
+# 	equipment = {
+#         type = imv_medium_1_equipment
+# 		creator = "NTO" 
+# 		version_name = "International MaxxPro"
+# 	}
+# 	requested_factories = 15
+# 	progress = 0.6
+# 	efficiency = 50
+# }
+
+####### PARLIAMENT #######
+
+set_variable = { var = USA_parliament_support value = 255 } ### Value of Parliament at start ###
+set_variable = { var = USA_parliament_total value = 435 } ### Max Value of Parliament ###
+NTO_recalc_usa_parliament_icon_frames = yes #### Scripted Effect - GFX updating ###
+
+set_variable = { var = EU_parliament_support value = 430 } ### Value of Parliament at start ###
+set_variable = { var = EU_parliament_total value = 720 } ### Max Value of Parliament ###
+NTO_recalc_eu_parliament_icon_frames = yes #### Scripted Effect - GFX updating ###
+NTO = { 
+	country_event = { id = nto_parliaments.1 days = 3 } # US PARLIAMENT EVENTS STARTER
+	country_event = { id = nto_parliaments.4 days = 9 } # EU PARLIAMENT EVENTS STARTER
+}

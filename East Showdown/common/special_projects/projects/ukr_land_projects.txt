@@ -1,0 +1,259 @@
+ukr_ad = {
+	specialization = specialization_land
+	icon = GFX_ukr_ad
+	project_tags = {
+		sp_tag_tank
+	}
+	allowed = {
+		tag = UKR
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = {
+			electronic = 5
+		}
+	}
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipment_modules = {
+			ukr_tank_ad_2
+			ukr_tank_ad_3
+		}
+	}
+}
+ukr_dp = {
+	specialization = specialization_land
+	icon = GFX_ukr_dp
+	project_tags = {
+		sp_tag_tank
+	}
+	allowed = {
+		tag = UKR
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = {
+			electronic = 5
+		}
+	}
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipment_modules = {
+			ukr_tank_dp_3
+			ukr_tank_dp_4
+		}
+	}
+}
+ukr_fcs_ai = {
+	specialization = specialization_land
+	icon = GFX_ukr_fcs_ai
+	project_tags = {
+		sp_tag_tank
+	}
+	allowed = {
+		tag = UKR
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	available = {
+		FROM = {
+			OR = {
+				has_tech = development_of_ai_3
+				has_tech = development_of_ai_4
+			}
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	resource_cost = {
+		resources = {
+			electronic = 5
+		}
+	}
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+	}
+	project_output = {
+		enable_equipment_modules = {
+			ukr_tank_fcs_AI_1
+			ukr_tank_fcs_AI_2
+			ukr_tank_fcs_AI_3
+			ukr_tank_fcs_AI_4
+		}
+	}
+}
+#ukr_develop_otrk_grom_1 = {
+#	specialization = specialization_land
+#	icon = GFX_ukr_develop_otrk_grom_1
+#	project_tags = {
+#	}
+#	allowed = {
+#		tag = UKR
+#	}
+#	breakthrough_cost = {
+#		specialization_land = 1
+#	}
+#	available = {
+#		UKR = {
+#			has_completed_focus = Otrk_thunder
+#		}
+#	}
+#	visible = {
+#		UKR = {
+#			has_completed_focus = Otrk_thunder
+#		}
+#	}
+#	prototype_time = sp_time.prototype.short
+#	complexity = 20
+#	resource_cost = {
+#		resources = {
+#			electronic = 10
+#		}
+#	}
+#	generic_prototype_rewards = {
+#		sp_land_generic_reward_scientist_xp_1
+#		sp_land_generic_reward_scientist_xp_2
+#		sp_land_generic_reward_scientist_xp_3
+#		sp_land_generic_reward_army_xp_1
+#		sp_land_generic_reward_army_xp_2
+#		sp_land_generic_reward_army_xp_3
+#		sp_land_generic_reward_major_progress_1
+#		sp_land_generic_reward_major_progress_2
+#		sp_land_generic_reward_major_progress_3
+#	}
+#	project_output = {
+#		enable_equipments = {
+#		}
+#	}
+#}
+#ukr_develop_otrk_grom_2 = {
+#	specialization = specialization_land
+#	icon = GFX_ukr_develop_otrk_grom_2
+#	project_tags = {
+#	}
+#	allowed = {
+#		tag = UKR
+#	}
+#	breakthrough_cost = {
+#		specialization_land = 1
+#	}
+#	available = {
+#		UKR = {
+#			has_completed_focus = Otrk_thunder
+#		}
+#	}
+#	visible = {
+#		FROM = {
+#			is_special_project_completed = sp:ukr_develop_otrk_grom_1
+#		}
+#	}
+#	special_project_parent = {
+#		ukr_develop_otrk_grom_1
+#	}
+#	prototype_time = sp_time.prototype.short
+#	complexity = 20
+#	resource_cost = {
+#		resources = {
+#			electronic = 10
+#		}
+#	}
+#	generic_prototype_rewards = {
+#		sp_land_generic_reward_scientist_xp_1
+#		sp_land_generic_reward_scientist_xp_2
+#		sp_land_generic_reward_scientist_xp_3
+#		sp_land_generic_reward_army_xp_1
+#		sp_land_generic_reward_army_xp_2
+#		sp_land_generic_reward_army_xp_3
+#		sp_land_generic_reward_major_progress_1
+#		sp_land_generic_reward_major_progress_2
+#		sp_land_generic_reward_major_progress_3
+#	}
+#	project_output = {
+#	}
+#}
+#ukr_develop_otrk_grom_3 = {
+#	specialization = specialization_land
+#	icon = GFX_ukr_develop_otrk_grom_3
+#	project_tags = {
+#		sp_tag_tank
+#	}
+#	allowed = {
+#		tag = UKR
+#	}
+#	breakthrough_cost = {
+#		specialization_land = 1
+#	}
+#	available = {
+#		UKR = {
+#			has_completed_focus = Otrk_thunder
+#		}
+#	}
+#	visible = {
+#		FROM = {
+#			is_special_project_completed = sp:ukr_develop_otrk_grom_2
+#		}
+#	}
+#	special_project_parent = {
+#		ukr_develop_otrk_grom_2
+#	}
+#	prototype_time = 200
+#	complexity = 60
+#	resource_cost = {
+#		resources = {
+#			electronic = 10
+#		}
+#	}
+#	generic_prototype_rewards = {
+#		sp_land_generic_reward_scientist_xp_1
+#		sp_land_generic_reward_scientist_xp_2
+#		sp_land_generic_reward_scientist_xp_3
+#		sp_land_generic_reward_army_xp_1
+#		sp_land_generic_reward_army_xp_2
+#		sp_land_generic_reward_army_xp_3
+#		sp_land_generic_reward_major_progress_1
+#		sp_land_generic_reward_major_progress_2
+#		sp_land_generic_reward_major_progress_3
+#	}
+#	project_output = {
+#		enable_equipments = {
+#			ukr_light_guided_missile_equipment_grom
+#		}
+#	}
+#}

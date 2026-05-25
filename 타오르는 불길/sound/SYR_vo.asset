@@ -1,0 +1,298 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	SYR_infantry_idle
+	SYR_infantry_neutral_combat
+	SYR_infantry_positive_combat
+	SYR_infantry_move_out
+	SYR_infantry_retreat
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+########## SYR
+
+soundeffect = 
+{
+    name = "SYR_infantry_idle"
+    sounds = {
+		sound = SYR_Idle_001
+        sound = SYR_Idle_002
+        sound = SYR_Idle_003
+        sound = SYR_Idle_004
+        sound = SYR_Idle_005
+        sound = SYR_Idle_006
+        sound = SYR_Idle_007
+
+    }
+	max_audible = 7
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+soundeffect = 
+{
+    name = "SYR_infantry_neutral_combat"
+    sounds = {
+        sound = SYR_Neutral_001
+		sound = SYR_Neutral_002
+        sound = SYR_Neutral_003
+        sound = SYR_Neutral_004
+        sound = SYR_Neutral_005
+        sound = SYR_Neutral_006
+        sound = SYR_Neutral_007
+        sound = SYR_Neutral_008
+        sound = SYR_Neutral_009
+        sound = SYR_Neutral_010
+    }
+	max_audible = 10
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "SYR_infantry_positive_combat"
+    sounds = {
+        sound = SYR_Positive_001
+        sound = SYR_Positive_002
+        sound = SYR_Positive_003
+        sound = SYR_Positive_004
+    }
+	max_audible = 4
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "SYR_infantry_move_out"
+    sounds = {
+        sound = SYR_Moving_001
+        sound = SYR_Moving_002
+        sound = SYR_Moving_003
+        sound = SYR_Moving_004
+        sound = SYR_Moving_005
+        sound = SYR_Moving_006
+        sound = SYR_Moving_007
+    }
+	max_audible = 7
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "SYR_infantry_retreat"
+    sounds = {
+        sound = SYR_Retreat_001
+        sound = SYR_Retreat_002
+        sound = SYR_Retreat_003
+    }
+	max_audible = 3
+	max_audible_behaviour = fail
+	volume = 0.60
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+############## AUDIO ASSETS
+
+################# SYR
+sound = 
+{
+	name = "SYR_Idle_001"
+	file = "SYR/SYR_idle_001.wav"
+}
+sound = 
+{
+	name = "SYR_Idle_002"
+	file = "SYR/SYR_idle_002.wav"
+}
+sound = 
+{
+	name = "SYR_Idle_003"
+	file = "SYR/SYR_idle_003.wav"
+}
+
+sound = 
+{
+	name = "SYR_Idle_004"
+	file = "SYR/SYR_idle_004.wav"
+}
+
+sound = 
+{
+	name = "SYR_Idle_005"
+	file = "SYR/SYR_idle_005.wav"
+}
+
+sound = 
+{
+	name = "SYR_Idle_006"
+	file = "SYR/SYR_idle_006.wav"
+}
+
+sound = 
+{
+	name = "SYR_Idle_007"
+	file = "SYR/SYR_idle_007.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_001"
+	file = "SYR/SYR_neutral_001.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_002"
+	file = "SYR/SYR_neutral_002.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_003"
+	file = "SYR/SYR_neutral_003.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_004"
+	file = "SYR/SYR_neutral_004.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_005"
+	file = "SYR/SYR_neutral_005.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_006"
+	file = "SYR/SYR_neutral_006.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_007"
+	file = "SYR/SYR_neutral_007.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_008"
+	file = "SYR/SYR_neutral_008.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_009"
+	file = "SYR/SYR_neutral_009.wav"
+}
+
+sound = 
+{
+	name = "SYR_Neutral_010"
+	file = "SYR/SYR_neutral_010.wav"
+}
+
+sound = 
+{
+	name = "SYR_Positive_001"
+	file = "SYR/SYR_positive_001.wav"
+}
+
+sound = 
+{
+	name = "SYR_Positive_002"
+	file = "SYR/SYR_positive_002.wav"
+}
+
+sound = 
+{
+	name = "SYR_Positive_003"
+	file = "SYR/SYR_positive_003.wav"
+}
+
+sound = 
+{
+	name = "SYR_Positive_004"
+	file = "SYR/SYR_positive_004.wav"
+}
+
+sound = 
+{
+	name = "SYR_Moving_001"
+	file = "SYR/SYR_move_001.wav"
+}
+
+sound = 
+{
+	name = "SYR_Moving_002"
+	file = "SYR/SYR_move_002.wav"
+}
+
+sound = 
+{
+	name = "SYR_Moving_003"
+	file = "SYR/SYR_move_003.wav"
+}
+
+sound = 
+{
+	name = "SYR_Moving_004"
+	file = "SYR/SYR_move_004.wav"
+}
+
+sound = 
+{
+	name = "SYR_Moving_005"
+	file = "SYR/SYR_move_005.wav"
+}
+
+sound = 
+{
+	name = "SYR_Moving_006"
+	file = "SYR/SYR_move_006.wav"
+}
+
+sound = 
+{
+	name = "SYR_Moving_007"
+	file = "SYR/SYR_move_007.wav"
+}
+
+sound = 
+{
+	name = "SYR_Retreat_001"
+	file = "SYR/SYR_retreat_001.wav"
+}
+
+sound = 
+{
+	name = "SYR_Retreat_002"
+	file = "SYR/SYR_retreat_002.wav"
+}
+
+sound = 
+{
+	name = "SYR_Retreat_003"
+	file = "SYR/SYR_retreat_003.wav"
+}

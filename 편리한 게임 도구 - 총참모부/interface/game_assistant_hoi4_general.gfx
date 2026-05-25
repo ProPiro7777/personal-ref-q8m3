@@ -1,0 +1,148 @@
+spriteTypes = {
+	spriteType = {
+		name = "game_assistant_hoi4_general_zhuo_mian_GER"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/zhuo_mian_GER.dds"
+	}
+	spriteType = {
+		name = "game_assistant_hoi4_general_zhuo_mian_USA"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/zhuo_mian_USA.dds"
+	}
+	spriteType = {
+		name = "game_assistant_hoi4_general_zhuo_mian_SOV"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/zhuo_mian_SOV.dds"
+	}
+	spriteType = {
+		name = "game_assistant_hoi4_general_bei_jing"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_hoi4_general_bei_jing.dds"
+	}
+
+	#按钮
+	spriteType = {
+		name = "game_assistant_general_open_button1"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button1.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button1"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button1.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button2"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button2.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button2"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button2.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button3"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button3.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button3"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button3.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button4"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button4.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button4"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button4.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button5"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button5.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button5"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button5.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button6"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button6.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button6"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button6.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button7"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button7.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button7"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button7.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button8"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button8.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button8"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button8.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button9"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button9.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button9"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button9.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button10"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button10.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button10"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button10.dds"
+	}
+
+
+	spriteType = {
+		name = "game_assistant_general_open_button11"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button11.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button11"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button11.dds"
+	}
+
+	spriteType = {
+		name = "game_assistant_general_open_button12"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_open_button12.dds"
+	}
+	spriteType = {
+		name = "game_assistant_general_clos_button12"
+		texturefile = "gfx\\interface\\game_assistant_hoi4_general_scripted_gui/game_assistant_general_clos_button12.dds"
+	}
+
+
+
+
+	#game_assistant_hoi4_general_bei_jing
+    #frameAnimatedSpriteType = {
+    #    name = "GFX_zai_ru_frame"
+    #    texturefile = "gfx/interface/game_assistant_hoi4_scripted_gui/zai_ru.dds"
+    #    #帧数
+    #    noOfFrames = 16
+    #    #速度
+    #    animation_rate_fps = 4
+    #    looping = no
+    #    play_on_show = yes
+	#	pause_on_loop = 0.5
+    #}
+    
+}
+
+	
+	

@@ -1,0 +1,322 @@
+guiTypes = {
+
+    containerWindowType = {
+        name = "game_assistant_hoi4_general_gui"
+        size = { width = 490 height = 500 }
+        position = { x = 0 y = 0} 
+
+		#嵌套
+		containerWindowType = {
+			name = "game_assistant_hoi4_mian_ban_gui"
+        	size = { width = 490 height = 500 }
+        	position = { x = 10 y = -10}
+			#面板背景1-3
+			iconType = {
+				position = { x = 0 y = 0 }
+				name = "game_assistant_hoi4_general_zhuo_mian_GER_icon"
+				spriteType = "game_assistant_hoi4_general_zhuo_mian_GER"
+			}
+			iconType = {
+				position = { x = 0 y = 0 }
+				name = "game_assistant_hoi4_general_zhuo_mian_USA_icon"
+				spriteType = "game_assistant_hoi4_general_zhuo_mian_USA"
+			}
+			iconType = {
+				position = { x = 0 y = 0 }
+				name = "game_assistant_hoi4_general_zhuo_mian_SOV_icon"
+				spriteType = "game_assistant_hoi4_general_zhuo_mian_SOV"
+			}
+		}
+
+
+		#小科普面板
+		iconType = {
+			position = { x = 20 y = 380 }
+			name = "game_assistant_hoi4_general_bei_jing"
+			spriteType = "game_assistant_hoi4_general_bei_jing"
+		}
+
+
+		#文字窗口
+		instantTextBoxType = {
+			name = "title"
+			position = { x = -60 y = 390 }
+			font = "hoi_18mbs"
+			borderSize = {x = 60 y = 0}
+			text = "game_assistant_hoi4_general_text"
+			maxWidth = 500
+			maxHeight = 100
+			fixedsize = yes
+			format = centre
+		}
+
+
+
+		#按钮
+
+		#工厂建设-建设五种建筑
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button1"
+    		position = { x = 15 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button1"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button1"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button1"
+    		position = { x = 15 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button1"
+    		#buttonText = ""
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button1"
+			frame = 1
+    	}
+
+		#国家控制-卖卖军火-扩军与非军事化
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button2"
+    		position = { x = 55 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button2"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button2"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button2"
+    		position = { x = 55 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button2"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button2"
+			frame = 1
+    	}
+
+		#军队控制-防守特定友军边界-禁止盟友擅自开战-盟友集中使用部队突破
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button3"
+    		position = { x = 95 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button3"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button3"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button3"
+    		position = { x = 95 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button3"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button3"
+			frame = 1
+    	}
+
+		#备战控制-备战特定国家
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button4"
+    		position = { x = 135 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button4"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button4"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button4"
+    		position = { x = 135 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button4"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button4"
+			frame = 1
+    	}
+		#协调入侵
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button5"
+    		position = { x = 175 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button5"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button5"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button5"
+    		position = { x = 175 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button5"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button5"
+			frame = 1
+    	}
+
+		#前线战法-防御态势
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button6"
+    		position = { x = 215 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button6"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_game_assistant_general_open_button6"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button6"
+    		position = { x = 215 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button6"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button6"
+			frame = 1
+    	}
+
+		#前线战法-稳步推进
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button7"
+    		position = { x = 255 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button7"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button7"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button7"
+    		position = { x = 255 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button7"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button7"
+			frame = 1
+    	}
+
+		#前线战法-全力进攻
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button8"
+    		position = { x = 295 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button8"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button8"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button8"
+    		position = { x = 295 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button8"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button8"
+			frame = 1
+    	}
+
+		#军队结构-陆军
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button9"
+    		position = { x = 335 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button9"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button9"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button9"
+    		position = { x = 335 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button9"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button9"
+			frame = 1
+    	}
+
+		#军队结构-海军
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button10"
+    		position = { x = 375 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button10"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button10"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button10"
+    		position = { x = 375 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button10"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button10"
+			frame = 1
+    	}
+
+		#军队结构-空军
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button11"
+    		position = { x = 415 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button11"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button11"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button11"
+    		position = { x = 415 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button11"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button11"
+			frame = 1
+    	}
+
+		#特定类别-盟友AI给玩家租借-#盟友AI给指定国家租借-傀儡禁止给玩家部队-特定国家类别
+		buttonType = {
+    		name = "GFX_game_assistant_general_open_button12"
+    		position = { x = 455 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_open_button12"
+    		#buttonText = "111"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_open_button12"
+			frame = 1
+    	}
+		buttonType = {
+    		name = "GFX_game_assistant_general_clos_button12"
+    		position = { x = 455 y = 462 } 
+    		quadTextureSprite = "game_assistant_general_clos_button12"
+    		#buttonText = "GFX_game_assistant_general_button"
+            buttonFont = "hoi_20b"
+    		clicksound = click_checkbox
+			pdx_tooltip = "GUI_GFX_game_assistant_general_clos_button12"
+			frame = 1
+    	}
+
+
+    }
+}
+

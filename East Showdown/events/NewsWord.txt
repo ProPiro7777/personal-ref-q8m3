@@ -1,0 +1,174 @@
+add_namespace = word
+
+news_event = { 
+	id = word.1  ##The United Nations General Assembly has called an emergency special session on Ukraine
+    picture = GFX_word_1
+    title = word.1.t
+    desc = word.1.d
+
+	major = yes
+	is_triggered_only = yes
+	
+    option	= {
+		name = word.1.u
+		log = "[GetDateText]: [This.GetName]: word.1.u executed"
+		trigger = {
+		    tag = UKR
+		}
+	}
+	
+	option	= {
+		name = word.1.n
+		log = "[GetDateText]: [This.GetName]: word.1.n executed"
+		trigger = {
+		    is_in_faction_with = NTO
+		}
+	}
+
+	option = {
+		name = word.1.r
+		log = "[GetDateText]: [This.GetName]: word.1.r executed"
+		trigger = {
+		    has_country_flag = news_pro_russian_flag
+		}
+	}
+
+	option = {
+		name = word.1.c
+		log = "[GetDateText]: [This.GetName]: word.1.c executed"
+		trigger = {
+		    NOT = {
+			    OR = {
+					tag = UKR
+					tag = RUS
+					tag = WGN
+					tag = LPR
+					tag = DPR
+					tag = CHE
+					tag = BLR
+					is_in_faction_with = NTO
+				}
+			}
+		}
+	}	
+}
+news_event = {
+    id = word.16
+	title = word.16.t
+    desc = word.16.d
+	picture	= GFX_news_event_083
+    major = yes
+    is_triggered_only = no
+    trigger = {
+		not = {
+			OR = {
+				has_global_flag = Belgorod_bombing
+				has_global_flag = startdate_2022_04_15
+			}
+		}
+		date = 2022.4.1
+		count_triggers = {
+			amount = 1
+			72 = { is_controlled_by = UKR } 
+			89 = { is_controlled_by = UKR } 
+			101 = { is_controlled_by = UKR } 
+			103 = { is_controlled_by = UKR } 
+			100 = { is_controlled_by = UKR } 
+		}
+		UKR = {
+			has_war_with = RUS
+		}
+	}
+
+    immediate = { 
+		set_global_flag = Belgorod_bombing
+		70 = {
+			damage_building = {
+				type = fuel_silo
+				damage = 1
+			}
+		}
+	}
+	
+    option = { 
+        name = word.16.a
+		log = "[GetDateText]: [This.GetName]: word.16.a executed"
+		trigger = {
+			NOT = { TAG = RUS }
+			NOT = { TAG = BLR }
+			NOT = { TAG = DPR }
+			NOT = { TAG = LPR }
+			NOT = { TAG = CHE }
+		}
+	}
+
+	option = { 
+		name = word.16.b
+		log = "[GetDateText]: [This.GetName]: word.16.b executed"
+		trigger = {	
+			has_country_flag = news_pro_russian_flag
+		}
+	}
+}
+news_event = {
+    id = word.17
+	title = word.17.t
+    desc = word.17.d
+	picture	= GFX_word_17
+    major = yes
+    is_triggered_only = no
+    trigger = {
+		not = {
+			has_global_flag = Crimea_aerodrome_bombing
+		}
+		date = 2022.8.9
+		count_triggers = {
+			amount = 1
+			296 = { is_controlled_by = UKR } 
+			271 = { is_controlled_by = UKR } 
+			256 = { is_controlled_by = UKR } 
+			233 = { is_controlled_by = UKR } 
+			253 = { is_controlled_by = UKR } 
+            264 = { is_controlled_by = UKR } 
+			240 = { is_controlled_by = UKR } 
+			251 = { is_controlled_by = UKR } 
+			246 = { is_controlled_by = UKR } 
+			262 = { is_controlled_by = UKR } 
+
+
+
+		}
+		UKR = {
+			has_war_with = RUS
+			}
+	}
+
+   
+
+    immediate = { 
+		set_global_flag = Crimea_aerodrome_bombing
+	}
+	
+    option = { 
+        name = word.17.a
+		log = "[GetDateText]: [This.GetName]: word.17.a executed"
+		trigger = {
+			NOT = { TAG = RUS }
+			NOT = { TAG = BLR }
+		}
+	}
+
+	option = { 
+		name = word.17.b
+		log = "[GetDateText]: [This.GetName]: word.17.b executed"
+		trigger = {	
+			has_country_flag = news_pro_russian_flag
+		}
+		303 = {
+			damage_building = {
+				type = air_base
+				damage = 1
+			}
+		}
+	}
+}

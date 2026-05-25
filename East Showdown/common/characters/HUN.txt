@@ -1,0 +1,34 @@
+characters = {
+	Katalin = {
+	   name = Katalin
+	   portraits = {
+		   civilian = {
+			   #Custom image for Denis Pushilin
+			   large = "gfx/leaders/HUN/Katalin.dds"
+		   }
+	   }
+	   country_leader = {
+		   expire = "1965.1.1"
+		   ideology = liberal_democracy
+		   traits = { 
+			   
+			}
+	   }
+   }
+   HUN_Victor_Orban = {
+	name = HUN_Victor_Orban
+	portraits = {
+		civilian = {
+			#Custom image for Denis Pushilin
+			large = "gfx/leaders/HUN/HUN_Victor_orban.dds"
+		}
+	}
+	country_leader = {
+		expire = "1965.1.1"
+		ideology = national_democracy
+		traits = { 
+			
+		 }
+	}
+}
+}

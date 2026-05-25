@@ -1,0 +1,55 @@
+state = { 
+	id = 657 
+	name = "STATE_657" 
+	manpower = 60962 
+	
+	state_category = rural 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 2427 2 }
+		victory_points = { 3395 1 }
+		victory_points = { 3535 2 }
+		victory_points = { 5471 3 }
+		victory_points = { 8266 2 }
+		victory_points = { 10201 2 }
+		victory_points = { 11114 10 }
+		victory_points = { 12797 5 }
+		victory_points = { 18406 5 }
+		victory_points = { 18424 2 }
+		victory_points = { 18444 1 }
+		victory_points = { 18447 10 }
+		
+		buildings = { 
+			electrical_substation = 1 
+			infrastructure = 2 
+			#rocket_site = 1 
+		}
+
+		2022.04.01 = {
+			owner = UKR
+			controller = RUS
+			UKR = {
+				set_province_controller = 18424
+				set_province_controller = 12797
+				set_province_controller = 6418
+				set_province_controller = 6361
+				set_province_controller = 18406
+				set_province_controller = 18444
+				set_province_controller = 2427
+				set_province_controller = 18444
+			}
+			buildings = {
+				 16133 = { bunker = 2 }
+				 12393 = { bunker = 3 }
+				 18462 = { bunker = 2 }
+				 18444 = { bunker = 1 }	
+				 2427 = { bunker = 2 }				 			 				 
+			}
+
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 1244 1260 2427 3102 3395 3535 5332 5471 5975 6361 6418 7366 7892 7975 8266 8545 9118 10201 11114 12393 12772 12797 15522 16104 16133 18406 18424 18444 18447 18462 }
+}

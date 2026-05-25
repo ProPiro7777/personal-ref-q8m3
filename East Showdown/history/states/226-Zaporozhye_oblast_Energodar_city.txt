@@ -1,0 +1,31 @@
+state = { 
+	id = 226 
+	name = "STATE_226" 
+	manpower = 53343 
+	
+	state_category = rural 
+	buildings_max_level_factor = 0.75 
+	history = { 
+		owner = UKR 
+		
+		victory_points = { 10145 2 }
+		victory_points = { 11891 15 }
+		
+		buildings = { 
+			electrical_substation = 14 
+			electrical_substation_big = 13 
+			infrastructure = 3 
+			industrial_complex = 2 
+			nuclear_power_plant = 6 
+			thermal_power_plant = 18 
+		}
+
+		2022.04.01 = {
+			owner = UKR
+			controller = RUS
+		}
+		
+		add_core_of = UKR 
+	}
+	provinces = { 10145 11891 18393 }
+}

@@ -1,0 +1,21 @@
+instant_effect = {
+	ensure_unit_template_LAT_Mehanizētais_bataljons = yes
+	ensure_unit_template_LAT_Kājnieku_bataljons = yes
+	ensure_unit_template_LAT_Mehanizētais_bataljons = yes
+}
+units = {
+	division = {
+		name = "1. mehanizētais bataljons"
+		location = 8132
+		division_template = "Mehanizētais bataljons"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+	division = {
+		name = "2. mehanizētais bataljons"
+		location = 12974
+		division_template = "Mehanizētais bataljons"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.1
+	}
+}

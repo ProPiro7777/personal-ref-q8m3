@@ -1,0 +1,22 @@
+add_namespace = game_assistant_hoi4_general_text
+
+country_event = {
+    id = game_assistant_hoi4_general_text.1
+    title = {
+        text = game_assistant_hoi4_general_text.1.t
+    }
+    desc = game_assistant_hoi4_general_text.1.d
+    fire_only_once = yes
+    picture = GFX_report_event_bul_ff_troops_panzer
+    is_triggered_only = yes
+    hidden = yes
+    immediate = {
+        
+    }
+    option = {
+        name = game_assistant_hoi4_general_text.1.a
+        set_variable = { game_assistant_hoi4_general1 = 1 }
+        set_variable = { game_assistant_hoi4_general_text = 1 }
+    }
+
+}
